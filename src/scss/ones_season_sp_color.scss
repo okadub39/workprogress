@@ -1,0 +1,115 @@
+/*
+コンテンツとカレンダーの背景色と文字色を設定するCSSになります。
+「NEW」「PR」のタブの設定もこちらで処理しております。
+*/
+
+/*コンテンツエリアの背景色*/
+.contents--area {
+  background-color: #f5eee7;
+}
+/*見出しの背景色*/
+.eventtitle--backcolor__default {
+  color: #fff;
+  background-color: #ac232c;
+  /*background-color: #ccc;*/
+}
+.eventtitle--backcolor__brawn {
+  background-color: #937a41 !important;
+	/*background-color: #f00;*/
+  color: #fff;
+}
+/*ボタンの背景色*/
+.event--button__color {
+  background-color: #ac232c;
+  /*background-color: #ccc;*/
+  color: #fff !important;
+}
+.btn--color {
+  background-color: #937a41 !important;
+	/*background-color: #f00;*/
+  color: #fff;
+}
+
+/*カレンダーの背景色*/
+#calendar--setdata h2 {
+  color:#fff;
+  background-color:#cccccc;
+}
+#calendar--setdata .calendar--header{
+  color:#fff;
+	border: 1px solid #c95960;
+  background-color:#c95960;
+}
+#calendar--setdata .calendar--header__002{
+  color:#333;
+  background-color:#ffffff;
+	border: 1px solid #c95960;
+}
+#calendar--setdata .row>div.sunday{
+  background-color:#FFE7DD;
+  color:#333;
+}
+#calendar--setdata .row>div.saturday{
+  background-color:#E9EEF4;
+  color:#333;
+}
+/*画像及びコンテンツに角丸を追加する場合*/
+.round {
+	border-radius: 4px;
+}
+/*イベント情報カセットの背景色*/
+.event--information__color{
+	background-color: #ffeded;
+	border-bottom: #eba0a0 solid 1px;
+	/*background-color: #eee;*/
+	color:inherit;
+}
+/*タブの色*/
+.conteiner--tag__color {
+  color: #fff;
+  background-color: #9D7744;
+	/*background-color: #000;*/
+}
+/*「NEW」と「PR」のタブデザイン*/
+.new {
+  background-image: url(../img/image_common_new.png);
+  background-repeat: no-repeat;
+	width: 33px;
+	height: 14px;
+	margin: 2px;
+	display: inline-block;
+}
+.pr {
+  background-image: url(../img/image_common_pr.png);
+  background-repeat: no-repeat;
+	width: 28px;
+	height: 14px;
+	margin: 2px;
+	display: inline-block;
+}
+/*見出しのデザインに「PR」タグを追加する場合*/
+.maintitle--design__pr {
+  background-image: url(../img/image_common_prwhite.png);
+  background-position: 95% center;
+  background-repeat: no-repeat;
+}
+.maintitle--design__prGlay {
+  background-image: url(../img/image_common_pr.png);
+  background-position: 95% center;
+  background-repeat: no-repeat;
+}
+/*見出しのデザインを上下ボーダースタイルに変更する場合*/
+.maintitle--design__border {
+  width: 100% !important;
+  margin: 0 auto !important;
+  background-color: #fff !important;
+  border-top: 2px solid #ac232c !important;
+  border-bottom: 1px solid #dfdfdf !important;
+  color: #333 !important;
+  font-size: 18px !important;
+  font-weight: 700 !important;
+  padding: 10px 0px !important;
+  margin: 0px !important;
+}
+
+

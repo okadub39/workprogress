@@ -1,0 +1,328 @@
+
+<!DOCTYPE HTML>
+<html xml:lang="ja" lang="ja">
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>確認用ページ</title>
+</head>
+
+<body id="index">
+    <h1>《レッツエンジョイ東京》特集ワンソース化｜ぐるなび様</h1>
+    <ul class="menulist">
+        <li>【履歴】</li>
+        <li>2018/05/18 可変可リンクアローページを追加しました。</li>
+        <li>2018/05/17 初稿upしました。</li>
+    </ul>
+    <h2>最新（2018/<span>05/17</span>）</h2>
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tbody>
+            <tr>
+                <th width="10">No</th>
+                <th width="100">ページタイトル</th>
+                <th width="100">対象ページ</th>
+                <th width="100">デザイン<br>(最終更新日)</th>
+                <th width="100">html<br>(最終更新日)</th>
+                <th>備考</th>
+            </tr>
+            <tr>
+                <td class="day">01</td>
+                <td>PC</td>
+                <td><a href="https://www.enjoytokyo.jp/feature/matsuri/autumn/" target="_blank">https://www.enjoytokyo.jp/feature/matsuri/autumn/</a></td>
+                <td><strong>FIX</strong><br><a href="imager/pc_180405.jpg" target="_blank">4/5</a></td>
+                <td><a href="index_pc.html" target="_blank">5/17</a></td>
+                <td>
+                    <ul>
+                        <li>MV含む共通ヘッダーフッター部分は現在未実装となっております、申し訳ありません。実装終わり次第改めてご報告させて頂きます。</li>
+                        <li>共通htmlモジュールは、一度見た目と挙動を下記ページでご確認頂き、その後別々のhtmlを用意させて頂きます。</li>
+                        <li>カレンダーの詳細仕様は後程提出させて頂きます。</li>
+                </td>
+            </tr>
+            <tr>
+                <td class="day">01-aa</td>
+                <td>PC - <br>リンクアロー可変</td>
+                <td>-</td>
+                <td>-</td>
+                <td><a href="index_pc_arrow.html" target="_blank">5/18</a></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="day">01-a</td>
+                <td>PC - <br>共通html確認用</td>
+                <td></td>
+                <td>-</td>
+                <td>-</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="day">01-b</td>
+                <td>PC - <br>共通html確認用</td>
+                <td></td>
+                <td>-</td>
+                <td>-</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="day">02</td>
+                <td>SP</td>
+                <td></td>
+                <td><strong>FIX</strong><br>
+                    TOP: <a href="imager/sp_180405.jpg" target="_blank">4/5</a><br>
+                    BASE: <a href="imager/sp_base_180405.jpg" target="_blank">4/5</a></td>
+                <td><a href="index_sp_arrow.html" target="_blank">5/17</a></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="day">02-aa</td>
+                <td>SP - <br>リンクアロー可変</td>
+                <td>-</td>
+                <td>-</td>
+                <td><a href="index_pc.html" target="_blank">5/18</a></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="day">02-a</td>
+                <td>SP - <br>共通html確認用</td>
+                <td></td>
+                <td>-</td>
+                <td>-</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="day">02-b</td>
+                <td>SP - <br>共通html確認用</td>
+                <td></td>
+                <td>-</td>
+                <td>-</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js'></script>
+<script type="text/javascript">
+$(function(){
+    var setData = $("h2 span").text();
+    $("td").each( function(){
+        var getData = $(this).text();
+        if(getData == setData){
+            $(this).addClass("new");
+        }
+    });
+});
+</script>
+<style>
+@charset "utf-8";
+td strong {
+    display: inline-block;
+    font-size: 10px;
+    padding: 1px 8px;
+    font-weight: bold;
+    background: #D15759;
+    color: #fff;
+}
+tr.close * {
+    background: #9c9c9c;
+}
+td.close02 {
+    background: #eee;
+}
+td.new {
+    background: #ffefef;
+}
+td:nth-child(5),
+td:nth-child(4) {
+text-align: center;
+}
+
+body {
+    margin: 0;
+    padding: 10px;
+    line-height: 1.6;
+    font-size: 12px;
+    font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    background-color: #FFF;
+    text-align: left;
+    color: #000;
+}
+
+strong {
+    font-size: 16px;
+}
+
+img {
+    vertical-align: bottom;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+/*
+h2 span {
+    font-size: 12px;
+    font-weight: normal;
+    margin-left: 5px;
+    padding-left: 5px;
+}
+*/
+td ul {
+    padding-left: 15px;
+}
+ul.menulist {
+    margin: 20px 0;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #eee;
+}
+
+ul.menulist a {
+    font-weight: normal;
+}
+
+ul.menulist li {
+    display: block;
+}
+
+ul.menulist li+li::before {
+}
+
+ul.normalist {
+    display: block;
+    margin: 0 0 0 10px;
+    padding: 0 0 0 10px;
+    font-weight: normal;
+    background-color: transparent;
+    list-style-type: disc;
+}
+
+ul.normalist li {
+    display: list-item;
+    margin: 0;
+    padding: 0;
+    list-style-type: disc;
+    background-color: transparent;
+}
+
+ul.normalist li+li::before {
+    content: inherit;
+}
+
+table {
+    border-collapse: collapse;
+    border: 2px #000 solid;
+    margin: 20px 0;
+}
+
+th {
+    padding: 10px;
+    border: 1px #FFF solid;
+    background-color: #666;
+    color: #FFF;
+    text-align: left;
+}
+
+th.subtit {
+    border: 1px #FFF solid;
+    color: #FFF;
+    background-color: #777;
+    text-align: left;
+    padding: 5px 10px;
+}
+
+td {
+    padding: 10px;
+    border: 1px #000 solid;
+    text-align: left;
+}
+
+tr,
+tr.kasou {}
+
+tr.kasou td {
+    background-color: #ddd;
+}
+
+tr.del td {
+    background-color: #ccc;
+    color: #999;
+}
+
+tr.del td a:link {
+    color: #666;
+}
+
+tr.del td a:visited {
+    color: #8A7D4F;
+}
+
+td.day {
+    white-space: nowrap;
+    background-color: #eee;
+}
+
+td:first-child+td {
+    text-align: left;
+}
+
+td.spcenter {
+    text-align: center !important;
+}
+
+td.spcenter+td+td {
+    text-align: left !important;
+}
+
+a:link {
+    color: #cd0000;
+}
+
+a:visited {
+    color: #D15759;
+}
+
+a:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+.new td {
+    background-color: #FFF6D4;
+}
+
+.grayout {
+    background-color: #F5F5F5;
+    color: #999;
+}
+
+.fontgray {
+    color: #666;
+}
+
+.bai {
+    background-color: #999;
+    color: #FFF;
+}
+
+.baisub {
+    background-color: #777;
+    color: #FFF;
+}
+
+.samll {
+    font-size: 10px;
+    color: #C30;
+}
+
+.fontorange {
+    color: #F40;
+}
+</style>
+
+</html>

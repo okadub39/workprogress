@@ -1,0 +1,145 @@
+@charset "UTF-8";
+/*
+コンテンツとカレンダーの背景色と文字色を設定するCSSになります。
+「NEW」「PR」のタブの設定もこちらで処理しております。
+*/
+/*コンテンツエリアの背景色*/
+.contents--area {
+  background-color: #f5eee7;
+}
+
+/*見出しの背景色*/
+.eventtitle--backcolor__default,#globalNav ul {
+  color: #fff;
+  background-color: #ac232c;
+  /*background-color: #ccc;*/
+}
+.eventtitle--backcolor__subcolor {
+  background-color: #937a41 !important;
+  /*background-color: #f00;*/
+  color: #fff;
+}
+
+/*ボタンの背景色*/
+.event--button__color {
+  background-color: #ac232c;
+  /*background-color: #ccc;*/
+  color: #fff !important;
+}
+
+.btn--color {
+  background-color: #937a41 !important;
+  /*background-color: #f00;*/
+  color: #fff !important;
+}
+
+/*カレンダーの背景色*/
+#calendar--setdata h2 {
+  color: #fff;
+}
+#calendar--setdata .calendar--header {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ac232c;
+  color: #fff;
+}
+
+#calendar--setdata .calendar--header a{
+  border: 1px solid rgba(255,248,248,.35);
+  background-color: rgba(255,248,248,.35);
+}
+
+#calendar--setdata .calendar--header__002 {
+  color: #333;
+  background-color: #ffffff;
+  border: 1px solid #c95960;
+}
+
+#calendar--setdata .row > div.sunday {
+  background-color: #FFE7DD;
+  color: #333;
+}
+
+#calendar--setdata .row > div.saturday {
+  background-color: #E9EEF4;
+  color: #333;
+}
+
+/*画像及びコンテンツに角丸を追加する場合*/
+.round {
+  border-radius: 4px;
+}
+
+/*イベント情報カセットの背景色*/
+.event--information__color {
+  background-color: rgba(255,248,248,.95);
+  /*background-color: #ffeded;
+  border-bottom: #eba0a0 solid 1px;
+  background-color: #eee;*/
+  color: inherit;
+  padding: 10px 0px 0px;
+  display: block;
+}
+hr.event--information__border {
+  background-color: rgba(0,0,0,.15);
+  width: 100%;
+  height: 1px;
+  margin: 0px;
+  padding: 0px;
+  display: block;
+}
+/*タブの色*/
+.conteiner--tag__color {
+  color: #fff;
+  background-color: #CF7926;
+  /*background-color: #000;*/
+}
+
+/*「NEW」と「PR」のタブデザイン*/
+.new {
+  background-image: url(../img/image_common_new.png);
+  background-repeat: no-repeat;
+  width: 33px;
+  height: 14px;
+  margin: 2px;
+  display: inline-block;
+}
+
+.pr {
+  background-image: url(../img/image_common_pr.png);
+  background-repeat: no-repeat;
+  width: 28px;
+  height: 14px;
+  margin: 2px;
+  display: inline-block;
+}
+
+/*見出しのデザインに「PR」タグを追加する場合*/
+.maintitle--design__pr {
+  background-image: url(../img/image_common_prwhite.png);
+  background-position: 98% center;
+  background-repeat: no-repeat;
+}
+
+.maintitle--design__prGlay {
+  background-image: url(../img/image_common_pr.png);
+  background-position: 98% center;
+  background-repeat: no-repeat;
+}
+
+/*見出しのデザインを上下ボーダースタイルに変更する場合*/
+.maintitle--design__border {
+  width: 100%;
+  margin: 0 auto !important;
+  background-color: #fff !important;
+  border-top: 2px solid #ac232c !important;
+  border-bottom: 1px solid #dfdfdf !important;
+  color: #333 !important;
+}
+.maintitle--design__underborder {
+  width: 100%;
+  margin: 0 auto !important;
+  background-color: #fff !important;
+  border-bottom: 1px solid #dfdfdf !important;
+  color: #333 !important;
+}
