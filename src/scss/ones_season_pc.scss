@@ -151,43 +151,8 @@ p.link--opacity__50:hover {
 	opacity: .5;
 }
 
-.contents--component__011 .link--opacity__50 a:hover {
-	opacity: 1;
-}
-.contents--component__011 .link--opacity__50 a:hover .conteiner--box__image img {
-	opacity: .5;
-}
-.contents--component__011 .link--opacity__50 a:hover .conteiner--box__text {
-	opacity: .5;
-}
-.contents--component__012 .link--opacity__50 a:hover {
-	opacity: 1;
-}
-.contents--component__012 .link--opacity__50 a:hover .conteiner--box__image img {
-	opacity: .5;
-}
-.contents--component__012 .link--opacity__50 a:hover .conteiner--box__text {
-	opacity: .5;
-}
-.contents--component__014 .link--opacity__50 a:hover {
-	opacity: 1;
-}
-.contents--component__014 .link--opacity__50 a:hover .conteiner--box__image img {
-	opacity: .5;
-}
-.contents--component__014 .link--opacity__50 a:hover .conteiner--box__text {
-	opacity: .5;
-}
-.contents--component__015 .link--opacity__50 a:hover {
-	opacity: 1;
-}
-.contents--component__015 .link--opacity__50 a:hover .conteiner--box__image img {
-	opacity: .5;
-}
-.contents--component__015 .link--opacity__50 a:hover .conteiner--box__text {
-	opacity: .5;
-}
-.conteiner--link__text a p span:hover {
+
+.container--link__text a p span:hover {
 	text-decoration: underline !important;
 	-webkit-text-decoration-color: #195197 !important;
 	-webkit-text-decoration-color: #195197 !important;
@@ -257,12 +222,12 @@ section {
 }
 .contents--area section .eventtitle--backcolor__white {
 	background-color: #fff;
-	border-bottom: 1px solid #ccc;
+	border-bottom: 1px solid #DFDFDF;
 	color: #333;
 }
 .contents--area section .contents--component__title.eventtitle--backcolor__brwan {
 	background-color: #937a41;
-	border-bottom: 1px solid #ccc;
+	border-bottom: 1px solid #DFDFDF;
 	color: #fff;
 }
 .contents--area section .contents--component__title.eventtitle--margin__bottom5px {
@@ -295,13 +260,13 @@ section {
 	margin-top: 0px;
 }
 /*section共通クラス----H2見出し----*/
-.conteiner--box {
+.container--box {
 	width: 100%;
 	margin: 0 auto;
 	display: inline-block;
 	text-align: left;
 }
-.conteiner--box__tag {
+.container--box__tag {
 	position: absolute;
 	top: 0px;
 	left: 0px;
@@ -309,55 +274,55 @@ section {
 	font-size: 12px;
 	font-weight: 700;
 }
-.conteiner--box__title {
+.container--box__title {
 	clear: both;
 	display: block;
 	letter-spacing: 0px;
 }
-.conteiner--box__title p {
+.container--box__title p {
 	margin: 0px;
 	padding: 0px 0px 0px 0px;
 	font-size: 14px;
 	font-weight: 700;
 	letter-spacing: 0px;
 }
-.conteiner--box__date p {
+.container--box__date p {
 	font-size: 11px;
 	letter-spacing: -0.1px;
 	margin-top: 5px;
 	margin-bottom: 2px;
 	line-height: 170%;
 }
-.conteiner--box__place {
+.container--box__place {
 	display: inline-block;
 }
-.conteiner--box__place p {
+.container--box__place p {
 	font-size: 11px;
 	float: left;
 	padding: 0px;
 	margin: 0px;
 }
-.conteiner--box__place p:before {
+.container--box__place p:before {
 	font-family: "Font Awesome 5 Free";
 	content: "\f3c5";
 	font-weight: 900;
 	margin-right: 3px;
 }
-.conteiner--link__text {
+.container--link__text {
 	float: right;
 	font-weight: 700;
 }
-.conteiner--link__text a p {
+.container--link__text a p {
 	height: 40px;
 	line-height: 40px;
 	font-size: 12px;
 	margin: 0px 5px 0px 0px;
 	padding: 0px;
 }
-.conteiner--link__text a p span {
+.container--link__text a p span {
 	margin-right: 5px;
 }
-.conteiner--link__text.arrow--img a p:after {
+.container--link__text.arrow--img a p:after {
 	content: '';
 	width: 7.5px;
 	height: 12px;
@@ -369,36 +334,17 @@ section {
 	vertical-align: middle;
 	background-repeat: no-repeat;
 }
-.conteiner--link__text.arrow--font a p:after {
+.container--link__text.arrow--font a p:after {
 	font-family: "Font Awesome 5 Free";
 	content: '\f105';
 	font-weight: 900;
 }
-.conteiner--link__text a p:hover:after {
+.container--link__text a p:hover:after {
 	text-decoration: none !important;
 	-webkit-text-decoration-color: #ffffff !important;
 	text-decoration-color: #ffffff !important;
 }
 
-.contents--component__013 .conteiner--box .conteiner--box__area.arrow--img a p:after {
-	content: '';
-	float: right;
-	margin-right: 10px;
-	width: 7.5px;
-	height: 12px;
-	display: inline-block;
-	background: url(../img/arrow_red.png);
-	background-size: contain;
-	vertical-align: middle;
-	background-repeat: no-repeat;
-}
-.contents--component__013 .conteiner--box .conteiner--box__area.arrow--font a p:after {
-	font-family: "Font Awesome 5 Free";
-	content: '\f105';
-	font-weight: 900;
-	float: right;
-	margin-right: 15px;
-}
 .event--information__title p:after {
 	content: url(../img/arrow_red2.png);
 	/*WEBフォントに切り替えるときはコメントアウトを外す。
@@ -462,13 +408,13 @@ a:hover {
 	background-color: #fff;
 }
 /*B-1 新着情報（写真）---コンテンツ領域*/
-.contents--area section#new--information__photo .conteiner--box {
+.contents--area section#new--information__photo .container--box {
 	width: 585px;
 	margin: 0 auto;
 	padding-top: 15px;
 }
 /*B-1 新着情報（写真）---見出しのスタイルシート*/
-.contents--area section#new--information__photo h2#B-1 {
+.contents--area section#new--information__photo h2#b-1 {
 	width: 575px;
 	font-size: 18px;
 	padding: 11px 15px;
@@ -477,18 +423,18 @@ a:hover {
 	line-height: 18px;
 }
 /*B-1 新着情報（写真）---コンテンツを展開させるコンテナのスタイルシート*/
-.contents--area section#new--information__photo .conteiner--box .conteiner--box__001 {
+.contents--area section#new--information__photo .container--box .container--box__001 {
 	margin: 0px 6px 0px 7px;
 	width: 182px;
 	float: left;
 	padding-bottom: 10px;
 }
 /*B-1 新着情報（写真）---写真を格納するフレーム領域*/
-.contents--area section#new--information__photo .conteiner--box .conteiner--box__001 .conteiner--box__image {
+.contents--area section#new--information__photo .container--box .container--box__001 .container--box__image {
 	position: relative;
 }
 /*B-1 新着情報（写真）---タグの設定*/
-.contents--area section#new--information__photo .conteiner--box .conteiner--box__001 .conteiner--box__image .conteiner--box__tag {
+.contents--area section#new--information__photo .container--box .container--box__001 .container--box__image .container--box__tag {
 	position: absolute;
 	top: 0px;
 	left: 0px;
@@ -497,12 +443,12 @@ a:hover {
 	font-weight: 700;
 }
 /*B-1 新着情報（写真）---写真のサイズ*/
-.contents--area section#new--information__photo .conteiner--box .conteiner--box__001 .conteiner--box__image img {
+.contents--area section#new--information__photo .container--box .container--box__001 .container--box__image img {
 	width: 182px;
 	min-height: 120px;
 }
 /*B-1 新着情報（写真）---コンテンツタイトル*/
-.contents--area section#new--information__photo .conteiner--box .conteiner--box__title p {
+.contents--area section#new--information__photo .container--box .container--box__title p {
 	font-weight: 700;
 	margin-left: 0px;
 	margin-top: 2px;
@@ -510,33 +456,33 @@ a:hover {
 	line-height: 20px;
 }
 /*B-1 新着情報（写真）---コンテンツの日付*/
-.contents--area section#new--information__photo .conteiner--box .conteiner--box__date p {
+.contents--area section#new--information__photo .container--box .container--box__date p {
 	margin-top: 2px;
 	margin-left: 0px;
 	padding-top: 0px;
 	font-size: 11px;
 }
 /*B-1 新着情報（写真）---コンテンツの場所*/
-.contents--area section#new--information__photo .conteiner--box .conteiner--box__place p {
+.contents--area section#new--information__photo .container--box .container--box__place p {
 	margin-left: 0px;
 	padding-top: 0px;
 }
 /*B-1 新着情報（写真）---罫線*/
 .contents--area section#new--information__photo hr {
 	display: block;
-	border-top: 1px solid #ccc;
+	border-top: 1px solid #DFDFDF;
 	margin: 0;
 	padding: 0;
 }
 /*B-1 新着情報（写真）---リンク設定*/
-.contents--area section#new--information__photo .conteiner--link__text a p {
+.contents--area section#new--information__photo .container--link__text a p {
 	position: relative;
 	height: 40px;
 	line-height: 40px;
 	font-size: 12px;
 	margin: 0px 5px 0px 0px;
 }
-.contents--area section#new--information__photo .conteiner--link__text a p span {
+.contents--area section#new--information__photo .container--link__text a p span {
 	height: 40px;
 	line-height: 40px;
 	margin-right: 5px;
@@ -557,7 +503,7 @@ a:hover {
 	text-align: left;
 }
 /*B-2 新着情報（テキスト）見出しのスタイルシート*/
-.contents--area section#new--information__text h2#B-2 {
+.contents--area section#new--information__text h2#b-2 {
 	width: 575px;
 	font-size: 18px;
 	padding: 11px 15px;
@@ -566,58 +512,58 @@ a:hover {
 	line-height: 18px;
 }
 /*B-2 新着情報（テキスト）見出しのスタイルシート*/
-.contents--area section#new--information__text .conteiner--box a {
+.contents--area section#new--information__text .container--box a {
 	display: block;
 }
 /*B-2 新着情報（テキスト）見出しのスタイルシート*/
-.contents--area section#new--information__text .conteiner--box .conteiner--link__text {
+.contents--area section#new--information__text .container--box .container--link__text {
 }
 /*B-2 新着情報（テキスト）日付のボックス*/
-.contents--area section#new--information__text .conteiner--box__date {
+.contents--area section#new--information__text .container--box__date {
 	height: 20px;
 	float: left;
 	margin: 0px;
 }
 /*B-2 新着情報（テキスト）日付のテキスト*/
-.contents--area section#new--information__text .conteiner--box__date p {
+.contents--area section#new--information__text .container--box__date p {
 	margin: 1px 0px 0px 0px;
 	line-height: 100%;
 }
 /*B-2 新着情報（テキスト）場所のボックス*/
-.contents--area section#new--information__text .conteiner--box__place {
+.contents--area section#new--information__text .container--box__place {
 	height: 18px;
 	margin-left: 21px;
 	float: left;
 }
 /*B-2 新着情報（テキスト）場所のテキスト*/
-.contents--area section#new--information__text .conteiner--box__place p{
+.contents--area section#new--information__text .container--box__place p{
 	line-height: 100%;
 }
 /*B-2 新着情報（テキスト）コンテンツのタイトルボックス*/
-.contents--area section#new--information__text .conteiner--box__title {
+.contents--area section#new--information__text .container--box__title {
 	margin-left: 0px;
 	margin-top: 0px;
 	padding-right: 25px;
 }
 /*B-2 新着情報（テキスト）コンテナボックス*/
-.contents--area section#new--information__text .conteiner--box__002 {
+.contents--area section#new--information__text .container--box__002 {
 	position: relative;
 	width: 575px;
 	clear: both;
-	border-bottom: 1px solid #ccc;
+	border-bottom: 1px solid #DFDFDF;
 	margin: 0 auto;
 	padding: 12px 0px 12px 0px;
 }
 /*B-2 新着情報（テキスト）リンクテキスト*/
-.contents--area section#new--information__text .conteiner--link__text a p {
+.contents--area section#new--information__text .container--link__text a p {
 	height: 40px;
 	line-height: 40px;
 }
-.contents--area section#new--information__text .conteiner--link__text a {
+.contents--area section#new--information__text .container--link__text a {
 	margin-right: 10px;
 }
 /*B-2 新着情報（テキスト）矢印の位置調整*/
-.contents--area section#new--information__text .conteiner--box__002.arrow--img:after {
+.contents--area section#new--information__text .container--box__002.arrow--img:after {
 	content: '';
 	width: 7.5px;
 	height: 12px;
@@ -627,12 +573,12 @@ a:hover {
 	vertical-align: middle;
 	background-repeat: no-repeat;
 }
-.contents--area section#new--information__text .conteiner--box__002.arrow--font:after {
+.contents--area section#new--information__text .container--box__002.arrow--font:after {
 	font-family: "Font Awesome 5 Free";
 	content: '\f105';
 	font-weight: 900;
 }
-.contents--area section#new--information__text .conteiner--box__002:after {
+.contents--area section#new--information__text .container--box__002:after {
 	position: absolute;
 	top: 50%;
 	right: 2px;
@@ -652,7 +598,7 @@ a:hover {
 	text-align: left;
 }
 /*C エリアから探す 見出しのスタイルシート*/
-.contents--area section#search--event__area h2#C {
+.contents--area section#search--event__area h2#c {
 	width: 575px;
 	font-size: 18px;
 	padding: 11px 15px;
@@ -662,28 +608,28 @@ a:hover {
 	display: inline-block;
 }
 /*C エリアから探す コンテンツエリア*/
-.contents--area section#search--event__area .conteiner--box {
+.contents--area section#search--event__area .container--box {
 	width: 575px;
 	margin: 0px 15px 15px 15px;
 }
 /*C エリアから探す コンテンツエリア*/
-.contents--area section#search--event__area .conteiner--box__003 {
+.contents--area section#search--event__area .container--box__003 {
 	position: relative;
 	width: 100%;
 	clear: both;
 	padding: 0px 0px 0px 0px;
 }
 /*C エリアから探す コンテンツタイトルボックス*/
-.contents--area section#search--event__area .conteiner--box__title {
+.contents--area section#search--event__area .container--box__title {
 	margin-left: 0px;
 }
 /*C エリアから探す コンテンツタイトルテキスト*/
-.contents--area section#search--event__area .conteiner--box__title p {
+.contents--area section#search--event__area .container--box__title p {
 	font-size: 16px;
 	padding-top: 0px;
 }
 /*C エリアから探す エリアリスト*/
-.contents--area section#search--event__area .conteiner--area__lists {
+.contents--area section#search--event__area .container--area__lists {
 	display: inline-block;
 	width: 100%;
 	line-height: 100%;
@@ -691,7 +637,7 @@ a:hover {
 	margin-left: 1px;
 }
 /*C エリアから探す フォントサイズは13pxではなく14pxに変更*/
-.contents--area section#search--event__area .conteiner--box__area {
+.contents--area section#search--event__area .container--box__area {
 	border-right: 1px #797979 solid;
 	width: auto;
 	padding: 0px 9px;
@@ -699,12 +645,12 @@ a:hover {
 	float: left;
 }
 /*C エリアから探す トップのみマージントップの値を変更するため。*/
-.contents--area section#search--event__area .conteiner--box__top {
+.contents--area section#search--event__area .container--box__top {
 	border-left: 1px #797979 solid;
 	margin: 10px 0px 0px 0px;
 }
 /*C エリアから探す フォントサイズは13pxではなく14pxに変更*/
-.contents--area section#search--event__area .conteiner--box__area a {
+.contents--area section#search--event__area .container--box__area a {
 	display: block;
 	width: 100%;
 	height: 14px;
@@ -714,30 +660,30 @@ a:hover {
 	padding-bottom: 5px;
 }
 /*C エリアから探す マウスオーバー時にアンダーラインを消す*/
-.contents--area section#search--event__area .conteiner--box__area a:hover {
+.contents--area section#search--event__area .container--box__area a:hover {
 	text-decoration: none !important;
 }
 /*C エリアから探す ２カラム用のスタイルシート*/
-.contents--area section#search--event__area .conteiner--frame__003 {
+.contents--area section#search--event__area .container--frame__003 {
 	width: 50%;
 	margin: 0px;
 	padding: 0px 0px 5px 0px;
 	float: left;
 }
 /*C エリアから探す マージントップ調整*/
-.contents--area section#search--event__area .conteiner--box__003 .conteiner--box__title p{
+.contents--area section#search--event__area .container--box__003 .container--box__title p{
 	margin-top: 25px;
 }
 /*C エリアから探す マージントップ調整加工*/
-.contents--area section#search--event__area .conteiner--box__003 .conteiner--box__title.conteiner--box__topmargin p{
+.contents--area section#search--event__area .container--box__003 .container--box__title.container--box__topmargin p{
 	margin-top: 15px;
 }
 /*C エリアから探す タイトルに矢印を付与*/
-.contents--area section#search--event__area a .conteiner--box__title p:after {
+.contents--area section#search--event__area a .container--box__title p:after {
 	margin-left: 5px;
 	font-size: 20px !important;
 }
-.contents--area section#search--event__area a .conteiner--box__title.arrow--img p:after {
+.contents--area section#search--event__area a .container--box__title.arrow--img p:after {
 	margin-left: 5px;
 	margin-top: -3.5px;
 	content: '';
@@ -749,7 +695,7 @@ a:hover {
 	vertical-align: middle;
 	background-repeat: no-repeat;
 }
-.contents--area section#search--event__area a .conteiner--box__title.arrow--font p:after {
+.contents--area section#search--event__area a .container--box__title.arrow--font p:after {
 	font-family: "Font Awesome 5 Free";
 	content: '\f105';
 	font-weight: 900;
@@ -765,7 +711,7 @@ a:hover {
 	background-color: #fff;
 }
 /*D ランキングTOP3 見出しのスタイルシート*/
-.contents--area section#ranking--top3 h2#D {
+.contents--area section#ranking--top3 h2#d {
 	width: 575px;
 	font-size: 18px;
 	padding: 11px 15px;
@@ -775,28 +721,28 @@ a:hover {
 	display: inline-block;
 }
 /*D ランキングTOP3 コンテンツエリア*/
-.contents--area section#ranking--top3 .conteiner--box {
+.contents--area section#ranking--top3 .container--box {
 	width: 605px;
 }
 /*D ランキングTOP3 コンテンツエリアタイトル*/
-.contents--area section#ranking--top3 .conteiner--box__title p {
+.contents--area section#ranking--top3 .container--box__title p {
 	font-size: 12px;
 	margin-bottom: 6px;
 	padding-top: 1px;
 }
 /*D ランキングTOP3 コンテンツエリアタイトルリンク*/
-.contents--area section#ranking--top3 .conteiner--link__text a p {
+.contents--area section#ranking--top3 .container--link__text a p {
 	margin-right: 16px;
 }
 /*D ランキングTOP3 コンテンツエリアタイトルランキングボックス*/
-.contents--area section#ranking--top3 .conteiner--box__004 {
+.contents--area section#ranking--top3 .container--box__004 {
 	margin-top: 15px;
 	margin-left: 15px;
 	width: 181px;
 	float: left;
 }
 /*D ランキングTOP3 コンテンツエリアタイトルランキングボックス（最後だけ処理を変える必要がある場合用）*/
-.contents--area section#ranking--top3 .conteiner--box__004-last {
+.contents--area section#ranking--top3 .container--box__004-last {
 	margin-top: 15px;
 	margin-left: 15px;
 	margin-bottom: 1px;
@@ -809,16 +755,16 @@ a:hover {
 	width: 575px;
 	margin: 0 auto;
 	display: block;
-	border-bottom: 1px solid #ccc;
+	border-bottom: 1px solid #DFDFDF;
 	margin-top: 0;
 	padding-top: 0;
 }
 /*D ランキングTOP3 ランキングタブを配置するためにrelativeに*/
-.contents--area section#ranking--top3 .conteiner--box__image {
+.contents--area section#ranking--top3 .container--box__image {
 	position: relative;
 }
 /*D ランキングTOP3 ランキングタブ*/
-.contents--area section#ranking--top3 .conteiner--ranking__001 {
+.contents--area section#ranking--top3 .container--ranking__001 {
 	position: absolute;
 	width: 27px;
 	height: 29px;
@@ -829,7 +775,7 @@ a:hover {
 	background-image: url(../img/image_ranking_001.png);
 	background-repeat: no-repeat;
 }
-.contents--area section#ranking--top3 .conteiner--ranking__002 {
+.contents--area section#ranking--top3 .container--ranking__002 {
 	position: absolute;
 	width: 27px;
 	height: 29px;
@@ -840,7 +786,7 @@ a:hover {
 	background-image: url(../img/image_ranking_002.png);
 	background-repeat: no-repeat;
 }
-.contents--area section#ranking--top3 .conteiner--ranking__003 {
+.contents--area section#ranking--top3 .container--ranking__003 {
 	position: absolute;
 	width: 27px;
 	height: 29px;
@@ -869,19 +815,19 @@ a:hover {
 	border-bottom: 1px solid #ddd;
 }
 /*E PICKUPコンテンツのコンテナボックス*/
-.contents--area section#pickup--contents .conteiner--box {
+.contents--area section#pickup--contents .container--box {
 	width: 575px;
 	padding-bottom: 10px;
 }
 /*E PICKUPコンテンツのコンテナボックス２つ目には下の余白を消す。*/
-.contents--area section#pickup--contents .conteiner--box:last-child {
+.contents--area section#pickup--contents .container--box:last-child {
 	padding-bottom: 0px;
 }
 /*E PICKUPコンテンツのコンテナボックスタイトルの位置調整。*/
-.contents--area section#pickup--contents .conteiner--box__title {
+.contents--area section#pickup--contents .container--box__title {
 	margin-top: -3px;
 }
-.contents--area section#pickup--contents .conteiner--box__title p {
+.contents--area section#pickup--contents .container--box__title p {
 	font-size: 16px;
 	line-height: 18px;
 	padding-top: 0px;
@@ -891,7 +837,7 @@ a:hover {
 	padding-top: 3px;
 }
 /*E PICKUPコンテンツの左側コンテナボックス*/
-.contents--area section#pickup--contents .conteiner--boxleft__005 {
+.contents--area section#pickup--contents .container--boxleft__005 {
 	width: 298px;
 	margin: 0px;
 	padding: 0px 0px 0px 0px;
@@ -899,19 +845,19 @@ a:hover {
 	float: left;
 }
 /*E PICKUPコンテンツの右側コンテナボックスのテキスト領域*/
-.contents--area section#pickup--contents .conteiner--boxright__005 {
+.contents--area section#pickup--contents .container--boxright__005 {
 	width: 277px;
 	margin: 0px;
 	padding: 0px 0px 0px 0px;
 	float: left;
 	text-align: left;
 }
-.contents--area section#pickup--contents .conteiner--boxright__005 p {
+.contents--area section#pickup--contents .container--boxright__005 p {
 	margin: 0px;
 }
 
 /*E PICKUPコンテンツのタグ設定*/
-.contents--area section#pickup--contents .conteiner--box__image .conteiner--box__tag {
+.contents--area section#pickup--contents .container--box__image .container--box__tag {
 	position: absolute;
 	top: 0px;
 	left: 0px;
@@ -922,24 +868,24 @@ a:hover {
 	font-weight: 700;
 }
 /*E PICKUPコンテンツの画像フレーム*/
-.contents--area section#pickup--contents .conteiner--box__image {
+.contents--area section#pickup--contents .container--box__image {
 	position: relative;
 	margin: -2px 0px 0px 1px;
 }
 /*E PICKUPコンテンツの画像*/
-.contents--area section#pickup--contents .conteiner--box__image img {
+.contents--area section#pickup--contents .container--box__image img {
 	width: 282px;
 	min-height: 80px;
 }
 /*E PICKUPコンテンツのリンク範囲*/
-.contents--area section#pickup--contents .conteiner--box a {
+.contents--area section#pickup--contents .container--box a {
 	float: none;
 	clear: both;
 	padding: 9px 0px 0px 0px;
 	display: inline-block;
 }
 /*E PICKUPコンテンツのリンク範囲２つ目の位置調整*/
-.contents--area section#pickup--contents .conteiner--box:last-child a {
+.contents--area section#pickup--contents .container--box:last-child a {
 	float: none;
 	clear: both;
 	padding: 14px 0px 0px 0px;
@@ -961,19 +907,19 @@ a:hover {
 	border-bottom: 1px solid #ddd;
 }
 /*E PICKUPコンテンツのコンテナボックス*/
-.contents--area section#pickup--contents__002 .conteiner--box {
+.contents--area section#pickup--contents__002 .container--box {
 	width: 575px;
 	padding-bottom: 10px;
 }
 /*E PICKUPコンテンツのコンテナボックス２つ目には下の余白を消す。*/
-.contents--area section#pickup--contents__002 .conteiner--box:last-child {
+.contents--area section#pickup--contents__002 .container--box:last-child {
 	padding-bottom: 0px;
 }
 /*E PICKUPコンテンツのコンテナボックスタイトルの位置調整。*/
-.contents--area section#pickup--contents__002 .conteiner--box__title {
+.contents--area section#pickup--contents__002 .container--box__title {
 	margin-top: -3px;
 }
-.contents--area section#pickup--contents__002 .conteiner--box__title p {
+.contents--area section#pickup--contents__002 .container--box__title p {
 	font-size: 16px;
 	line-height: 18px;
 	padding-top: 0px;
@@ -983,7 +929,7 @@ a:hover {
 	padding-top: 3px;
 }
 /*E PICKUPコンテンツの左側コンテナボックス*/
-.contents--area section#pickup--contents__002 .conteiner--boxleft__005 {
+.contents--area section#pickup--contents__002 .container--boxleft__005 {
 	width: 298px;
 	margin: 0px;
 	padding: 0px 0px 0px 0px;
@@ -991,19 +937,19 @@ a:hover {
 	float: left;
 }
 /*E PICKUPコンテンツの右側コンテナボックスのテキスト領域*/
-.contents--area section#pickup--contents__002 .conteiner--boxright__005 {
+.contents--area section#pickup--contents__002 .container--boxright__005 {
 	width: 277px;
 	margin: 0px;
 	padding: 0px 0px 0px 0px;
 	float: left;
 	text-align: left;
 }
-.contents--area section#pickup--contents__002 .conteiner--boxright__005 p {
+.contents--area section#pickup--contents__002 .container--boxright__005 p {
 	margin: 0px;
 }
 
 /*E PICKUPコンテンツのタグ設定*/
-.contents--area section#pickup--contents__002 .conteiner--box__image .conteiner--box__tag {
+.contents--area section#pickup--contents__002 .container--box__image .container--box__tag {
 	position: absolute;
 	top: 0px;
 	left: 0px;
@@ -1014,24 +960,24 @@ a:hover {
 	font-weight: 700;
 }
 /*E PICKUPコンテンツの画像フレーム*/
-.contents--area section#pickup--contents__002 .conteiner--box__image {
+.contents--area section#pickup--contents__002 .container--box__image {
 	position: relative;
 	margin: -2px 0px 0px 1px;
 }
 /*E PICKUPコンテンツの画像*/
-.contents--area section#pickup--contents__002 .conteiner--box__image img {
+.contents--area section#pickup--contents__002 .container--box__image img {
 	width: 282px;
 	min-height: 80px;
 }
 /*E PICKUPコンテンツのリンク範囲*/
-.contents--area section#pickup--contents__002 .conteiner--box a {
+.contents--area section#pickup--contents__002 .container--box a {
 	float: none;
 	clear: both;
 	padding: 9px 0px 0px 0px;
 	display: inline-block;
 }
 /*E PICKUPコンテンツのリンク範囲２つ目の位置調整*/
-.contents--area section#pickup--contents__002 .conteiner--box:last-child a {
+.contents--area section#pickup--contents__002 .container--box:last-child a {
 	float: none;
 	clear: both;
 	padding: 14px 0px 0px 0px;
@@ -1047,7 +993,7 @@ a:hover {
 	padding: 0px;
 }
 /*F コンテンツ誘導枠のタイトル*/
-.contents--area section#contents--induction h2#F {
+.contents--area section#contents--induction h2#f {
 	width: 575px;
 	font-size: 18px;
 	padding: 11px 15px;
@@ -1057,18 +1003,18 @@ a:hover {
 	display: inline-block;
 }
 /*F コンテンツ誘導枠のコンテンツボックス*/
-.contents--area section#contents--induction .conteiner--box {
+.contents--area section#contents--induction .container--box {
 	padding-bottom: 0px;
 	width:100%;
 	margin: 0 auto;
 	display: inline-block;
 	text-align: left;
 }
-.contents--area section#contents--induction .conteiner--box a {
+.contents--area section#contents--induction .container--box a {
 	display: inline-block;
 }
 /*F コンテンツ誘導枠のコンテンツボックスタイトル*/
-.contents--area section#contents--induction .conteiner--box__title p {
+.contents--area section#contents--induction .container--box__title p {
 	font-size: 16px;
 	color: #195197;
 	margin: 0px 0px 5px 0px;
@@ -1076,7 +1022,7 @@ a:hover {
 	line-height: 100%;
 }
 /*F コンテンツ誘導枠のコンテンツボックスリンクエリア*/
-.contents--area section#contents--induction .conteiner--box__text a {
+.contents--area section#contents--induction .container--box__text a {
 	font-size: 13px;
 	color: #195197;
 	margin: 0px !important;
@@ -1084,11 +1030,11 @@ a:hover {
 	display: inline-block;
 }
 /*F コンテンツ誘導枠のコンテンツボックステキスト*/
-.contents--area section#contents--induction .conteiner--box__text a span {
+.contents--area section#contents--induction .container--box__text a span {
 	line-height: 22px;
 }
 /*F コンテンツ誘導枠のコンテンツ左側*/
-.contents--area section#contents--induction .conteiner--boxleft__006 {
+.contents--area section#contents--induction .container--boxleft__006 {
 	width: 210px;
 	margin: 0px;
 	padding: 0px 0px 0px 0px;
@@ -1096,17 +1042,17 @@ a:hover {
 	float: left;
 }
 /*F コンテンツ誘導枠のコンテンツ左側画像フレーム*/
-.contents--area section#contents--induction .conteiner--box__image {
+.contents--area section#contents--induction .container--box__image {
 	position: relative;
 	padding: 15px 15px 12px;
 }
 /*F コンテンツ誘導枠のコンテンツ左側画像*/
-.contents--area section#contents--induction .conteiner--box__image img {
+.contents--area section#contents--induction .container--box__image img {
 	width: 182px;
 	min-height: 120px;
 }
 /*F コンテンツ誘導枠のコンテンツ右側*/
-.contents--area section#contents--induction .conteiner--boxright__006a {
+.contents--area section#contents--induction .container--boxright__006a {
 	width: 385px;
 	margin: 0px 0px 0px 4px;
 	padding: 5px 0px 0px 0px;
@@ -1114,12 +1060,12 @@ a:hover {
 	float: left;
 }
 /*F コンテンツ誘導枠のコンテンツ右側テキスト*/
-.contents--area section#contents--induction .conteiner--boxright__006a p {
+.contents--area section#contents--induction .container--boxright__006a p {
 	padding: 0px 0px 0px 0px;
 	margin: 10px 0px 0px 0px;
 }
 /*F コンテンツ誘導枠のコンテンツ右側下のリンクボックス*/
-.contents--area section#contents--induction .conteiner--boxright__006b {
+.contents--area section#contents--induction .container--boxright__006b {
 	width: 370px;
 	margin: 0px;
 	padding: 0px 10px 0px 0px;
@@ -1127,7 +1073,7 @@ a:hover {
 	float: left;
 }
 /*F コンテンツ誘導枠のコンテンツ右側下のリンクボックステキスト*/
-.contents--area section#contents--induction .conteiner--boxright__006b .conteiner--box__text {
+.contents--area section#contents--induction .container--boxright__006b .container--box__text {
 	margin: 7px 10px 0px 2px;
 	padding: 0px;
 }
@@ -1138,19 +1084,19 @@ a:hover {
 	text-decoration-color: #195197 !important;
 }
 /*F コンテンツ誘導枠のコンテンツ右側下の矢印設定*/
-.contents--area section#contents--induction .conteiner--box__title p:after {
+.contents--area section#contents--induction .container--box__title p:after {
 	font-size: 14px;
 	color: #ac232c;
 }
-.contents--area section#contents--induction .conteiner--box__text a:after {
+.contents--area section#contents--induction .container--box__text a:after {
 	font-size: 14px;
 	color: #ac232c;
 }
-.contents--area section#contents--induction .conteiner--box__title p:after {
+.contents--area section#contents--induction .container--box__title p:after {
 	margin-left: 5px;
 	font-size: 20px !important;
 }
-.contents--area section#contents--induction .conteiner--box__title.arrow--img p:after {
+.contents--area section#contents--induction .container--box__title.arrow--img p:after {
 	content: '';
 	width: 7.5px;
 	height: 12px;
@@ -1161,12 +1107,12 @@ a:hover {
 	background-repeat: no-repeat;
 	margin-top: -4px;
 }
-.contents--area section#contents--induction .conteiner--box__title.arrow--font p:after {
+.contents--area section#contents--induction .container--box__title.arrow--font p:after {
 	font-family: "Font Awesome 5 Free";
 	content: '\f105';
 	font-weight: 900;
 }
-.contents--area section#contents--induction .conteiner--box__text.arrow--img a :after {
+.contents--area section#contents--induction .container--box__text.arrow--img a :after {
 	content: '';
 	width: 7.5px;
 	height: 12px;
@@ -1178,7 +1124,7 @@ a:hover {
 	margin-left: 5px;
 	margin-right: 14px;
 }
-.contents--area section#contents--induction .conteiner--box__text.arrow--img a span:after {
+.contents--area section#contents--induction .container--box__text.arrow--img a span:after {
 	content: '';
 	width: 7.5px;
 	height: 12px;
@@ -1191,7 +1137,7 @@ a:hover {
 	margin-left: 5px;
 	margin-right: 14px;
 }
-.contents--area section#contents--induction .conteiner--box__text.arrow--font a:after {
+.contents--area section#contents--induction .container--box__text.arrow--font a:after {
 	font-family: "Font Awesome 5 Free";
 	content: '\f105';
 	margin: 0px 5px;
@@ -1211,7 +1157,7 @@ a:hover {
 	padding-bottom: 3px;
 }
 /*V 有料差込枠のタイトル*/
-.contents--area section#contents--paymentfee h2#V {
+.contents--area section#contents--paymentfee h2#v {
 	width: 575px;
 	font-size: 18px;
 	padding: 11px 15px 11px;
@@ -1221,7 +1167,7 @@ a:hover {
 	display: inline-block;
 }
 /*V 有料差込枠のコンテンツボックス*/
-.contents--area section#contents--paymentfee .conteiner--box {
+.contents--area section#contents--paymentfee .container--box {
 	padding-bottom: 0px;
 	width:100%;
 	margin: 0 auto;
@@ -1230,7 +1176,7 @@ a:hover {
 	line-height: 100%;
 }
 /*V 有料差込枠のコンテンツボックスリンク範囲*/
-.contents--area section#contents--paymentfee .conteiner--box a {
+.contents--area section#contents--paymentfee .container--box a {
 	display: inline-block;
 	line-height: 100%;
 	float: none;
@@ -1238,7 +1184,7 @@ a:hover {
 	padding: 15px 0px 11px;
 }
 /*V 有料差込枠のコンテンツボックスタイトル*/
-.contents--area section#contents--paymentfee .conteiner--boxright__007 .conteiner--box__title p {
+.contents--area section#contents--paymentfee .container--boxright__007 .container--box__title p {
 	font-size: 16px;
 	margin-top: 3px;
 	margin-left: -3px;
@@ -1246,7 +1192,7 @@ a:hover {
 	padding-bottom: 0px;
 }
 /*V 有料差込枠のコンテンツボックス右側*/
-.contents--area section#contents--paymentfee .conteiner--boxright__007 {
+.contents--area section#contents--paymentfee .container--boxright__007 {
 	width: 390px;
 	margin: 0px 0px 0px 0px;
 	padding: 0px 0px 0px 0px;
@@ -1254,7 +1200,7 @@ a:hover {
 	float: left;
 }
 /*V 有料差込枠のコンテンツボックス右側テキスト*/
-.contents--area section#contents--paymentfee .conteiner--boxright__007 p {
+.contents--area section#contents--paymentfee .container--boxright__007 p {
 	margin-top: 6px;
 	margin-left: -3px;
 	line-height: 18px;
@@ -1266,7 +1212,7 @@ a:hover {
 	margin-top: 10px;
 }
 /*V 有料差込枠のコンテンツボックス右側ボタンテキスト*/
-.contents--area section#contents--paymentfee .conteiner--boxright__007 btn p {
+.contents--area section#contents--paymentfee .container--boxright__007 btn p {
 	margin-top: 7px;
 	margin-left: -2px;
 	line-height: 18px;
@@ -1274,7 +1220,7 @@ a:hover {
 	margin-bottom: 0;
 }
 /*V 有料差込枠のコンテンツボックス左側*/
-.contents--area section#contents--paymentfee .conteiner--boxleft__007 {
+.contents--area section#contents--paymentfee .container--boxleft__007 {
 	width: 215px;
 	margin: 0px;
 	padding: 0px 0px 0px 0px;
@@ -1282,11 +1228,11 @@ a:hover {
 	float: left;
 }
 /*V 有料差込枠のコンテンツボックス画像フレーム*/
-.contents--area section#contents--paymentfee .conteiner--box__image {
+.contents--area section#contents--paymentfee .container--box__image {
 	position: relative;
 }
 /*V 有料差込枠のコンテンツボックス画像*/
-.contents--area section#contents--paymentfee .conteiner--box__image img {
+.contents--area section#contents--paymentfee .container--box__image img {
 	width: 182px;
 	min-height: 122px;
 }
@@ -1347,7 +1293,7 @@ a:hover {
 	line-height: 100%;
 }
 /*H 人気のエリアのタイトル*/
-.contents--area section#contents--popular--areas h2#H {
+.contents--area section#contents--popular--areas h2#h {
 	width: 575px;
 	font-size: 18px;
 	padding: 11px 15px 11px;
@@ -1357,7 +1303,7 @@ a:hover {
 	display: block;
 }
 /*H 人気のエリアのコンテンツボックス*/
-.contents--area section#contents--popular--areas .conteiner--box {
+.contents--area section#contents--popular--areas .container--box {
 	background-color: #fff;
 	padding-bottom: 0px;
 	width:100%;
@@ -1367,19 +1313,19 @@ a:hover {
 	line-height: 100%;
 }
 /*H 人気のエリアのコンテンツエリア*/
-.contents--area section#contents--popular--areas .conteiner--box .conteiner--box__area {
+.contents--area section#contents--popular--areas .container--box .container--box__area {
 	display: inline-block;
 	width: 605px;
 	margin: 0 auto !important;
 }
 /*H 人気のエリアのコンテンツエリアのテキスト*/
-.contents--area section#contents--popular--areas .conteiner--box .conteiner--box__area p {
+.contents--area section#contents--popular--areas .container--box .container--box__area p {
 	font-size: 12px;
 	font-weight: 700;
 	margin: 7px 0px;
 }
 /*H 人気のエリアのコンテンツボックスリンク範囲*/
-.contents--area section#contents--popular--areas .conteiner--box a {
+.contents--area section#contents--popular--areas .container--box a {
 	background-color: #fff;
 	width: 133px;
 	min-height: 89px;
@@ -1390,11 +1336,11 @@ a:hover {
 	padding-bottom: 8px;
 }
 /*H 人気のエリアのコンテンツボックス右側のマージンをなくす*/
-.contents--area section#contents--popular--areas .conteiner--box a.margin--right__not {
+.contents--area section#contents--popular--areas .container--box a.margin--right__not {
 	margin-right: 0px;
 }
 /*H 人気のエリアの画像*/
-.contents--area section#contents--popular--areas .conteiner--box a img {
+.contents--area section#contents--popular--areas .container--box a img {
 	width: 133px;
 	min-height: 89px;
 }
@@ -1412,7 +1358,7 @@ a:hover {
 	margin-bottom:0px;
 }
 /*X レストラン誘導枠のタイトル*/
-.contents--area section#contents--restaurant__guidance h2#X {
+.contents--area section#contents--restaurant__guidance h2#x {
 	width: 575px;
 	font-size: 18px;
 	padding: 11px 15px 11px;
@@ -1422,7 +1368,7 @@ a:hover {
 	display: inline-block;
 }
 /*X レストラン誘導枠のコンテンツボックス*/
-.contents--area section#contents--restaurant__guidance .conteiner--box {
+.contents--area section#contents--restaurant__guidance .container--box {
 	padding-bottom: 0px;
 	width:100%;
 	margin: 0 auto;
@@ -1431,7 +1377,7 @@ a:hover {
 	line-height: 100%;
 }
 /*X レストラン誘導枠のコンテンツボックスリンク範囲*/
-.contents--area section#contents--restaurant__guidance .conteiner--box a {
+.contents--area section#contents--restaurant__guidance .container--box a {
 	display: inline-block;
 	line-height: 100%;
 	float: none;
@@ -1440,14 +1386,14 @@ a:hover {
 	display: inline-block;
 }
 /*X レストラン誘導枠の左側の枠*/
-.contents--area section#contents--restaurant__guidance .conteiner--boxleft__009 {
+.contents--area section#contents--restaurant__guidance .container--boxleft__009 {
 	width: 212px;
 	padding: 0px 0px 0px 0px;
 	text-align: center;
 	float: left;
 }
 /*X レストラン誘導枠の右の枠*/
-.contents--area section#contents--restaurant__guidance .conteiner--boxright__009 {
+.contents--area section#contents--restaurant__guidance .container--boxright__009 {
 	width: 387px;
 	margin: 0px;
 	padding: 0px 0px 0px 0px;
@@ -1455,7 +1401,7 @@ a:hover {
 	float: right;
 }
 /*X レストラン誘導枠の右テキスト*/
-.contents--area section#contents--restaurant__guidance .conteiner--boxright__009 p {
+.contents--area section#contents--restaurant__guidance .container--boxright__009 p {
 	font-size: 12px;
 	margin-top: -2px;
 	margin-right: 15px;
@@ -1463,18 +1409,18 @@ a:hover {
 	margin-bottom: 0px;
 }
 /*X レストラン誘導枠の画像フレーム*/
-.contents--area section#contents--restaurant__guidance .conteiner--box__image {
+.contents--area section#contents--restaurant__guidance .container--box__image {
 	position: relative;
 }
 /*X レストラン誘導枠の画像*/
-.contents--area section#contents--restaurant__guidance .conteiner--box__image img {
+.contents--area section#contents--restaurant__guidance .container--box__image img {
 	width: 182px;
 	min-height: 122px;
 	float: left;
 	margin-left: 15px;
 }
 /*X レストラン誘導枠のボタン*/
-.contents--area section#contents--restaurant__guidance .conteiner--boxright__009 .btn {
+.contents--area section#contents--restaurant__guidance .container--boxright__009 .btn {
 	position: relative;
 	color: #fff;
 	display: block;
@@ -1490,14 +1436,14 @@ a:hover {
 	margin-top: 12px;
 }
 /*X レストラン誘導枠のボタンテキスト*/
-.contents--area section#contents--restaurant__guidance .conteiner--boxright__009 .btn p {
+.contents--area section#contents--restaurant__guidance .container--boxright__009 .btn p {
 	font-size: 14px;
 	font-weight: 700;
 	line-height: 40px;
 	margin-left: 12px;
 }
 /*X レストラン誘導枠のボタンテキストのアフター*/
-.contents--area section#contents--restaurant__guidance .conteiner--boxright__009 .btn p:after {
+.contents--area section#contents--restaurant__guidance .container--boxright__009 .btn p:after {
 	font-family: "Font Awesome 5 Free";
 	content: '\f105';
 	font-weight: 900;
@@ -1506,7 +1452,7 @@ a:hover {
 	top: 2px;
 }
 /*X レストラン誘導枠の下のコンテンツ領域*/
-.contents--area section#contents--restaurant__guidance .conteiner--box__area {
+.contents--area section#contents--restaurant__guidance .container--box__area {
 	width: auto;
 	margin: 0px 0px 0px 8px;
 	clear: both;
@@ -1515,7 +1461,7 @@ a:hover {
 	display: inline-block;
 }
 /*X レストラン誘導枠の下のコンテンツ領域のリンク*/
-.contents--area section#contents--restaurant__guidance .conteiner--box__area a {
+.contents--area section#contents--restaurant__guidance .container--box__area a {
 	display: block;
 	float: left;
 	width: 49.8%;
@@ -1528,11 +1474,11 @@ a:hover {
 	color: #195197;
 }
 /*X レストラン誘導枠の下のコンテンツ領域のリンク矢印*/
-.contents--area section#contents--restaurant__guidance .conteiner--box__area a:before {
+.contents--area section#contents--restaurant__guidance .container--box__area a:before {
 	font-size: 14px;
 	color: #ac232c;
 }
-.contents--area section#contents--restaurant__guidance .conteiner--box__area.arrow--img a:before {
+.contents--area section#contents--restaurant__guidance .container--box__area.arrow--img a:before {
 	content: '';
 	width: 7.5px;
 	height: 12px;
@@ -1545,7 +1491,7 @@ a:hover {
 	margin-left: 7px;
 	margin-top: -3px;
 }
-.contents--area section#contents--restaurant__guidance .conteiner--box__area.arrow--font a:before {
+.contents--area section#contents--restaurant__guidance .container--box__area.arrow--font a:before {
 	font-family: "Font Awesome 5 Free";
 	content: '\f105';
 	font-weight: 900;
@@ -1582,7 +1528,7 @@ a:hover {
 	background-repeat: no-repeat;
 }
 /*Y 記事誘導枠のタイトル*/
-.contents--area section#contents--article__induction h2#Y {
+.contents--area section#contents--article__induction h2#y {
 	width: 575px;
 	font-size: 18px;
 	padding: 11px 15px 11px;
@@ -1592,7 +1538,7 @@ a:hover {
 	display: inline-block;
 }
 /*Y 記事誘導枠のコンテンツボックス*/
-.contents--area section#contents--article__induction .conteiner--box {
+.contents--area section#contents--article__induction .container--box {
 	padding: 10px 0px 0px 0px;
 	padding-bottom: 0px;
 	width:100%;
@@ -1602,7 +1548,7 @@ a:hover {
 	line-height: 100%;
 }
 /*Y 記事誘導枠のコンテンツボックスのリンク範囲*/
-.contents--area section#contents--article__induction .conteiner--box a {
+.contents--area section#contents--article__induction .container--box a {
 	width: 133px;
 	min-height: 147px;
 	float: left;
@@ -1612,27 +1558,27 @@ a:hover {
 	background-color: #fff;
 }
 /*Y 記事誘導枠のコンテンツボックスの画像*/
-.contents--area section#contents--article__induction .conteiner--box a img {
+.contents--area section#contents--article__induction .container--box a img {
 	width: 133px;
 	min-height: 89px;
 }
 /*Y 記事誘導枠のコンテンツエリア*/
-.contents--area section#contents--article__induction .conteiner--box .conteiner--box__area {
+.contents--area section#contents--article__induction .container--box .container--box__area {
 	width: 605px;
 	margin: 0 auto !important;
 }
 /*Y 記事誘導枠のコンテンツエリアのテキスト*/
-.contents--area section#contents--article__induction .conteiner--box .conteiner--box__area p {
+.contents--area section#contents--article__induction .container--box .container--box__area p {
 	font-size: 12px;
 	font-weight: 400;
 	margin: 0px;
 }
 /*Y 記事誘導枠のコンテンツエリアのテキストをbold*/
-.contents--area section#contents--article__induction .conteiner--box .conteiner--box__area p.text--strong {
+.contents--area section#contents--article__induction .container--box .container--box__area p.text--strong {
 	margin: 5px 0px 5px 0px;
 }
 /*Y 記事誘導枠のコンテンツボックスのテキスト*/
-.contents--area section#contents--article__induction .link--opacity__50 .conteiner--box__text p{
+.contents--area section#contents--article__induction .link--opacity__50 .container--box__text p{
 	line-height: 18px;
 	margin-top: 5px;
 	margin-bottom: 8px;
@@ -1641,10 +1587,10 @@ a:hover {
 .contents--area section#contents--article__induction .link--opacity__50 a:hover {
 	opacity: 1;
 }
-.contents--area section#contents--article__induction .link--opacity__50 a:hover .conteiner--box__image img {
+.contents--area section#contents--article__induction .link--opacity__50 a:hover .container--box__image img {
 	opacity: .5;
 }
-.contents--area section#contents--article__induction .link--opacity__50 a:hover .conteiner--box__text {
+.contents--area section#contents--article__induction .link--opacity__50 a:hover .container--box__text {
 	opacity: .5;
 }
 /*Y 記事誘導枠の
@@ -1653,77 +1599,103 @@ a:hover {
 
 
 
-
-/*Z-1 関連特集（正方形）*/
-.contents--component__011 {
+/*関連特集（正方形）の
+				スタイルシート開始（ＰＣ版）compoment--010の設定*/
+.contents--area section#contents--feature__square {
 	width: 605px;
 	background-color: #fff;
 	background-image: url(../img/momiji-4.png);
 	background-position: right 15px bottom 15px;
 	background-repeat: no-repeat;
 }
-.contents--component__011 .conteiner--box {
+.contents--area section#contents--feature__square h2#z-1 {
+	width: 575px;
+	font-size: 18px;
+	padding: 11px 15px 11px;
+	font-weight: 700;
+	margin: 0px;
+	line-height: 18px;
+	display: inline-block;
+}
+.contents--area section#contents--feature__square .container--box {
 	width: auto;
 	margin: 0 auto;
-	padding: 0px 0px 10px 0px;
+	padding: 0px;
 }
-.contents--component__011 .conteiner--box a {
+.contents--area section#contents--feature__square .container--box a {
 	width: 182px;
 	height: auto;
 	float: left;
 	display: inline-block;
-	margin-top: 15px;
+	margin-top: 5px;
 	margin-left: 15px;
 	padding: 0px;
 	line-height: 160%;
 	background-color: #fff;
 }
-.contents--component__011 .conteiner--box a img {
+.contents--area section#contents--feature__square .container--box a img {
 	width: 60px;
 	min-height: 60px;
 }
-.contents--component__011 .conteiner--box__image {
+.contents--area section#contents--feature__square .container--box__image {
 	float: left;
 }
-.contents--component__011 .conteiner--box__text {
+.contents--area section#contents--feature__square .container--box__text {
 	float: left;
 	margin-left: 10px;
 }
-.contents--component__011 .conteiner--box__text .subtitle {
+.contents--area section#contents--feature__square .container--box__text .subtitle {
 	margin: 0px;
 	padding: 0px;
 	font-weight: 700;
-	line-height: 110%;
+	line-height: 15px;
+	letter-spacing: -1px;
 }
-.contents--component__011 .conteiner--box__text p {
-	margin: 0px;
-}
-.contents--component__011 .conteiner--box a p {
-	width: 110px;
-	margin-top: 0;
-	padding-top: 0;
-}
-.contents--component__011 .conteiner--box .conteiner--box__area {
-	width: 605px;
-	margin: 0 auto !important;
-}
-.contents--component__011 .conteiner--box .conteiner--box__area p {
+.contents--area section#contents--feature__square .container--box__text p {
 	font-size: 12px;
 }
-/*Z-2 関連特集枠*/
-.contents--component__012 {
+.contents--area section#contents--feature__square .container--box a p {
+	width: 110px;
+	margin-top: 3px;
+	padding-top: 0;
+	letter-spacing: -1px;
+}
+.contents--area section#contents--feature__square .container--box .container--box__area {
+	width: 605px;
+	margin: 0 auto !important;
+	display: inline-block;
+	padding-top: 10px;
+}
+
+
+.contents--area section#contents--feature__square .link--opacity__50 a:hover {
+	opacity: 1;
+}
+.contents--area section#contents--feature__square .link--opacity__50 a:hover .container--box__image img {
+	opacity: .5;
+}
+.contents--area section#contents--feature__square .link--opacity__50 a:hover .container--box__text {
+	opacity: .5;
+}
+/*関連特集（正方形）の
+				スタイルシート終了（ＰＣ版）compoment--010の設定*/
+
+
+/*Z-2 関連特集枠の
+				スタイルシート開始（ＰＣ版）compoment--012の設定*/
+.contents--area section#contents--feature__3-2 {
 	width: 605px;
 	background-color: #fff;
 	background-image: url(../img/momiji-4.png);
 	background-position: right 15px bottom 15px;
 	background-repeat: no-repeat;
 }
-.contents--component__012 .conteiner--box {
+.contents--area section#contents--feature__3-2 .container--box {
 	width: auto;
 	margin: 0 auto;
 	padding-bottom: 10px;
 }
-.contents--component__012 .conteiner--box a {
+.contents--area section#contents--feature__3-2 .container--box a {
 	width: 280px;
 	height: auto;
 	float: left;
@@ -1733,40 +1705,205 @@ a:hover {
 	line-height: 140%;
 	background-color: #fff;
 }
-.contents--component__012 .conteiner--box a img {
+.contents--area section#contents--feature__3-2 .container--box a img {
 	width: 133px;
 	min-height: 89px;
 }
-.contents--component__012 .conteiner--box__image {
+.contents--area section#contents--feature__3-2 .container--box__image {
 	float: left;
 }
-.contents--component__012 .conteiner--box__text {
+.contents--area section#contents--feature__3-2 .container--box__text {
 	float: left;
 	margin-left: 10px;
 }
-.contents--component__012 .conteiner--box__text .subtitle {
+.contents--area section#contents--feature__3-2 .container--box__text .subtitle {
 	margin: 0px;
 	padding: 0px;
 }
-.contents--component__012 .conteiner--box a p {
+.contents--area section#contents--feature__3-2 .container--box a p {
 	width: 133px;
 	margin-top: 0;
 	padding-top: 0;
 }
-.contents--component__012 .conteiner--box .conteiner--box__area {
+.contents--area section#contents--feature__3-2 .container--box .container--box__area {
 	width: 605px;
 	margin: 0 auto !important;
 }
-.contents--component__012 .conteiner--box .conteiner--box__area p {
+.contents--area section#contents--feature__3-2 .container--box .container--box__area p {
 	font-size: 12px;
 }
-/*テキストのみ角丸ボタン*/
-.contents--component__013 {
+.contents--area section#contents--feature__3-2 .link--opacity__50 a:hover {
+	opacity: 1;
+}
+.contents--area section#contents--feature__3-2 .link--opacity__50 a:hover .container--box__image img {
+	opacity: .5;
+}
+.contents--area section#contents--feature__3-2 .link--opacity__50 a:hover .container--box__text {
+	opacity: .5;
+}
+/*Z-2 関連特集枠の
+				スタイルシート終了（ＰＣ版）compoment--012の設定*/
+
+
+/*module4 画像とテキスト_1カラムと4カラムの
+				スタイルシート開始（ＰＣ版）compoment--010の設定*/
+.contents--area section#imagetext--onecolum__fourcolum {
+	width: 605px;
+	background-color: #fff;
+	background-image: url(../img/momiji-3.png);
+	background-position: right 15px bottom 23px;
+	background-repeat: no-repeat;
+}
+/*module4 画像とテキスト_1カラムと4カラムのタイトル*/
+.contents--area section#imagetext--onecolum__fourcolum h2#module4  {
+	width: 575px;
+	font-size: 18px;
+	padding: 11px 15px 11px;
+	font-weight: 700;
+	margin: 0px;
+	line-height: 18px;
+	display: inline-block;
+}
+/*module4 画像とテキスト_1カラムと4カラムのコンテンツボックス*/
+.contents--area section#imagetext--onecolum__fourcolum .container--box {
+	padding: 15px 0px 0px 0px;
+	padding-bottom: 0px;
+	width:100%;
+	margin: 0 auto;
+	display: inline-block;
+	text-align: left;
+	line-height: 100%;
+}
+/*module4 画像とテキスト_1カラムと4カラムのコンテンツボックスのリンク範囲*/
+.contents--area section#imagetext--onecolum__fourcolum .container--box a {
+	width: 133px;
+	min-height: 147px;
+	float: left;
+	margin-top: 0px;
+	margin-left: 14px;
+	padding: 0px;
+	background-color: #fff;
+}
+/*module4 画像とテキスト_1カラムと4カラムのコンテンツボックスの画像*/
+.contents--area section#imagetext--onecolum__fourcolum .container--box a img {
+	width: 133px;
+	min-height: 89px;
+}
+/*module4 画像とテキスト_1カラムと4カラムのコンテンツエリア*/
+.contents--area section#imagetext--onecolum__fourcolum .container--box .container--box__area {
+	width: 605px;
+	margin: 0 auto !important;
+	display: inline-block;
+}
+/*module4 画像とテキスト_1カラムと4カラムのコンテンツエリアのテキスト*/
+.contents--area section#imagetext--onecolum__fourcolum .container--box .container--box__area p {
+	font-size: 12px;
+	font-weight: 400;
+	margin: 0px;
+}
+/*module4 画像とテキスト_1カラムと4カラムのコンテンツエリアのテキストをbold*/
+.contents--area section#imagetext--onecolum__fourcolum .container--box .container--box__area p.text--strong {
+	margin: 4px 3px 5px 0px;
+}
+/*module4 画像とテキスト_1カラムと4カラムのコンテンツボックスのテキスト*/
+.contents--area section#imagetext--onecolum__fourcolum .link--opacity__50 .container--box__text p{
+	line-height: 18px;
+	margin-top: 4px;
+	margin-bottom: 11px;
+}
+/*module4 画像とテキスト_1カラムと4カラムのコンテンツボックスのマウスオーバー処理*/
+.contents--area section#imagetext--onecolum__fourcolum .link--opacity__50 a:hover {
+	opacity: 1;
+}
+.contents--area section#imagetext--onecolum__fourcolum .link--opacity__50 a:hover .container--box__image img {
+	opacity: .5;
+}
+.contents--area section#imagetext--onecolum__fourcolum .link--opacity__50 a:hover .container--box__text {
+	opacity: .5;
+}
+/*module4 画像とテキスト_1カラムと4カラムの
+				スタイルシート終了（ＰＣ版）compoment--010の設定*/
+
+/*module5 画像とテキストと１カラムと２カラムの
+				スタイルシート開始（ＰＣ版）compoment--012の設定*/
+.contents--area section#imagetext--onecolum__twocolum {
+	width: 605px;
+	background-color: #fff;
+	background-image: url(../img/momiji-4.png);
+	background-position: right 15px bottom 15px;
+	background-repeat: no-repeat;
+}
+.contents--area section#imagetext--onecolum__twocolum .container--box {
+	width: auto;
+	margin: 0 auto;
+	padding-bottom: 10px;
+}
+.contents--area section#imagetext--onecolum__twocolum .container--box a {
+	width: 280px;
+	height: auto;
+	float: left;
+	margin-top: 15px;
+	margin-left: 15px;
+	padding: 0px;
+	line-height: 140%;
+	background-color: #fff;
+}
+.contents--area section#imagetext--onecolum__twocolum .container--box a img {
+	width: 133px;
+	min-height: 89px;
+}
+.contents--area section#imagetext--onecolum__twocolum .container--box__image {
+	float: left;
+}
+.contents--area section#imagetext--onecolum__twocolum .container--box__text {
+	float: left;
+	margin-left: 10px;
+}
+.contents--area section#imagetext--onecolum__twocolum .container--box__text .subtitle {
+	margin: 0px;
+	padding: 0px;
+}
+.contents--area section#imagetext--onecolum__twocolum .container--box a p {
+	width: 133px;
+	margin-top: 0;
+	padding-top: 0;
+}
+.contents--area section#imagetext--onecolum__twocolum .container--box .container--box__area {
+	width: 605px;
+	margin: 0 auto !important;
+}
+.contents--area section#imagetext--onecolum__twocolum .container--box .container--box__area p {
+	font-size: 12px;
+}
+.contents--area section#imagetext--onecolum__twocolum .link--opacity__50 a:hover {
+	opacity: 1;
+}
+.contents--area section#imagetext--onecolum__twocolum .link--opacity__50 a:hover .container--box__image img {
+	opacity: .5;
+}
+.contents--area section#imagetext--onecolum__twocolum .link--opacity__50 a:hover .container--box__text {
+	opacity: .5;
+}
+/*module5 画像とテキストと１カラムと２カラムの
+				スタイルシート終了（ＰＣ版）compoment--012の設定*/
+
+/*module1 エリアから秋祭りを探すの
+				スタイルシート開始（ＰＣ版）の設定*/
+.contents--area section#search--festa__area {
 	width: 605px;
 	background-color: #fff;
 	padding-bottom: 15px;
 }
-.contents--component__013 .conteiner--box {
+.contents--area section#search--festa__area h2#module1 {
+	width: 575px;
+	font-size: 18px;
+	padding: 11px 15px 11px;
+	font-weight: 700;
+	margin: 0px;
+	line-height: 18px;
+	display: inline-block;
+}
+.contents--area section#search--festa__area .container--box {
 	width: 585px;
 	text-align: center;
 	margin: 0 auto;
@@ -1774,90 +1911,131 @@ a:hover {
 	display: inline-block;
 	overflow: auto;
 }
-.contents--component__013 .conteiner--box:nth-child(2) {
+.contents--area section#search--festa__area .container--box:nth-child(2) {
 	padding-top: 10px;
 }
-.contents--component__013 .conteiner--box .conteiner--box__area　 {
+.contents--area section#search--festa__area .container--box .container--box__area　 {
 	display: inline-block;
 	padding-top: 5px;
 	overflow: auto;
 }
-.contents--component__013 .conteiner--box .conteiner--box__area a {
+.contents--area section#search--festa__area .container--box .container--box__area a {
 	text-align: left;
-	width: 134px;
+	width: 136px;
 	float: left;
-	display: block;
-	margin: 5px 6px 0px 5px;
+	display: inline-block;
+	margin: 5px 4px 0px 5px;
 	line-height: 110%;
 	background-color: #f3f3f3;
-	border: 1px solid #ccc;
+	border: 1px solid #DFDFDF;
 	-webkit-box-sizing: border-box;
 	-o-box-sizing: border-box;
 	-ms-box-sizing: border-box;
 	box-sizing: border-box;
 }
-.contents--component__013 .conteiner--box .conteiner--box__area a:first-child {
-	margin-left: 5px;
+.contents--area section#search--festa__area .container--box .container--box__area a:first-child {
+	margin-left: 0px;
 }
-.contents--component__013 .conteiner--box .conteiner--box__area a:nth-child(4n) {
+.contents--area section#search--festa__area .container--box .container--box__area a:last-child {
+	margin-left: 0px;
+}
+.contents--area section#search--festa__area .container--box .container--box__area a:nth-child(4n) {
 	float: right;
 	margin-right: 0px;
 }
-.contents--component__013 .conteiner--box .conteiner--box__area a p {
+.contents--area section#search--festa__area .container--box .container--box__area a p {
 	font-size: 14px;
-	margin: 15px !important;
+	margin: 15px 0px 15px 10px;
 }
-.contents--component__013 .conteiner--box.set {
+.contents--area section#search--festa__area .container--box.set {
 	width: 575px !important;
 	margin: 0 auto !important;
 	display: inline-block;
 	overflow: auto;
 }
-.contents--component__013 .conteiner--box .conteiner--box__area a.margin--right__not {
+.contents--area section#search--festa__area .container--box .container--box__area a.margin--right__not {
 	width: 25%;
 	margin-right: 0px;
 	margin-left: 0px;
-	border-top: 1px solid #ccc;
-	border-bottom: 1px solid #ccc;
-	border-left: 1px solid #ccc;
+	border-top: 1px solid #DFDFDF;
+	border-bottom: 1px solid #DFDFDF;
+	border-left: 1px solid #DFDFDF;
 	border-right: none;
 	-webkit-box-sizing: border-box;
 	-o-box-sizing: border-box;
 	-ms-box-sizing: border-box;
 	box-sizing: border-box;
 }
-.contents--component__013 .conteiner--box .conteiner--box__area a.margin--right__not:nth-child(4) {
-	border-right: 1px solid #ccc;
+.contents--area section#search--festa__area .container--box .container--box__area a.margin--right__not:nth-child(4) {
+	border-right: 1px solid #DFDFDF;
 }
-.contents--component__013 .conteiner--box .conteiner--box__area a.margin--right__not:nth-last-child(1) {
-	border-right: 1px solid #ccc;
+.contents--area section#search--festa__area .container--box .container--box__area a.margin--right__not:nth-last-child(1) {
+	border-right: 1px solid #DFDFDF;
 }
+
+.contents--area section#search--festa__area .container--box .container--box__area.arrow--img a p:after {
+	content: '';
+	float: right;
+	margin-right: 10px;
+	width: 7.5px;
+	height: 12px;
+	display: inline-block;
+	background: url(../img/arrow_red.png);
+	background-size: contain;
+	vertical-align: middle;
+	background-repeat: no-repeat;
+}
+.contents--area section#search--festa__area .container--box .container--box__area.arrow--font a p:after {
+	font-family: "Font Awesome 5 Free";
+	content: '\f105';
+	font-weight: 900;
+	float: right;
+	margin-right: 15px;
+}
+.contents--area section#search--festa__area .container--box .container--box__area a p:after {
+	font-size: 14px;
+	color: #ac232c;
+}
+/*module1 エリアから秋祭りを探すの
+				スタイルシート終了（ＰＣ版）の設定*/
+
 .border--right {
-	border-right: 1px solid #ccc !important;
+	border-right: 1px solid #DFDFDF !important;
 	-webkit-box-sizing: border-box;
 	-o-box-sizing: border-box;
 	-ms-box-sizing: border-box;
 	box-sizing: border-box;
 }
-/*画像とテキスト_1カラムと2カラム（キャプションで展開）*/
-.contents--component__014 {
+
+/*module6 画像とテキスト_1カラムと2カラム（キャプションで展開)の
+				スタイルシート開始（ＰＣ版）の設定*/
+.contents--area section#imagetext--onecolum__twocolum--ver2 {
 	width: 605px;
 	background-color: #fff;
 	background-image: url(../img/momiji-4.png);
-	background-position: right 20px bottom 20px;
+	background-position: right 15px bottom 15px;
 	background-repeat: no-repeat;
-	padding-bottom: 15px;
+	padding-bottom: 5px;
 }
-.contents--component__014 .conteiner--box {
+
+.contents--area section#imagetext--onecolum__twocolum--ver2 h2#module6 {
+	width: 575px;
+	font-size: 18px;
+	padding: 11px 15px 11px;
+	font-weight: 700;
+	margin: 0px;
+	line-height: 18px;
+	display: inline-block;
+}
+.contents--area section#imagetext--onecolum__twocolum--ver2 .container--box {
 	width: auto;
 	margin: 0 auto;
 	padding-bottom: 0px;
 }
-.contents--component__014 .conteiner--box a {
-	width: 275px;
-	height: 120px;
+.contents--area section#imagetext--onecolum__twocolum--ver2 .container--box a {
+	width: 277px;
 	float: left;
-	margin-top: 15px;
+	margin-top: 10px;
 	margin-left: 15px;
 	margin-right: 5px;
 	padding: 0px;
@@ -1865,58 +2043,82 @@ a:hover {
 	background-color: #fff;
 	position: relative;
 }
-.contents--component__014 .conteiner--box a img {
-	width: 275px;
-	height: 120px;
+.contents--area section#imagetext--onecolum__twocolum--ver2 .container--box a img {
+	width: 277px;
 }
-.contents--component__014 .conteiner--box__image {
+.contents--area section#imagetext--onecolum__twocolum--ver2 .container--box__image {
 	float: left;
 }
-.contents--component__014 .conteiner--box__text {
+.contents--area section#imagetext--onecolum__twocolum--ver2 .container--box__text {
 	padding: 0px;
 	margin: 0px;
 }
-.contents--component__014 .conteiner--box a .conteiner--box__text {
-	width: 275px;
+.contents--area section#imagetext--onecolum__twocolum--ver2 .container--box a .container--box__text {
+	width: 277px;
 	background-color: rgba(255, 255, 255, .75);
 	position: absolute;
 	top: auto;
-	bottom: 0px;
+	bottom: 0;
 }
-.contents--component__014 .conteiner--box .conteiner--box__area {
+.contents--area section#imagetext--onecolum__twocolum--ver2 .container--box .container--box__area {
 	width: 605px;
 	margin: 0 auto !important;
+	display: inline-block;
+	padding-top: 5px;
 }
-.contents--component__014 .conteiner--box .conteiner--box__area p {
+.contents--area section#imagetext--onecolum__twocolum--ver2 .container--box .container--box__area p {
 	font-size: 12px;
 	font-weight: 400;
 	width: 95%;
-	margin: 3px 6px 3px 6px;
+	margin: 0px 9px 0px 9px;
+	padding: 9px 0px;
 }
-/*画像とテキスト_1カラムと2カラム（キャプションで展開）*/
-.contents--component__015 {
+.contents--area section#imagetext--onecolum__twocolum--ver2 .link--opacity__50 a:hover {
+	opacity: 1;
+}
+.contents--area section#imagetext--onecolum__twocolum--ver2 .link--opacity__50 a:hover .container--box__image img {
+	opacity: .5;
+}
+.contents--area section#imagetext--onecolum__twocolum--ver2 .link--opacity__50 a:hover .container--box__text {
+	opacity: .5;
+}
+/*module6 画像とテキスト_1カラムと2カラム（キャプションで展開)の
+				スタイルシート終了（ＰＣ版）の設定*/
+
+/*module7 画像とテキスト_2カラムと2カラムの
+				スタイルシート開始（ＰＣ版）の設定*/
+.contents--area section#imagetext--twocolum__twocolum {
 	width: 605px;
 	background-color: #fff;
 	background-image: url(../img/momiji-6.png);
 	background-position: right 15px bottom 15px;
 	background-repeat: no-repeat;
 }
-.contents--component__015 .conteiner--box {
+.contents--area section#imagetext--twocolum__twocolum h2#module7 {
+	width: 575px;
+	font-size: 18px;
+	padding: 11px 15px 11px;
+	font-weight: 700;
+	margin: 0px;
+	line-height: 18px;
+	display: inline-block;
+}
+.contents--area section#imagetext--twocolum__twocolum .container--box {
 	width: auto;
 	margin: 0 auto;
 	text-align: center;
 	padding-top: 15px;
 }
-.contents--component__015 .conteiner--box a {
+.contents--area section#imagetext--twocolum__twocolum .container--box a {
 	float: left;
 	background-color: #fff;
 }
-.contents--component__015 .conteiner--box a img {
+.contents--area section#imagetext--twocolum__twocolum .container--box a img {
 	width: 277px;
 	margin-right: 5px;
 	margin-left: 15px;
 }
-.contents--component__015 .conteiner--box a .conteiner--box__text {
+.contents--area section#imagetext--twocolum__twocolum .container--box a .container--box__text {
 	width: auto;
 	max-width: 277px;
 	float: none;
@@ -1925,12 +2127,12 @@ a:hover {
 	margin-left: 15px;
 	margin-top: 0;
 }
-.contents--component__015 .conteiner--box .conteiner--box__area {
+.contents--area section#imagetext--twocolum__twocolum .container--box .container--box__area {
 	width: 60 5px;
 	margin: 0 auto;
 	display: inline-block;
 }
-.contents--component__015 .conteiner--box .conteiner--box__area p {
+.contents--area section#imagetext--twocolum__twocolum .container--box .container--box__area p {
 	text-align: left;
 	font-size: 14px;
 	margin-top: 5px;
@@ -1939,63 +2141,102 @@ a:hover {
 	letter-spacing: -0.5px;
 	line-height: 140%;
 }
-/*画像とテキスト_1カラムと2カラム（キャプションで展開）*/
-.contents--component__016 {
+.contents--area section#imagetext--twocolum__twocolum .link--opacity__50 a:hover {
+	opacity: 1;
+}
+.contents--area section#imagetext--twocolum__twocolum .link--opacity__50 a:hover .container--box__image img {
+	opacity: .5;
+}
+.contents--area section#imagetext--twocolum__twocolum .link--opacity__50 a:hover .container--box__text {
+	opacity: .5;
+}
+/*module7 画像とテキスト_2カラムと2カラムの
+				スタイルシート終了（ＰＣ版）の設定*/
+
+/*module8 画像とテキスト（強調）の
+				スタイルシート開始（ＰＣ版）の設定*/
+.contents--area section#imagetext--strong {
 	width: 605px;
 	background-color: #fff;
 }
-.contents--component__016 .conteiner--box {
+.contents--area section#imagetext--strong h2#module8 {
+	width: 575px;
+	font-size: 18px;
+	padding: 11px 15px 11px;
+	font-weight: 700;
+	margin: 0px;
+	line-height: 18px;
+	display: inline-block;
+}
+.contents--area section#imagetext--strong .container--box {
 	width: 575px;
 	margin: 0 auto;
 	display: inline-block;
 	padding-top: 15px;
 	padding-bottom: 0px;
 }
-.contents--component__016 .conteiner--box__left {
+.contents--area section#imagetext--strong .container--box__left {
 	float: left;
 	width: 282px;
 	text-align: center;
 }
-.contents--component__016 .conteiner--box__left a p {
+.contents--area section#imagetext--strong .container--box__left a p {
+	text-align: left;
+	width: 282px;
+	margin: 2px 0px 0px 0px;
+}
+.contents--area section#imagetext--strong .container--box__right a {
+	display: inline-block;
+}
+.contents--area section#imagetext--strong .container--box__left a p.text--strong {
 	text-align: left;
 	width: 282px;
 	margin: 5px 0px 0px 0px;
 }
-.contents--component__016 .conteiner--box__left a img {
+.contents--area section#imagetext--strong .container--box__left a img {
 	width: 282px;
 	margin: 0 auto;
 }
-.contents--component__016 .conteiner--box__right {
+.contents--area section#imagetext--strong .container--box__right {
 	float: right;
 	width: 278px;
 }
-.conteiner--box__right .conteiner--box__inline {
+.contents--area section#imagetext--strong .container--box__right .container--box__inline {
 	display: inline-block;
 	clear: both;
-	margin-bottom: 10px;
+	margin-bottom: 8px;
 }
-.conteiner--box__right .conteiner--box__inline:last-child {
+.contents--area section#imagetext--strong .container--box__right a p.text--strong {
+	text-align: left;
+	width: 282px;
+	margin: -1px 0px 0px 10px;
+}
+.contents--area section#imagetext--strong .container--box__right .container--box__inline:last-child {
 	margin-bottom: 0px;
 }
-.contents--component__016 .conteiner--box__right .conteiner--box__image {
+.contents--area section#imagetext--strong .container--box__right .container--box__image {
 	float: left;
 }
-.contents--component__016 .conteiner--box__right .conteiner--box__image img {
+.contents--area section#imagetext--strong .container--box__right .container--box__image img {
 	width: 110px;
 }
-.contents--component__016 .conteiner--box__right .conteiner--box__text {
+.contents--area section#imagetext--strong .container--box__right .container--box__text {
 	float: right;
 	width: 160px;
 }
-.contents--component__016 .conteiner--box__right .conteiner--box__text p {
+.contents--area section#imagetext--strong .container--box__right .container--box__text p {
 	margin-top: 0;
 	padding-top: 0;
 	margin-left: 10px;
-	margin-bottom: 5px;
+	margin-bottom: 0px;
 }
-.contents--component__016 .conteiner--box__left .conteiner--box__text .text--size__middle {
+.contents--area section#imagetext--strong .container--box__left .container--box__text .text--size__middle {
 	letter-spacing: -0.2px;
 }
+/*module8 画像とテキスト（強調）の
+				スタイルシート終了（ＰＣ版）の設定*/
+
+
 /*イベント情報カセット_共有*/
 .tab {
 	color: #ffffff;
@@ -2014,7 +2255,7 @@ a:hover {
 	-o-box-sizing: border-box;
 	-ms-box-sizing: border-box;
 	box-sizing: border-box;
-	border: 1px solid #ccc;
+	border: 1px solid #DFDFDF;
 }
 .tab--event {
 	background-color: #ce7824;
@@ -2047,7 +2288,7 @@ a:hover {
 	display: inline-block;
 	width: auto;
 	max-width: 575px;
-	margin-left: 15px;
+	margin-left: 10px;
 }
 /*イベント情報カセット_PICKUP*/
 .event--information {
@@ -2056,10 +2297,13 @@ a:hover {
 	text-align: left;
 	position: relative;
 }
+.event--information__border {
+	display: none;
+}
 .event--information__area {
 	width: 575px;
 	margin: 0 auto;
-	border-bottom: 1px solid #ccc;
+	border-bottom: 1px solid #DFDFDF;
 	display: inline-block;
 }
 .event--information__label {
@@ -2083,7 +2327,7 @@ a:hover {
 }
 .event--casset__common dl {
 	text-align: left;
-	border-bottom: 1px solid #ccc;
+	border-bottom: 1px solid #DFDFDF;
 	width: 575px;
 	display: inline-block;
 	clear: both;
@@ -2154,36 +2398,39 @@ a:hover {
 	margin-left: 15px;
 	line-height: 210%;
 }
-/*PICKUP枠*/
-.contents--component__017 {
+
+
+/*module9 イベント情報PICKUPの
+				スタイルシート開始（ＰＣ版）の設定*/
+.contents--area section#eventinformation--casset__pickup {
 	width: 605px;
 	background-color: #ffffff;
 	display: block;
 }
-.contents--component__017 a {
+.contents--area section#eventinformation--casset__pickup a {
 	display: block;
 	position: relative;
 }
-.contents--component__017 hr {
+.contents--area section#eventinformation--casset__pickup hr {
 	width: 575px;
 	margin: 0 auto;
 }
-.contents--component__017 .event--information__title p.text--size__bigger {
+.contents--area section#eventinformation--casset__pickup .event--information__title p.text--size__bigger {
 	width: 560px;
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
-.contents--component__017 .event--image__frame img {
+.contents--area section#eventinformation--casset__pickup .event--image__frame img {
 	width: 240px;
 }
-.contents--component__017 .event--image__frame {
+.contents--area section#eventinformation--casset__pickup .event--image__frame {
 	width: 255px;
 	height: auto;
 	text-align: left;
 	float: left;
 	margin-left: 0px;
 }
-.contents--component__017 .event--image__text {
+.contents--area section#eventinformation--casset__pickup .event--image__text {
 	width: 320px;
 	height: auto;
 	text-align: left;
@@ -2191,54 +2438,58 @@ a:hover {
 	margin-right: 0px;
 	padding-bottom: 10px;
 }
-.contents--component__017 .event--image__frame p {
+.contents--area section#eventinformation--casset__pickup .event--image__frame p {
 	width: 240px;
 	text-align: left;
 	margin: 5px 0px;
 	font-size: 11px;
 	color: #757575;
 }
-.contents--component__017 .event--image__moreinfo {
+.contents--area section#eventinformation--casset__pickup .event--image__moreinfo {
 	width: calc(100%-20px);
 	margin: 0auto;
 	padding: 10px;
 	text-align: left;
 	background-color: #faf0d5;
 }
-/*リスト枠*/
-.contents--component__018 {
+/*module9 イベント情報PICKUPの
+				スタイルシート終了（ＰＣ版）の設定*/
+
+/*module9 イベント情報リストの
+				スタイルシート開始（ＰＣ版）の設定*/
+.contents--area section#eventinformation--casset__lists {
 	width: 605px;
 	background-color: #ffffff;
 }
-.contents--component__018 .event--information__title p.text--size__bigger {
+.contents--area section#eventinformation--casset__lists .event--information__title p.text--size__bigger {
 	width: 560px;
 	margin-top: 15px;
 	margin-bottom: 10px;
 }
-.contents--component__018 .event--image__frame {
+.contents--area section#eventinformation--casset__lists .event--image__frame {
 	width: 180px;
 	height: auto;
 	text-align: left;
 	float: left;
 	margin-left: 0px;
 }
-.contents--component__018 .event--image__frame img {
+.contents--area section#eventinformation--casset__lists .event--image__frame img {
 	width: 180px;
 }
-.contents--component__018 .event--image__frame p {
+.contents--area section#eventinformation--casset__lists .event--image__frame p {
 	width: 180px;
 	text-align: left;
 	margin: 5px 0px;
 	font-size: 11px;
 	color: #757575;
 }
-.contents--component__018 .event--information__area {
+.contents--area section#eventinformation--casset__lists .event--information__area {
 	margin-top: 15px;
 }
-.contents--component__018 .event--information__label {
+.contents--area section#eventinformation--casset__lists .event--information__label {
 	display: none;
 }
-.contents--component__018 .event--image__text {
+.contents--area section#eventinformation--casset__lists .event--image__text {
 	width: 375px;
 	height: auto;
 	text-align: left;
@@ -2246,70 +2497,75 @@ a:hover {
 	margin-right: 0px;
 	padding-bottom: 10px;
 }
-.contents--component__018 .event--image__moreinfo {
+.contents--area section#eventinformation--casset__lists .event--image__moreinfo {
 	width: 258px;
 	margin: 0auto;
 	text-align: left;
 	padding: 10px;
 	background-color: #faf0d5;
 }
-/*特別枠*/
-.contents--component__019 {
-	width: 605px;
-	background-color: #ffffff;
-}
-.contents--component__018 .event--information__title p.text--size__bigger {
+.contents--area section#eventinformation--casset__lists .event--information__title p.text--size__bigger {
 	width: 560px;
 	margin-top: 10px;
 	margin-bottom: 5px;
 }
-.contents--component__019 .event--information__title p.text--size__bigger {
+/*module9 イベント情報リストの
+				スタイルシート終了（ＰＣ版）の設定*/
+
+/*module9 イベント情報特別枠の
+				スタイルシート開始（ＰＣ版）の設定*/
+.contents--area section#eventinformation--casset__special {
+	width: 605px;
+	background-color: #ffffff;
+}
+
+.contents--area section#eventinformation--casset__special .event--information__title p.text--size__bigger {
 	width: 560px;
 	margin-top: 15px;
 	margin-bottom: 10px;
 }
-.contents--component__019 .event--information__label {
+.contents--area section#eventinformation--casset__special .event--information__label {
 	margin-left: 15px;
 	margin-bottom: 0px;
 }
-.contents--component__019 .event--image__frame001 {
+.contents--area section#eventinformation--casset__special .event--image__frame001 {
 	width: 277px;
 	height: auto;
 	text-align: center;
 	float: left;
 	margin-right: 20px;
 }
-.contents--component__019 .event--image__frame002 {
+.contents--area section#eventinformation--casset__special .event--image__frame002 {
 	width: 277px;
 	height: auto;
 	text-align: center;
 	float: left;
 	margin-right: 0px;
 }
-.contents--component__019 .event--image__frame001 img {
+.contents--area section#eventinformation--casset__special .event--image__frame001 img {
 	width: 277px;
 }
-.contents--component__019 .event--image__frame001 p {
-	width: 277px;
-	text-align: left;
-	margin: 0px;
-	font-size: 11px;
-	color: #757575;
-}
-.contents--component__019 .event--image__frame002 img {
-	width: 277px;
-}
-.contents--component__019 .event--image__frame002 p {
+.contents--area section#eventinformation--casset__special .event--image__frame001 p {
 	width: 277px;
 	text-align: left;
 	margin: 0px;
 	font-size: 11px;
 	color: #757575;
 }
-.contents--component__019 .event--information__area {
+.contents--area section#eventinformation--casset__special .event--image__frame002 img {
+	width: 277px;
+}
+.contents--area section#eventinformation--casset__special .event--image__frame002 p {
+	width: 277px;
+	text-align: left;
+	margin: 0px;
+	font-size: 11px;
+	color: #757575;
+}
+.contents--area section#eventinformation--casset__special .event--information__area {
 	margin-top: 15px;
 }
-.contents--component__019 .event--image__text {
+.contents--area section#eventinformation--casset__special .event--image__text {
 	width: 575px;
 	margin: 0 auto;
 	height: auto;
@@ -2319,7 +2575,7 @@ a:hover {
 	padding-top: 15px;
 	padding-bottom: 15px;
 }
-.contents--component__019 .event--image__moreinfo {
+.contents--area section#eventinformation--casset__special .event--image__moreinfo {
 	width: 535px;
 	margin: 0 auto;
 	text-align: left;
@@ -2327,12 +2583,16 @@ a:hover {
 	background-color: #faf0d5;
 	margin-top: 10px;
 }
-.contents--component__019 .event--image__text {
+.contents--area section#eventinformation--casset__special .event--image__text {
 	clear: both;
 	float: none;
 	width: 575px;
 	margin: 0 auto;
 }
+/*module9 イベント情報特別枠の
+				スタイルシート終了（ＰＣ版）の設定*/
+
+
 /*イベント情報カセット－－強調*/
 .contents--component__020 {
 	width: 605px;
@@ -2384,14 +2644,14 @@ a:hover {
 	margin-top: 10px;
 	display: block;
 }
-.contents--component__021 {
+.contents--area section#eventinformation--casset__more {
 	background-color: #ffffff;
 	margin-top: -21px !important;
 	text-align: center;
 	width: 605px;
 	padding: 15px 0px;
 }
-.contents--component__021 a {
+.contents--area section#eventinformation--casset__more a {
 	color: #757575;
 	font-size: 12px;
 	line-height: 8px;
@@ -2400,14 +2660,25 @@ a:hover {
 	display: inline !important;
 	width: auto !important;
 }
-.contents--component__021 a:hover {
+.contents--area section#eventinformation--casset__more a:hover {
 	text-decoration: underline !important;
 }
-.contents--component__021 a.arrow--font:after {
+.contents--area section#eventinformation--casset__more a.arrow--font:after {
 	font-family: "Font Awesome 5 Free";
 	content: '\f105';
 	font-weight: 900;
 }
+.contents--area section#eventinformation--casset__more a.arrow--img:after {
+	content: '';
+	width: 15px;
+	height: 6px;
+	display: inline-block;
+	background: url(../img/arrow_red_down.png);
+	background-size: contain;
+	vertical-align: middle;
+	background-repeat: no-repeat;
+}
+
 .event--image__frame.event--cassette__002 {
 	width: 208px;
 	height: auto;
@@ -2439,34 +2710,30 @@ a:hover {
 }
 #innerWrap {
 	background-color: #ffffff;
-	-webkit-box-shadow: 1px 1px 1px 1px #ccc;
-	box-shadow: 1px 1px 1px 1px #ccc;
+	-webkit-box-shadow: 1px 1px 1px 1px #DFDFDF;
+	box-shadow: 1px 1px 1px 1px #DFDFDF;
 }
-.conteiner--link__text p {
+.container--link__text p {
 	color: #195197;
 }
 /*マップアイコンの色*/
-.conteiner--box__place p:before {
+.container--box__place p:before {
 	color: #D3BDA6;
 }
 /*もっと見るの横にあるアローアイコンの色*/
-.conteiner--link__text p:after {
+.container--link__text p:after {
 	color: #ac232c;
 }
 /*右寄せ・高さ中央にあるアローアイコンの色*/
-.conteiner--box__002.arrow--font:after {
+.container--box__002.arrow--font:after {
 	color: #ac232c;
 	font-size: 20px;
 }
-#search--event__area .conteiner--box__title p:after {
+#search--event__area .container--box__title p:after {
 	font-size: 14px;
 	color: #ac232c;
 }
 
-.contents--component__013 .conteiner--box .conteiner--box__area a p:after {
-	font-size: 14px;
-	color: #ac232c;
-}
 .event--casset__common .event--information p:after {
 	font-size: 14px;
 	color: #ac232c;
@@ -2476,7 +2743,7 @@ a:hover {
 	color: #ac232c;
 }
 .border--top {
-	border-top: 1px solid #ccc !important;
+	border-top: 1px solid #DFDFDF !important;
 }
 /*カレンダーCSS*/
 #calendar--setdata {
@@ -2558,7 +2825,7 @@ a:hover {
 	width: 277px;
 	max-width: 277px;
 	margin: 0 auto;
-	background-color: #ccc;
+	background-color: #DFDFDF;
 	font-weight: 400;
 	text-align: center;
 }
@@ -2576,8 +2843,8 @@ a:hover {
 	text-align: center;
 	font-weight: 400;
 	width: 14%;
-	border-left: 1px solid #ccc;
-	border-bottom: 1px solid #ccc;
+	border-left: 1px solid #DFDFDF;
+	border-bottom: 1px solid #DFDFDF;
 }
 #calendar--setdata .row.tabele--contents > div {
 	text-align: center;
@@ -2585,10 +2852,10 @@ a:hover {
 	height: 20px;
 }
 #calendar--setdata .row > div.sunday {
-	border-right: 1px solid #ccc;
+	border-right: 1px solid #DFDFDF;
 }
 #calendar--setdata .border--right {
-	border-right: 1px solid #ccc;
+	border-right: 1px solid #DFDFDF;
 }
 #calendar--setdata .row.tabele--header > div.weekday {
 	color: #333;
@@ -2680,16 +2947,7 @@ a:hover {
 	vertical-align: middle;
 	background-repeat: no-repeat;
 }
-.contents--component__021 a.arrow--img:after {
-	content: '';
-	width: 15px;
-	height: 6px;
-	display: inline-block;
-	background: url(../img/arrow_red_down.png);
-	background-size: contain;
-	vertical-align: middle;
-	background-repeat: no-repeat;
-}
+
 /*グローバルナビのCSS*/
 /* globalNav */
 #globalNav {
@@ -2797,7 +3055,7 @@ a:hover {
 }
 #globalNav ul :hover ul li {
 	margin: 0;
-	border-bottom: 1px solid #ccc;
+	border-bottom: 1px solid #DFDFDF;
 	border-right: 1px solid #efefef;
 	border-left: 1px solid #efefef;
 }

@@ -17,7 +17,7 @@ Font Awesome 5 FreeのWEBフォントを使用する場合、font-weightの値�
 
 */
 /*アロー全体のデフォルト設定　こちらの設定を変更することで画像とWEBフォントの切り替えも可能です。*/
-.conteiner--link__text.arrow--img a p:after, .conteiner--link__text.arrow--font a p:after, .conteiner--box__002.arrow--img:after, .conteiner--box__002.arrow--font:after, .contents--component__003 a .conteiner--box__title.arrow--img:after, .contents--component__003 a .conteiner--box__title.arrow--font:after, .contents--component__007.arrow--font .btn p:after, .contents--component__009.arrow--img .btn p:after, .contents--component__009.arrow--font .btn p:after, .contents--component__007.arrow--img .btn p:after, .contents--component__006 .conteiner--box__text.arrow--img a:after, .contents--component__006 .conteiner--box__text.arrow--font a:after, .contents--component__009 .conteiner--box__area.arrow--img a:after, .contents--component__009 .conteiner--box__area.arrow--font a:after, .contents--component__013 .conteiner--box .conteiner--box__area.arrow--img a p:after, .contents--component__013 .conteiner--box .conteiner--box__area.arrow--font a p:after, .event--information__title p:after, .contents--component__021 a.arrow--img:after, .contents--component__021 a.arrow--font:after, .conteiner--box__002.arrow--font:after, #calendar--setdata .calendar--header a:after, .event--casset__common dl dd a:after, .event--casset__common .btn a:after,.contents--component__003 .conteiner--box__area a:after,.event--casset__common .btn p:after {
+.container--link__text.arrow--img a p:after, .container--link__text.arrow--font a p:after, .container--box__002.arrow--img:after, .container--box__002.arrow--font:after, .contents--component__003 a .container--box__title.arrow--img:after, .contents--component__003 a .container--box__title.arrow--font:after, .contents--component__007.arrow--font .btn p:after, .contents--component__009.arrow--img .btn p:after, .contents--component__009.arrow--font .btn p:after, .contents--component__007.arrow--img .btn p:after, .contents--component__006 .container--box__text.arrow--img a:after, .contents--component__006 .container--box__text.arrow--font a:after, .contents--component__009 .container--box__area.arrow--img a:after, .contents--component__009 .container--box__area.arrow--font a:after, .contents--component__013 .container--box .container--box__area.arrow--img a p:after, .contents--component__013 .container--box .container--box__area.arrow--font a p:after, .event--information__title p:after, .contents--component__021 a.arrow--img:after, .contents--component__021 a.arrow--font:after, .container--box__002.arrow--font:after, #calendar--setdata .calendar--header a:after, .event--casset__common dl dd a:after, .event--casset__common .btn a:after,.contents--component__003 .container--box__area a:after,.event--casset__common .btn p:after {
 	font-family: "Font Awesome 5 Free";
   content: '\f105';
   font-weight: 900;
@@ -84,7 +84,7 @@ Font Awesome 5 FreeのWEBフォントを使用する場合、font-weightの値�
 	margin-top: -24px;
 }
 /*下記はアローの位置調整*/
-.conteiner--link__text.arrow--img a p:after, .conteiner--link__text.arrow--font a p:after {
+.container--link__text.arrow--img a p:after, .container--link__text.arrow--font a p:after {
 	position: absolute;
 	/*WEBフォントの時の設定はこちら*/
 	top:0;
@@ -94,17 +94,17 @@ Font Awesome 5 FreeのWEBフォントを使用する場合、font-weightの値�
 	top:50%;
 	margin-top:-6px;*/
 }
-.contents--component__006 .conteiner--box__text.arrow--img a:after {
+.contents--component__006 .container--box__text.arrow--img a:after {
   float: right;
   margin-right: 0px;
 }
-.contents--component__006 .conteiner--box__text.arrow--font a:after {
+.contents--component__006 .container--box__text.arrow--font a:after {
   margin: 0px 5px;
 }
-.contents--component__009 .conteiner--box__area.arrow--img a:before, .contents--component__009 .conteiner--box__area.arrow--font a:before {
+.contents--component__009 .container--box__area.arrow--img a:before, .contents--component__009 .container--box__area.arrow--font a:before {
   margin-right: 10px;
 }
-.contents--component__013 .conteiner--box .conteiner--box__area.arrow--img a p:after, .contents--component__013 .conteiner--box .conteiner--box__area.arrow--font a p:after {
+.contents--component__013 .container--box .container--box__area.arrow--img a p:after, .contents--component__013 .container--box .container--box__area.arrow--font a p:after {
 	/*WEBフォントの時の設定はこちら*/
   float: right;
   margin-right: 10px;
@@ -123,7 +123,7 @@ Font Awesome 5 FreeのWEBフォントを使用する場合、font-weightの値�
 .contents--component__021 a.arrow--img:after, .event--casset__common dl dd a:after {
   margin-left: 10px;
 }
-.conteiner--box__002.arrow--font:after {
+.container--box__002.arrow--font:after {
   font-size: 20px;
 }
 #calendar--setdata .calendar--header a:after {
