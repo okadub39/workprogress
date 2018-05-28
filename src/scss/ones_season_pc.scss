@@ -2311,18 +2311,20 @@ a:hover {
 	font-weight: 700;
 	float: left;
 	text-align: left;
-	margin: 15px 0px;
+	margin: 10px 0px 7px;
 }
 .event--casset__common .event--image__text p {
-	margin-top: -3px;
+	margin-top: 0px;
 	padding-top: 0px;
 	line-height: 160%;
 	margin-bottom: 0px;
 }
 .event--casset__common .event--image__moreinfo p {
-	margin-top: 0px;
+	margin-top: 7px;
+	margin-left: 7px;
 	padding-top: 0px;
 	margin-bottom: 0px;
+	line-height: 15px;
 	font-size: 14px;
 }
 .event--casset__common dl {
@@ -2341,15 +2343,16 @@ a:hover {
 	padding: 5px 0px;
 }
 .event--casset__common dl dd {
-	width: 490px;
+	width: auto;
 	padding: 5px 0px 10px 0px;
 	float: left;
 	margin-left: 30px;
+	display: inline-block;
 }
 .event--casset__common dl dd p {
 	margin: 0px;
 	padding: 2px 0px;
-	line-height: 100%;
+	line-height: 13px;
 	font-size: 12px;
 	font-weight: 400;
 }
@@ -2366,22 +2369,19 @@ a:hover {
 	display: block;
 }
 .event--casset__common a.button {
-	display: block;
+	display:inline-block;
 	width: 370px;
-	display: block;
 	text-align: center;
-	margin: 0 auto;
+	margin: 10px auto 0px -10px;
 	height: 40px;
-	line-height: 40px;
-	text-align: center;
-	margin: 0 auto;
+	line-height: 10px;
 	border-radius: 4px;
 	position: relative;
 	-webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
 	box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
 }
 .event--button__color {
-	margin-top: 15px!important;
+	margin-top: 15px;
 }
 .btn.btn--color {
 	margin-top: 15px;
@@ -2406,19 +2406,31 @@ a:hover {
 	width: 605px;
 	background-color: #ffffff;
 	display: block;
+	margin-bottom: 0px;
+}
+.contents--area section#eventinformation--casset__pickup h2#module9 {
+	width: 575px;
+	font-size: 18px;
+	padding: 11px 15px 11px;
+	font-weight: 700;
+	margin: 0px;
+	line-height: 18px;
+	display: inline-block;
 }
 .contents--area section#eventinformation--casset__pickup a {
-	display: block;
+	display:inline-block;
 	position: relative;
 }
 .contents--area section#eventinformation--casset__pickup hr {
-	width: 575px;
+	width: 605px;
 	margin: 0 auto;
+	display: block;
 }
 .contents--area section#eventinformation--casset__pickup .event--information__title p.text--size__bigger {
 	width: 560px;
-	margin-top: 10px;
-	margin-bottom: 10px;
+	margin-top: 6px;
+	margin-bottom: 14px;
+	display: block;
 }
 .contents--area section#eventinformation--casset__pickup .event--image__frame img {
 	width: 240px;
@@ -2429,6 +2441,7 @@ a:hover {
 	text-align: left;
 	float: left;
 	margin-left: 0px;
+	margin-top: 5px;
 }
 .contents--area section#eventinformation--casset__pickup .event--image__text {
 	width: 320px;
@@ -2441,7 +2454,7 @@ a:hover {
 .contents--area section#eventinformation--casset__pickup .event--image__frame p {
 	width: 240px;
 	text-align: left;
-	margin: 5px 0px;
+	margin: 0px 0px 5px;
 	font-size: 11px;
 	color: #757575;
 }
@@ -2460,6 +2473,7 @@ a:hover {
 .contents--area section#eventinformation--casset__lists {
 	width: 605px;
 	background-color: #ffffff;
+	margin-top: 0px;
 }
 .contents--area section#eventinformation--casset__lists .event--information__title p.text--size__bigger {
 	width: 560px;
@@ -2472,6 +2486,11 @@ a:hover {
 	text-align: left;
 	float: left;
 	margin-left: 0px;
+}
+.contents--area section#eventinformation--casset__lists hr {
+	width: 605px;
+	margin: 0 auto;
+	display: block;
 }
 .contents--area section#eventinformation--casset__lists .event--image__frame img {
 	width: 180px;
@@ -2507,7 +2526,7 @@ a:hover {
 .contents--area section#eventinformation--casset__lists .event--information__title p.text--size__bigger {
 	width: 560px;
 	margin-top: 10px;
-	margin-bottom: 5px;
+	margin-bottom: 15px;
 }
 /*module9 イベント情報リストの
 				スタイルシート終了（ＰＣ版）の設定*/
