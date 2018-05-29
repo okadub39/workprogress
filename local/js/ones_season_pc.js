@@ -3,10 +3,10 @@
 $(window).on('load resize', function(){
 	$('#new--information__photo').each(function(i, box) {
 		var maxHeight = 0;
-		$(box).find('.conteiner--box__001').each(function() {
+		$(box).find('.container--box__001').each(function() {
 			if ($(this).height() > maxHeight) maxHeight = $(this).height();
 		});
-		$(box).find('.conteiner--box__001').height(maxHeight);
+		$(box).find('.container--box__001').height(maxHeight);
 	});
 });
 
@@ -14,23 +14,33 @@ $(window).on('load resize', function(){
 $(window).on('load resize', function(){
 	$('#contents--article__induction').each(function(i, box) {
 		var maxHeight = 0;
-		$(box).find('.conteiner--box__area a').each(function() {
+		$(box).find('.container--box__area a').each(function() {
 			if ($(this).height() > maxHeight) maxHeight = $(this).height();
 		});
-		$(box).find('.conteiner--box__area a').height(maxHeight);
+		$(box).find('.container--box__area a').height(maxHeight);
 	});
 });
 //Z-1 関連特集（正方形）の最大高さの値を取得してコンテンツの高さを揃えるJS
 $(window).on('load resize', function(){
-	$('.contents--component__011').each(function(i, box) {
+	$('#contents--feature__square').each(function(i, box) {
 		var maxHeight = 0;
-		$(box).find('.conteiner--box__area a').each(function() {
+		$(box).find('.container--box__area a').each(function() {
 			if ($(this).height() > maxHeight) maxHeight = $(this).height();
 		});
-		$(box).find('.conteiner--box__area a').height(maxHeight);
+		$(box).find('.container--box__area a').height(maxHeight);
 	});
 });
 
+//Z-1 関連特集（正方形）の最大高さの値を取得してコンテンツの高さを揃えるJS
+$(window).on('load resize', function(){
+	$('#contents--restaurant__guidance').each(function(i, box) {
+		var maxHeight = 0;
+		$(box).find('.container--box__area .accordion--spot').each(function() {
+			if ($(this).height() > maxHeight) maxHeight = $(this).height();
+		});
+		$(box).find('.container--box__area .accordion--spot').height(maxHeight);
+	});
+});
 
 
 

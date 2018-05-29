@@ -38,14 +38,11 @@
   color: #fff;
 }
 #calendar--setdata .calendar--header {
-  border-style: solid;
-  border-width: 1px;
-  border-color: #ac232c;
   color: #fff;
 }
 
 #calendar--setdata .calendar--header a{
-  border: 1px solid rgba(255,248,248,.35);
+  padding: 1px;
   background-color: rgba(255,248,248,.35);
 }
 
@@ -81,7 +78,7 @@
   display: block;
 }
 hr.event--information__border {
-  background-color: rgba(0,0,0,.15);
+  background-color: rgba(255,0,200,.15);
   width: 100%;
   height: 1px;
   margin: 0px;
@@ -121,6 +118,14 @@ hr.event--information__border {
   background-repeat: no-repeat;
 }
 
+.maintitle--design__pr-glay {
+  background-image: url(../img/image_common_pr.png);
+  background-position: 98% center;
+  background-repeat: no-repeat;
+}
+
+
+
 .maintitle--design__prGlay {
   background-image: url(../img/image_common_pr.png);
   background-position: 98% center;
@@ -143,3 +148,4 @@ hr.event--information__border {
   border-bottom: 1px solid #dfdfdf !important;
   color: #333 !important;
 }
+

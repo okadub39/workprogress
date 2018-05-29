@@ -74,6 +74,12 @@ section.contents--mainvisual .contents--texts__fields p {
 	width: 100%;
 	height: 20px;
 }
+.height--25px {
+	clear: both;
+	float: none;
+	width: 100%;
+	height: 25px;
+}
 .height--30px {
 	clear: both;
 	float: none;
@@ -151,7 +157,6 @@ p.link--opacity__50:hover {
 	opacity: .5;
 }
 
-
 .container--link__text a p span:hover {
 	text-decoration: underline !important;
 	-webkit-text-decoration-color: #195197 !important;
@@ -173,6 +178,9 @@ a.link--underline p:hover {
 	-webkit-text-decoration-color: #757575 !important;
 	text-decoration-color: #757575 !important;
 }
+
+
+
 
 /*セクション共通要素*/
 .contents--area {
@@ -250,7 +258,7 @@ section {
 	padding: 10px 15px;
 }
 #calendar--setdata h2 {
-	width: 100%;
+	width: 605px;
 	height: 40px;
 	line-height: 40px;
 	text-align: left;
@@ -324,7 +332,7 @@ section {
 }
 .container--link__text.arrow--img a p:after {
 	content: '';
-	width: 7.5px;
+	width: 6px;
 	height: 12px;
 	margin-top: -2px;
 	content: " ";
@@ -415,13 +423,27 @@ a:hover {
 }
 /*B-1 新着情報（写真）---見出しのスタイルシート*/
 .contents--area section#new--information__photo h2#b-1 {
-	width: 575px;
+	width: 540px;
+	padding: 11px 50px 11px 15px;
+	position: relative;
 	font-size: 18px;
-	padding: 11px 15px;
 	font-weight: 700;
 	margin: 0px;
 	line-height: 18px;
 }
+.contents--area section#new--information__photo h2#b-1 span {
+	position: absolute;
+	right: 15px;
+	top:50%;
+	margin-top: -7px;
+	background-image: url(../img/image_common_prwhite.png);
+ 	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 28px;
+	height: 14px;
+}
+
 /*B-1 新着情報（写真）---コンテンツを展開させるコンテナのスタイルシート*/
 .contents--area section#new--information__photo .container--box .container--box__001 {
 	margin: 0px 6px 0px 7px;
@@ -504,12 +526,25 @@ a:hover {
 }
 /*B-2 新着情報（テキスト）見出しのスタイルシート*/
 .contents--area section#new--information__text h2#b-2 {
-	width: 575px;
+	width: 540px;
+	padding: 11px 50px 11px 15px;
+	position: relative;
 	font-size: 18px;
-	padding: 11px 15px;
 	font-weight: 700;
 	margin: 0px;
 	line-height: 18px;
+}
+.contents--area section#new--information__text h2#b-2 span {
+	position: absolute;
+	right: 15px;
+	top:50%;
+	margin-top: -7px;
+	background-image: url(../img/image_common_prwhite.png);
+ 	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 28px;
+	height: 14px;
 }
 /*B-2 新着情報（テキスト）見出しのスタイルシート*/
 .contents--area section#new--information__text .container--box a {
@@ -543,16 +578,15 @@ a:hover {
 .contents--area section#new--information__text .container--box__title {
 	margin-left: 0px;
 	margin-top: 0px;
-	padding-right: 25px;
 }
 /*B-2 新着情報（テキスト）コンテナボックス*/
 .contents--area section#new--information__text .container--box__002 {
 	position: relative;
-	width: 575px;
+	width: 550px;
 	clear: both;
 	border-bottom: 1px solid #DFDFDF;
 	margin: 0 auto;
-	padding: 12px 0px 12px 0px;
+	padding: 12px 25px 12px 0px;
 }
 /*B-2 新着情報（テキスト）リンクテキスト*/
 .contents--area section#new--information__text .container--link__text a p {
@@ -599,13 +633,26 @@ a:hover {
 }
 /*C エリアから探す 見出しのスタイルシート*/
 .contents--area section#search--event__area h2#c {
-	width: 575px;
+	width: 540px;
+	padding: 11px 50px 11px 15px;
+	position: relative;
 	font-size: 18px;
-	padding: 11px 15px;
 	font-weight: 700;
 	margin: 0px;
 	line-height: 18px;
 	display: inline-block;
+}
+.contents--area section#search--event__area h2#c span {
+	position: absolute;
+	right: 15px;
+	top:50%;
+	margin-top: -7px;
+	background-image: url(../img/image_common_prwhite.png);
+ 	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 28px;
+	height: 14px;
 }
 /*C エリアから探す コンテンツエリア*/
 .contents--area section#search--event__area .container--box {
@@ -659,10 +706,6 @@ a:hover {
 	/*border-bottom: 1px #797979 solid;*/
 	padding-bottom: 5px;
 }
-/*C エリアから探す マウスオーバー時にアンダーラインを消す*/
-.contents--area section#search--event__area .container--box__area a:hover {
-	text-decoration: none !important;
-}
 /*C エリアから探す ２カラム用のスタイルシート*/
 .contents--area section#search--event__area .container--frame__003 {
 	width: 50%;
@@ -679,11 +722,14 @@ a:hover {
 	margin-top: 15px;
 }
 /*C エリアから探す タイトルに矢印を付与*/
-.contents--area section#search--event__area a .container--box__title p:after {
+.contents--area section#search--event__area div .container--box__title a {
+	display: inline;
+}
+.contents--area section#search--event__area div .container--box__title p:after {
 	margin-left: 5px;
 	font-size: 20px !important;
 }
-.contents--area section#search--event__area a .container--box__title.arrow--img p:after {
+.contents--area section#search--event__area div .container--box__title.arrow--img p:after {
 	margin-left: 5px;
 	margin-top: -3.5px;
 	content: '';
@@ -695,7 +741,7 @@ a:hover {
 	vertical-align: middle;
 	background-repeat: no-repeat;
 }
-.contents--area section#search--event__area a .container--box__title.arrow--font p:after {
+.contents--area section#search--event__area div .container--box__title.arrow--font p:after {
 	font-family: "Font Awesome 5 Free";
 	content: '\f105';
 	font-weight: 900;
@@ -712,13 +758,26 @@ a:hover {
 }
 /*D ランキングTOP3 見出しのスタイルシート*/
 .contents--area section#ranking--top3 h2#d {
-	width: 575px;
+	width: 540px;
+	padding: 11px 50px 11px 15px;
+	position: relative;
 	font-size: 18px;
-	padding: 11px 15px;
 	font-weight: 700;
 	margin: 0px;
 	line-height: 18px;
 	display: inline-block;
+}
+.contents--area section#ranking--top3 h2#d span {
+	position: absolute;
+	right: 15px;
+	top:50%;
+	margin-top: -7px;
+	background-image: url(../img/image_common_prwhite.png);
+ 	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 28px;
+	height: 14px;
 }
 /*D ランキングTOP3 コンテンツエリア*/
 .contents--area section#ranking--top3 .container--box {
@@ -731,8 +790,18 @@ a:hover {
 	padding-top: 1px;
 }
 /*D ランキングTOP3 コンテンツエリアタイトルリンク*/
+.contents--area section#ranking--top3 .container--link__text {
+	width: 575px;
+	margin: 0 auto;
+	border-top: 1px solid #dfdfdf;
+	margin-right: 15px;
+}
+.contents--area section#ranking--top3 .container--link__text a {
+	float:right;
+}
+
 .contents--area section#ranking--top3 .container--link__text a p {
-	margin-right: 16px;
+	margin-right: 1px;
 }
 /*D ランキングTOP3 コンテンツエリアタイトルランキングボックス*/
 .contents--area section#ranking--top3 .container--box__004 {
@@ -811,8 +880,11 @@ a:hover {
 	padding: 9px 0px 7px;
 }
 /*E PICKUPコンテンツの間の罫線*/
-.contents--area section#pickup--contents .border--bottom {
-	border-bottom: 1px solid #ddd;
+.contents--area section#pickup--contents .container--box {
+	border-top: 1px solid #ddd;
+}
+.contents--area section#pickup--contents .container--box:first-child {
+	border-top: none;
 }
 /*E PICKUPコンテンツのコンテナボックス*/
 .contents--area section#pickup--contents .container--box {
@@ -903,8 +975,12 @@ a:hover {
 	padding: 9px 0px 7px;
 }
 /*E PICKUPコンテンツの間の罫線*/
-.contents--area section#pickup--contents__002 .border--bottom {
-	border-bottom: 1px solid #ddd;
+/*E PICKUPコンテンツの間の罫線*/
+.contents--area section#pickup--contents__002 .container--box {
+	border-top: 1px solid #ddd;
+}
+.contents--area section#pickup--contents__002 .container--box:first-child {
+	border-top: none;
 }
 /*E PICKUPコンテンツのコンテナボックス*/
 .contents--area section#pickup--contents__002 .container--box {
@@ -994,13 +1070,26 @@ a:hover {
 }
 /*F コンテンツ誘導枠のタイトル*/
 .contents--area section#contents--induction h2#f {
-	width: 575px;
+	width: 540px;
+	padding: 11px 50px 11px 15px;
+	position: relative;
 	font-size: 18px;
-	padding: 11px 15px;
 	font-weight: 700;
 	margin: 0px;
 	line-height: 18px;
 	display: inline-block;
+}
+.contents--area section#contents--induction h2#f span {
+	position: absolute;
+	right: 15px;
+	top:50%;
+	margin-top: -7px;
+	background-image: url(../img/image_common_prwhite.png);
+ 	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 28px;
+	height: 14px;
 }
 /*F コンテンツ誘導枠のコンテンツボックス*/
 .contents--area section#contents--induction .container--box {
@@ -1158,13 +1247,26 @@ a:hover {
 }
 /*V 有料差込枠のタイトル*/
 .contents--area section#contents--paymentfee h2#v {
-	width: 575px;
+	width: 540px;
+	padding: 11px 50px 11px 15px;
+	position: relative;
 	font-size: 18px;
-	padding: 11px 15px 11px;
 	font-weight: 700;
 	margin: 0px;
 	line-height: 18px;
 	display: inline-block;
+}
+.contents--area section#contents--paymentfee h2#v span {
+	position: absolute;
+	right: 15px;
+	top:50%;
+	margin-top: -7px;
+	background-image: url(../img/image_common_prwhite.png);
+ 	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 28px;
+	height: 14px;
 }
 /*V 有料差込枠のコンテンツボックス*/
 .contents--area section#contents--paymentfee .container--box {
@@ -1294,13 +1396,26 @@ a:hover {
 }
 /*H 人気のエリアのタイトル*/
 .contents--area section#contents--popular--areas h2#h {
-	width: 575px;
+	width: 540px;
+	padding: 11px 50px 11px 15px;
+	position: relative;
 	font-size: 18px;
-	padding: 11px 15px 11px;
 	font-weight: 700;
 	margin: 0px;
 	line-height: 18px;
 	display: block;
+}
+.contents--area section#contents--popular--areas h2#h span {
+	position: absolute;
+	right: 15px;
+	top:50%;
+	margin-top: -7px;
+	background-image: url(../img/image_common_prwhite.png);
+ 	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 28px;
+	height: 14px;
 }
 /*H 人気のエリアのコンテンツボックス*/
 .contents--area section#contents--popular--areas .container--box {
@@ -1359,14 +1474,28 @@ a:hover {
 }
 /*X レストラン誘導枠のタイトル*/
 .contents--area section#contents--restaurant__guidance h2#x {
-	width: 575px;
+	width: 540px;
+	padding: 11px 50px 11px 15px;
+	position: relative;
 	font-size: 18px;
-	padding: 11px 15px 11px;
 	font-weight: 700;
 	margin: 0px;
 	line-height: 18px;
 	display: inline-block;
 }
+.contents--area section#contents--restaurant__guidance h2#x span {
+	position: absolute;
+	right: 15px;
+	top:50%;
+	margin-top: -7px;
+	background-image: url(../img/image_common_prwhite.png);
+ 	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 28px;
+	height: 14px;
+}
+
 /*X レストラン誘導枠のコンテンツボックス*/
 .contents--area section#contents--restaurant__guidance .container--box {
 	padding-bottom: 0px;
@@ -1464,14 +1593,16 @@ a:hover {
 .contents--area section#contents--restaurant__guidance .container--box__area a {
 	display: block;
 	float: left;
-	width: 49.8%;
+	width: calc(49.8% - 20px);
 	padding-top: 0px;
 	padding-bottom: 0px;
+	padding-left: 20px;
 	margin: 10px 0px;
 	clear: none;
 	font-weight: 900;
 	font-size: 14px;
 	color: #195197;
+	position: relative;
 }
 /*X レストラン誘導枠の下のコンテンツ領域のリンク矢印*/
 .contents--area section#contents--restaurant__guidance .container--box__area a:before {
@@ -1487,9 +1618,10 @@ a:hover {
 	background-size: contain;
 	vertical-align: middle;
 	background-repeat: no-repeat;
-	margin-right: 10px;
-	margin-left: 7px;
-	margin-top: -3px;
+	position: absolute;
+	left:7px;
+	top:50%;
+	margin-top: -6px;
 }
 .contents--area section#contents--restaurant__guidance .container--box__area.arrow--font a:before {
 	font-family: "Font Awesome 5 Free";
@@ -1529,13 +1661,26 @@ a:hover {
 }
 /*Y 記事誘導枠のタイトル*/
 .contents--area section#contents--article__induction h2#y {
-	width: 575px;
+	width: 540px;
+	padding: 11px 50px 11px 15px;
+	position: relative;
 	font-size: 18px;
-	padding: 11px 15px 11px;
 	font-weight: 700;
 	margin: 0px;
 	line-height: 18px;
 	display: inline-block;
+}
+.contents--area section#contents--article__induction h2#y span {
+	position: absolute;
+	right: 15px;
+	top:50%;
+	margin-top: -7px;
+	background-image: url(../img/image_common_prwhite.png);
+ 	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 28px;
+	height: 14px;
 }
 /*Y 記事誘導枠のコンテンツボックス*/
 .contents--area section#contents--article__induction .container--box {
@@ -1609,13 +1754,26 @@ a:hover {
 	background-repeat: no-repeat;
 }
 .contents--area section#contents--feature__square h2#z-1 {
-	width: 575px;
+	width: 540px;
+	padding: 11px 50px 11px 15px;
+	position: relative;
 	font-size: 18px;
-	padding: 11px 15px 11px;
 	font-weight: 700;
 	margin: 0px;
 	line-height: 18px;
 	display: inline-block;
+}
+.contents--area section#contents--feature__square h2#z-1 span {
+	position: absolute;
+	right: 15px;
+	top:50%;
+	margin-top: -7px;
+	background-image: url(../img/image_common_prwhite.png);
+ 	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 28px;
+	height: 14px;
 }
 .contents--area section#contents--feature__square .container--box {
 	width: auto;
@@ -1756,13 +1914,26 @@ a:hover {
 }
 /*module4 画像とテキスト_1カラムと4カラムのタイトル*/
 .contents--area section#imagetext--onecolum__fourcolum h2#module4  {
-	width: 575px;
+	width: 540px;
+	padding: 11px 50px 11px 15px;
+	position: relative;
 	font-size: 18px;
-	padding: 11px 15px 11px;
 	font-weight: 700;
 	margin: 0px;
 	line-height: 18px;
 	display: inline-block;
+}
+.contents--area section#imagetext--onecolum__fourcolum h2#module4 span {
+	position: absolute;
+	right: 15px;
+	top:50%;
+	margin-top: -7px;
+	background-image: url(../img/image_common_prwhite.png);
+ 	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 28px;
+	height: 14px;
 }
 /*module4 画像とテキスト_1カラムと4カラムのコンテンツボックス*/
 .contents--area section#imagetext--onecolum__fourcolum .container--box {
@@ -1895,13 +2066,26 @@ a:hover {
 	padding-bottom: 15px;
 }
 .contents--area section#search--festa__area h2#module1 {
-	width: 575px;
+	width: 540px;
+	padding: 11px 50px 11px 15px;
+	position: relative;
 	font-size: 18px;
-	padding: 11px 15px 11px;
 	font-weight: 700;
 	margin: 0px;
 	line-height: 18px;
 	display: inline-block;
+}
+.contents--area section#search--festa__area h2#module1 span {
+	position: absolute;
+	right: 15px;
+	top:50%;
+	margin-top: -7px;
+	background-image: url(../img/image_common_prwhite.png);
+ 	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 28px;
+	height: 14px;
 }
 .contents--area section#search--festa__area .container--box {
 	width: 585px;
@@ -1945,7 +2129,7 @@ a:hover {
 }
 .contents--area section#search--festa__area .container--box .container--box__area a p {
 	font-size: 14px;
-	margin: 15px 0px 15px 10px;
+	margin: 15px 15px 15px 10px;
 }
 .contents--area section#search--festa__area .container--box.set {
 	width: 575px !important;
@@ -1973,10 +2157,15 @@ a:hover {
 	border-right: 1px solid #DFDFDF;
 }
 
+.contents--area section#search--festa__area .container--box .container--box__area.arrow--img a p{
+	position: relative;
+}
 .contents--area section#search--festa__area .container--box .container--box__area.arrow--img a p:after {
+	position: absolute;
+	top:50%;
+	margin-top: -6px;
 	content: '';
-	float: right;
-	margin-right: 10px;
+	right: -10px;
 	width: 7.5px;
 	height: 12px;
 	display: inline-block;
@@ -2019,13 +2208,26 @@ a:hover {
 }
 
 .contents--area section#imagetext--onecolum__twocolum--ver2 h2#module6 {
-	width: 575px;
+	width: 540px;
+	padding: 11px 50px 11px 15px;
+	position: relative;
 	font-size: 18px;
-	padding: 11px 15px 11px;
 	font-weight: 700;
 	margin: 0px;
 	line-height: 18px;
 	display: inline-block;
+}
+.contents--area section#imagetext--onecolum__twocolum--ver2 h2#module6 span {
+	position: absolute;
+	right: 15px;
+	top:50%;
+	margin-top: -7px;
+	background-image: url(../img/image_common_prwhite.png);
+ 	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 28px;
+	height: 14px;
 }
 .contents--area section#imagetext--onecolum__twocolum--ver2 .container--box {
 	width: auto;
@@ -2095,13 +2297,26 @@ a:hover {
 	background-repeat: no-repeat;
 }
 .contents--area section#imagetext--twocolum__twocolum h2#module7 {
-	width: 575px;
+	width: 540px;
+	padding: 11px 50px 11px 15px;
+	position: relative;
 	font-size: 18px;
-	padding: 11px 15px 11px;
 	font-weight: 700;
 	margin: 0px;
 	line-height: 18px;
 	display: inline-block;
+}
+.contents--area section#imagetext--twocolum__twocolum h2#module7 span {
+	position: absolute;
+	right: 15px;
+	top:50%;
+	margin-top: -7px;
+	background-image: url(../img/image_common_prwhite.png);
+ 	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 28px;
+	height: 14px;
 }
 .contents--area section#imagetext--twocolum__twocolum .container--box {
 	width: auto;
@@ -2128,7 +2343,7 @@ a:hover {
 	margin-top: 0;
 }
 .contents--area section#imagetext--twocolum__twocolum .container--box .container--box__area {
-	width: 60 5px;
+	width: 605px;
 	margin: 0 auto;
 	display: inline-block;
 }
@@ -2160,13 +2375,26 @@ a:hover {
 	background-color: #fff;
 }
 .contents--area section#imagetext--strong h2#module8 {
-	width: 575px;
+	width: 540px;
+	padding: 11px 50px 11px 15px;
+	position: relative;
 	font-size: 18px;
-	padding: 11px 15px 11px;
 	font-weight: 700;
 	margin: 0px;
 	line-height: 18px;
 	display: inline-block;
+}
+.contents--area section#imagetext--strong h2#module8 span {
+	position: absolute;
+	right: 15px;
+	top:50%;
+	margin-top: -7px;
+	background-image: url(../img/image_common_prwhite.png);
+ 	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 28px;
+	height: 14px;
 }
 .contents--area section#imagetext--strong .container--box {
 	width: 575px;
@@ -2320,8 +2548,8 @@ a:hover {
 	margin-bottom: 0px;
 }
 .event--casset__common .event--image__moreinfo p {
-	margin-top: 7px;
-	margin-left: 7px;
+	margin-top: 4px;
+	margin-left: 10px;
 	padding-top: 0px;
 	margin-bottom: 0px;
 	line-height: 15px;
@@ -2372,7 +2600,7 @@ a:hover {
 	display:inline-block;
 	width: 370px;
 	text-align: center;
-	margin: 10px auto 0px -10px;
+	margin: 12px auto 0px -10px;
 	height: 40px;
 	line-height: 10px;
 	border-radius: 4px;
@@ -2407,11 +2635,13 @@ a:hover {
 	background-color: #ffffff;
 	display: block;
 	margin-bottom: 0px;
+	margin-top: 0px;
 }
 .contents--area section#eventinformation--casset__pickup h2#module9 {
-	width: 575px;
+	width: 540px;
+	padding: 11px 50px 11px 15px;
+	position: relative;
 	font-size: 18px;
-	padding: 11px 15px 11px;
 	font-weight: 700;
 	margin: 0px;
 	line-height: 18px;
@@ -2426,25 +2656,51 @@ a:hover {
 	margin: 0 auto;
 	display: block;
 }
-.contents--area section#eventinformation--casset__pickup .event--information__title p.text--size__bigger {
+.contents--area section#eventinformation--casset__pickup .event--information__title h3.text--size__bigger {
 	width: 560px;
 	margin-top: 6px;
 	margin-bottom: 14px;
 	display: block;
 }
-.contents--area section#eventinformation--casset__pickup .event--image__frame img {
-	width: 240px;
-}
-.contents--area section#eventinformation--casset__pickup .event--image__frame {
-	width: 255px;
+/*左のボックス*/
+.contents--area section#eventinformation--casset__pickup .event--information__left {
+	float: left;
 	height: auto;
-	text-align: left;
+	width:255px;
+	min-height: 220px;	
+}
+/*左のボックス画像フレーム*/
+.contents--area section#eventinformation--casset__pickup .event--image__frame {
+	width: 240px;
+	height: 160px;
+	text-align: center;
 	float: left;
 	margin-left: 0px;
 	margin-top: 5px;
+	overflow: hidden;
+}
+/*左のボックス画像*/
+.contents--area section#eventinformation--casset__pickup .event--image__frame .event--image {
+	background-image: url(../img/fire_work_001.png);
+	background-repeat: no-repeat;
+	background-size:contain;
+	background-position: center center;	
+	width: 240px;
+	height: 160px;
+}
+/*左のボックス画像キャプション*/
+.contents--area section#eventinformation--casset__pickup .event--image__caption {
+	width: 100%;
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+.contents--area section#eventinformation--casset__pickup .event--image__caption p{
+	padding-top: 0px;
+	margin-top: 0px;
 }
 .contents--area section#eventinformation--casset__pickup .event--image__text {
-	width: 320px;
+	width: 318px;
 	height: auto;
 	text-align: left;
 	float: right;
@@ -2454,16 +2710,19 @@ a:hover {
 .contents--area section#eventinformation--casset__pickup .event--image__frame p {
 	width: 240px;
 	text-align: left;
-	margin: 0px 0px 5px;
+	margin: 2px 0px 6px;
 	font-size: 11px;
 	color: #757575;
 }
 .contents--area section#eventinformation--casset__pickup .event--image__moreinfo {
-	width: calc(100%-20px);
-	margin: 0auto;
-	padding: 10px;
+	width: calc(100% - 0px);
+	margin: 5px auto 0px;
+	padding: 8px 5px;
 	text-align: left;
 	background-color: #faf0d5;
+}
+.contents--area section#eventinformation--casset__pickup .event--image__moreinfo p{
+	line-height: 140%;
 }
 /*module9 イベント情報PICKUPの
 				スタイルシート終了（ＰＣ版）の設定*/
@@ -2474,8 +2733,9 @@ a:hover {
 	width: 605px;
 	background-color: #ffffff;
 	margin-top: 0px;
+	margin-bottom: 0;
 }
-.contents--area section#eventinformation--casset__lists .event--information__title p.text--size__bigger {
+.contents--area section#eventinformation--casset__lists .event--information__title h3.text--size__bigger {
 	width: 560px;
 	margin-top: 15px;
 	margin-bottom: 10px;
@@ -2483,7 +2743,7 @@ a:hover {
 .contents--area section#eventinformation--casset__lists .event--image__frame {
 	width: 180px;
 	height: auto;
-	text-align: left;
+	text-align: center;
 	float: left;
 	margin-left: 0px;
 }
@@ -2492,18 +2752,45 @@ a:hover {
 	margin: 0 auto;
 	display: block;
 }
-.contents--area section#eventinformation--casset__lists .event--image__frame img {
-	width: 180px;
+/*左のボックス*/
+.contents--area section#eventinformation--casset__lists .event--information__left {
+	float: left;
+	height: auto;
+	width:180px;
+	min-height: 220px;	
 }
-.contents--area section#eventinformation--casset__lists .event--image__frame p {
+/*左のボックス画像フレーム*/
+.contents--area section#eventinformation--casset__lists .event--image__frame {
 	width: 180px;
+	height: 120px;
+	text-align: center;
+	float: left;
+	margin-left: 0px;
+	margin-top: 5px;
+	overflow: hidden;
+}
+/*左のボックス画像*/
+.contents--area section#eventinformation--casset__lists .event--image__frame .event--image {
+	background-image: url(../img/fire_work_002.png);
+	background-repeat: no-repeat;
+	background-size:contain;
+	background-position: center center;	
+	width: 180px;
+	height: 120px;
+}
+/*左のボックス画像キャプション*/
+.contents--area section#eventinformation--casset__lists .event--image__caption {
+	width: 100%;
+	clear: both;
 	text-align: left;
-	margin: 5px 0px;
-	font-size: 11px;
-	color: #757575;
+	padding-top: 10px;
+}
+.contents--area section#eventinformation--casset__lists .event--image__caption p{
+	padding: 0px;
+	margin: 0px;
 }
 .contents--area section#eventinformation--casset__lists .event--information__area {
-	margin-top: 15px;
+	margin-top: 10px;
 }
 .contents--area section#eventinformation--casset__lists .event--information__label {
 	display: none;
@@ -2523,7 +2810,7 @@ a:hover {
 	padding: 10px;
 	background-color: #faf0d5;
 }
-.contents--area section#eventinformation--casset__lists .event--information__title p.text--size__bigger {
+.contents--area section#eventinformation--casset__lists .event--information__title h3.text--size__bigger {
 	width: 560px;
 	margin-top: 10px;
 	margin-bottom: 15px;
@@ -2536,20 +2823,100 @@ a:hover {
 .contents--area section#eventinformation--casset__special {
 	width: 605px;
 	background-color: #ffffff;
+	margin-top: 0;
+	margin-bottom: 0;
 }
-
-.contents--area section#eventinformation--casset__special .event--information__title p.text--size__bigger {
+.contents--area section#eventinformation--casset__special .event--information__title h3.text--size__bigger {
 	width: 560px;
-	margin-top: 15px;
-	margin-bottom: 10px;
+	margin-top: 6px;
+	margin-bottom: 9px;
 }
 .contents--area section#eventinformation--casset__special .event--information__label {
 	margin-left: 15px;
 	margin-bottom: 0px;
+	margin-top: 15px;
 }
+/*左のボックス*/
+.contents--area section#eventinformation--casset__special .event--information__left {
+	float: left;
+	height: auto;
+	width:277px;
+	min-height: 220px;	
+}
+/*左のボックス画像フレーム*/
+.contents--area section#eventinformation--casset__special .event--information__left .event--image__frame {
+	width: 277px;
+	height: 186px;
+	text-align: center;
+	float: left;
+	margin-left: 0px;
+	margin-top: 5px;
+	overflow: hidden;
+}
+/*左のボックス画像*/
+.contents--area section#eventinformation--casset__special .event--information__left .event--image__frame .event--image {
+	background-image: url(../img/fire_work_004.png);
+	background-repeat: no-repeat;
+	background-size:contain;
+	background-position: center center;	
+	width: 277px;
+	height: 186px;
+}
+/*左のボックス画像キャプション*/
+.contents--area section#eventinformation--casset__special .event--information__left .event--image__caption {
+	width: 100%;
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+.contents--area section#eventinformation--casset__special .event--information__left .event--image__caption p{
+	margin: 0px;
+	padding: 0px;
+}
+/*右のボックス*/
+.contents--area section#eventinformation--casset__special .event--information__right {
+	float: right;
+	height: auto;
+	width:277px;
+	min-height: 220px;	
+}
+/*左のボックス画像フレーム*/
+.contents--area section#eventinformation--casset__special .event--information__right .event--image__frame {
+	width: 277px;
+	height: 186px;
+	text-align: center;
+	float: left;
+	margin-left: 0px;
+	margin-top: 5px;
+	overflow: hidden;
+}
+/*左のボックス画像*/
+.contents--area section#eventinformation--casset__special .event--information__right .event--image__frame .event--image {
+	background-image: url(../img/fire_work_001b.png);
+	background-repeat: no-repeat;
+	background-size:contain;
+	background-position: center center;	
+	width: 277px;
+	height: 186px;
+}
+/*左のボックス画像キャプション*/
+.contents--area section#eventinformation--casset__special .event--information__right .event--image__caption {
+	width: 100%;
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+.contents--area section#eventinformation--casset__special .event--information__right .event--image__caption p{
+	margin: 0px;
+	padding: 0px;
+}
+
+
+
 .contents--area section#eventinformation--casset__special .event--image__frame001 {
 	width: 277px;
 	height: auto;
+	max-height: 277px;
 	text-align: center;
 	float: left;
 	margin-right: 20px;
@@ -2557,12 +2924,12 @@ a:hover {
 .contents--area section#eventinformation--casset__special .event--image__frame002 {
 	width: 277px;
 	height: auto;
+	max-height: 277px;
 	text-align: center;
 	float: left;
 	margin-right: 0px;
 }
 .contents--area section#eventinformation--casset__special .event--image__frame001 img {
-	width: 277px;
 }
 .contents--area section#eventinformation--casset__special .event--image__frame001 p {
 	width: 277px;
@@ -2572,7 +2939,6 @@ a:hover {
 	color: #757575;
 }
 .contents--area section#eventinformation--casset__special .event--image__frame002 img {
-	width: 277px;
 }
 .contents--area section#eventinformation--casset__special .event--image__frame002 p {
 	width: 277px;
@@ -2591,8 +2957,13 @@ a:hover {
 	text-align: left;
 	float: none;
 	clear: both;
-	padding-top: 15px;
-	padding-bottom: 15px;
+	padding-top: 9px;
+	padding-bottom: 18px;
+}
+.contents--area section#eventinformation--casset__special .event--image__text p{
+	line-height: 21px;
+	letter-spacing: -1px;
+	font-size: 14px;
 }
 .contents--area section#eventinformation--casset__special .event--image__moreinfo {
 	width: 535px;
@@ -2607,6 +2978,11 @@ a:hover {
 	float: none;
 	width: 575px;
 	margin: 0 auto;
+}
+.contents--area section#eventinformation--casset__special hr {
+	width: 605px;
+	margin: 0 auto;
+	display: block;
 }
 /*module9 イベント情報特別枠の
 				スタイルシート終了（ＰＣ版）の設定*/
@@ -2625,18 +3001,17 @@ a:hover {
 	width: 575px;
 	margin: 0 auto;
 }
-.contents--component__020 .event--information__title p.text--size__bigger {
+.contents--component__020 .event--information__title h3.text--size__bigger {
 	width: 560px;
 	margin-top: 15px;
 	margin-bottom: 5px;
 }
 .contents--component__020 .event--image__frame img {
-	width: 240px;
 }
 .contents--component__020 .event--image__frame {
 	width: 255px;
 	height: auto;
-	text-align: left;
+	text-align: center;
 	float: left;
 	margin-left: 0px;
 }
@@ -2665,16 +3040,16 @@ a:hover {
 }
 .contents--area section#eventinformation--casset__more {
 	background-color: #ffffff;
-	margin-top: -21px !important;
 	text-align: center;
 	width: 605px;
-	padding: 15px 0px;
+	padding: 12px 0px 15px;
+	
 }
 .contents--area section#eventinformation--casset__more a {
 	color: #757575;
 	font-size: 12px;
 	line-height: 8px;
-	margin: 0;
+	margin-left: 16px;
 	padding: 0;
 	display: inline !important;
 	width: auto !important;
@@ -2691,13 +3066,17 @@ a:hover {
 	content: '';
 	width: 15px;
 	height: 6px;
+	margin-left: 10px;
 	display: inline-block;
 	background: url(../img/arrow_red_down.png);
 	background-size: contain;
 	vertical-align: middle;
 	background-repeat: no-repeat;
 }
-
+.contents--area section#eventinformation--casset__more{
+	margin: -1px 15px 0px;
+	
+}
 .event--image__frame.event--cassette__002 {
 	width: 208px;
 	height: auto;
@@ -2858,7 +3237,7 @@ a:hover {
 	display: table-cell;
 	font-size: 12px;
 	margin: 1px;
-	padding: 9px;
+	padding: 8px 9px;
 	text-align: center;
 	font-weight: 400;
 	width: 14%;
@@ -2889,7 +3268,7 @@ a:hover {
 	width: 100%;
 	overflow: hidden;
 	margin: 0;
-	padding: 10px;
+	padding: 9px 10px;
 }
 #calendar--setdata .row.tabele--contents div p {
 	position: absolute;
@@ -2922,9 +3301,6 @@ a:hover {
 	text-decoration: underline !important;
 	margin: 0;
 	padding: 0px;
-}
-#calendar--setdata .row.tabele--contents div a:hover {
-	text-decoration: none !important;
 }
 #calendar--setdata .fireworks--text {
 	text-align: left;
@@ -3111,9 +3487,41 @@ a:hover {
 	border-top: 1px solid #efefef;
 }
 .btn_scroll_top.js-scroll-top.only_sp {
-	position: fixed;
-	top: auto;
-	bottom: 30px;
-	left: auto;
-	right: 30px;
+	display: none;
+}
+/*アコーディオンに矢印をつける　スタート*/
+.accordion--toggle__nonactive:after {
+	content: '';
+	width: 15px;
+	height: 6px;
+	content: " ";
+	margin-left: 5px;
+	display: inline-block;
+	background: url(../img/arrow_red_up.png);
+	background-size: contain;
+	vertical-align: middle;
+	background-repeat: no-repeat;
+}
+.accordion--toggle__active:after {
+	content: '';
+	width: 15px;
+	height: 6px;
+	content: " ";
+	margin-left: 5px;
+	display: inline-block;
+	background: url(../img/arrow_red_down.png);
+	background-size: contain;
+	vertical-align: middle;
+	background-repeat: no-repeat;
+}
+/*アコーディオンに矢印をつける エンド*/
+.contents--area .link-top {
+	float: right;
+	margin-right: 15px;
+	padding: 10px 0px 20px;
+}
+.contents--area div.link-top a{
+	color: #cc2414;
+	font-size: 12px;
+	text-decoration:underline;
 }

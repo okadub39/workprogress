@@ -1,3 +1,21 @@
-<section id="eventinformation--casset__more" class="event--casset__common">
+<section id="eventinformation--casset__more">
 	<a class="arrow--img" href="#">イベントをもっと見る</a>	
 </section>
+
+<script>
+var eventNum = 1;
+hideevent = "<a class='accordion--toggle__nonactive' href='#'>イベントをもっと見る</a>";
+showevent = "<a class='accordion--toggle__active' href='#'>イベントをもっと見る</a>";
+$("#eventinformation--casset__more").html( showevent );
+$(".event--casset__common:not(:lt("+eventNum+"))").hide();
+$("#eventinformation--casset__more").click(function (e) {
+   e.preventDefault();
+       if ($(".event--casset__common:eq("+eventNum+")").is(":hidden")) {
+           $(".event--casset__common:hidden").slideDown();
+           $("#eventinformation--casset__more").html( hideevent );
+       } else {
+           $(".event--casset__common:not(:lt("+eventNum+"))").slideUp();
+           $("#eventinformation--casset__more").html( showevent );
+       }
+});
+</script>
