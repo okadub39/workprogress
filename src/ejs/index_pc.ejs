@@ -1,9 +1,8 @@
 <%- include('./_head', {page: 'index'}); %>
-<!-- PC用のCSS配置 -->
-<!-- PC用のCSS配置 -->
-<!-- カラーセットを調整できるコンテンツCSS -->
-
-<!-- カラーセットを調整できるコンテンツCSS -->
+<%
+var page = page ? page : 'index';
+include('./_config', {page: page});
+%>
 <%- include(PATH + '/globals/_header'); %>
 <!--========== メインビジュアル =====================================================-->
 <%- include(PATH + '/_contents--mainvisual'); %>
@@ -89,9 +88,6 @@
 <%- include(PATH + '/_contents--023'); %>
 <!--========== イベント情報カレンダー ===================================================-->
 </div><!--contents--area end -->
-<!-- PC用のJS配置 -->
-<script src="js/ones_season_pc.js"></script>
-<!-- PC用のJS配置 -->
 <!-- /コーディングここまで -->
 <%- include(PATH + '/globals/_sidebar'); %>
 <%- include(PATH + '/globals/_footer'); %>
