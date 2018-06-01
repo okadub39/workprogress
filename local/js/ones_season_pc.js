@@ -1,4 +1,5 @@
 
+
 //B-1新着情報（写真）の最大高さの値を取得してコンテンツの高さを揃えるJS
 $(window).on('load resize', function(){
 	$('#new--information__photo').each(function(i, box) {
@@ -10,6 +11,7 @@ $(window).on('load resize', function(){
 	});
 });
 
+
 //Y 記事誘導枠の最大高さの値を取得してコンテンツの高さを揃えるJS
 $(window).on('load resize', function(){
 	$('#contents--article__induction').each(function(i, box) {
@@ -20,7 +22,7 @@ $(window).on('load resize', function(){
 		$(box).find('.container--box__area a').height(maxHeight);
 	});
 });
-//Z-1 関連特集（正方形）の最大高さの値を取得してコンテンツの高さを揃えるJS
+
 $(window).on('load resize', function(){
 	$('#contents--feature__square').each(function(i, box) {
 		var maxHeight = 0;
@@ -31,7 +33,6 @@ $(window).on('load resize', function(){
 	});
 });
 
-//Z-1 関連特集（正方形）の最大高さの値を取得してコンテンツの高さを揃えるJS
 $(window).on('load resize', function(){
 	$('#contents--restaurant__guidance').each(function(i, box) {
 		var maxHeight = 0;
@@ -42,6 +43,53 @@ $(window).on('load resize', function(){
 	});
 });
 
+$(window).on('load resize', function(){
+	$('#imagetext--onecolum__fourcolum').each(function(i, box) {
+		var maxHeight = 0;
+		$(box).find('.container--box__area a').each(function() {
+			if ($(this).height() > maxHeight) maxHeight = $(this).height();
+		});
+		$(box).find('.container--box__area a').height(maxHeight);
+	});
+});
+$(window).on('load resize', function(){
+	$('#imagetext--onecolum__twocolum').each(function(i, box) {
+		var maxHeight = 0;
+		$(box).find('.container--box__area a').each(function() {
+			if ($(this).height() > maxHeight) maxHeight = $(this).height();
+		});
+		$(box).find('.container--box__area a').height(maxHeight);
+	});
+});
+
+$(window).on('load resize', function(){
+	$('#imagetext--twocolum__twocolum').each(function(i, box) {
+		var maxHeight = 0;
+		$(box).find('.container--box__area a').each(function() {
+			if ($(this).height() > maxHeight) maxHeight = $(this).height();
+		});
+		$(box).find('.container--box__area a').height(maxHeight);
+	});
+});
+
+
+$(window).on('load resize', function(){
+var eventNum = 1;
+hideevent = "<a class='accordion--toggle__nonactive' href='#'>お出かけ記事を隠す</a>";
+showevent = "<a class='accordion--toggle__active' href='#'>お出かけ記事をもっと見る</a>";
+$("#eventinformation--casset__more").html( showevent );
+$(".event--casset__common:not(:lt("+eventNum+"))").hide();
+$("#eventinformation--casset__more").click(function (e) {
+   e.preventDefault();
+       if ($(".event--casset__common:eq("+eventNum+")").is(":hidden")) {
+           $(".event--casset__common:hidden").slideDown();
+           $("#eventinformation--casset__more").html( hideevent );
+       } else {
+           $(".event--casset__common:not(:lt("+eventNum+"))").slideUp();
+           $("#eventinformation--casset__more").html( showevent );
+       }
+});
+});
 
 
 
@@ -51,25 +99,21 @@ var global_setLink = [];
 var global_setDay = [];
 var global_setMonth = [];
 var global_setUrl = [];
-var global_calendar_month = [];
-var global_dateSet = 0 ;
+var checkCurrent = 0;
+var monthNum = 0 ;
 var dateSet01;
 var dateSet02;
 var dateSet03;
-function add(){
-  monthNum = monthNum + 1;
-  checkmonth = monthNum + 1 ;
-	convertCSVtoArray(req.responseText);
+var checkmonth = monthNum + 1 ;
+function change01(){
+  document.getElementById("left").style.display="none";
+  document.getElementById("right").style.display="block";
 };
-function prev(){
-  checkmonth = checkmonth - 1 ;
-  monthNum = checkmonth - 1;
+
+function change02(){
+  document.getElementById("left").style.display="block";
+  document.getElementById("right").style.display="none";
 };
-function reset(){
-  monthNum = 0;
-  checkmonth = monthNum + 1 ;
-};
-	
 // CSVファイル読み込み
 window.onload = function() {
 req = new XMLHttpRequest();
@@ -95,24 +139,17 @@ var presentMonth = thisDate.getMonth()+1 ;
 var calendarMonth = global_setMonth[1];
 var setLink = global_setLink[1];
 var monthNum = (calendarMonth - presentMonth);
-var checkmonth = (monthNum - monthNum + 1);
-//var target = document.getElementById('test');
-//target.innerHTML = setLink;
-//target.innerHTML += calendarMonth;
-//target.innerHTML += monthNum;
-//target.innerHTML += checkmonth;
+var checkmonth = (monthNum + 1);
 var tableHtml = '' ;
 var target01 = document.getElementById("output01");
 var target02 = document.getElementById("output02");
-
 function calendar( calendarOffset ){
-
 //var calendarOffset = 0;
 //チェック用にサンプルスクリプトを用意
 //var target = document.getElementById('test');
 //target.innerHTML = 'こんにちは';
 // 今日の日付を取得する。
-
+var thisDate = new Date();
 // 月曜日スタートの曜日をセットする。
 var thisWeekTbl = new Array( "月","火","水","木","金","土","日" );
 // var thisWeekTbl = new Array( "mon","tue","wed","thu","fri","sat","sun" );	
@@ -121,7 +158,8 @@ var thisMonthTbl= new Array( 31,28,31,30,31,30,31,31,30,31,30,31 );
 // 今日の日付を変数に格納する。
 var thisToday = thisDate.getDate() ;
 // 今日の月を格納する。
-var thisMonth = thisDate.getMonth() ;
+var thisMonth = thisDate.getMonth();
+var currentMonth = thisMonth;
 // 日付を '1日' に変えて、
 thisDate.setDate(1);
 // 今日の月に対してjsの呼び出しに入れた数値を加算する処理
@@ -130,10 +168,8 @@ var thisMonth = thisMonth + calendarOffset;
 thisDate.setMonth(thisMonth);
 // 西暦を取得する
 var thisYear = thisDate.getFullYear();
-
-
 // 月を取得(0月～11月)
-//thisMonth = thisDate.getMonth();
+thisMonth = thisDate.getMonth();
 nextMonth = thisDate.getMonth()+1;
 // '１日'の曜日を取得する。月曜日スタートなので日曜日の0を６に置き換え、他の曜日に−1の処理を加える。
 var thisWeek = thisDate.getDay();
@@ -158,6 +194,7 @@ var tableSet002 = "</a></div><div id ='table'>";
 //thisYear + "<span>年</span>" 
 tableHtml = tableSet001 + (thisMonth+1) + "<span>月の花火大会</span>" + tableSet002 + "<div class='row tabele--header outline'>";
 // １週間分のカラムをセット。
+
 var set001;
 var set002;
 var set003;
@@ -186,7 +223,6 @@ var dateWeek = thisDate.getDay();
 var dateNum = thisMonthTbl[thisMonth] + dateWeek;
 //月の最大日付と曜日の番号を加算した数値を７で割った数を行数に設定する。デフォルトとして+1を設定。
 dateSet = (dateNum / 7) ;
-
 var monthNumber = thisMonthTbl[thisMonth];
 //var target = document.getElementById('test');
 //target.innerHTML = monthNumber;
@@ -204,17 +240,13 @@ if (thisWeek == 5 || thisWeek == 6){
 }else{
 }
 //行数を退避。
-	
 var dateSet_stach = dateSet;
 if (dateSet < dateSet03){
   dateSet = dateSet03;
 } else if (dateSet < dateSet02){
   dateSet = dateSet02;
 }
-
-
 //dateSet = 6;
-
 for( i=0; i< dateSet; i++ ){	
 tableHtml += "<div class='row tabele--contents'>";
 //for( k=0; k<setDay.length; k++ ){
@@ -240,14 +272,13 @@ tableHtml += "<div class='weekday'>";
 }
 //global_target.innerHTML += global_setUrl[1];
 for( k=0; k<global_setDay.length; k++ ){
-//if ( thisDat == global_setDay[k] && thisMonth+1 == global_setMonth[k] && thisYear == global_setYear[k]){
 if ( thisDat == global_setDay[k] && thisMonth+1 == global_setMonth[k]){
 tableHtml += "<a href='" + global_setUrl[k] + "'>" + thisDat + "</a>";
 }else{
 }
 }
 // 日付セット
-tableHtml += "<p>" + thisDat + "</p>";
+tableHtml +=  "<p>" + thisDat + "</p>";
 // 列(セル)の終わり
 tableHtml += "</div>";
 }	
@@ -257,7 +288,6 @@ tableHtml += "</div>";
 // 表の終わり
 tableHtml += "</div>";
 // 次の月のカレンダー
-
 if (calendarOffset == monthNum) {
 dateSet02 = dateSet_stach;
 target01.innerHTML = tableHtml;
@@ -267,7 +297,6 @@ dateSet03 = dateSet_stach;
 target02.innerHTML = tableHtml;
 }
 }
-	
 calendar(monthNum);	
 calendar(checkmonth);
 }

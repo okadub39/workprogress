@@ -128,48 +128,45 @@ section.contents--mainvisual .contents--texts__fields p {
 .display--none {
 	display: none;
 }
-/*パソコン閲覧用*/
-.pc--only {
-	display: none;
-}
 /*スマートフォン閲覧用*/
-.sp--only {
+.only_sp {
 	display: block;
 }
+.only_pc {
+	display: none !important;
+	}
 /*アコーディオン用CSS*/
 #accordion--001 {
-	width: calc(100% - 20px);
+	width: 100%;
 	margin: 0 auto;
 	text-align: center;
-	overflow: auto;
 }
-#accordion--001 a {
+.contents--area section#contents--restaurant__guidance .container--box #accordion--001 a.archive {
 	width: 100%;
 	font-size: 12px;
 	color: #757575;
 	border-top: 1px solid #ccc;
 	border-bottom: none;
-	margin-left: 0px !important;
+	margin-left: 0px;
 }
 #accordion--001 a p {
 	font-weight: 700;
-	padding: 5px 0px;
+	padding: 5px 10px;
 }
 #accordion--002 {
-	width: calc(100% - 20px);
+	width: 100%;
 	margin: 0 auto;
 	text-align: center;
-	overflow: auto;
 }
 #accordion--002 a p {
-	height: 40px !important;
-	max-height: 40px !important;
-	line-height: 40px !important;
-	width: 100%;
+	height: auto;
+	min-height: 20px;
+	line-height: 20px;
 	font-size: 12px;
 	color: #757575;
 	border-bottom: 0px solid #ccc;
 	font-weight: 700 !important;
+	padding: 10px;
 }
 #accordion--002 a:hover {
 	opacity: 1 !important;
@@ -177,13 +174,12 @@ section.contents--mainvisual .contents--texts__fields p {
 #accordion--003 {
 	width: 100%;
 	text-align: center;
-	overflow: auto;
 }
 #accordion--003 a p {
-	height: 40px !important;
-	max-height: 40px !important;
-	line-height: 40px !important;
-	width: 100%;
+	height: auto;
+	min-height: 20px;
+	line-height: 20px;
+	padding: 10px;
 	font-size: 12px;
 	color: #757575;
 	border-top: none;
@@ -224,6 +220,9 @@ a.link--underline span:hover {
 }
 
 /*セクション共通要素（デフォルト）*/
+.contents--area {
+	color: #333333;
+}
 .contents--area a {
 	color: inherit;
 	text-decoration: none !important;
@@ -248,6 +247,7 @@ a.link--underline span:hover {
 }
 .contents--area section a {
 	display: block;
+	width: 100%;
 }
 /*section共通クラス----H2見出し----*/
 .contents--area section .contents--component__title {
@@ -274,11 +274,11 @@ a.link--underline span:hover {
 	text-align: center;
 }
 #calendar--setdata h2 {
-	padding: 13.5px 30px 13.5px 10px !important;
+	padding: 10.5px 30px 10.5px 10px !important;
 	text-align: left;
 	font-size: 16px;
 	display: block;
-	line-height: 18px;
+	line-height: 24px;
 	font-weight: 700;
 }
 /*section共通クラス----H2見出し----*/
@@ -295,6 +295,8 @@ a.link--underline span:hover {
 	left: 0px;
 	padding: 1px 4px;
 	font-size: 11px;
+	height: 18px;
+	line-height: 18px;
 }
 .container--box__place {
 	display: inline-block;
@@ -317,21 +319,26 @@ a.link--underline span:hover {
 	position: relative;
 	height: auto;
 	margin-right: 10px;
+	width: calc(100% - 10px);
+	text-align: right;
 }
 .container--link__text a p {
 	position: relative;
-	height: 40px;
-	line-height: 40px;
+	min-height: 20px;
+	height: auto;
+	line-height: 20px;
 	font-size: 12px;
 	margin: 0px 10px 0px 0px;
 	padding: 0px;
 }
 .container--link__text a p span {
-	height: 40px;
-	line-height: 40px;
+	min-height: 20px;
+	height: auto;
+	line-height: 20px;
 	margin-right: 5px;
 	font-size: 12px;
 	font-weight: 700;
+	padding: 10px 0px;
 }
 .container--link__text a p span:hover {
 	text-decoration: underline !important;
@@ -497,7 +504,6 @@ opacity: 0.5;
 	display: block;
 	clear: both;
 	text-align: center;
-	border: 1px solid #DFDFDF;
 	margin: 20px 0px 0px 0px;
 	width: 100%;
 	background-color: #fff;
@@ -511,27 +517,25 @@ opacity: 0.5;
 
 /*B-1 新着情報（写真）---見出しのスタイルシート*/
 .contents--area section#new--information__photo h2#b-1 {
-	padding: 13.5px 30px 13.5px 10px !important;
+	padding: 10.5px 30px 10.5px 10px !important;
 	text-align: left;
 	font-size: 16px;
 	display: block;
-	line-height: 18px;
+	line-height: 24px;
 	font-weight: 700;
 	position: relative;
 	width: calc(100%-40px);
 	position: relative;
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
 }
 .contents--area section#new--information__photo h2#b-1 span {
 	position: absolute;
-	right: 5px;
+	right: 10px;
 	top:50%;
 	margin-top: -7px;
-	background-image: url(../img/image_common_prwhite.png);
- 	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: contain;
-	width: 28px;
-	height: 14px;
 	z-index: 5;
 }
 
@@ -548,7 +552,6 @@ opacity: 0.5;
 	border-bottom: 1px solid #dfdfdf;
 	float: none;
 	clear: both;
-	overflow: auto;
 }
 /*B-1 新着情報（写真）---写真を格納するフレーム領域*/
 .contents--area section#new--information__photo .container--box .container--box__001 .container--box__image {
@@ -599,19 +602,21 @@ opacity: 0.5;
 }
 /*B-1 新着情報（写真）---リンク設定*/
 .contents--area section#new--information__photo .container--link__text a p {
-	position: relative;
-	height: 40px;
-	line-height: 40px;
+	min-height: 20px;
+	height: auto;
+	line-height: 20px;
 	font-size: 12px;
 	margin: 0px 5px 0px 0px;
-	padding: 0px;
+	padding: 10px 0px;
 }
 .contents--area section#new--information__photo .container--link__text a p span {
-	height: 40px;
-	line-height: 40px;
+	min-height: 20px;
+	height: auto;
+	line-height: 20px;
 	margin-right: 5px;
 	font-size: 12px;
 	font-weight: 700;
+	padding: 10px 0px;
 }
 /*B-1 新着情報（写真）の
 				スタイルシート終了（ＳＰ版）*/
@@ -622,6 +627,7 @@ opacity: 0.5;
 
 /*B-2 新着情報（テキスト）*/
 .contents--area section#new--information__text {
+	display: block;
 	width: 100%;
 	background-color: #fff;
 	position: relative;
@@ -629,11 +635,11 @@ opacity: 0.5;
 }
 /*B-1 新着情報（テキスト）---見出しのスタイルシート*/
 .contents--area section#new--information__text h2#b-2 {
-	padding: 13.5px 30px 13.5px 10px !important;
+	padding: 10.5px 30px 10.5px 10px !important;
 	text-align: left;
 	font-size: 16px;
 	display: block;
-	line-height: 18px;
+	line-height: 24px;
 	font-weight: 700;
 	position: relative;
 	width: calc(100%-40px);
@@ -641,15 +647,9 @@ opacity: 0.5;
 }
 .contents--area section#new--information__text h2#b-2 span {
 	position: absolute;
-	right: 5px;
+	right: 10px;
 	top:50%;
 	margin-top: -7px;
-	background-image: url(../img/image_common_prwhite.png);
- 	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: contain;
-	width: 28px;
-	height: 14px;
 	z-index: 5;
 }
 
@@ -658,8 +658,8 @@ opacity: 0.5;
 	margin: 0 auto;
 }
 .contents--area section#new--information__text .container--box a {
-	overflow: auto;
 	display: block;
+	padding: 0px 0px 10px;
 }
 .contents--area section#new--information__text .container--box__date {
 	height: 20px;
@@ -697,10 +697,6 @@ opacity: 0.5;
 	margin: 0 auto;
 	padding: 12px 0px;
 }
-.contents--area section#new--information__text .container--link__text a p {
-	height: 40px;
-	line-height: 40px;
-}
 .contents--area section#new--information__text .container--link__text {
 	margin-right: 10px !important;
 }
@@ -709,6 +705,7 @@ opacity: 0.5;
 /*C エリアから探すの
 				スタイルシート開始（ＳＰ版）*/
 .contents--area section#search--event__area  {
+	display: block;
 	width: 100%;
 	background-color: #fff;
 	position: relative;
@@ -716,11 +713,11 @@ opacity: 0.5;
 }
 /*C エリアから探す 見出しのスタイルシート*/
 .contents--area section#search--event__area h2#c {
-	padding: 13.5px 30px 13.5px 10px !important;
+	padding: 10.5px 30px 10.5px 10px !important;
 	text-align: left;
 	font-size: 16px;
 	display: block;
-	line-height: 18px;
+	line-height: 24px;
 	font-weight: 700;
 	position: relative;
 	width: calc(100%-40px);
@@ -728,15 +725,9 @@ opacity: 0.5;
 /*C エリアから探す 見出しのスタイルシート*/
 .contents--area section#search--event__area h2#c span {
 	position: absolute;
-	right: 5px;
+	right: 10px;
 	top:50%;
 	margin-top: -7px;
-	background-image: url(../img/image_common_prwhite.png);
- 	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: contain;
-	width: 28px;
-	height: 14px;
 	z-index: 5;
 }
 
@@ -762,6 +753,9 @@ opacity: 0.5;
 	margin-bottom: 0px;
 	padding: 11px 0px 15px 0px;
 }
+.contents--area section#search--event__area .container--box__title p a span{
+	font-weight: 700;
+}
 /*C エリアから探す エリアリスト*/
 .contents--area section#search--event__area .container--area__lists {
 	width: 100%;
@@ -779,9 +773,10 @@ opacity: 0.5;
 /*C エリアから探す エリアボックス*/
 .contents--area section#search--event__area .container--box__area {
 	width: 50%;
-	height: 46px;
+	min-height: 46px;
+	height: auto;
 	float: left;
-	padding: 14px 0px 0px 1px;
+	padding: 0px 0px 0px 1px;
 	border-bottom: 1px solid #ccc;
 	border-right: 1px solid #ccc;
 	-webkit-box-sizing: border-box;
@@ -792,6 +787,7 @@ opacity: 0.5;
 /*C エリアから探す エリアテキスト*/
 .contents--area section#search--event__area .container--box__area a {
 	margin-left: 10px;
+	padding: 14px 20px 14px 0px;
 }
 .contents--area section#search--event__area .container--box__area a span {
 	font-size: 14px;
@@ -822,7 +818,7 @@ opacity: 0.5;
 	width: 100%;
 	height: 45px;
 	float: none;
-	display: inline-block;
+	display: block;
 	padding: 16px 0px;
 	border-bottom: 1px solid #ccc !important;
 	border-right: none;
@@ -834,18 +830,28 @@ opacity: 0.5;
 /*C エリアから探す 背景の紅葉を隠すために白背景を設置*/
 .contents--area section#search--event__area .container--area__lists .container--box__area {
 	background-color: #ffffff;
-	display: inline-block;
+	display: block;
 }
 /*C エリアから探す 矢印設定*/
-.contents--area section#search--event__area a .container--box__title:after {
+.contents--area section#search--event__area .container--box__title:after {
 	margin-left: 5px;
 	font-size: 20px !important;
 }
-.contents--area section#search--event__area a .container--box__title.arrow--img p {
+.contents--area section#search--event__area .container--box__title.arrow--img p {
 	position: relative;
 	width: 100%;
 }
-.contents--area section#search--event__area a .container--box__title.arrow--img p:after {
+.contents--area section#search--event__area .container--box__title.arrow--img p a {
+	width: 100%;
+	height: 100%;
+}
+.contents--area section#search--event__area .container--box__title.arrow--img p a span{
+	padding-right: 20px;
+}
+
+
+
+.contents--area section#search--event__area .container--box__title.arrow--img p a:after {
 	position: absolute;
 	top: 50%;
 	right: 16px;
@@ -860,16 +866,20 @@ opacity: 0.5;
 	vertical-align: middle;
 	background-repeat: no-repeat;
 }
+.contents--area section#search--event__area .container--box__area a {
+	position: relative;
+	width: calc(100% - 30px);
+}
 .contents--area section#search--event__area .container--box__area a:after {
 	content: url(../img/arrow_red_sp.png);
-	float: right;
-	margin-right: 6px;
-	margin-top: 1px;
-	line-height: 14px;
+	position: absolute;
+	right: 5px;
+	top:50%;
+	margin-top: -6px;
+	line-height: 16px;
 	content: '';
 	width: 7.5px;
 	height: 12px;
-	content: " ";
 	display: inline-block;
 	background: url(../img/arrow_red.png);
 	background-size: contain;
@@ -903,6 +913,7 @@ opacity: 0.5;
 /*D ランキングTOP3の
 				スタイルシート開始（ＳＰ版）*/
 .contents--area section#ranking--top3 {
+	display: block;
 	width: 100%;
 	margin-top: -4px !important;
 	background-color: #fff;
@@ -915,11 +926,11 @@ opacity: 0.5;
 }
 /*D ランキングTOP3 見出しのスタイルシート*/
 .contents--area section#ranking--top3 h2#d {
-	padding: 13.5px 30px 13.5px 10px;
+	padding: 10.5px 30px 10.5px 10px;
 	text-align: left;
 	font-size: 16px;
 	display: block;
-	line-height: 18px;
+	line-height: 24px;
 	font-weight: 700;
 	position: relative;
 	width: calc(100%-40px);
@@ -927,15 +938,9 @@ opacity: 0.5;
 /*D ランキングTOP3 見出しのスタイルシート*/
 .contents--area section#ranking--top3 h2#d span {
 	position: absolute;
-	right: 5px;
+	right: 10px;
 	top:50%;
 	margin-top: -7px;
-	background-image: url(../img/image_common_prwhite.png);
- 	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: contain;
-	width: 28px;
-	height: 14px;
 	z-index: 5;
 }
 
@@ -1013,16 +1018,20 @@ opacity: 0.5;
 	margin-right: 0px;
 }
 .contents--area section#ranking--top3 .container--link__text a p {
-	height: 40px;
-	line-height: 40px;
+	min-height: 20px;
+	height: auto;
+	line-height: 20px;
 	font-size: 12px;
 	margin-right: 20px;
+	padding: 10px 0px;
 }
 .contents--area section#ranking--top3 .container--link__text a p span {
-	height: 35px;
-	line-height: 35px;
+	min-height: 20px;
+	height: auto;
+	line-height: 20px;
 	font-size: 12px;
 	font-weight: 700;
+	padding: 10px 0px;
 }
 .contents--area section#ranking--top3 .container--link__text a p span:hover {
 	text-decoration: underline !important;
@@ -1034,11 +1043,14 @@ opacity: 0.5;
 	font-size: 12px;
 	text-decoration: none !important;
 }
+.contents--area section#ranking--top3 .container--link__text.arrow--img a {
+	position: relative;
+}
 .contents--area section#ranking--top3 .container--link__text.arrow--img a p:after {
 	position: absolute;
 	top: 50%;
 	margin-top: -6px;
-	margin-left: 3px;
+	right: -10px;
 	content: '';
 	width: 7.5px;
 	height: 12px;
@@ -1100,6 +1112,7 @@ opacity: 0.5;
 /*E PICKUPコンテンツの
 				スタイルシート開始（ＳＰ版）*/
 .contents--area section#pickup--contents {
+	display: block;
 	width: 100%;
 	background-color: #fbf8f5;
 	padding: 10px 0px 6px;
@@ -1109,11 +1122,11 @@ opacity: 0.5;
 }
 /*E PICKUPコンテンツのタイトル*/
 .contents--area section#pickup--contents h2#e {
-	padding: 13.5px 30px 13.5px 10px;
+	padding: 10.5px 30px 10.5px 10px;
 	text-align: left;
 	font-size: 16px;
 	display: block;
-	line-height: 18px;
+	line-height: 24px;
 	font-weight: 700;
 	position: relative;
 	width: calc(100%-40px);
@@ -1121,22 +1134,15 @@ opacity: 0.5;
 /*E PICKUPコンテンツのタイトル*/
 .contents--area section#pickup--contents h2#e span {
 	position: absolute;
-	right: 5px;
+	right: 10px;
 	top:50%;
 	margin-top: -7px;
-	background-image: url(../img/image_common_prwhite.png);
- 	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: contain;
-	width: 28px;
-	height: 14px;
 	z-index: 5;
 }
 /*E PICKUPコンテンツのコンテナボックス*/
 .contents--area section#pickup--contents .container--box {
 	width: 100%;
 	display: inline-block;
-	overflow: auto;
 	padding: 10px 0px 0px 0px;
 	text-align: center;
 	border-top: 1px solid #ccc;
@@ -1211,6 +1217,7 @@ opacity: 0.5;
 /*E PICKUPコンテンツ3:2の
 				スタイルシート開始（ＳＰ版）*/
 .contents--area section#pickup--contents__002 {
+	display: block;
 	width: 100%;
 	background-color: #fbf8f5;
 	padding: 10px 0px 6px;
@@ -1221,11 +1228,11 @@ opacity: 0.5;
 }
 /*E PICKUPコンテンツのタイトル*/
 .contents--area section#pickup--contents h2#e {
-	padding: 13.5px 30px 13.5px 10px !important;
+	padding: 10.5px 30px 10.5px 10px !important;
 	text-align: left;
 	font-size: 16px;
 	display: block;
-	line-height: 18px;
+	line-height: 24px;
 	font-weight: 700;
 	position: relative;
 	width: calc(100%-40px);
@@ -1233,22 +1240,15 @@ opacity: 0.5;
 /*E PICKUPコンテンツのタイトル*/
 .contents--area section#pickup--contents h2#e span {
 	position: absolute;
-	right: 5px;
+	right: 10px;
 	top:50%;
 	margin-top: -7px;
-	background-image: url(../img/image_common_prwhite.png);
- 	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: contain;
-	width: 28px;
-	height: 14px;
 	z-index: 5;
 }
 /*E PICKUPコンテンツのコンテナボックス*/
 .contents--area section#pickup--contents__002 .container--box {
 	width: 100%;
 	display: inline-block;
-	overflow: auto;
 	padding: 10px 0px 0px 0px;
 	text-align: center;
 	border-top: 1px solid #ccc;
@@ -1289,10 +1289,10 @@ opacity: 0.5;
 	position: absolute;
 	top: 0px;
 	left: 0px;
-	padding: 0px 6px;
+	padding: 0px 7.5px;
 	font-size: 11px;
-	line-height: 15px;
-	height: 15px;
+	line-height: 18px;
+	height: 18px;
 	font-weight: 400;
 }
 /*E PICKUPコンテンツの画像フレーム*/
@@ -1319,6 +1319,7 @@ opacity: 0.5;
 /*F コンテンツ誘導枠の
 				スタイルシート終了（ＳＰ版）*/
 .contents--area section#contents--induction {
+	display: block;
 	width: 100%;
 	background-color: #fff;
 	padding: 0px;
@@ -1337,11 +1338,11 @@ opacity: 0.5;
 }
 /*F コンテンツ誘導枠のタイトル*/
 .contents--area section#contents--induction h2#f {
-	padding: 13.5px 30px 13.5px 10px !important;
+	padding: 10.5px 30px 10.5px 10px !important;
 	text-align: left;
 	font-size: 16px;
 	display: block;
-	line-height: 18px;
+	line-height: 24px;
 	font-weight: 700;
 	position: relative;
 	width: calc(100%-40px);
@@ -1349,15 +1350,9 @@ opacity: 0.5;
 /*E PICKUPコンテンツのタイトル*/
 .contents--area section#contents--induction h2#f span {
 	position: absolute;
-	right: 5px;
+	right: 10px;
 	top:50%;
 	margin-top: -7px;
-	background-image: url(../img/image_common_prwhite.png);
- 	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: contain;
-	width: 28px;
-	height: 14px;
 	z-index: 5;
 }
 /*F コンテンツ誘導枠コンテンツのコンテナボックス*/
@@ -1436,7 +1431,6 @@ opacity: 0.5;
 	line-height: 140%;
 	margin: 5px 0px 0px 0px;
 	padding: 0px 0px 0px 0px;
-	overflow: auto;
 	display: inline-block;
 	border-top: solid 1px #ccc;
 	-webkit-box-sizing: border-box;
@@ -1481,7 +1475,7 @@ opacity: 0.5;
 	border-bottom: none;
 }
 .contents--area section#contents--induction .container--boxright__006b .container--box__text a span {
-	margin: 15.5px 10px 15.5px 10px;
+	margin: 15.5px 20px 15.5px 10px;
 	font-size: 14px;
 	line-height: 18px;
 }
@@ -1542,6 +1536,7 @@ opacity: 0.5;
 /*V 有料差込枠の
 				スタイルシート開始（ＳＰ版）*/
 .contents--area section#contents--paymentfee {
+	display: block;
 	width: 100%;
 	background-color: #fff;
 	border-top: 4px solid #937a41 !important;
@@ -1558,15 +1553,10 @@ opacity: 0.5;
 }
 .contents--area section#contents--paymentfee h2#v span {
 	position: absolute;
-	right: 5px;
+	right: 10px;
 	top:50%;
 	margin-top: -7px;
-	background-image: url(../img/image_common_pr.png);
- 	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: contain;
-	width: 28px;
-	height: 14px;
+	z-index: 5;
 }
 .contents--area section#contents--paymentfee .contents--component__title h2 {
 	width: calc(100%-60px);
@@ -1574,7 +1564,7 @@ opacity: 0.5;
 
 /*V 有料差込枠下側コンテンツのエリア*/
 .contents--area section#contents--paymentfee .container--box {
-	width: calc(100%);
+	width: 100%;
 	margin: 0 auto;
 	display: inline-block;
 	padding-bottom: 14px;
@@ -1590,6 +1580,7 @@ opacity: 0.5;
 	width: calc(59%-10px);
 	margin: 0px;
 	padding: 10px 0px 0px 0px;
+	margin-right: 10px;
 	text-align: left;
 	float: left;
 }
@@ -1601,7 +1592,6 @@ opacity: 0.5;
 	margin-right: 0px;
 	margin-bottom: 7px;
 	line-height: 140%;
-	letter-spacing: -1.45px;
 }
 /*V 有料差込枠下側コンテンツの右側のテキストタイトル*/
 .contents--area section#contents--paymentfee .container--boxright__007 .container--box__title p {
@@ -1612,7 +1602,7 @@ opacity: 0.5;
 }
 /*V 有料差込枠下側コンテンツの左側のコンテンツボックス*/
 .contents--area section#contents--paymentfee .container--boxleft__007 {
-	width: calc(38%-10px);
+	width: calc(41%-20px);
 	margin: 0px;
 	padding: 10px 0px 0px 10px;
 	text-align: center;
@@ -1639,7 +1629,7 @@ opacity: 0.5;
 	font-size: 14px;
 	font-weight: 700;
 	padding: 16px 0px;
-	width: calc(100%-40px);
+	width: calc(100%-20px);
 	margin: 0 auto;
 	height: auto !important;
 	line-height: 100% !important;
@@ -1681,6 +1671,7 @@ opacity: 0.5;
 /*H 人気のエリアの
 				スタイルシート開始（ＳＰ版）*/
 .contents--area section#contents--popular--areas {
+	display: block;
 	border-top: none;
 	width: 100%;
 	background-color: #fff;
@@ -1688,11 +1679,11 @@ opacity: 0.5;
 }
 /*H 人気のエリアのタイトル*/
 .contents--area section#contents--popular--areas h2#h {
-	padding: 13.5px 30px 13.5px 10px !important;
+	padding: 10.5px 30px 10.5px 10px !important;
 	text-align: left;
 	font-size: 16px;
 	display: block;
-	line-height: 18px;
+	line-height: 24px;
 	font-weight: 700;
 	position: relative;
 	width: calc(100%-40px);
@@ -1700,15 +1691,9 @@ opacity: 0.5;
 /*H 人気のエリアのタイトル*/
 .contents--area section#contents--popular--areas h2#h span {
 	position: absolute;
-	right: 5px;
+	right: 10px;
 	top:50%;
 	margin-top: -7px;
-	background-image: url(../img/image_common_pr.png);
- 	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: contain;
-	width: 28px;
-	height: 14px;
 	z-index: 5;
 }
 
@@ -1760,6 +1745,7 @@ opacity: 0.5;
 /*X レストラン誘導枠の
 				スタイルシート開始（ＳＰ版）*/
 .contents--area section#contents--restaurant__guidance {
+	display: block;
 	width: 100%;
 	margin: 0 auto;
 	background-color: #fff;
@@ -1770,11 +1756,11 @@ opacity: 0.5;
 }
 /*X レストラン誘導枠のタイトル*/
 .contents--area section#contents--restaurant__guidance h2#x {
-	padding: 13.5px 30px 13.5px 10px !important;
+	padding: 10.5px 30px 10.5px 10px !important;
 	text-align: left;
 	font-size: 16px;
 	display: block;
-	line-height: 18px;
+	line-height: 24px;
 	font-weight: 700;
 	position: relative;
 	width: calc(100%-40px);
@@ -1782,15 +1768,9 @@ opacity: 0.5;
 /*H 人気のエリアのタイトル*/
 .contents--area section#contents--restaurant__guidance h2#x span {
 	position: absolute;
-	right: 5px;
+	right: 10px;
 	top:50%;
 	margin-top: -7px;
-	background-image: url(../img/image_common_prwhite.png);
- 	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: contain;
-	width: 28px;
-	height: 14px;
 	z-index: 5;
 }
 
@@ -1799,16 +1779,15 @@ opacity: 0.5;
 	width: 100%;
 	margin: 0 auto;
 	display: block;
-	overflow: auto;
 	padding: 0px;
 }
 /*X レストラン誘導枠のコンテナボックスリンク範囲*/
 .contents--area section#contents--restaurant__guidance .container--box a {
 	margin-left: 10px;
-	width: 100%;
+	width: calc(100% - 10px);
 	float: none;
 	clear: both;
-	padding: 10px 0px 5px 0px;
+	padding: 10px 0px 10px 0px;
 	display: inline-block;
 }
 /*X レストラン誘導枠の左エリア*/
@@ -1846,8 +1825,8 @@ opacity: 0.5;
 .contents--area section#contents--restaurant__guidance .event-button {
 	color: #fff;
 	display: block;
-	width: calc(100% - 15px);
-	margin: 0px 15px 0px 0px;
+	width: 100%;
+	margin: 0px 0px 0px 0px;
 	text-align: center;
 	border-radius: 4px;
 	-webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
@@ -1883,7 +1862,7 @@ opacity: 0.5;
 /*X レストラン誘導枠の右エリアのアコーディオンエリアリンク*/
 .contents--area section#contents--restaurant__guidance .container--box__area a {
 	display: block;
-	width: calc(100% - 20px);
+	width: 100%;
 	margin: 0 auto;
 	clear: none;
 	font-size: 14px;
@@ -1893,10 +1872,14 @@ opacity: 0.5;
 }
 /*X レストラン誘導枠の右エリアのアコーディオンエリアリンクテキスト*/
 .contents--area section#contents--restaurant__guidance .container--box__area a span {
-	margin-left: 0px;
+	margin-left: 5px;
 	font-weight: 700;
-	height: 40px;
-	line-height: 40px;
+	min-height: 20px;
+	height: auto;
+	line-height: 20px;
+	position: relative;
+	display: block;
+	padding: 10px 20px 10px 0px;
 }
 /*X レストラン誘導枠の右エリアのアコーディオンエリアリンク矢印*/
 .contents--area section#contents--restaurant__guidance .container--box__area a:before {
@@ -1904,11 +1887,11 @@ opacity: 0.5;
 	color: #ac232c;
 }
 /*X レストラン誘導枠の右エリアのアコーディオンボタン開閉の矢印*/
-.contents--area section#contents--restaurant__guidance .container--box__area.arrow--img a:after {
-	float: right;
-	line-height: 14px;
-	margin-top: 15px;
-	padding-right: 8px;
+.contents--area section#contents--restaurant__guidance .container--box__area.arrow--img a span:after {
+	position: absolute;
+	right: 5px;
+	top:50%;
+	margin-top: -6px;
 	content: '';
 	width: 7.5px;
 	height: 12px;
@@ -1959,6 +1942,7 @@ opacity: 0.5;
 /*Y 記事誘導枠の
 		    スタイルシート開始（ＳＰ版）*/
 .contents--area section#contents--article__induction {
+	display: block;
 	width: 100%;
 	background-color: #fff;
 	/*background-image: url(../img/momiji-3.png);
@@ -1968,11 +1952,11 @@ background-position: right 15px bottom 15px*/
 }
 /*Y 記事誘導枠のタイトル*/
 .contents--area section#contents--article__induction h2#y {
-	padding: 13.5px 30px 13.5px 10px !important;
+	padding: 10.5px 30px 10.5px 10px !important;
 	text-align: left;
 	font-size: 16px;
 	display: block;
-	line-height: 18px;
+	line-height: 24px;
 	font-weight: 700;
 	position: relative;
 	width: calc(100%-40px);
@@ -1980,15 +1964,9 @@ background-position: right 15px bottom 15px*/
 /*H 人気のエリアのタイトル*/
 .contents--area section#contents--article__induction h2#y span {
 	position: absolute;
-	right: 5px;
+	right: 10px;
 	top:50%;
 	margin-top: -7px;
-	background-image: url(../img/image_common_pr.png);
- 	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: contain;
-	width: 28px;
-	height: 14px;
 	z-index: 5;
 }
 
@@ -1996,7 +1974,6 @@ background-position: right 15px bottom 15px*/
 .contents--area section#contents--article__induction .container--box {
 	width: 100%;
 	margin: 0 auto;
-	overflow: auto;
 	padding-bottom: 0px;
 	display: inline-block;
 }
@@ -2006,15 +1983,19 @@ background-position: right 15px bottom 15px*/
 	margin: 0 auto;
 	display: inline-block;
 	padding: 6px 0px 9px;
-	border-bottom: 1px solid #ccc;
+	border-top: 1px solid #ccc;
 	line-height: 100%;
 	padding-bottom: -4px;
 }
 /*Y 記事誘導枠のコンテナボックスのリンク範囲の最初の要素のみマージン変更*/
 .contents--area section#contents--article__induction .container--box a:first-child {
 	padding-top: 10px;
+	border-top:none;
 }
 /*Y 記事誘導枠のアコーディオンの下線をなくす*/
+.contents--area section#contents--article__induction .container--box #accordion--002  {
+	border-top:1px solid #dfdfdf;
+}
 .contents--area section#contents--article__induction .container--box #accordion--002 a {
 	border-bottom: none;
 }
@@ -2083,17 +2064,18 @@ background-position: right 15px bottom 15px*/
 /*Z-1 関連特集（正方形）の
 				スタイルシート開始（ＰＣ版）compoment--010の設定*/
 .contents--area section#contents--feature__square {
+	display: block;
 	width: 100%;
 	background-color: #fff;
 	background-repeat: no-repeat;
 	border-bottom: none !important;
 }
 .contents--area section#contents--feature__square h2#z-1 {
-	padding: 13.5px 30px 13.5px 10px !important;
+	padding: 10.5px 30px 10.5px 10px !important;
 	text-align: left;
 	font-size: 16px;
 	display: block;
-	line-height: 18px;
+	line-height: 24px;
 	font-weight: 700;
 	position: relative;
 	width: calc(100%-40px);
@@ -2101,22 +2083,15 @@ background-position: right 15px bottom 15px*/
 /*H 人気のエリアのタイトル*/
 .contents--area section#contents--feature__square h2#z-1 span {
 	position: absolute;
-	right: 5px;
+	right: 10px;
 	top:50%;
 	margin-top: -7px;
-	background-image: url(../img/image_common_pr.png);
- 	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: contain;
-	width: 28px;
-	height: 14px;
 	z-index: 5;
 }
 /*Z-1 関連特集（正方形）のコンテナボックス*/
 .contents--area section#contents--feature__square .container--box {
 	width: 100%;
 	margin: 0 auto;
-	overflow: auto;
 	padding-bottom: 0px;
 	display: inline-block;
 }
@@ -2128,8 +2103,8 @@ background-position: right 15px bottom 15px*/
 	clear: both;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	overflow: auto;
 	border-bottom: 1px solid #ccc;
+	display: inline-block;
 }
 .contents--area section#contents--feature__square .container--box a .container--box__image {
 	width: calc(24%-10px);
@@ -2180,16 +2155,17 @@ background-position: right 15px bottom 15px*/
 /*Z-2 関連特集枠の
 				スタイルシート開始（ＰＣ版）の設定*/
 .contents--area section#contents--feature__3-2 {
+	display: block;
 	width: 100%;
 	background-color: #fff;
 	background-repeat: no-repeat;
 }
 .contents--area section#contents--feature__3-2 h2#z-2 {
-	padding: 13.5px 30px 13.5px 10px !important;
+	padding: 10.5px 30px 10.5px 10px !important;
 	text-align: left;
 	font-size: 16px;
 	display: block;
-	line-height: 18px;
+	line-height: 24px;
 	font-weight: 700;
 	position: relative;
 	width: calc(100%-40px);
@@ -2197,22 +2173,15 @@ background-position: right 15px bottom 15px*/
 /*H 人気のエリアのタイトル*/
 .contents--area section#contents--feature__3-2 h2#z-2 span {
 	position: absolute;
-	right: 5px;
+	right: 10px;
 	top:50%;
 	margin-top: -7px;
-	background-image: url(../img/image_common_pr.png);
- 	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: contain;
-	width: 28px;
-	height: 14px;
 	z-index: 5;
 }
 /*Z-1 関連特集（正方形）のコンテナボックス*/
 .contents--area section#contents--feature__3-2 .container--box {
 	width: 100%;
 	margin: 0 auto;
-	overflow: auto;
 	padding-bottom: 0px;
 	display: inline-block;
 }
@@ -2220,10 +2189,10 @@ background-position: right 15px bottom 15px*/
 	width: 100%;
 }
 .contents--area section#contents--feature__3-2 .container--box__area a {
-	overflow: auto;
 	clear: both;
 	padding: 10px 0px 10px 0px;
 	border-bottom: 1px solid #ccc;
+	display: inline-block;
 }
 .contents--area section#contents--feature__3-2 .container--box__area a:last-child {
 	border-bottom: none;
@@ -2274,6 +2243,7 @@ background-position: right 15px bottom 15px*/
 /*module4 画像とテキスト_1カラムと4カラムの
 				スタイルシート開始（ＰＣ版）compoment--010の設定*/
 .contents--area section#imagetext--onecolum__fourcolum {
+	display: block;
 	width: 100%;
 	background-color: #fff;
 	/*background-image: url(../img/momiji-3.png);
@@ -2283,11 +2253,11 @@ background-position: right 15px bottom 15px*/
 }
 /*module4 画像とテキスト_1カラムと4カラムのタイトル*/
 .contents--area section#imagetext--onecolum__fourcolum h2#module4 {
-	padding: 13.5px 30px 13.5px 10px !important;
+	padding: 10.5px 30px 10.5px 10px !important;
 	text-align: left;
 	font-size: 16px;
 	display: block;
-	line-height: 18px;
+	line-height: 24px;
 	font-weight: 700;
 	position: relative;
 	width: calc(100%-40px);
@@ -2295,22 +2265,15 @@ background-position: right 15px bottom 15px*/
 /*H 人気のエリアのタイトル*/
 .contents--area section#imagetext--onecolum__fourcolum h2#module4 span {
 	position: absolute;
-	right: 5px;
+	right: 10px;
 	top:50%;
 	margin-top: -7px;
-	background-image: url(../img/image_common_pr.png);
- 	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: contain;
-	width: 28px;
-	height: 14px;
 	z-index: 5;
 }
 /*module4 画像とテキスト_1カラムと4カラムのコンテナボックス*/
 .contents--area section#imagetext--onecolum__fourcolum .container--box {
 	width: 100%;
 	margin: 0 auto;
-	overflow: auto;
 	padding-bottom: 0px;
 	display: inline-block;
 }
@@ -2323,6 +2286,18 @@ background-position: right 15px bottom 15px*/
 	border-bottom: 1px solid #ccc;
 	line-height: 100%;
 	padding-bottom: -4px;
+}
+.contents--area section#imagetext--onecolum__fourcolum .container--box a {
+	width: 100%;
+	margin: 0 auto;
+	display: inline-block;
+	padding: 6px 0px 9px;
+	border-bottom: 1px solid #ccc;
+	line-height: 100%;
+	padding-bottom: -4px;
+}
+.contents--area section#imagetext--onecolum__fourcolum .container--box a:last-child {
+	border-bottom:none;
 }
 /*module4 画像とテキスト_1カラムと4カラムのコンテナボックスのリンク範囲の最初の要素のみマージン変更*/
 .contents--area section#imagetext--onecolum__fourcolum .container--box a:first-child {
@@ -2407,16 +2382,17 @@ background-position: right 15px bottom 15px*/
 /*module4 画像とテキスト_1カラムと2カラムの
 				スタイルシート開始（ＰＣ版）の設定*/
 .contents--area section#imagetext--onecolum__twocolum {
+	display: block;
 	width: 100%;
 	background-color: #fff;
 	background-repeat: no-repeat;
 }
 .contents--area section#imagetext--onecolum__twocolum h2#module5 {
-	padding: 13.5px 30px 13.5px 10px !important;
+	padding: 10.5px 30px 10.5px 10px !important;
 	text-align: left;
 	font-size: 16px;
 	display: block;
-	line-height: 18px;
+	line-height: 24px;
 	font-weight: 700;
 	position: relative;
 	width: calc(100%-40px);
@@ -2424,32 +2400,25 @@ background-position: right 15px bottom 15px*/
 /*H 人気のエリアのタイトル*/
 .contents--area section#imagetext--onecolum__twocolum h2#module5 span {
 	position: absolute;
-	right: 5px;
+	right: 10px;
 	top:50%;
 	margin-top: -7px;
-	background-image: url(../img/image_common_pr.png);
- 	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: contain;
-	width: 28px;
-	height: 14px;
 	z-index: 5;
 }
 .contents--area section#imagetext--onecolum__twocolum .container--box {
 	width: 100%;
 	margin: 0 auto;
 	padding: 0px;
-	overflow: auto;
 	display: block;
 }
 .contents--area section#imagetext--onecolum__twocolum .container--box__area {
 	width: 100%;
 }
 .contents--area section#imagetext--onecolum__twocolum .container--box__area a {
-	overflow: auto;
 	clear: both;
 	padding: 10px 0px 10px 0px;
 	border-bottom: 1px solid #ccc;
+	display: inline-block;
 }
 .contents--area section#imagetext--onecolum__twocolum .container--box__area a:last-child {
 	border-bottom: none;
@@ -2501,10 +2470,10 @@ background-position: right 15px bottom 15px*/
 /*module1 エリアから秋祭りを探すの
 				スタイルシート開始（ＳＰ版）の設定*/
 .contents--area section#search--festa__area {
+	display: block;
 	width: 100%;
 	background-color: #fff;
 	display: inline-block;
-	overflow: auto;
 	-webkit-box-sizing: border-box;
 	-o-box-sizing: border-box;
 	-ms-box-sizing: border-box;
@@ -2512,11 +2481,11 @@ background-position: right 15px bottom 15px*/
 	padding-bottom: 10px!important;
 }
 .contents--area section#search--festa__area h2#module1 {
-	padding: 13.5px 30px 13.5px 10px !important;
+	padding: 10.5px 30px 10.5px 10px !important;
 	text-align: left;
 	font-size: 16px;
 	display: block;
-	line-height: 18px;
+	line-height: 24px;
 	font-weight: 700;
 	position: relative;
 	width: calc(100%-40px);
@@ -2524,15 +2493,9 @@ background-position: right 15px bottom 15px*/
 /*H 人気のエリアのタイトル*/
 .contents--area section#search--festa__area h2#module1 span {
 	position: absolute;
-	right: 5px;
+	right: 10px;
 	top:50%;
 	margin-top: -7px;
-	background-image: url(../img/image_common_pr.png);
- 	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: contain;
-	width: 28px;
-	height: 14px;
 	z-index: 5;
 }
 .contents--area section#search--festa__area .container--box {
@@ -2571,10 +2534,8 @@ background-position: right 15px bottom 15px*/
 }
 .contents--area section#search--festa__area .container--box .container--box__area a p {
 	font-size: 16px;
-	margin-left: 15px;
-	padding: 0px;
-	height: 47px;
-	line-height: 47px;
+	padding: 13.5px 20px 13.5px 15px;
+	line-height: 20px;
 }
 .contents--area section#search--festa__area .container--box .container--box__area a.margin--right__not {
 	width: 50%;
@@ -2596,19 +2557,26 @@ background-position: right 15px bottom 15px*/
 .contents--area section#search--festa__area .container--box__area a.margin--right__not:nth-child(even) {
 	border-right: 1px solid #ccc !important;
 }
+.contents--area section#search--festa__area .container--box__area a.margin--right__not:last-child {
+	border-right: 1px solid #ccc !important;
+}
+.contents--area section#search--festa__area .container--box .container--box__area.arrow--img a {
+	position: relative;
+}
 .contents--area section#search--festa__area .container--box .container--box__area.arrow--img a p:after {
+	position: absolute;
+	top:50%;
+	margin-top: -8px;
+	right: 5px;
 	content: '';
-	float: right;
-	margin-right: 10px;
-	margin-top: 18px;
-	width: 7.5px;
-	height: 12px;
-	content: " ";
 	display: inline-block;
 	background: url(../img/arrow_red.png);
 	background-size: contain;
 	vertical-align: middle;
 	background-repeat: no-repeat;
+	width: 7.5px;
+	height: 15px;
+	z-index: 2;
 }
 .contents--area section#search--festa__area .container--box .container--box__area.arrow--font a p:after {
 	font-family: "Font Awesome 5 Free";
@@ -2628,19 +2596,20 @@ background-position: right 15px bottom 15px*/
 /*module6 画像とテキスト_1カラムと2カラム（キャプションで展開）の
 				スタイルシート開始（ＳＰ版）の設定*/
 .contents--area section#imagetext--onecolum__twocolum--ver2 {
+	display: block;
 	width: 100%;
 	background-color: #fff;
 	background-image: url(../img/momiji-5.png);
 	background-position: right 10px bottom 10px;
 	background-repeat: no-repeat;
-	padding-bottom: 15px;
+	padding-bottom: 0px;
 }
 .contents--area section#imagetext--onecolum__twocolum--ver2 h2 {
-	padding: 13.5px 30px 13.5px 10px !important;
+	padding: 10.5px 30px 10.5px 10px !important;
 	text-align: left;
 	font-size: 16px;
 	display: block;
-	line-height: 18px;
+	line-height: 24px;
 	font-weight: 700;
 	position: relative;
 	width: calc(100%-40px);
@@ -2648,15 +2617,9 @@ background-position: right 15px bottom 15px*/
 /*H 人気のエリアのタイトル*/
 .contents--area section#imagetext--onecolum__twocolum--ver2 h2 span {
 	position: absolute;
-	right: 5px;
+	right: 10px;
 	top:50%;
 	margin-top: -7px;
-	background-image: url(../img/image_common_pr.png);
- 	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: contain;
-	width: 28px;
-	height: 14px;
 	z-index: 5;
 }
 .contents--area section#imagetext--onecolum__twocolum--ver2 .container--box {
@@ -2694,6 +2657,8 @@ background-position: right 15px bottom 15px*/
 	position: absolute;
 	top: auto;
 	bottom: 0px;
+	max-height: 135px;
+	height: auto;
 }
 .contents--area section#imagetext--onecolum__twocolum--ver2 .container--box .container--box__area {
 	width: 100%;
@@ -2703,7 +2668,8 @@ background-position: right 15px bottom 15px*/
 	font-size: 14px;
 	font-weight: 700;
 	width: 95%;
-	margin: 3px 6px 3px 6px;
+	margin: 4px 6px;
+	padding: 6px 0px;
 }
 .contents--area section#imagetext--onecolum__twocolum--ver2 .link--opacity__50 a:hover {
 	opacity: 1;
@@ -2720,6 +2686,7 @@ background-position: right 15px bottom 15px*/
 /*module7 画像とテキスト_2カラムと2カラムの
 				スタイルシート開始（ＳＰ版）の設定*/
 .contents--area section#imagetext--twocolum__twocolum {
+	display: block;
 	width: 100%;
 	background-color: #fff;
 	background-image: url(../img/momiji-5.png);
@@ -2727,11 +2694,11 @@ background-position: right 15px bottom 15px*/
 	background-repeat: no-repeat;
 }
 .contents--area section#imagetext--twocolum__twocolum h2 {
-	padding: 13.5px 30px 13.5px 10px !important;
+	padding: 10.5px 30px 10.5px 10px !important;
 	text-align: left;
 	font-size: 16px;
 	display: block;
-	line-height: 18px;
+	line-height: 24px;
 	font-weight: 700;
 	position: relative;
 	width: calc(100%-40px);
@@ -2739,15 +2706,9 @@ background-position: right 15px bottom 15px*/
 /*H 人気のエリアのタイトル*/
 .contents--area section#imagetext--twocolum__twocolum h2 span {
 	position: absolute;
-	right: 5px;
+	right: 10px;
 	top:50%;
 	margin-top: -7px;
-	background-image: url(../img/image_common_pr.png);
- 	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: contain;
-	width: 28px;
-	height: 14px;
 	z-index: 5;
 }
 
@@ -2757,11 +2718,12 @@ background-position: right 15px bottom 15px*/
 	text-align: center;
 	padding-top: 0px;
 	display: inline-block;
+	padding-bottom: 5px;
 }
 .contents--area section#imagetext--twocolum__twocolum .container--box__area a {
 	float: left;
 	width: calc(50%-5px);
-	margin: 0px 0px 0px 0px;
+	margin: 3px 0px 0px 0px;
 	padding: 0px;
 	background-color: #fff;
 }
@@ -2808,25 +2770,31 @@ background-position: right 15px bottom 15px*/
 /*module8 画像とテキスト（強調）の
 				スタイルシート開始（ＳＰ版）の設定*/
 .contents--area section#imagetext--strong {
+	display: block;
 	width: 100%;
 	background-color: #fff;
 }
 .contents--area section#imagetext--strong h2 {
-	padding: 13.5px 30px 13.5px 10px !important;
+	padding: 10.5px 30px 10.5px 10px !important;
 	text-align: left;
 	font-size: 16px;
 	display: block;
-	line-height: 18px;
+	line-height: 24px;
 	font-weight: 700;
 	position: relative;
 	width: calc(100%-40px);
 }
-
+.contents--area section#imagetext--strong h2 span {
+	position: absolute;
+	right: 10px;
+	top:50%;
+	margin-top: -7px;
+	z-index: 5;
+}
 .contents--area section#imagetext--strong .container--box {
 	width: 100%;
 	margin: 0 auto;
 	display: inline-block;
-	overflow: auto;
 	font-size: 14px;
 }
 .contents--area section#imagetext--strong .container--box__left {
@@ -2834,6 +2802,9 @@ background-position: right 15px bottom 15px*/
 	text-align: center;
 	margin: 0 auto;
 	border-bottom: 1px solid #ccc;
+}
+.contents--area section#imagetext--strong .container--box__left .container--box__text {
+	padding-top: 5px;
 }
 .contents--area section#imagetext--strong .container--box__left .container--box__image {
 	width: 100%;
@@ -2902,42 +2873,47 @@ background-position: right 15px bottom 15px*/
 	color: #ffffff;
 	font-size: 12px;
 	padding: 4px 8px;
-	margin: 0px 1px 2px 0px;
+	margin: 0px 4px 2px 0px;
 	border-radius: 4px;
 	display: inline-block;
+	float: left;
 }
-.tab--station {
+.tab span {
+	margin: 0;
+	padding: 0;
+}
+.tab-color--mono {
 	color: #333333;
-	background-color: #ffffff;
+	background-color: #FBF8F5;
 	-webkit-box-shadow: 0 0 0 1px #cccccc inset;
 	box-shadow: 0 0 0 1px #cccccc inset;
-	padding: 5px 6px !important;
+	padding: 4px 6px !important;
 }
-.tab--event {
+.tab-color--orange {
 	background-color: #ce7824;
 }
-.tab--gourmet {
+.tab-color--strong-red {
 	background-color: #bf4141;
 }
-.tab--music {
+.tab-color--cyan-blue {
 	background-color: #4d7ea1;
 }
-.tab--sports {
+.tab-color--deep-green {
 	background-color: #357d4d;
 }
-.tab--art {
+.tab-color--blue-magenta {
 	background-color: #7d579a;
 }
-.tab--fes {
+.tab-color--strong-magenta {
 	background-color: #ac478e;
 }
-.tab--sanma {
+.tab-color--phthalo-blue {
 	background-color: #475297;
 }
-.tab--leaves {
+.tab-color--brown {
 	background-color: #7a573a;
 }
-.tab--sweets {
+.tab-color--yellow-green {
 	background-color: #838b29;
 }
 .event--information__tabs {
@@ -2954,13 +2930,13 @@ background-position: right 15px bottom 15px*/
 	position: relative;
 }
 .event--information__area {
-	width: 100%;
+	width: calc(100% - 20px);
 	margin: 0 auto;
 	border-bottom: 1px solid #ccc;
 	display: inline-block;
 }
 .event--information__label {
-	width: calc(100%-20px);
+	width: 100%;
 	margin: 0 auto;
 	font-size: 14px;
 	font-weight: 700;
@@ -2972,6 +2948,7 @@ background-position: right 15px bottom 15px*/
 	padding-top: 0px;
 	line-height: 160%;
 	margin-bottom: 10px;
+	text-align: left;
 }
 .event--casset__common .event--image__moreinfo p {
 	margin-top: 0px;
@@ -2980,26 +2957,29 @@ background-position: right 15px bottom 15px*/
 	font-size: 14px;
 }
 .event--casset__common dl {
-	text-align: left;
 	border-bottom: 1px solid #ccc;
-	width: 100%;
+	width: calc(100% - 20px);
 	display: inline-block;
 	clear: both;
 	float: none;
 	margin: 0 auto;
 	padding: 12px 0px 8px;
+	text-align: left;
+}
+section.event--casset__common dl:last-of-type {
+	padding-bottom: 15px;
 }
 .event--casset__common dl dt {
 	width: calc(25%-10px);
 	float: left;
 	font-weight: 700;
-	margin-left: 10px;
+	margin-left: 0px;
 }
 .event--casset__common dl dd {
 	width: calc(75%-10px);
 	padding: 0px;
 	float: left;
-	margin-left: 0px;
+	margin-left: 5px;
 	margin-right: 10px;
 }
 .event--casset__common dl dd p {
@@ -3009,15 +2989,20 @@ background-position: right 15px bottom 15px*/
 	font-size: 12px;
 	font-weight: 400;
 }
-.event--casset__common dl dd p:nth-child(3) {
-	line-height: 14px;
+.event--casset__common dl dd p.recent-station {
+	line-height: 16px;
 }
 .event--casset__common dl dd a {
 	display: inline;
-	margin-left: 15px;
+	margin-left: 5px;
 	color: #195197;
 	font-weight: 700;
 	line-height: 18px;
+}
+.event--casset__common dl dd a span{
+	margin-left: 5px;
+	font-size: 12px;
+	font-weight: 400;
 }
 .event--casset__common .event-button {
 	font-size: 14px;
@@ -3026,7 +3011,8 @@ background-position: right 15px bottom 15px*/
 	width: 90%;
 	margin: 0 auto;
 	display: inline-block;
-	padding: 3.5px 0px;
+	padding: 6.5px 0px;
+	line-height: 17px;
 }
 .event--casset__common .event-button p span {
 	display: inline-block;
@@ -3035,7 +3021,6 @@ background-position: right 15px bottom 15px*/
 .event--casset__common a.button {
 	width: calc(100%-20px);
 	display: block;
-	overflow: auto;
 	display: block;
 	text-align: center;
 	height: auto;
@@ -3050,19 +3035,23 @@ background-position: right 15px bottom 15px*/
 	box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
 }
 .event--casset__common .event--information__title {
-	margin-left: 15px;
+	margin-left: 10px;
 	margin-right: 10px;
-	padding-top: 10px;
+	padding-top: 5px;
 	padding-bottom: 0px;
+	line-height: 24px;
+	font-size: 18px;
+	font-weight: 700;
 }
 .event--casset__common .event--information__title p {
-	line-height: 140%;
 }
 /*module9 イベント情報ピックアップの
 				スタイルシート開始（SP版）の設定*/
 .contents--area section#eventinformation--casset__pickup {
+	display: block;
 	width: 100%;
 	background-color: #ffffff;
+	padding-bottom: 10px;
 }
 .contents--area section#eventinformation--casset__pickup a {
 	position: relative;
@@ -3070,14 +3059,16 @@ background-position: right 15px bottom 15px*/
 }
 .contents--area section#eventinformation--casset__pickup hr {
 	width: 100%;
+	height: 2px;
 	margin: 0 auto;
+	display: block;
 }
 .contents--area section#eventinformation--casset__pickup h2#module9 {
-	padding: 13.5px 50px 13.5px 10px;
-	position: relative;
+	width: calc(100% - 10px);
+	padding: 13.5px 0px 13.5px 10px;
 	text-align: left;
+	position: relative;
 	font-size: 16px;
-	display: block;
 	line-height: 18px;
 	font-weight: 700;
 	z-index: 100;
@@ -3088,7 +3079,7 @@ background-position: right 15px bottom 15px*/
 	position: absolute;
 	top: 50%;
 	margin-top: -7.5px;
-	right: 0px;
+	right: -30px;
 	background: url(../img/arrow_red.png);
 	background-size: contain;
 	vertical-align: middle;
@@ -3100,7 +3091,7 @@ background-position: right 15px bottom 15px*/
 
 .contents--area section#eventinformation--casset__pickup .event--information__title h3.text--size__bigger {
 	position: relative;
-	width: 100%;
+	width: calc(100% - 30px);
 	margin-top: 10px;
 	margin-bottom: 10px;
 	padding-right: 0px;
@@ -3114,13 +3105,10 @@ background-position: right 15px bottom 15px*/
 	text-align: left;
 	margin: 0 auto;
 }
-.contents--area section#eventinformation--casset__pickup .event--image__text {
-	width: calc(100% - 20px);
-	height: auto;
-	text-align: left;
-	margin: 0 auto;
-	padding-bottom: 10px;
+.contents--area section#eventinformation--casset__pickup .event--information__right .event--image__text p.text--size__middle {
+	line-height: 20px;
 }
+
 .contents--area section#eventinformation--casset__pickup .event--image__frame p {
 	width: 100%;
 	text-align: left;
@@ -3140,7 +3128,7 @@ background-position: right 15px bottom 15px*/
 .contents--area section#eventinformation--casset__pickup .event--information__left {
 	float: none;
 	height: auto;
-	width: calc(100% - 20px);
+	width: 100%;
 	margin: 0 auto;
 	text-align: center;
 }
@@ -3169,7 +3157,7 @@ background-position: right 15px bottom 15px*/
 	width: 100%;
 	clear: both;
 	text-align: left;
-	padding: 10px;
+	padding: 5px 0px;
 	color: #777;
 }
 .contents--area section#eventinformation--casset__pickup .event--image__caption p {
@@ -3181,20 +3169,21 @@ background-position: right 15px bottom 15px*/
 .contents--area section#eventinformation--casset__pickup.event--casset__common a.button {
 	width: calc(100%-20px);
 	display: block;
-	overflow: auto;
 	display: block;
 	text-align: center;
 	height: auto;
 	min-height: 40px;
 	line-height: 180%;
 	text-align: center;
-	margin: 0 auto;
-	margin-top: 15px;
+	margin: 15px auto 18px;
 	border-radius: 4px;
 	position: relative;
 	padding: 4px 0px;
 	-webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
 	box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
+}
+.contents--area section#eventinformation--casset__pickup .height--20px {
+	height: 0px;
 }
 /*module9 イベント情報ピックアップの
 				スタイルシート終了（SP版）の設定*/
@@ -3202,13 +3191,19 @@ background-position: right 15px bottom 15px*/
 /*module9 イベント情報リストの
 				スタイルシート開始（SP版）の設定*/
 .contents--area section#eventinformation--casset__lists {
+	display: block;
 	width: 100%;
 	background-color: #ffffff;
+	padding-bottom: 10px;
 }
-.contents--area section#eventinformation--casset__lists .event--information__title h3.text--size__bigger {
+.contents--area section#eventinformation--casset__lists a {
+	position: relative;
 	width: 100%;
-	margin-top: 10px;
-	margin-bottom: 15px;
+}
+.contents--area section#eventinformation--casset__lists hr {
+	width: 100%;
+	height: 2px;
+	margin: 0 auto;
 }
 .contents--area section#eventinformation--casset__lists .event--image__frame {
 	width: calc(35%-10px);
@@ -3233,7 +3228,7 @@ background-position: right 15px bottom 15px*/
 	height: auto;
 	width: calc(37.3% - 10px);
 	text-align: center;
-	margin-left: 10px;
+	margin-left: 0px;
 }
 /*左のボックス画像フレーム*/
 .contents--area section#eventinformation--casset__lists .event--image__frame {
@@ -3261,17 +3256,20 @@ background-position: right 15px bottom 15px*/
 	width: 100%;
 	clear: both;
 	text-align: left;
-	padding: 10px 0px;
+	padding: 5px 0px;
 	color: #777;
 }
 .contents--area section#eventinformation--casset__lists .event--image__caption p {
 	padding: 0;
 	margin: 0;
 	font-size: 11px;
-	line-height: 15px;
+	line-height: 12px;
 }
 .contents--area section#eventinformation--casset__lists .event--image__text p {
 	font-size: 14px;
+	line-height: 20px;
+}
+.contents--area section#eventinformation--casset__lists .event--information__right .event--image__text p.text--size__middle {
 	line-height: 20px;
 }
 .contents--area section#eventinformation--casset__lists .event--information__area {
@@ -3281,15 +3279,14 @@ background-position: right 15px bottom 15px*/
 	display: none;
 }
 .contents--area section#eventinformation--casset__lists .event--image__text p.text--size__middle {
-	width: calc(62.7% - 20px);
+	width: 62.7%;
 	height: auto;
 	float: right;
-	margin: 0px 10px;
 	text-align: left;
 	padding-bottom: 10px;
 }
 .contents--area section#eventinformation--casset__lists .event--image__moreinfo {
-	width: calc(100%-20px);
+	width: 100%;
 	clear: both;
 	background-color: #faf0d5;
 	margin: 0 auto;
@@ -3309,28 +3306,29 @@ background-position: right 15px bottom 15px*/
 .contents--area section#eventinformation--casset__lists.event--casset__common a.button {
 	width: calc(100%-20px);
 	display: block;
-	overflow: auto;
-	display: block;
 	text-align: center;
 	height: auto;
 	min-height: 40px;
 	line-height: 180%;
 	text-align: center;
-	margin: 0 auto;
-	margin-top: 15px;
+	margin: 15px auto 18px;
 	border-radius: 4px;
 	position: relative;
 	padding: 4px 0px;
 	-webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
 	box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
 }
+.contents--area section#eventinformation--casset__lists.event--casset__common .height--20px {
+	height: 0px;
+}
+
 .contents--area section#eventinformation--casset__lists .event--information__title h3:after {
 	display: inline-block;
 	content: '';
 	position: absolute;
 	top: 50%;
 	margin-top: -7.5px;
-	right: 0px;
+	right: -30px;
 	background: url(../img/arrow_red.png);
 	background-size: contain;
 	vertical-align: middle;
@@ -3342,9 +3340,9 @@ background-position: right 15px bottom 15px*/
 
 .contents--area section#eventinformation--casset__lists .event--information__title h3.text--size__bigger {
 	position: relative;
-	width: 100%;
-	margin-top: 10px;
-	margin-bottom: 10px;
+	width: calc(100% - 30px);
+	margin-top: 7px;
+	margin-bottom: 7px;
 	padding-right: 0px;
 }
 
@@ -3353,26 +3351,36 @@ background-position: right 15px bottom 15px*/
 
 /*特別枠*/
 .contents--area section#eventinformation--casset__special {
+	display: block;
 	width: 100%;
 	background-color: #ffffff;
+	padding-bottom: 10px;
 }
+.contents--area section#eventinformation--casset__special hr {
+	width: 100%;
+	margin: 0 auto;
+	height: 2px;
+	padding: 0;
+	margin: 0;
+}
+
 .contents--area section#eventinformation--casset__special a {
+	position: relative;
 	width: 100%;
 }
 .contents--area section#eventinformation--casset__special .event--information__title h3.text--size__bigger {
-	width: 100%;
-	margin-top: 10px;
-	margin-bottom: 15px;
+	width: calc(100% - 30px);
+	margin-top: 8px;
+	margin-bottom: 8px;
 }
 .contents--area section#eventinformation--casset__special .event--information__label {
-	margin-left: 15px;
 	margin-bottom: 0px;
 }
 /*左のボックス*/
 .contents--area section#eventinformation--casset__special .event--information__left {
 	float: none;
 	height: auto;
-	width: calc(100% - 20px);
+	width: 100%;
 	margin: 0 auto;
 }
 /*左のボックス画像フレーム*/
@@ -3405,11 +3413,16 @@ background-position: right 15px bottom 15px*/
 	margin: 0px;
 	padding: 0px;
 }
+.contents--area section#eventinformation--casset__special .event--information__right .event--image__text p.text--size__middle {
+	line-height: 20px;
+	text-align: left;
+}
+
 /*左のボックス*/
 .contents--area section#eventinformation--casset__special .event--information__right {
 	float: none;
 	height: auto;
-	width: calc(100% - 20px);
+	width: 100%;
 	margin: 0 auto;
 }
 /*左のボックス画像フレーム*/
@@ -3442,7 +3455,9 @@ background-position: right 15px bottom 15px*/
 	margin: 0px;
 	padding: 0px;
 }
-
+.contents--area section#eventinformation--casset__special .event--image__text p {
+	line-height: 20px;
+}
 .contents--area section#eventinformation--casset__special .event--image__frame001 {
 	width: 100%;
 	height: auto;
@@ -3518,7 +3533,7 @@ background-position: right 15px bottom 15px*/
 	position: absolute;
 	top: 50%;
 	margin-top: -7.5px;
-	right: 0px;
+	right: -30px;
 	background: url(../img/arrow_red.png);
 	background-size: contain;
 	vertical-align: middle;
@@ -3530,30 +3545,29 @@ background-position: right 15px bottom 15px*/
 
 .contents--area section#eventinformation--casset__special .event--information__title h3.text--size__bigger {
 	position: relative;
-	width: 100%;
-	margin-top: 10px;
+	width: calc(100% - 30px);
+	margin-top: 5px;
 	margin-bottom: 10px;
 	padding-right: 0px;
 }
 .contents--area section#eventinformation--casset__special.event--casset__common a.button {
 	width: calc(100%-20px);
 	display: block;
-	overflow: auto;
-	display: block;
 	text-align: center;
 	height: auto;
 	min-height: 40px;
 	line-height: 180%;
 	text-align: center;
-	margin: 0 auto;
-	margin-top: 15px;
+	margin: 15px auto 18px;
 	border-radius: 4px;
 	position: relative;
 	padding: 4px 0px;
 	-webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
 	box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
 }
-
+.contents--area section#eventinformation--casset__special.event--casset__common .height--25px {
+	height: 0px;
+}
 /*イベント情報カセット－－強調*/
 .contents--component__020 {
 	width: 100%;
@@ -3615,10 +3629,16 @@ background-position: right 15px bottom 15px*/
 }
 .contents--area section#eventinformation--casset__more {
 	background-color: #ffffff;
-	margin-top: -21px !important;
+	margin-top: 0px;
 	text-align: center;
 	width: 100%;
 	padding: 15px 0px;
+}
+.contents--area section#eventinformation--casset__more p{
+	padding-top: 15px;
+	border-top: 1px solid #DFDFDF;
+	margin-top: 8px;
+	margin-left: 10px;
 }
 .contents--area section#eventinformation--casset__more a {
 	color: #757575;
@@ -3655,18 +3675,23 @@ background-position: right 15px bottom 15px*/
 	background-color: #ffffff;
 	text-align: center;
 	width: 100%;
-	padding: 12px 0px 15px;
-	border-top: 1px solid #DFDFDF;
+	margin: 0 auto;
+	padding: 0px 0px 15px;
 	
 }
+.contents--area section#eventinformation--casset__more p {
+	width: 100%;
+	margin: 0 auto;
+}
+
+
 .contents--area section#eventinformation--casset__more a {
+	width: 100%;
 	color: #757575;
 	font-size: 12px;
 	line-height: 8px;
 	margin-left: 16px;
 	padding: 0;
-	display: inline !important;
-	width: auto !important;
 }
 .contents--area section#eventinformation--casset__more a:hover {
 	text-decoration: underline !important;
@@ -3687,7 +3712,6 @@ background-position: right 15px bottom 15px*/
 	vertical-align: middle;
 	background-repeat: no-repeat;
 }
-
 .event--casset__common .event-button p:after {
 	position: absolute;
 	top: 50%;
@@ -3729,6 +3753,7 @@ background-position: right 15px bottom 15px*/
 	width: 100%x;
 	margin: 0 auto !important;
 	background-color: #ffffff;
+	padding-bottom: 15px;
 }
 /*色指定クラス*/
 body {
@@ -3771,14 +3796,14 @@ hr {
 }
 /*カレンダーCSS*/
 #calendar--setdata {
-	margin-top: 30px;
+	margin-top: 15px;
 }
 #calendar--setdata .calendar--header {
 	width: 49%;
 	position: relative;
 	margin: 0 auto;
-	min-height: 40px;
-	line-height: 40px;
+	min-height: 45px;
+	line-height: 45px;
 	font-size: 14px;
 	font-weight: 700;
 	text-align: center;
@@ -3796,8 +3821,8 @@ hr {
 	width: 49%;
 	position: relative;
 	margin: 0 auto;
-	min-height: 40px;
-	line-height: 40px;
+	min-height: 45px;
+	line-height: 45px;
 	font-size: 14px;
 	font-weight: 700;
 	text-align: center;
@@ -3832,14 +3857,14 @@ hr {
 	width: 95%;
 	max-width: 375px;
 	margin: 0 auto;
-	padding-top: 20px;
+	padding-top: 15px;
 	display: block;
 }
 #calendar--setdata #right {
 	width: 95%;
 	max-width: 375px;
 	margin: 0 auto;
-	padding-top: 20px;
+	padding-top: 15px;
 	display: none;
 }
 #calendar--setdata #table {
@@ -3847,7 +3872,7 @@ hr {
 	table-layout: fixed;
 	width: 100%;
 	max-width: 375px;
-	margin: 0 auto;
+	margin: -1 auto;
 	background-color: #ccc;
 	font-weight: 400;
 	text-align: center;
@@ -3861,9 +3886,9 @@ hr {
 }
 #calendar--setdata .row div {
 	display: table-cell;
-	font-size: 12px;
+	font-size: 16px;
 	margin: 1px;
-	padding: 9px;
+	padding: 13.5px 9px;
 	text-align: center;
 	font-weight: 400;
 	width: 14%;
@@ -3871,7 +3896,6 @@ hr {
 	min-height: 20px;
 	border-left: 1px solid #ccc;
 	border-bottom: 1px solid #ccc;
-	overflow: auto;
 }
 #calendar--setdata .row.tabele--contents > div {
 	text-align: center;
@@ -3906,9 +3930,20 @@ hr {
 	text-decoration: underline !important;
 	margin: 0;
 	padding: 0;
-	top: 9px;
+	top: 13.5px;
 	left: 0;
 }
+.calendar--header.calendar--backcolor__default {
+	border-bottom: 1px solid #C85960;
+	background-color: #C85960;
+}
+
+.calendar--header__002.calendar--backcolor__default {
+	border: 1px solid #C85960;
+	background-color: #ffffff;
+}
+
+
 #calendar--setdata .fireworks--text {
 	text-align: left;
 	clear: both;
@@ -3918,9 +3953,178 @@ hr {
 #calendar--setdata .fireworks--text p {
 	color: #333;
 	font-size: 12px;
-	margin-left: 15px;
-	margin-top: 5px;
+	margin-left: 10px;
+	margin-top: 10px;
 	line-height: 100%;
+}
+
+
+span.square-color__red {
+	padding:1px 2.5px;
+	font-size:10px;
+	line-height:100%;
+	background-color:#E50000;
+	color:#ffffff;
+	margin-left: 3px;
+	letter-spacing: 0px;
+}
+span.square-color__grey {
+	padding:1px 2.5px;
+	font-size:10px;
+	line-height:100%;
+	background-color:#CFCFCF;
+	color:#ffffff;
+	margin-left: 3px;
+	letter-spacing: 0px;
+}
+span.square-color__white {
+	padding:1px 2.5px;
+	font-size:10px;
+	line-height:100%;
+	background-color:#FFFFFF;
+	color:#999999;
+	margin-left: 3px;
+	letter-spacing: 0px;
+}
+
+#footer-before {
+	background-color: #fff;
+	width: 100%;
+	height: auto;
+	display: block;
+}
+#footer-before .go-to-top {
+	padding: 15px 0px;
+	width:100%;
+	width:100%;
+	border-top: 1px solid #DFDFDF;
+	height: auto;
+	display: block;
+}
+#footer-before .button-top {
+	display: block;
+	margin-top: 15px;
+	width:calc(100% - 20px);
+	margin: 0 auto;
+	min-height: 48px;
+	height: auto;
+	position: relative;
+	box-shadow: 1.35px 5.85px 6px rgba(0,0,0,0.4);
+	text-align: center;
+	background-color: #EEEEEE;
+	border-radius: 8px;
+}
+#footer-before .button-top a{
+	display: block;
+	width: 100%;
+	height: 1005;
+	position: absolute;
+}
+#footer-before .button-top p{
+	padding: 16px 0px;
+	font-size: 14px;
+	line-height: 17px;
+	font-weight: 700;
+}
+#footer-before .button-top p:before {
+	position: absolute;
+	top: 50%;
+	left:10px;
+	margin-top: -6px;
+	margin-left: 3px;
+	width: 7.5px;
+	height: 12px;
+	content: " ";
+	display: inline-block;
+	background: url(../img/arrow_red_left.png);
+	background-size: contain;
+	vertical-align: middle;
+	background-repeat: no-repeat;
+	z-index: 6;
+}
+#footer-before .breadcrumb {
+	width:calc(100% - 20px);
+	margin: 20px 10px 0px 10px;
+	font-size: 12px;
+	line-height: 15px;
+	text-align: center;		
+	display: inline-block;
+}
+#footer-before .breadcrumb-box {
+	width: auto;
+	margin: 0 auto;
+	text-align: center;
+	display:inline-block;
+}
+#footer-before .breadcrumb a span{
+	color:#195197;
+	text-decoration: underline;
+	margin-right: 15px;
+	margin-left: 15px;
+	font-weight: 700;
+}
+#footer-before .breadcrumb p span{
+	text-decoration: none;
+	margin-right: 15px;
+	margin-left: 15px;
+}
+#footer-before .breadcrumb a{
+	display:inline-block;
+	margin: 0px;
+	padding: 0px;
+	line-height: 30px;
+}
+#footer-before .breadcrumb p{
+	display:inline-block;
+	margin: 0px;
+	padding: 0px;
+	line-height: 30px;
+}
+#footer-before .breadcrumb a:first-child span{
+	margin-left: 0px;
+}
+
+#footer-before .breadcrumb a:before{
+	color:#195197;
+	text-decoration: none;
+	margin: 0pa 15px;
+	width: 7.5px;
+	height: 12px;
+	content: " ";
+	display: inline-block;
+	background: url(../img/arrow_glay@3x.png);
+	background-size: contain;
+	vertical-align: middle;
+	background-repeat: no-repeat;
+	z-index: 6;
+}
+#footer-before .breadcrumb p:before{
+	color:#195197;
+	text-decoration: none;
+	margin: 0pa 15px;
+	width: 7.5px;
+	height: 12px;
+	content: " ";
+	display: inline-block;
+	background: url(../img/arrow_glay@3x.png);
+	background-size: contain;
+	vertical-align: middle;
+	background-repeat: no-repeat;
+	z-index: 6;
+}
+#footer-before .breadcrumb a:first-child:before{
+	color:#195197;
+	text-decoration: none;
+	margin: 0pa 15px;
+	width: 7.5px;
+	height: 12px;
+	content: " ";
+	display: inline-block;
+	background: url();
+	background-size: contain;
+	vertical-align: middle;
+	background-repeat: no-repeat;
+	z-index: 6;
 }
 
 .pc-only {

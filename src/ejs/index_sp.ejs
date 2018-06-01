@@ -1,23 +1,4 @@
 <%- include('./_head_sp', {page: 'index'}); %>
-<!-- PC用のCSS配置 -->
-<!-- PC用のCSS配置 -->
-<!-- カラーセットを調整できるコンテンツCSS -->
-
-<!-- カラーセットを調整できるコンテンツCSS -->
-<style>
-.spAdBanner p a.images,
-.spAdBanner p img {
-	display: block;
-	margin: 10px auto;
-	width: 320px;
-	max-width: 100%;
-	height: auto;
-	background: #fff; /*無いとhover時に画像がずれるので必須*/
-}
-.only_pc {
-	display: none !important;
-	}
-</style>
 <%- include(PATH + '/globals/_header_sp'); %>
 <!-- ここからコーディングをお願いいたします -->
 <div class="contents--area">
@@ -103,11 +84,9 @@
 <!--========== イベント情報カレンダー ===================================================-->
 <%- include(PATH + '/_contents--023'); %>
 <!--========== イベント情報カレンダー ===================================================-->
-</div><!--contents--area end -->
-<!-- PC用のJS配置 -->
-<script src="js/ones_season_sp.js"></script>
-<!-- PC用のJS配置 -->
-<!-- /コーディングここまで -->
-<!--sidebarはなくてもいいのでは///-->
+<!--========== イベント情報カレンダー ===================================================-->
+<%- include(PATH + '/_contents--024'); %>
+<!--========== イベント情報カレンダー ===================================================-->
+</div>
 <%- include(PATH + '/globals/_sidebar_sp'); %>
 <%- include(PATH + '/globals/_footer_sp'); %>

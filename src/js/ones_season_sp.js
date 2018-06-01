@@ -1,4 +1,21 @@
-
+$(window).load(function (e) {
+var hash = location.hash;
+if($(hash).length){
+e.preventDefault();
+headerH = header.height();
+var ua = window.navigator.userAgent.toLowerCase();
+var isIE = (ua.indexOf('msie') >= 0 || ua.indexOf('trident') >= 0);
+if (isIE) {
+setTimeout(function(){
+var position = $(hash).offset().top;
+$("html, body").scrollTop(Number(position)-headerH);
+},500);
+} else {
+var position = $(hash).offset().top;
+$("html, body").scrollTop(Number(position)-headerH);
+}
+}
+});
 
 
 $(window).on('load resize', function(){
