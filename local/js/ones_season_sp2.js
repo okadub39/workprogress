@@ -1,20 +1,8 @@
-
-
-//B-1新着情報（写真）の最大高さの値を取得してコンテンツの高さを揃えるJS
+$(function() {
+  //ウインドウがリサイズされたら発動
+  $(window).resize(function() {
 $(window).on('load resize', function(){
-	$('#new--information__photo').each(function(i, box) {
-		var maxHeight = 0;
-		$(box).find('.container--box__001').each(function() {
-			if ($(this).height() > maxHeight) maxHeight = $(this).height();
-		});
-		$(box).find('.container--box__001').height(maxHeight);
-	});
-});
-
-
-//Y 記事誘導枠の最大高さの値を取得してコンテンツの高さを揃えるJS
-$(window).on('load resize', function(){
-	$('#contents--article__induction').each(function(i, box) {
+	$('#imagetext--twocolum__twocolum').each(function(i, box) {
 		var maxHeight = 0;
 		$(box).find('.container--box__area a').each(function() {
 			if ($(this).height() > maxHeight) maxHeight = $(this).height();
@@ -22,38 +10,31 @@ $(window).on('load resize', function(){
 		$(box).find('.container--box__area a').height(maxHeight);
 	});
 });
-
+  });
+});
+//高さ調整のJS
 $(window).on('load resize', function(){
-	$('#contents--feature__square').each(function(i, box) {
+	$('.contents--component__006').each(function(i, box) {
 		var maxHeight = 0;
-		$(box).find('.container--box__area a').each(function() {
+		$(box).find('.conteiner--box__text a').each(function() {
 			if ($(this).height() > maxHeight) maxHeight = $(this).height();
 		});
-		$(box).find('.container--box__area a').height(maxHeight);
+		$(box).find('.conteiner--box__text a').height(maxHeight);
 	});
 });
 
 $(window).on('load resize', function(){
-	$('#contents--restaurant__guidance').each(function(i, box) {
+	$('#contents--induction').each(function(i, box) {
 		var maxHeight = 0;
-		$(box).find('.container--box__area .accordion--spot').each(function() {
+		$(box).find('.container--box__text a').each(function() {
 			if ($(this).height() > maxHeight) maxHeight = $(this).height();
 		});
-		$(box).find('.container--box__area .accordion--spot').height(maxHeight);
+		$(box).find('.container--box__text a').height(maxHeight);
 	});
 });
 
 $(window).on('load resize', function(){
-	$('#imagetext--onecolum__fourcolum').each(function(i, box) {
-		var maxHeight = 0;
-		$(box).find('.container--box__area a').each(function() {
-			if ($(this).height() > maxHeight) maxHeight = $(this).height();
-		});
-		$(box).find('.container--box__area a').height(maxHeight);
-	});
-});
-$(window).on('load resize', function(){
-	$('#imagetext--onecolum__twocolum').each(function(i, box) {
+	$('#search--festa__area').each(function(i, box) {
 		var maxHeight = 0;
 		$(box).find('.container--box__area a').each(function() {
 			if ($(this).height() > maxHeight) maxHeight = $(this).height();
@@ -72,11 +53,73 @@ $(window).on('load resize', function(){
 	});
 });
 
+$(window).on('load resize', function(){
+	$('#search--event__area').each(function(i, box) {
+		var maxHeight = 0;
+		$(box).find('.container--area__lists a').each(function() {
+			if ($(this).height() > maxHeight) maxHeight = $(this).height();
+		});
+		$(box).find('.container--area__lists a').height(maxHeight);
+	});
+});
+//アコーディオンJS
+$(window).on('load resize', function(){
+var spotNum = 0;
+hidespot = "<p class='accordion--toggle__nonactive'>東京のバレンタインスポットを隠す</p>";
+showspot = "<p class='accordion--toggle__active'>東京のバレンタインスポットをもっと見る</p>";
+$(".archive").html( showspot );
+$(".accordion--spot:not(:lt("+spotNum+"))").hide();
+$(".archive").click(function (e) {
+   e.preventDefault();
+       if ($(".accordion--spot:eq("+spotNum+")").is(":hidden")) {
+           $(".accordion--spot:hidden").slideDown();
+           $(".archive").html( hidespot );
+       } else {
+           $(".accordion--spot:not(:lt("+spotNum+"))").slideUp();
+           $(".archive").html( showspot );
+       }
+});
+})
+$(window).on('load resize', function(){
+var 　outingNum = 3;
+hideouting = "<p class='accordion--toggle__nonactive'>お出かけ記事を隠す</p>";
+showouting = "<p class='accordion--toggle__active'>おでかけ記事をもっと見る</p>";
+$(".archive--outing").html( showouting );
+$(".accordion--outing:not(:lt("+outingNum+"))").hide();
+$(".archive--outing").click(function (e) {
+   e.preventDefault();
+       if ($(".accordion--outing:eq("+outingNum+")").is(":hidden")) {
+           $(".accordion--outing:hidden").slideDown();
+           $(".archive--outing").html( hideouting );
+       } else {
+           $(".accordion--outing:not(:lt("+outingNum+"))").slideUp();
+           $(".archive--outing").html( showouting );
+       }
+});
+});
 
 $(window).on('load resize', function(){
+var 　outingNum__002 = 3;
+hideouting__002 = "<p class='accordion--toggle__nonactive'>お出かけ記事を隠す</p>";
+showouting__002 = "<p class='accordion--toggle__active'>おでかけ記事をもっと見る</p>";
+$(".archive--outing__002").html( showouting__002 );
+$(".accordion--outing__002:not(:lt("+outingNum__002+"))").hide();
+$(".archive--outing__002").click(function (e) {
+   e.preventDefault();
+       if ($(".accordion--outing__002:eq("+outingNum__002+")").is(":hidden")) {
+           $(".accordion--outing__002:hidden").slideDown();
+           $(".archive--outing__002").html( hideouting__002 );
+       } else {
+           $(".accordion--outing__002:not(:lt("+outingNum__002+"))").slideUp();
+           $(".archive--outing__002").html( showouting__002 );
+       }
+});
+});
+
+$(function(){
 var eventNum = 1;
-hideevent = "<a class='accordion--toggle__nonactive' href='#'>お出かけ記事を隠す</a>";
-showevent = "<a class='accordion--toggle__active' href='#'>お出かけ記事をもっと見る</a>";
+hideevent = "<p class='accordion--toggle__nonactive'>お出かけ記事を隠す</p>";
+showevent = "<p class='accordion--toggle__active'>おでかけ記事をもっと見る</p>";
 $("#eventinformation--casset__more").html( showevent );
 $(".event--casset__common:not(:lt("+eventNum+"))").hide();
 $("#eventinformation--casset__more").click(function (e) {
@@ -91,6 +134,30 @@ $("#eventinformation--casset__more").click(function (e) {
 });
 });
 
+// ページ外アンカーリンク対策
+$(function(){
+var url = $(location).attr('href');
+if(url.indexOf("#") != -1){
+var anchor = url.split("#");
+var target = $('#' + anchor[anchor.length - 1]);
+if(target.length){
+var pos = Math.floor(target.offset().top) - 44;
+$("html, body").animate({scrollTop:pos}, 100);
+}
+}
+});
+
+// スムーズスクロール&&ページ内アンカーリンク対策
+$(function(){
+var headerHight = 44;
+$('a[href^=#]').click(function(){
+var href= $(this).attr("href");
+var target = $(href == "#" || href == "" ? 'html' : href);
+var position = target.offset().top-headerHight; //ヘッダの高さ分位置をずらす
+$("html, body").animate({scrollTop:position}, 550, "swing");
+return false;
+});
+});
 
 
 //カレンダーJS
@@ -181,7 +248,6 @@ thisMonth = thisMonth + calendarOffset + margeYear;
 thisDate.setMonth(thisMonth);
 // 日付を '1日' に変えて、
 thisDate.setDate(1);
-
 // 月を取得(0月～11月)
 thisMonth = thisDate.getMonth();
 nextMonth = thisDate.getMonth()+1;
@@ -201,20 +267,40 @@ thisMonthTbl[1] = 29;
 var thisTable = new Array(7*6);
 // テーブルの中身を綺麗にする。
 for(i=0; i<7*6; i++) thisTable[i]="";
-for(i=0; i<thisMonthTbl[thisMonth]; i++) thisTable[i+thisWeek]= i+1;	
+for(i=0; i<thisMonthTbl[thisMonth]; i++) thisTable[i+thisWeek]= i+1;
 
-//WEB用の記述 この範囲以外は同じスクリプト//
-if (calendarOffset == monthNum) {
-var thisMonthLink = 1;
-} else if (calendarOffset == checkmonth) {
-thisMonthLink = 2;
-}
-var tableSet001 = "<div class ='calendar--header eventtitle--backcolor__default outline'><a href='" + global_setLink[thisMonthLink] +"'>";
-var tableSet002 = "</a></div><div id ='table'>";
+//スマートフォン用の記述 この範囲以外は同じスクリプト//
+var spMonth001 = thisMonth+1;
+if (spMonth001 > 12) {
+spMonth001 = spMonth001 - 12;
+};
+var spMonth002 = nextMonth+1;
+if (spMonth002 > 12) {
+spMonth002 = spMonth002 - 12;
+};
+var spMonth003 = thisMonth;
+if (spMonth003 == 0) {
+spMonth003 = 12;
+};
+var spMonth004 = nextMonth;
+if (spMonth004 == 0) {
+spMonth004 = 12;
+};
+if (calendarOffset == monthNum){
+var tableSet001 = "<div class ='calendar--header calendar--backcolor__default calendar--float__left outline'>";
+var tableSet002 = "</div>";
+var tableSet003 = "<div class ='calendar--header__002 calendar--backcolor__default calendar--float__right outline' onclick='change01()'>";
+tableHtml = tableSet001 + spMonth001 + "<span>月の花火大会</span>" + tableSet002 + tableSet003 + spMonth002 + "<span>月の花火大会</span>" + tableSet002 + "<div id ='table'><div class='row tabele--header outline'>";
+}	else {
+var tableSet001 = "<div class ='calendar--header__002 calendar--backcolor__default calendar--float__left outline' onclick='change02()'>";
+var tableSet002 = "</div>";
+var tableSet003 = "<div class ='calendar--header calendar--backcolor__default calendar--float__right outline'>";
 //変数の中にHTML要素を格納する。
 //thisYear + "<span>年</span>" 
-tableHtml = tableSet001 + (thisMonth+1) + "<span>月の花火大会</span>" + tableSet002 + "<div class='row tabele--header outline'>";
-//WEB用の記述//
+tableHtml = tableSet001 + spMonth003 + "<span>月の花火大会</span>" + tableSet002 + tableSet003 + spMonth004 + "<span>月の花火大会</span>" + tableSet002 + "<div id ='table'><div class='row tabele--header outline'>";
+}
+//スマートフォン用の記述//
+
 
 // １週間分のカラムをセット。
 var set001;
