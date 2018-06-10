@@ -277,9 +277,7 @@ thisDat = thisTable[ j + (i*7) ];
 //var target = document.getElementById('test');
 //for (k = 0; k < monthNumber; k++) {
 //target.innerHTML += i;
-if ( thisDat == thisToday && calendarOffset == 0 ){	
-tableHtml += "<div class='today'>";
-}else if( j==5 ){	
+if ( j==5 ){	
 // 土曜のセルの色
 tableHtml += "<div class='saturday'>";
 }else if( j==6 ){	

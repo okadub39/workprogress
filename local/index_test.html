@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>テスト</title>
+  </head>
+  <body>
+  <script>
+    function fileListDirectory(files) {
+      var ファイル数 = files.length;
+      var ファイル名 = new Array();
+      var パス = new Array();
+      for (i=0; i<ファイル数; i++) {
+        ファイル名[i] = files[i].name;
+        パス[i] = files[i].webkitRelativePath; // 行Ａ
+      }
+      var 表示内容 = "";
+      for (i=0; i<ファイル数; i++) {
+        if (ファイル名[i] == ".") { // 行Ｂ
+          表示内容 += "フォルダ：";
+        }
+        else {
+          表示内容 += "file：";
+        }
+        表示内容 += パス[i] + "<br>";
+      }
+      document.getElementById('表示場所').innerHTML = 表示内容;
+    }
+  </script>
+    <p><input type="file"
+    webkitdirectory directory 
+    onChange="fileListDirectory(this.files)"></p>
+    <div id="表示場所" class="red">結果がここに表示されます。</div>
+  </body>
+</html>

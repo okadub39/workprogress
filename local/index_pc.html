@@ -38,6 +38,8 @@ src="https://www.facebook.com/tr?id=675506402614889&ev=PageView&noscript=1"
 
 <!--========== シーズンPC/SPここから =============================================-->
 <script src="https://www.enjoytokyo.jp/js/common/lib/jquery/1.10.2/jquery.min.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+<link rel="stylesheet" href="css/ones_season_contents.css">
 <!--========== シーズンPC/SPここまで =============================================-->
 <!--========== (UAで出し分け)シーズンPCここから ================================================-->
 <link rel="stylesheet" href="https://www.enjoytokyo.jp/global/css/common_navi.css">
@@ -46,12 +48,10 @@ src="https://www.facebook.com/tr?id=675506402614889&ev=PageView&noscript=1"
 <link rel="stylesheet" href="https://www.enjoytokyo.jp/global/css/socialbookmark_special.css">
 <script src="https://www.enjoytokyo.jp/global/js/actionscript.js"></script>
 <script src="https://www.enjoytokyo.jp/global/js/socialbookmark_special.js"></script>
+<script src="js/ones_season_pc.js"></script>
 <!--以下に本ページで必要なcssの記載をお願いいたします-->
-
-<!--========== PC・SP共通 ================================================-->
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+<link rel="stylesheet" href="css/ones_season_pc.css">
 <!--========== (UAで出し分け)シーズンPCここまで ================================================-->
-
 <!--========== (UAで出し分け)シーズンSPここから =================================================-->
 <!--
 どの特集でも読む共通ファイルが先その後個別で読むファイルのならびで記載してください
@@ -62,7 +62,6 @@ src="https://www.facebook.com/tr?id=675506402614889&ev=PageView&noscript=1"
 個別CSS
 個別js
 -->
-
 	
 	
 	
@@ -397,12 +396,6 @@ src="https://www.facebook.com/tr?id=675506402614889&ev=PageView&noscript=1"
 }
 </script>
 </head>
-<!-- PC用のCSS配置 -->
-<link rel="stylesheet" href="css/ones_season_pc.css">
-<!-- PC用のCSS配置 -->
-<!-- カラーセットを調整できるコンテンツCSS -->
-<link rel="stylesheet" href="css/ones_season_contents.css">
-<!-- カラーセットを調整できるコンテンツCSS -->
 
 <body>
 <!--ヘッダ　開始-->
@@ -520,8 +513,7 @@ src="https://www.facebook.com/tr?id=675506402614889&ev=PageView&noscript=1"
 <!--/(UAで出し分け)COMMON_HEADER_V4-->
 <!--//////////////////////////////// copy start ////////////////////////////////-->
 
-<main>
-<article>
+
 <br><center><div style="color:#ff0000;font-weight:bold;">2017年の夏祭り情報は6月下旬更新予定です。お楽しみに！<br><br>
 <a href="https://www.enjoytokyo.jp/phones/feature/matsuri/summer/fes/06.html" style="color:#000000;font-weight:bold;">【速報！】5月・6月開催の祭り＆イベント情報はこちら ＞ ＞</a></div></center><br>
 <div id="wrapper">
@@ -553,16 +545,13 @@ globalNavi("top");
 
 
 <!--========== メインビジュアル =====================================================-->
-
 <!-- ここからコーディングをお願いいたします -->
-
 <div class="contents--area"><!--左側のメインコンテンツを格納する要素-->
-	
 <section class="contents--mainvisual">
-	<h1 class="pc--only">
+	<h1 class="only_pc">
 		<img src="img/ttl_main_2017.jpg" alt="秋祭り＆秋のイベント"/>
 	</h1>
-	<h1 class="sp--only">
+	<h1 class="only_sp">
 		<img src="img/ttl_main_2017_sp.jpg" alt="秋祭り＆秋のイベント"/>
 	</h1>
 	<div class="contents--texts__fields">
@@ -571,8 +560,6 @@ globalNavi("top");
 		</p>
 	</div>
 </section>
-
-	
 <!-- sns -->
 <div id="sbsp" class="only_pc">
 <script>
@@ -585,80 +572,71 @@ loadLetsSBM_special('facebook-sp,twitter-sp,hatena-sp,line', 'sbsp');
 </script>
 </div>
 <!-- /sns -->
-	
-<style>	
-
-	
-	
-	
-	
-</style>	
-	
 <!--========== メインビジュアル =====================================================-->
 <!--========== B-1 新着情報（写真） =================================================-->
-<!--========== B-1 新着情報（写真） =================================================-->
 <section id="new--information__photo">
-	<h2 id="B-1" class="contents--component__title eventtitle--backcolor__default">注目の秋祭り＆秋のイベント</h2>
-	<div class="conteiner--box">
-		<div class="conteiner--box__001">
+	<div class="contents--component__title eventtitle--backcolor__default">
+		<h2 id="b-1">注目の秋祭り＆秋のイベント</h2>
+	</div>
+	<div class="container--box">
+		<div class="container--box__001">
 			<a class="link--opacity__50" href="#">
-				<div class="conteiner--box__image">
-					<div class="conteiner--box__tag conteiner--tag__color">イベント</div>
+				<div class="container--box__image">
+					<div class="container--box__tag container--tag__color">イベント</div>
 					<img src="img/image_sample_001.jpg" alt="image_sample001" />
 				</div>
-				<div class="conteiner--box__field">
-					<div class="conteiner--box__title">
+				<div class="container--box__field">
+					<div class="container--box__title">
 						<p>イベント名イベント名イベント名イベント名</p>
 					</div>
-					<div class="conteiner--box__date">
+					<div class="container--box__date">
 						<p>2018年10月28日(aaa)～11月28日(aaa)</p>
 					</div>
-					<div class="conteiner--box__place">
+					<div class="container--box__place">
 						<p>六本木ヒルズアリーナ</p>
 					</div>
 				</div>
 			</a>
 		</div>
-		<div class="conteiner--box__001">
+		<div class="container--box__001">
 			<a class="link--opacity__50" href="#">
-				<div class="conteiner--box__image">
-					<div class="conteiner--box__tag conteiner--tag__color">紅葉</div>
+				<div class="container--box__image">
+					<div class="container--box__tag container--tag__color">紅葉</div>
 					<img src="img/image_sample_002.jpg" alt="image_sample002" />
 				</div>
-				<div class="conteiner--box__field">
-					<div class="conteiner--box__title">
+				<div class="container--box__field">
+					<div class="container--box__title">
 						<p>イベント名イベント名イベント名イベント名</p>
 					</div>
-					<div class="conteiner--box__date">
+					<div class="container--box__date">
 						<p>2018年10月28日(aaa)～11月28日(aaa)</p>
 					</div>
-					<div class="conteiner--box__place">
+					<div class="container--box__place">
 						<p>六本木ヒルズアリーナ</p>
 					</div>
 				</div>
 			</a>
 		</div>
-		<div class="conteiner--box__001">
+		<div class="container--box__001">
 			<a class="link--opacity__50" href="#">
-				<div class="conteiner--box__image">
-					<div class="conteiner--box__tag conteiner--tag__color">グルメ</div>
+				<div class="container--box__image">
+					<div class="container--box__tag container--tag__color">グルメ</div>
 					<img src="img/image_sample_003.jpg" alt="image_sample003" />
 				</div>
-				<div class="conteiner--box__field">
-					<div class="conteiner--box__title">
+				<div class="container--box__field">
+					<div class="container--box__title">
 						<p>イベント名イベント名イベント名イベント名</p>
 					</div>
-					<div class="conteiner--box__date">
+					<div class="container--box__date">
 						<p>2018年10月28日(aaa)～11月28日(aaa)</p>
 					</div>
-					<div class="conteiner--box__place">
+					<div class="container--box__place">
 						<p>六本木ヒルズアリーナ</p>
 					</div>
 				</div>
 			</a>
 		</div>
-		<hr />
-		<div class="conteiner--link__text arrow--img">
+		<div class="container--link__text arrow--img">
 			<a href="#">
 				<p><span>おすすめ秋祭りをもっと見る</span></p>
 			</a>
@@ -669,20 +647,21 @@ loadLetsSBM_special('facebook-sp,twitter-sp,hatena-sp,line', 'sbsp');
 
 <!--========== B-1 新着情報（写真） =================================================-->
 <!--========== B-2 新着情報（テキスト） ==============================================-->
-<!--========== B-2 新着情報（テキスト） ==============================================-->
 <section id="new--information__text">
-	<h2 id="B-2" class="contents--component__title eventtitle--backcolor__default">注目の秋祭り＆秋のイベント</h2>
-	<div class="conteiner--box">
+	<div class="contents--component__title eventtitle--backcolor__default">
+		<h2 id="b-2">注目の秋祭り＆秋のイベント</h2>
+	</div>
+	<div class="container--box">
 		<!--========== B-2 新着情報（テキスト）BOX ==============================================-->
 		<a class="link--opacity__50" href="#">
-			<div class="conteiner--box__002 arrow--img">
-				<div class="conteiner--box__date">
+			<div class="container--box__002 arrow--img">
+				<div class="container--box__date">
 					<p>2018年10月28日(aaa)～11月28日(aaa)</p>
 				</div>
-				<div class="conteiner--box__place">
+				<div class="container--box__place">
 					<p>六本木ヒルズアリーナ</p>
 				</div>
-				<div class="conteiner--box__title">
+				<div class="container--box__title">
 						<p>イベント名イベント名イベント名イベント名</p>
 				</div>
 			</div>
@@ -690,14 +669,14 @@ loadLetsSBM_special('facebook-sp,twitter-sp,hatena-sp,line', 'sbsp');
 		<!--========== B-2 新着情報（テキスト）BOX ==============================================-->
 		<!--========== B-2 新着情報（テキスト）BOX ==============================================-->
 		<a class="link--opacity__50" href="#">
-			<div class="conteiner--box__002 arrow--img">
-				<div class="conteiner--box__date">
+			<div class="container--box__002 arrow--img">
+				<div class="container--box__date">
 					<p>2018年10月28日(aaa)～11月28日(aaa)</p>
 				</div>
-				<div class="conteiner--box__place">
+				<div class="container--box__place">
 					<p>六本木ヒルズアリーナ</p>
 				</div>
-				<div class="conteiner--box__title">
+				<div class="container--box__title">
 					<p>イベント名イベント名イベント名イベント名</p>
 				</div>
 			</div>
@@ -705,20 +684,20 @@ loadLetsSBM_special('facebook-sp,twitter-sp,hatena-sp,line', 'sbsp');
 		<!--========== B-2 新着情報（テキスト）BOX ==============================================-->
 		<!--========== B-2 新着情報（テキスト）BOX ==============================================-->
 		<a class="link--opacity__50" href="#">
-			<div class="conteiner--box__002 arrow--img">
-				<div class="conteiner--box__date">
+			<div class="container--box__002 arrow--img">
+				<div class="container--box__date">
 					<p>2018年10月28日(aaa)～11月28日(aaa)</p>
 				</div>
-				<div class="conteiner--box__place">
+				<div class="container--box__place">
 					<p>六本木ヒルズアリーナ</p>
 				</div>
-				<div class="conteiner--box__title">
+				<div class="container--box__title">
 					<p>イベント名イベント名イベント名イベント名</p>
 				</div>
 			</div>
 		</a>
 		<!--========== B-2 新着情報（テキスト）BOX ==============================================-->
-		<div class="conteiner--link__text arrow--img">
+		<div class="container--link__text arrow--img">
 			<a href="#">
 				<p><span>おすすめ秋祭りをもっと見る</span></p>
 			</a>
@@ -729,166 +708,165 @@ loadLetsSBM_special('facebook-sp,twitter-sp,hatena-sp,line', 'sbsp');
 <!--========== B-2 新着情報（テキスト） ==============================================-->
 <!--========== C エリアから探す =====================================================-->
 <section id="search--event__area">
-	<h2 id="C" class="contents--component__title eventtitle--backcolor__default">エリアから秋祭り・イベントを探す</h2>
-	<div class="conteiner--box">
-		<!--========== B-2 新着情報（テキスト）BOX ==============================================-->
-		<a class="link--underline" href="#">
-			<div class="conteiner--box__003">
-				<div class="conteiner--box__topmargin conteiner--box__title arrow--img">
-					<p>東京で買えるおすすめバレンタインチョコ</p>
+	<div class="contents--component__title eventtitle--backcolor__default">
+		<h2 id="c">エリアから秋祭り・イベントを探す</h2>
+		</div>
+	<div class="container--box">
+		<div class="link--underline">
+			<div class="container--box__003">
+				<div class="container--box__topmargin container--box__title arrow--img">
+					<p><a href="#"><span>東京で買えるおすすめバレンタインチョコ</span></a></p>
 				</div>
 			</div>
-		</a>
-		<!--  1カラムにする場合は、conteiner--area__listsの要素に「oneclum」のクラスを追加する-->
-		<div class="conteiner--area__lists">
-			<div class="conteiner--box__area conteiner--box__top">
+		</div>
+		<div class="container--area__lists">
+			<div class="container--box__area container--box__top">
 				<a href="#"><span>銀座・有楽町</span></a>
 			</div>
-			<div class="conteiner--box__area">
+			<div class="container--box__area">
 				<a href="#"><span>東京駅・丸の内</span></a>
 			</div>
-			<div class="conteiner--box__area">
+			<div class="container--box__area">
 				<a href="#"><span>日本橋</span></a>
 			</div>
-			<div class="conteiner--box__area">
+			<div class="container--box__area">
 				<a href="#"><span>新橋</span></a>
 			</div>
-			<div class="conteiner--box__area">
+			<div class="container--box__area">
 				<a href="#"><span>渋谷</span></a>
 			</div>
-			<div class="conteiner--box__area">
+			<div class="container--box__area">
 				<a href="#"><span>原宿</span></a>
 			</div>
-			<div class="conteiner--box__area">
+			<div class="container--box__area">
 				<a href="#"><span>表参道・青山</span></a>
 			</div>
-			<div class="conteiner--box__area">
+			<div class="container--box__area">
 				<a href="#"><span>恵比寿</span></a>
 			</div>
-			<div class="conteiner--box__area">
+			<div class="container--box__area">
 				<a href="#"><span>代官山</span></a>
 			</div>
-			<div class="conteiner--box__area">
+			<div class="container--box__area">
 				<a href="#"><span>六本木</span></a>
 			</div>
-			<div class="conteiner--box__area">
+			<div class="container--box__area">
 				<a href="#"><span>赤坂</span></a>
 			</div>
-			<div class="conteiner--box__area">
+			<div class="container--box__area">
 				<a href="#"><span>自由が丘・二子玉川</span></a>
 			</div>
-			<div class="conteiner--box__area">
+			<div class="container--box__area">
 				<a href="#"><span>品川</span></a>
 			</div>
-			<div class="conteiner--box__area">
+			<div class="container--box__area">
 				<a href="#"><span>上野・浅草</span></a>
 			</div>
-			<div class="conteiner--box__area">
+			<div class="container--box__area">
 				<a href="#"><span>池袋</span></a>
 			</div>
-			<div class="conteiner--box__area">
+			<div class="container--box__area">
 				<a href="#"><span>吉祥寺</span></a>
 			</div>
 		</div>
-		<div class="conteiner--box__003">
-			<div class="conteiner--box__title arrow--img">
-				<p>神奈川で買えるバレンタインチョコ</p>
+		<div class="container--box__003">
+			<div class="container--box__topmargin container--box__title arrow--img">
+				<p><span>神奈川で買えるバレンタインチョコ</span></p>
 			</div>
 		</div>
-		<!--  1カラムにする場合は、conteiner--area__listsの要素に「oneclum」のクラスを追加する-->
-		<div class="conteiner--area__lists">
-			<div class="conteiner--box__area  conteiner--box__top">
+		<div class="container--area__lists">
+			<div class="container--box__area  container--box__top">
 				<a href="#"><span>横浜・みなとみらい</span></a>
 			</div>
-			<div class="conteiner--box__area">
+			<div class="container--box__area">
 				<a href="#"><span>川崎</span></a>
 			</div>
-			<div class="conteiner--box__area">
+			<div class="container--box__area">
 				<a href="#"><span>鎌倉・湘南</span></a>
 			</div>
 		</div>
-		<br clear="all" class="pc_only" />
-		<div class="conteiner--frame__003">
-			<a href="#" class="link--underline">
-				<div class="conteiner--box__003">
-					<div class="conteiner--box__title arrow--img">
-						<p>千葉で買えるバレンタインチョコ</p>
+		<br clear="all" class="only_pc" />
+		<div class="container--frame__003">
+			<div class="link--underline">
+				<div class="container--box__003">
+					<div class="container--box__title arrow--img">
+						<p><a href="#"><span>千葉で買えるバレンタインチョコ</span></a></p>
 					</div>
 				</div>
-			</a>
-			<!--  1カラムにする場合は、conteiner--area__listsの要素に「oneclum」のクラスを追加する-->
-			<div class="conteiner--area__lists">
-				<div class="conteiner--box__area conteiner--box__top">
+			</div>
+			<div class="container--area__lists">
+				<div class="container--box__area container--box__top">
 					<a href="#"><span>千葉</span></a>
 				</div>
-				<div class="conteiner--box__area">
+				<div class="container--box__area">
 					<a href="#"><span>船橋</span></a>
 				</div>
 			</div>
 		</div>
-		<div class="conteiner--frame__003">
-			<a href="#" class="link--underline">
-				<div class="conteiner--box__003">
-					<div class="conteiner--box__title arrow--img">
-						<p>埼玉で買えるバレンタインチョコ</p>
+		<div class="container--frame__003">
+			<div class="link--underline">
+				<div class="container--box__003">
+					<div class="container--box__title arrow--img">
+						<p><a href="#"><span>埼玉で買えるバレンタインチョコ</span></a></p>
 					</div>
 				</div>
-			</a>
-			<!--  1カラムにする場合は、conteiner--area__listsの要素に「oneclum」のクラスを追加する-->
-			<div class="conteiner--area__lists border--bottom__none">
-				<div class="conteiner--box__area conteiner--box__top  border--bottom__none">
+			</div>
+			<div class="container--area__lists border--bottom__none">
+				<div class="container--box__area container--box__top  border--bottom__none">
 					<a href="#"><span>埼玉</span></a>
 				</div>
-				<div class="conteiner--box__area border--bottom__none">
+				<div class="container--box__area border--bottom__none">
 					<a href="#"><span>川越</span></a>
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
-
 <!--========== C エリアから探す =====================================================-->
 <!--========== D ランキングＴＯＰ３ ==================================================-->
 <section id="ranking--top3">
-	<h2 id="D" class="contents--component__title eventtitle--backcolor__default">秋の人気イベントランキング</h2>
-	<div class="conteiner--box conteiner--box__line">
-		<div class="conteiner--box__004">
-			<a class="link--opacity__50" href="#">
-				<div class="conteiner--box__image">
-					<div class="conteiner--ranking__001"></div>
-					<img src="img/image_sample_004.png" alt="image_sample004" />
-				</div>
-				<div class="conteiner--box__title">
-					<p>イベント名イベント名イベント名</p>
-				</div>
-			</a>
-		</div>
-		<div class="conteiner--box__004">
-			<a class="link--opacity__50" href="#">
-				<div class="conteiner--box__image">
-					<div class="conteiner--ranking__002"></div>
-					<img src="img/image_sample_005.png" alt="image_sample005" />
-				</div>
-				<div class="conteiner--box__title">
-					<p>イベント名イベント名イベント名</p>
-				</div>
-			</a>
-		</div>
-		<div class="conteiner--box__004-last">
-			<a class="link--opacity__50" href="#">
-				<div class="conteiner--box__image">
-					<div class="conteiner--ranking__003"></div>
-					<img src="img/image_sample_006.png" alt="image_sample006" />
-				</div>
-				<div class="conteiner--box__title">
-					<p>イベント名イベント名イベント名</p>
-				</div>
-			</a>
+	<div class="contents--component__title eventtitle--backcolor__default">
+		<h2 id="d">秋の人気イベントランキング</h2>
+	</div>
+	<div class="container--box container--box__line">
+		<div class="container--box__field">
+			<div class="container--box__004">
+				<a class="link--opacity__50" href="#">
+					<div class="container--box__image">
+						<div class="container--ranking__001"></div>
+						<img src="img/image_sample_004.png" alt="image_sample004" />
+					</div>
+					<div class="container--box__title">
+						<p>イベント名イベント名イベント名</p>
+					</div>
+				</a>
+			</div>
+			<div class="container--box__004">
+				<a class="link--opacity__50" href="#">
+					<div class="container--box__image">
+						<div class="container--ranking__002"></div>
+						<img src="img/image_sample_005.png" alt="image_sample005" />
+					</div>
+					<div class="container--box__title">
+						<p>イベント名イベント名イベント名</p>
+					</div>
+				</a>
+			</div>
+			<div class="container--box__004-last">
+				<a class="link--opacity__50" href="#">
+					<div class="container--box__image">
+						<div class="container--ranking__003"></div>
+						<img src="img/image_sample_006.png" alt="image_sample006" />
+					</div>
+					<div class="container--box__title">
+						<p>イベント名イベント名イベント名</p>
+					</div>
+				</a>
+			</div>
 		</div>
 	</div>
-	<hr />
-    <div class="conteiner--box">
-		<div class="conteiner--link__text arrow--img">
+    <div class="container--box">
+		<div class="container--link__text arrow--img">
 			<a href="#">
 				<p><span>TOP10すべてのランキングを見る</span></p>
 			</a>
@@ -898,32 +876,32 @@ loadLetsSBM_special('facebook-sp,twitter-sp,hatena-sp,line', 'sbsp');
 <!--========== D ランキングＴＯＰ３ ==================================================-->
 <!--========== E PICKUPコンテンツ ===================================================-->
 <section id="pickup--contents">
-	<div id="E" class="conteiner--box border--bottom ">
+	<div id="e" class="container--box">
 		<a class="link--opacity__50" href="#">
-			<div class="conteiner--boxleft__005">
-				<div class="conteiner--box__image">
-					<div class="conteiner--box__tag conteiner--tag__color">PICKUPコンテンツ</div>
+			<div class="container--boxleft__005">
+				<div class="container--box__image">
+					<div class="container--box__tag tag-color__pickup">PICKUPコンテンツ</div>
 					<img src="img/image_sample_007.png" alt="image_sample007" />
 				</div>
 			</div>
-			<div class="conteiner--boxright__005">
-				<div class="conteiner--box__title">
+			<div class="container--boxright__005">
+				<div class="container--box__title">
 					<p>デートにぴったり！バレンタインイベント</p>
 				</div>
 				<p>デートにぴったりな気分があがるイベントをご紹介！</p>
 			</div>
 		</a>
 	</div>
-	<div class="conteiner--box">
+	<div class="container--box">
 		<a class="link--opacity__50" href="#">
-			<div class="conteiner--boxleft__005">
-				<div class="conteiner--box__image">
-					<div class="conteiner--box__tag conteiner--tag__color">PICKUPコンテンツ</div>
+			<div class="container--boxleft__005">
+				<div class="container--box__image">
+					<div class="container--box__tag tag-color__pickup">PICKUPコンテンツ</div>
 					<img src="img/image_sample_008.png" alt="image_sample008" />
 				</div>
 			</div>
-			<div class="conteiner--boxright__005">
-				<div class="conteiner--box__title">
+			<div class="container--boxright__005">
+				<div class="container--box__title">
 					<p>デートにぴったり！秋のイベント</p>
 				</div>
 				<p>デートにぴったりな気分があがるイベントをご紹介！</p>
@@ -934,32 +912,32 @@ loadLetsSBM_special('facebook-sp,twitter-sp,hatena-sp,line', 'sbsp');
 <!--========== E PICKUPコンテンツ ===================================================-->
 <!--========== E PICKUPコンテンツ3:2 ================================================-->
 <section id="pickup--contents__002">
-	<div id="E-2" class="conteiner--box border--bottom">
+	<div id="e-2" class="container--box border--bottom">
 		<a class="link--opacity__50" href="#">
-			<div class="conteiner--boxleft__005">
-				<div class="conteiner--box__image">
-					<div class="conteiner--box__tag conteiner--tag__color">PICKUPコンテンツ</div>
+			<div class="container--boxleft__005">
+				<div class="container--box__image">
+					<div class="container--box__tag tag-color__pickup">PICKUPコンテンツ</div>
 					<img src="img/image_sample_009.png" alt="image_sample009" />
 				</div>
 			</div>
-			<div class="conteiner--boxright__005">
-				<div class="conteiner--box__title">
+			<div class="container--boxright__005">
+				<div class="container--box__title">
 					<p>キャッチ567890</p>
 				</div>
 				<p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。これで90文字です。</p>
 			</div>
 		</a>
 	</div>
-	<div class="conteiner--box">
+	<div class="container--box">
 		<a class="link--opacity__50" href="#">
-			<div class="conteiner--boxleft__005">
-				<div class="conteiner--box__image">
-					<div class="conteiner--box__tag conteiner--tag__color">PICKUPコンテンツ</div>
+			<div class="container--boxleft__005">
+				<div class="container--box__image">
+					<div class="container--box__tag tag-color__pickup">PICKUPコンテンツ</div>
 					<img src="img/image_sample_010.png" alt="image_sample010" />
 				</div>
 			</div>
-			<div class="conteiner--boxright__005">
-				<div class="conteiner--box__title">
+			<div class="container--boxright__005">
+				<div class="container--box__title">
 					<p>キャッチ567890</p>
 				</div>
 				<p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。これで90文字です。</p>
@@ -970,29 +948,31 @@ loadLetsSBM_special('facebook-sp,twitter-sp,hatena-sp,line', 'sbsp');
 <!--========== E PICKUPコンテンツ3:2 ================================================-->
 <!--========== F コンテンツ誘導枠 ====================================================-->
 <section id="contents--induction">
-	<h2 id="F" class="contents--component__title eventtitle--backcolor__default">タイプ別編集部おすすめ秋祭り</h2>
-	<div class="conteiner--box">
-		<div class="conteiner--boxleft__006 pc--only">
-			<div class="conteiner--box__image">
+	<div class="contents--component__title eventtitle--backcolor__default">
+		<h2 id="f">タイプ別編集部おすすめ秋祭り</h2>
+	</div>
+	<div class="container--box">
+		<div class="container--boxleft__006 only_pc">
+			<div class="container--box__image">
 				<img src="img/image_sample_011.png" alt="image_sample009" />
 			</div>
 		</div>
 		<a href="#">
-			<div class="conteiner--boxleft__006 sp--only">
-				<div class="conteiner--box__image">
+			<div class="container--boxleft__006 only_sp">
+				<div class="container--box__image">
 					<img src="img/image_sample_011.png" alt="image_sample009" />
 				</div>
 			</div>
-			<div class="conteiner--boxright__006a">
-				<div class="conteiner--box__title arrow--img">
+			<div class="container--boxright__006a">
+				<div class="container--box__title arrow--img">
 					<p class="link--underline">タイプ別編集部おすすめ秋祭り</p>
 				</div>
-				<p class="sp--only">テキストが入ります。テキストが入ります。テキストが入ります。これで40文字です。</p>
+				<p class="only_sp">テキストが入ります。テキストが入ります。テキストが入ります。これで40文字です。</p>
 			</div>
 		</a>
-		<p class="conteiner--boxright__006a pc--only">テキストが入ります。テキストが入ります。テキストが入ります。これで40文字です。</p>
-		<div class="conteiner--boxright__006b">
-			<div class="conteiner--box__text arrow--img link--underline">
+		<p class="container--boxright__006a only_pc">テキストが入ります。テキストが入ります。テキストが入ります。これで40文字です。</p>
+		<div class="container--boxright__006b">
+			<div class="container--box__text arrow--img link--underline">
 				<a href="#"><span>本命チョコ</span></a>
 				<a href="#"><span>義理チョコ</span></a>
 				<a href="#"><span>友チョコ</span></a>
@@ -1006,57 +986,64 @@ loadLetsSBM_special('facebook-sp,twitter-sp,hatena-sp,line', 'sbsp');
 <!--========== F コンテンツ誘導枠 ====================================================-->
 <!--========== V 差込有料枠 =========================================================-->
 <section id="contents--paymentfee">
-	<h2 id="V" class="contents--component__title maintitle--design__prGlay maintitle--design__underborder">秋祭りにおでかけするなら、周辺レストランもチェック！</h2>
-	<div class="conteiner--box link--opacity__50">
+	<div class="contents--component__title maintitle--design__underborder">
+		<h2 id="v">秋祭りにおでかけするなら、周辺レストランもチェック！</h2>
+		<span class="square-color__grey">PR</span>
+	</div>
+	<div class="container--box link--opacity__50">
 		<a href="#">
-			<div class="conteiner--boxleft__007">
-				<div class="conteiner--box__image">
-					<img src="img/image_sample_012.png" alt="image_sample009" />
+			<div class="container--box__field">
+				<div class="container--boxleft__007">
+					<div class="container--box__image">
+						<img src="img/image_sample_012.png" alt="image_sample009" />
+					</div>
 				</div>
-			</div>
-			<div class="conteiner--boxright__007">
-				<div class="conteiner--box__title">
-					<p>秋祭り会場周辺のレストランを探そう</p>
-				</div>
-				<p>秋祭りに行く前に、行った後に立ち寄りたい、秋祭り会場周辺のレストラン情報はコチラをチェック！</p>
-				<div class="btn btn--color arrow--img">
-					<p>お店を見る</p>
+				<div class="container--boxright__007">
+					<div class="container--box__title">
+						<p>秋祭り会場周辺のレストランを探そう</p>
+					</div>
+					<p>秋祭りに行く前に、行った後に立ち寄りたい、秋祭り会場周辺のレストラン情報はコチラをチェック！</p>
+					<div class="event-button event-button--color arrow--img">
+						<p>お店を見る</p>
+					</div>
 				</div>
 			</div>
 		</a>
 	</div>
-</section
+</section>
 <!--========== V 差込有料枠 =========================================================-->
 <!--========== H 人気のエリア =======================================================-->
 <section id="contents--popular--areas">
-	<h2 id="H" class="contents--component__title eventtitle--backcolor__default">編集部おすすめのエリア</h2>
-	<div class="conteiner--box">
-		<div class="conteiner--box__area link--opacity__50">
+	<div class="contents--component__title eventtitle--backcolor__default">
+		<h2 id="h">編集部おすすめのエリア</h2>
+	</div>
+	<div class="container--box">
+		<div class="container--box__area link--opacity__50">
 			<a href="#">
-				<div class="conteiner--box__image">
+				<div class="container--box__image">
 					<img src="img/image_sample_013.png" alt="image_sample009" />
 				</div>
 				<p>銀座</p>
 			</a>
 			<a href="#">
-				<div class="conteiner--boxleft__008">
-					<div class="conteiner--box__image">
+				<div class="container--boxleft__008">
+					<div class="container--box__image">
 						<img src="img/image_sample_014.png" alt="image_sample009" />
 					</div>
 				</div>
 				<p>表参道・青山</p>
 			</a>
 			<a href="#">
-				<div class="conteiner--boxleft__008">
-					<div class="conteiner--box__image">
+				<div class="container--boxleft__008">
+					<div class="container--box__image">
 						<img src="img/image_sample_015.png" alt="image_sample009" />
 					</div>
 				</div>
 				<p>渋谷</p>
 			</a>
 			<a href="#">
-				<div class="conteiner--boxleft__008">
-					<div class="conteiner--box__image">
+				<div class="container--boxleft__008">
+					<div class="container--box__image">
 						<img src="img/image_sample_016.png" alt="image_sample009" />
 					</div>
 				</div>
@@ -1069,22 +1056,29 @@ loadLetsSBM_special('facebook-sp,twitter-sp,hatena-sp,line', 'sbsp');
 <!--========== H 人気のエリア =======================================================-->
 <!--========== X レストラン誘導枠 ====================================================-->
 <section id="contents--restaurant__guidance">
-	<h2 id="X" class="contents--component__title maintitle--design__pr eventtitle--backcolor__subcolor">デートやディナーにおすすめのレストラン</h2>
-	<div class="conteiner--box">
+	<div class="contents--component__title eventtitle--backcolor__subcolor">
+		<h2 id="x">デートやディナーにおすすめのレストラン<span class="square-color__white">PR</span></h2>
+	</div>
+	<div class="container--box">
 		<a href="#" class="link--opacity__50">
-			<div class="conteiner--boxleft__009">
-				<div class="conteiner--box__image">
-					<img src="img/image_sample_017.png" alt="image_sample009" />
+			<div class="container--box__field">
+				<div class="container--boxleft__009">
+					<div class="container--box__image">
+						<img src="img/image_sample_017.png" alt="image_sample009" />
+					</div>
 				</div>
-			</div>
-			<div class="conteiner--boxright__009">
-				<p>バレンタイン限定の特別なコースやきれいな夜景が見えるなど、バレンタインディナーにぴったりなお店・レストランをご紹介</p>
-				<div class="btn arrow--img btn--color">
-					<p>おすすめレストランを見る</p>
+				<div class="container--boxright__009">
+					<p>バレンタイン限定の特別なコースやきれいな夜景が見えるなど、バレンタインディナーにぴったりなお店・レストランをご紹介</p>
+					<div class="event-button event-button--color arrow--img">
+						<p>おすすめレストランを見る</p>
+					</div>
 				</div>
 			</div>
 		</a>
-		<div class="conteiner--box__area arrow--img link--underline">
+		<div id="accordion--001" class="only_sp">
+			<a class="archive">東京のバレンタインスポットをもっと見る</a>
+		</div>
+		<div class="container--box__area arrow--img link--underline">
 			<a class="accordion--spot" href="#"><span>夜景・景色がきれいなお店</span></a>
 			<a class="accordion--spot" href="#"><span>２人で祝う　誕生日＆記念日にこのお店</span></a>
 			<a class="accordion--spot" href="#"><span>カップルシート＆2人個室のあるお店</span></a>
@@ -1092,152 +1086,180 @@ loadLetsSBM_special('facebook-sp,twitter-sp,hatena-sp,line', 'sbsp');
 			<a class="accordion--spot" href="#"><span>落ち着いた大人デートを楽しむお店</span></a>
 			<a class="accordion--spot" href="#"><span>夜景・景色がきれいなお店</span></a>
 		</div>
-		<div id="accordion--001" class="sp--only">
-			<a class="archive" href="#">東京のバレンタインスポットをもっと見る</a>
-		</div>
 	</div>
 </section>
 
 <!--========== X レストラン誘導枠 ====================================================-->
 <!--========== Y 記事誘導枠 =========================================================-->
 <section id="contents--article__induction">
-	<h2 id="Y" class="contents--component__title eventtitle--backcolor__default maintitle--design__border">秋のイベントのおでかけ記事</h2>
-	<div class="conteiner--box">
-		<div class="conteiner--box__area link--opacity__50">
+	<div class="contents--component__title eventtitle--backcolor__default maintitle--design__border">
+		<h2 id="y">秋のイベントのおでかけ記事</h2>
+	</div>
+	<div class="container--box">
+		<div class="container--box__area link--opacity__50">
 			<a class="accordion--outing" href="#">
-				<div class="conteiner--box__image">
-					<img src="img/image10-1.png" alt="image10-1" />
-				</div>
-				<div class="conteiner--box__text">
-				  <p>テキストが入ります。テキストが入ります。テキストが<span class="float--right"><span class="new"></span><span class="pr"></span></span></p>
+				<div class="container--box__field">
+					<div class="container--box__image">
+						<img src="img/image10-1.png" alt="image10-1" />
+					</div>
+					<div class="container--box__text">
+					  <p>テキストが入ります。テキストが入ります。テキストが<span class="float--right"><span class="square-color__red">NEW</span><span class="square-color__grey">PR</span></span></p>
+					</div>
 				</div>
 			</a>
 			<a class="accordion--outing" href="#">
-				<div class="conteiner--boxleft__010">
-					<div class="conteiner--box__image">
-						<img src="img/image10-2.png" alt="image10-2" />
+				<div class="container--box__field">
+					<div class="container--boxleft__010">
+						<div class="container--box__image">
+							<img src="img/image10-2.png" alt="image10-2" />
+						</div>
 					</div>
-				</div>
-				<div class="conteiner--box__text">
-				  <p>テキストが入ります。テキストが入ります。テキストが入ります。<span class="float--right"><span class="new"></span></span></p>
+					<div class="container--box__text">
+					  <p>テキストが入ります。テキストが入ります。テキストが入ります。<span class="float--right"><span class="square-color__red">NEW</span></span></p>
+					</div>
 				</div>
 			</a>
 			<a class="accordion--outing" href="#">
-				<div class="conteiner--boxleft__010">
-					<div class="conteiner--box__image">
-						<img src="img/image10-3.png" alt="image10-3" />
+				<div class="container--box__field">
+					<div class="container--boxleft__010">
+						<div class="container--box__image">
+							<img src="img/image10-3.png" alt="image10-3" />
+						</div>
 					</div>
-				</div>
-				<div class="conteiner--box__text">
-				  <p>テキストが入ります。テキストが入ります。テキストが入ります。<span class="float--right"><span class="pr"></span></span></p>
+					<div class="container--box__text">
+					  <p>テキストが入ります。テキストが入ります。テキストが入ります。<span class="float--right"><span class="square-color__grey">PR</span></span></p>
+					</div>
 				</div>
 			</a>
 			<a class="accordion--outing" href="#">
-				<div class="conteiner--boxleft__010">
-					<div class="conteiner--box__image">
-						<img src="img/image10-4.png" alt="image10-4" />
+				<div class="container--box__field">
+					<div class="container--boxleft__010">
+						<div class="container--box__image">
+							<img src="img/image10-4.png" alt="image10-4" />
+						</div>
 					</div>
-				</div>
-				<div class="conteiner--box__text">
-				  <p>テキストが入ります。テキストが入ります。テキストが入ります。</p>
+					<div class="container--box__text">
+					  <p>テキストが入ります。テキストが入ります。テキストが入ります。</p>
+					</div>
 				</div>
 			</a>
 			<a class="accordion--outing" href="#">
-				<div class="conteiner--boxleft__010">
-					<div class="conteiner--box__image">
-						<img src="img/image10-5.png" alt="image10-5" />
+				<div class="container--box__field">
+					<div class="container--boxleft__010">
+						<div class="container--box__image">
+							<img src="img/image10-5.png" alt="image10-4" />
+						</div>
 					</div>
-				</div>
-				<div class="conteiner--box__text">
-				  <p>テキストが入ります。テキストが入ります。テキストが入ります。</p>
+					<div class="container--box__text">
+					  <p>テキストが入ります。テキストが入ります。テキストが入ります。</p>
+					</div>
 				</div>
 			</a>
 			<a class="accordion--outing" href="#">
-				<div class="conteiner--boxleft__010">
-					<div class="conteiner--box__image">
-						<img src="img/image10-6.png" alt="image10-6" />
+				<div class="container--box__field">
+					<div class="container--boxleft__010">
+						<div class="container--box__image">
+							<img src="img/image10-6.png" alt="image10-4" />
+						</div>
 					</div>
-				</div>
-				<div class="conteiner--box__text">
-				  <p>テキストが入ります。テキストが入ります。テキストが入ります。</p>
+					<div class="container--box__text">
+					  <p>テキストが入ります。テキストが入ります。テキストが入ります。</p>
+					</div>
 				</div>
 			</a>
 		</div>
-		<div id="accordion--002" class="sp--only">
-			<a class="archive--outing" href="#">おでかけ記事をもっと見る</a>
+		<div id="accordion--002" class="only_sp">
+			<a class="archive--outing">おでかけ記事をもっと見る</a>
 		</div>
 	</div>
 </section>
 <!--========== Y 記事誘導枠 =========================================================-->
 <!--========== Z-1 関連特集（正方形) =================================================-->
-<section class="contents--component__011">
-	<h2 class="contents--component__title eventtitle--backcolor__default maintitle--design__border">秋祭り＆秋のイベントのお役立ち情報</h2>
-	<div class="conteiner--box">
-		<div class="conteiner--box__area link--opacity__50">
+<section id="contents--feature__square">
+	<div class="contents--component__title eventtitle--backcolor__default maintitle--design__border">
+		<h2 id="z-1">秋祭り＆秋のイベントのお役立ち情報</h2>
+	</div>
+	<div class="container--box">
+		<div class="container--box__area link--opacity__50">
 			<a class="accordion--outing__002" href="#">
-				<div class="conteiner--box__image">
-					<img src="img/image11-1.png" alt="image_sample009" />
-				</div>
-				<div class="conteiner--box__text">
-					<p class="subtitle">タイトルタイトルタイトルタイトル</p>
-					<p>テキストが入ります。テキストが入ります。<span class="float--right"><span class="new"></span><span class="pr"></span></span></p>
+				<div class="container--box__field">
+					<div class="container--box__image">
+						<img src="img/image11-1.png" alt="image_sample009" />
+					</div>
+					<div class="container--box__text">
+						<p class="subtitle">タイトルタイトルタイトルタイトル</p>
+						<p>テキストが入ります。テキストが入ります。<span class="float--right"><span class="square-color__red">NEW</span><span class="square-color__grey">PR</span></span></p>
+					</div>
 				</div>
 			</a>
 			<a class="accordion--outing__002" href="#">
-				<div class="conteiner--box__image">
-					<img src="img/image11-2.png" alt="image_sample009" />
-				</div>
-				<div class="conteiner--box__text">
-					<p class="subtitle">タイトルタイトルタイトルタイトル</p>
-					<p>テキストが入ります。テキストが入ります。<span class="float--right"><span class="pr"></span></span></p>
-				</div>
-			</a>
-			<a class="accordion--outing__002" href="#">
-				<div class="conteiner--box__image">
-					<img src="img/image11-3.png" alt="image_sample009" />
-				</div>
-				<div class="conteiner--box__text">
-					<p class="subtitle">タイトルタイトルタイトルタイトル</p>
-					<p>テキストが入ります。テキストが入ります。</p>
+				<div class="container--box__field">
+					<div class="container--box__image">
+						<img src="img/image11-2.png" alt="image_sample009" />
+					</div>
+					<div class="container--box__text">
+						<p class="subtitle">タイトルタイトルタイトルタイトル</p>
+						<p>テキストが入ります。テキストが入ります。<span class="float--right"><span class="square-color__grey">PR</span></span></p>
+					</div>
 				</div>
 			</a>
 			<a class="accordion--outing__002" href="#">
-				<div class="conteiner--box__image">
-					<img src="img/image11-4.png" alt="image_sample009" />
+				<div class="container--box__field">
+					<div class="container--box__image">
+						<img src="img/image11-3.png" alt="image_sample009" />
+					</div>
+					<div class="container--box__text">
+						<p class="subtitle">タイトルタイトルタイトルタイトル</p>
+						<p>テキストが入ります。テキストが入ります。</p>
+					</div>
 				</div>
-				<div class="conteiner--box__text">
-					<p class="subtitle">タイトルタイトルタイトルタイトル</p>
-					<p>テキストが入ります。テキストが入ります。</p>
+			</a>
+			<a class="accordion--outing__002" href="#">
+				<div class="container--box__field">
+					<div class="container--box__image">
+						<img src="img/image11-4.png" alt="image_sample009" />
+					</div>
+					<div class="container--box__text">
+						<p class="subtitle">タイトルタイトルタイトルタイトル</p>
+						<p>テキストが入ります。テキストが入ります。</p>
+					</div>
 				</div>
 			</a>
 		</div>
-		<div id="accordion--003" class="sp--only">
-			<a class="archive--outing__002" href="#">おでかけ記事をもっと見る</a>
+		<div id="accordion--003" class="only_sp">
+			<a class="archive--outing__002">おでかけ記事をもっと見る</a>
 		</div>
 	</div>
 </section>
+
 <!--========== Z-1 関連特集（正方形) =================================================-->
 <!--========== Z-2 関連特集枠 =======================================================-->
-<section class="contents--component__012">
-	<h2 class="contents--component__title eventtitle--backcolor__default maintitle--design__border">おすすめ特集</h2>
-	<div class="conteiner--box">
-		<div class="conteiner--box__area link--opacity__50">			
+<section id="contents--feature__3-2">
+	<div class="contents--component__title eventtitle--backcolor__default maintitle--design__border">
+		<h2 id="z-2">おすすめ特集</h2>
+	</div>
+	<div class="container--box">
+		<div class="container--box__area link--opacity__50">			
 			<a href="#">
-				<div class="conteiner--box__image">
-					<img src="img/image12-1.png" alt="image_sample009" />
-				</div>
-				<div class="conteiner--box__text">
-					<p class="subtitle text--strong">イルミネーション特集</p>
-					<p>テキストが入ります。テキストが入ります。テキストが入ります。<span class="float--right"><span class="new"></span><span class="pr"></span></span></p>
+				<div class="container--box__field">
+					<div class="container--box__image">
+						<img src="img/image12-1.png" alt="image_sample009" />
+					</div>
+					<div class="container--box__text">
+						<p class="subtitle text--strong">イルミネーション特集</p>
+						<p>テキストが入ります。テキストが入ります。テキストが入ります。<span class="float--right"><span class="square-color__red">NEW</span><span class="square-color__grey">PR</span></span></p>
+					</div>
 				</div>
 			</a>
 			<a href="#">
-				<div class="conteiner--box__image">
-					<img src="img/image12-2.png" alt="image_sample009" />
-				</div>
-				<div class="conteiner--box__text">
-					<p class="subtitle text--strong">イルミネーション特集</p>
-					<p>テキストが入ります。テキストが入ります。テキストが入ります。<span class="float--right"><span class="new"></span><span class="pr"></span></span></p>
+				<div class="container--box__field">
+					<div class="container--box__image">
+						<img src="img/image12-2.png" alt="image_sample009" />
+					</div>
+					<div class="container--box__text">
+						<p class="subtitle text--strong">イルミネーション特集</p>
+						<p>テキストが入ります。テキストが入ります。テキストが入ります。<span class="float--right"><span class="square-color__red">NEW</span><span class="square-color__grey">PR</span></span></p>
+					</div>
 				</div>
 			</a>
 		</div>
@@ -1245,31 +1267,35 @@ loadLetsSBM_special('facebook-sp,twitter-sp,hatena-sp,line', 'sbsp');
 </section>
 
 <!--========== Z-2 関連特集枠 =======================================================-->
-<!--========== テキストのみ角丸ボタン =================================================-->
-<section class="contents--component__013">
+<section id="search--festa__area">
 <!--========== テキストのみ角丸ボタン　 ==================================================-->
-	<h2 class="contents--component__title eventtitle--backcolor__default">エリアから秋祭りを探す</h2>
-  <div class="conteiner--box set">
-		<div class="conteiner--box__area arrow--img link--opacity__50">			
-			<a class="round" href="#">
-				<p>東京</p>
-			</a>
-			<a class="round" href="#">
-				<p>神奈川</p>
-			</a>
-			<a class="round" href="#">
-				<p>千葉</p>
-			</a>
-		  <a class="round" href="#">
-				<p>埼玉</p>
-			</a>
+<div class="contents--component__title eventtitle--backcolor__default">
+	<h2 id="module1">エリアから秋祭りを探す</h2>
+</div>
+  <div class="container--box set">
+		<div class="container--box__area arrow--img link--opacity__50">	
+			<div class="container--box__field">
+				<a class="contents-round" href="#">
+					<p>東京</p>
+				</a>
+				<a class="contents-round" href="#">
+					<p>神奈川</p>
+				</a>
+				<a class="contents-round" href="#">
+					<p>千葉</p>
+				</a>
+				<a class="contents-round" href="#">
+					<p>埼玉</p>
+				</a>
+			</div>
 		</div>
 	</div>
 <!--========== テキストのみ角丸ボタン　 ==================================================-->
 
-<!--========== テキストのみ角丸ボタン ==================================================-->
-  <div class="conteiner--box set">
-		<div class="conteiner--box__area arrow--img link--opacity__50">			
+<!--========== テキストのみ四角ボタン ==================================================-->
+<div class="container--box set">
+	<div class="container--box__area arrow--img link--opacity__50">
+		<div class="container--box__field">
 			<a href="#">
 				<p>東京</p>
 			</a>
@@ -1279,99 +1305,115 @@ loadLetsSBM_special('facebook-sp,twitter-sp,hatena-sp,line', 'sbsp');
 			<a href="#">
 				<p>千葉</p>
 			</a>
-		<a href="#">
+			<a href="#">
 				<p>埼玉</p>
 			</a>
 		</div>
 	</div>
+</div>
 <!--========== テキストのみ四角ボタン ==================================================-->
 <!--========== テキストのみリスト ==================================================-->
-	<div class="conteiner--box set">
-		<div class="conteiner--box__area arrow--img link--opacity__50">			
-			<a class="margin--right__not" href="#">
-				<p>東京</p>
-			</a>
-			<a class="margin--right__not" href="#">
-				<p>神奈川</p>
-			</a>
-			<a class="margin--right__not" href="#">
-				<p>千葉</p>
-			</a>
-			<a class="margin--right__not" href="#">
-				<p>埼玉</p>
-			</a>
+	<div class="container--box set">
+		<div class="container--box__area arrow--img link--opacity__50">
+			<div class="container--box__field">
+				<a class="margin--right__not" href="#">
+					<p>東京</p>
+				</a>
+				<a class="margin--right__not" href="#">
+					<p>神奈川</p>
+				</a>
+				<a class="margin--right__not" href="#">
+					<p>千葉</p>
+				</a>
+				<a class="margin--right__not" href="#">
+					<p>埼玉</p>
+				</a>
+			</div>
 		</div>
 	</div>
 <!--========== テキストのみリスト ==================================================-->
 </section>
-<!--========== テキストのみ角丸ボタン ==================================================-->
 <!--========== 画像とテキスト_1カラムと4カラム ==========================================-->
-<section class="contents--component__010">
-	<h2 class="contents--component__title eventtitle--backcolor__default">ジャンルで探す</h2>
-	<div class="conteiner--box">
-		<div class="conteiner--box__area link--opacity__50">
+<section id="imagetext--onecolum__fourcolum">
+	<div class="contents--component__title eventtitle--backcolor__default">
+		<h2 id="module4">ジャンルで探す</h2>
+	</div>
+	<div class="container--box">
+		<div class="container--box__area link--opacity__50">
 			<a href="#">
-				<div class="conteiner--box__image">
-					<img src="img/genre_sample_001.png" alt="例大祭・神社の祭り" />
-				</div>
-				<div class="conteiner--box__text">
-					<p class="text--strong">例大祭・神社の祭り</p>
-				  <p>テキストが入ります。テキストが入ります。テキストが入ります。</p>
+				<div class="container--box__field">
+					<div class="container--box__image">
+						<img src="img/genre_sample_001.png" alt="例大祭・神社の祭り" />
+					</div>
+					<div class="container--box__text">
+						<p class="text--strong">例大祭・神社の祭り</p>
+					  <p>テキストが入ります。テキストが入ります。テキストが入ります。</p>
+					</div>
 				</div>
 			</a>
 			<a href="#">
-				<div class="conteiner--boxleft__010">
-					<div class="conteiner--box__image">
-					<img src="img/genre_sample_002.png" alt="さんま祭り" />
+				<div class="container--box__field">
+					<div class="container--boxleft__010">
+						<div class="container--box__image">
+						<img src="img/genre_sample_002.png" alt="さんま祭り" />
+						</div>
 					</div>
-				</div>
-				<div class="conteiner--box__text">
-					<p class="text--strong">さんま祭り</p>
-				  <p>テキストが入ります。テキストが入ります。テキストが入ります。</p>
+					<div class="container--box__text">
+						<p class="text--strong">さんま祭り</p>
+					  <p>テキストが入ります。テキストが入ります。テキストが入ります。</p>
+					</div>
 				</div>
 			</a>
 			<a href="#">
-				<div class="conteiner--boxleft__010">
-					<div class="conteiner--box__image">
-					<img src="img/genre_sample_003.png" alt="グルメフェス" />
+				<div class="container--box__field">
+					<div class="container--boxleft__010">
+						<div class="container--box__image">
+						<img src="img/genre_sample_003.png" alt="グルメフェス" />
+						</div>
 					</div>
-				</div>
-				<div class="conteiner--box__text">
-					<p class="text--strong">グルメフェス</p>
-				  <p>テキストが入ります。テキストが入ります。テキストが入ります。</p>
+					<div class="container--box__text">
+						<p class="text--strong">グルメフェス</p>
+					  <p>テキストが入ります。テキストが入ります。テキストが入ります。</p>
+					</div>
 				</div>
 			</a>
 			<a href="#">
-				<div class="conteiner--boxleft__010">
-					<div class="conteiner--box__image">
-					<img src="img/genre_sample_004.png" alt="音楽イベント" />
+				<div class="container--box__field">
+					<div class="container--boxleft__010">
+						<div class="container--box__image">
+						<img src="img/genre_sample_004.png" alt="音楽イベント" />
+						</div>
 					</div>
-				</div>
-				<div class="conteiner--box__text">
-					<p class="text--strong">音楽イベント</p>
-				  <p>テキストが入ります。テキストが入ります。テキストが入ります。</p>
+					<div class="container--box__text">
+						<p class="text--strong">音楽イベント</p>
+					  <p>テキストが入ります。テキストが入ります。テキストが入ります。</p>
+					</div>
 				</div>
 			</a>
 			<a href="#">
-				<div class="conteiner--boxleft__010">
-					<div class="conteiner--box__image">
-					<img src="img/genre_sample_005.png" alt="スポーツイベント" />
+				<div class="container--box__field">
+					<div class="container--boxleft__010">
+						<div class="container--box__image">
+						<img src="img/genre_sample_005.png" alt="スポーツイベント" />
+						</div>
 					</div>
-				</div>
-				<div class="conteiner--box__text">
-					<p class="text--strong">スポーツイベント</p>
-				  <p>テキストが入ります。テキストが入ります。テキストが入ります。</p>
+					<div class="container--box__text">
+						<p class="text--strong">スポーツイベント</p>
+					  <p>テキストが入ります。テキストが入ります。テキストが入ります。</p>
+					</div>
 				</div>
 			</a>
 			<a href="#">
-				<div class="conteiner--boxleft__010">
-					<div class="conteiner--box__image">
-					<img src="img/genre_sample_006.png" alt="アート・カルチャー" />
+				<div class="container--box__field">
+					<div class="container--boxleft__010">
+						<div class="container--box__image">
+						<img src="img/genre_sample_006.png" alt="アート・カルチャー" />
+						</div>
 					</div>
-				</div>
-				<div class="conteiner--box__text">
-					<p class="text--strong">アート・カルチャー</p>
-				  <p>テキストが入ります。テキストが入ります。テキストが入ります。</p>
+					<div class="container--box__text">
+						<p class="text--strong">アート・カルチャー</p>
+					  <p>テキストが入ります。テキストが入ります。テキストが入ります。</p>
+					</div>
 				</div>
 			</a>
 		</div>
@@ -1380,35 +1422,43 @@ loadLetsSBM_special('facebook-sp,twitter-sp,hatena-sp,line', 'sbsp');
 
 <!--========== 画像とテキスト_1カラムと4カラム ==========================================-->
 <!--========== 画像とテキスト_1カラムと2カラム ==========================================-->
-<section class="contents--component__012">
-	<h2 class="contents--component__title eventtitle--backcolor__default">イベント・フェア</h2>
-	<div class="conteiner--box">
-		<div class="conteiner--box__area link--opacity__50">			
+<section id="imagetext--onecolum__twocolum">
+	<div class="contents--component__title eventtitle--backcolor__default">
+		<h2 id="module5">イベント・フェア</h2>
+	</div>
+	<div class="container--box">
+		<div class="container--box__area link--opacity__50">			
 			<a href="#">
-				<div class="conteiner--box__image">
-					<img src="img/genre_sample_003.png" alt="グルメフェス" />
-				</div>
-				<div class="conteiner--box__text">
-					<p class="subtitle text--strong">秋のグルメフェス</p>
-					<p>テキストが入ります。テキストが入ります。テキストが入ります。</p>
+				<div class="container--box__field">
+					<div class="container--box__image">
+						<img src="img/genre_sample_003.png" alt="グルメフェス" />
+					</div>
+					<div class="container--box__text">
+						<p class="subtitle text--strong">秋のグルメフェス</p>
+						<p>テキストが入ります。テキストが入ります。テキストが入ります。</p>
+					</div>
 				</div>
 			</a>
 			<a href="#">
-				<div class="conteiner--box__image">
-					<img src="img/genre_sample_002.png" alt="さんま祭り" />
-				</div>
-				<div class="conteiner--box__text">
-					<p class="subtitle text--strong">秋のグルメフェス</p>
-					<p>テキストが入ります。テキストが入ります。テキストが入ります。</p>
+				<div class="container--box__field">
+					<div class="container--box__image">
+						<img src="img/genre_sample_002.png" alt="さんま祭り" />
+					</div>
+					<div class="container--box__text">
+						<p class="subtitle text--strong">秋のグルメフェス</p>
+						<p>テキストが入ります。テキストが入ります。テキストが入ります。</p>
+					</div>
 				</div>
 			</a>
 			<a href="#">
-				<div class="conteiner--box__image">
-					<img src="img/genre_sample_002.png" alt="さんま祭り" />
-				</div>
-				<div class="conteiner--box__text">
-					<p class="subtitle text--strong">秋のグルメフェス</p>
-					<p>テキストが入ります。テキストが入ります。テキストが入ります。</p>
+				<div class="container--box__field">
+					<div class="container--box__image">
+						<img src="img/genre_sample_002.png" alt="さんま祭り" />
+					</div>
+					<div class="container--box__text">
+						<p class="subtitle text--strong">秋のグルメフェス</p>
+						<p>テキストが入ります。テキストが入ります。テキストが入ります。</p>
+					</div>
 				</div>
 			</a>
 		</div>
@@ -1416,32 +1466,35 @@ loadLetsSBM_special('facebook-sp,twitter-sp,hatena-sp,line', 'sbsp');
 </section>
 <!--========== 画像とテキスト_1カラムと2カラム ==========================================-->
 <!--========== 画像とテキスト_1カラムと2カラム（キャプションで展開） ========================-->
-<section class="contents--component__014">
-	<h2 class="contents--component__title eventtitle--backcolor__default">秋イベントをとことん満喫しよう</h2>
-	<div class="conteiner--box">
-		<div class="conteiner--box__area link--opacity__50">			
+<section id="imagetext--onecolum__twocolum--ver2">
+	<div class="contents--component__title eventtitle--backcolor__default">
+		<h2 id="module6" class="">秋イベントをとことん満喫しよう</h2>
+		<span class="square-color__white">PR</span>
+	</div>
+	<div class="container--box">
+		<div class="container--box__area link--opacity__50">			
 			<a href="#">
-				<div class="conteiner--box__image">
+				<div class="container--box__image">
 					<img src="img/genre_sample_007.png" alt="グルメフェス" />
 				</div>
-				<div class="conteiner--box__text">
+				<div class="container--box__text">
 					<p>テキストが入ります。テキストが入ります。テキストが入ります。</p>
 				</div>
 			</a>
 			<a href="#">
-				<div class="conteiner--box__image">
+				<div class="container--box__image">
 					<img src="img/genre_sample_008.png" alt="さんま祭り" />
 				</div>
-				<div class="conteiner--box__text">
+				<div class="container--box__text">
 					<p>テキストが入ります。テキストが入ります。テキストが入ります。<span class="float--right"><span class="pr"></span></span></p>
 				</div>
 			</a>
 			<a href="#">
-				<div class="conteiner--box__image">
+				<div class="container--box__image">
 					<img src="img/genre_sample_009.png" alt="さんま祭り" />
 				</div>
-				<div class="conteiner--box__text">
-					<p>テキストが入ります。テキストが入ります。テキストが入ります。</p>
+				<div class="container--box__text">
+					<p>テキストが入ります。テキストが入ります。テキストが入ります。<span class="float--right"><span class="pr"></span></span></p>
 				</div>
 			</a>
 		</div>
@@ -1449,31 +1502,34 @@ loadLetsSBM_special('facebook-sp,twitter-sp,hatena-sp,line', 'sbsp');
 </section>
 <!--========== 画像とテキスト_1カラムと2カラム（キャプションで展開） ========================-->
 <!--========== 画像とテキスト_2カラムと2カラム ==========================================-->
-<section class="contents--component__015">
-	<h2 class="contents--component__title eventtitle--backcolor__subcolor maintitle--design__pr brawn">秋イベントおすすめ情報</h2>
-	<div class="conteiner--box">
-		<div class="conteiner--box__area link--opacity__50">			
+<section id="imagetext--twocolum__twocolum">
+	<div class="contents--component__title eventtitle--backcolor__subcolor">
+		<h2 id="module7">秋イベントおすすめ情報</h2>
+		<span class="square-color__white">PR</span>
+	</div>
+	<div class="container--box">
+		<div class="container--box__area link--opacity__50">			
 			<a href="#">
-				<div class="conteiner--box__image">
+				<div class="container--box__image">
 					<img src="img/genre_sample_010.png" alt="グルメフェス" />
 				</div>
-				<div class="conteiner--box__text">
+				<div class="container--box__text">
 					<p>テキストが入ります。テキストが入ります。テキストが入ります。</p>
 				</div>
 			</a>
 			<a href="#">
-				<div class="conteiner--box__image">
+				<div class="container--box__image">
 					<img src="img/genre_sample_011.png" alt="さんま祭り" />
 				</div>
-				<div class="conteiner--box__text">
+				<div class="container--box__text">
 					<p>テキストが入ります。テキストが入ります。テキストが入ります。</p>
 				</div>
 			</a>
 			<a href="#">
-				<div class="conteiner--box__image">
+				<div class="container--box__image">
 					<img src="img/genre_sample_012.png" alt="さんま祭り" />
 				</div>
-				<div class="conteiner--box__text">
+				<div class="container--box__text">
 					<p>テキストが入ります。テキストが入ります。テキストが入ります。</p>
 				</div>
 			</a>
@@ -1482,51 +1538,59 @@ loadLetsSBM_special('facebook-sp,twitter-sp,hatena-sp,line', 'sbsp');
 </section>
 <!--========== 画像とテキスト_2カラムと2カラム ==========================================-->
 <!--========== 画像とテキスト_強調 ====================================================-->
-<section class="contents--component__016">
-	<h2 class="contents--component__title eventtitle--backcolor__default maintitle--design__pr">秋イベントおすすめ情報</h2>
-	<div class="conteiner--box link--opacity__50">
-		<div class="conteiner--box__left">			
+<section id="imagetext--strong">
+	<div class="contents--component__title eventtitle--backcolor__default">
+		<h2 id="module8">秋イベントおすすめ情報<span class="square-color__white">PR</span></h2>
+	</div>
+	<div class="container--box link--opacity__50">
+		<div class="container--box__left">			
 			<a href="#">
-				<div class="conteiner--box__image">
+				<div class="container--box__image">
 					<img src="img/event_image_001.png" alt="グルメフェス" />
 				</div>
-				<div class="conteiner--box__text">
+				<div class="container--box__text">
 					<p class="text--size__middle text--strong">テキストが入ります。テキストが入ります。</p>
 					<p>デートにぴったりな気分があがるイベントをご紹介！</p>
 				</div>
 			</a>
 		</div>
-		<div class="conteiner--box__right">
-			<div class="conteiner--box__inline">
+		<div class="container--box__right">
+			<div class="container--box__inline">
 				<a href="#">
-					<div class="conteiner--box__image">
-						<img src="img/event_image_002.png" alt="グルメフェス" />
-					</div>
-					<div class="conteiner--box__text">
-						<p class="text--strong">テキストが入ります。</p>
-						<p>テキストが入ります。テキストが入ります。</p>
+					<div class="container--box__field">
+						<div class="container--box__image">
+							<img src="img/event_image_002.png" alt="グルメフェス" />
+						</div>
+						<div class="container--box__text">
+							<p class="text--strong">テキストが入ります。</p>
+							<p>テキストが入ります。テキストが入ります。</p>
+						</div>
 					</div>
 				</a>
 			</div>
-			<div class="conteiner--box__inline">
+			<div class="container--box__inline">
 				<a href="#">
-					<div class="conteiner--box__image">
-						<img src="img/event_image_003.png" alt="グルメフェス" />
-					</div>
-					<div class="conteiner--box__text">
-						<p class="text--strong">テキストが入ります。</p>
-						<p>テキストが入ります。テキストが入ります。</p>
+					<div class="container--box__field">
+						<div class="container--box__image">
+							<img src="img/event_image_003.png" alt="グルメフェス" />
+						</div>
+						<div class="container--box__text">
+							<p class="text--strong">テキストが入ります。</p>
+							<p>テキストが入ります。テキストが入ります。</p>
+						</div>
 					</div>
 				</a>
 			</div>
-			<div class="conteiner--box__inline">
+			<div class="container--box__inline">
 				<a href="#">
-					<div class="conteiner--box__image">
-						<img src="img/event_image_004.png" alt="グルメフェス" />
-					</div>
-					<div class="conteiner--box__text">
-						<p class="text--strong">テキストが入ります。</p>
-						<p>テキストが入ります。テキストが入ります。</p>
+					<div class="container--box__field">
+						<div class="container--box__image">
+							<img src="img/event_image_004.png" alt="グルメフェス" />
+						</div>
+						<div class="container--box__text">
+							<p class="text--strong">テキストが入ります。</p>
+							<p>テキストが入ります。テキストが入ります。</p>
+						</div>
 					</div>
 				</a>
 			</div>
@@ -1535,25 +1599,27 @@ loadLetsSBM_special('facebook-sp,twitter-sp,hatena-sp,line', 'sbsp');
 </section>
 <!--========== 画像とテキスト_強調 ====================================================-->
 <!--========== イベント情報カセット_PICKUP =============================================-->
-<section class="contents--component__017 event--casset__common">
-	<h2 class="contents--component__title eventtitle--backcolor__default">イベント・フェア</h2>
+<section id="eventinformation--casset__pickup" class="event--casset__common moreinfo__none">
+	<div class="contents--component__title eventtitle--backcolor__default">
+		<h2 id="module9">イベント・フェア</h2>
+	</div>
 	<!--イベントインフォメーション START-->
 	<a href="#" class="event--information eventtitle--backcolor__default link--opacity__50">
 		<div class="event--information__color">
 			<div class="event--information__tabs">
-				<span class="tab tab--station round">駅名／都県</span>
-				<span class="tab tab--event round">イベント</span>
-				<span class="tab tab--gourmet round">グルメ</span>
-				<span class="tab tab--music round">音楽</span>
-				<span class="tab tab--sports round">スポーツ</span>
-				<span class="tab tab--art round">アート・カルチャー</span>
-				<span class="tab tab--fes round">祭り</span>
-				<span class="tab tab--sanma round">さんま祭り</span>
-				<span class="tab tab--leaves round">紅葉</span>
-				<span class="tab tab--sweets round">スイーツ</span>
+				<span class="tab tab-color--mono round">駅名／都県</span>
+				<span class="tab tab-color--orange round">イベント</span>
+				<span class="tab tab-color--strong-red round">グルメ</span>
+				<span class="tab tab-color--cyan-blue round">音楽</span>
+				<span class="tab tab-color--deep-green round">スポーツ</span>
+				<span class="tab tab-color--blue-magenta round">アート・カルチャー</span>
+				<span class="tab tab-color--strong-magenta">祭り</span>
+				<span class="tab tab-color--phthalo-blue round">さんま祭り</span>
+				<span class="tab tab-color--brown round">紅葉</span>
+				<span class="tab tab-color--yellow-green round">スイーツ</span>
 			</div>
 			<div class="event--information__title">
-				<p class="text--size__bigger text--strong text--left">2017神宮外苑花火大会</p>
+				<h3 id="event-title__001" class="text--size__bigger text--strong text--left">2017神宮外苑花火大会</h3>
 			</div>
 			<hr class="event--information__border" />
 		</div>
@@ -1562,18 +1628,230 @@ loadLetsSBM_special('facebook-sp,twitter-sp,hatena-sp,line', 'sbsp');
 	<!--インフォメーションエリア START-->
 	<div class="event--information__area">
 		<!--見出しタイトル START-->
-	  <p class="event--information__label">神宮の空を鮮やかに彩る花火×人気アーティストの豪華饗宴</p>
+		<p class="event--information__label">神宮の空を鮮やかに彩る花火×人気アーティストの豪華饗宴</p>
 		<!--見出しタイトル END-->
-		 <div class="event--image__frame">
-			 <img src="img/fire_work_001.png" alt="花火" />
-			 <p>
-				 キャプションが入ります。キャプションが入ります。キャプションが入ります。キャプションが入ります。
-			 </p>
+		<div class="event--information__left">
+			<div class="event--image__frame">
+				<div class="event--image only_pc"></div>
+				<a class="event--image only_sp" href="#">
+					<img src="img/fire_work_001.png" style="width:100%;" />
+				</a>
+			</div>
+			 <div class="event--image__caption">
+				 <p>
+					 キャプションが入ります。キャプションが入ります。キャプションが入ります。キャプションが入ります。
+				 </p>
+			</div>
+		</div>
+		<div class="event--information__right">
+			<div class="event--image__text">
+				<p class="text--size__middle">
+					東京三大花火と称される神宮外苑花火大会は、大迫力のスターマインや趣向を凝らした花火はもちろん、人気アーティストによるライブも充実。メイン会場の神宮球場には、デビュー25周年を迎える大黒摩季が登場！名曲とともに約1万2000発の花火が神宮の空を彩る。
+				</p>
+				<!--追加情報枠　黄色背景-->
+				<div class="event--image__moreinfo">
+					<p>
+						打ち上げ数：<span class="text--strong">約1万2000発</span>
+					</p>
+					<p>
+						例年の人出：<span class="text--strong">32万人</span>
+					</p>
+					<p>
+						露店：<span class="text--strong">あり</span>
+					</p>
+				</div>
+				<!--追加情報枠　黄色背景-->
+			</div>
+		</div>
+	</div>
+	<!--インフォメーションエリア END-->
+	<div class="event--information__field">
+		<dl>
+			<dt>開催日時</dt>
+			<dd>
+				<p class="text--strong">2017年8月20日(日) </p>
+				<p>19:30花火打ち上げ開始、20:30花火終了予定</p>
+				<p>※予備日、8月21日(月) 翌日順延。</p>
+			</dd>
+		</dl>
+		<dl>
+			<dt>場所</dt>
+			<dd>
+				<p>明治神宮外苑</p>
+			</dd>
+		</dl>
+		<dl>
+			<dt>最寄駅</dt>
+			<dd>
+				<p class="recent-station">国立競技場、 外苑前、 信濃町、 千駄ヶ谷、 代々木、 北参道、 青山一丁目、 表参道</p>
+			</dd>
+		</dl>
+		<dl>
+			<dt>有料席</dt>
+			<dd>
+				<p>あり<a class="link--underline" href="#"><span>料金・お問合せ先を見る</span></a></p>
+			</dd>
+		</dl>
+		<dl>
+			<dt>予約期間</dt>
+			<dd>6月17日(土)より一般発売開始</dd>
+		</dl>
+	</div>
+	<a class="button link--opacity__50 event--button__color" href="#">
+		<div class="event-button">
+			<p>エリアで買える<span>おすすめチョコレートを見る</span></p>
+		</div>
+	</a>
+	<div class="height--20px"></div>
+</section>
+
+
+
+
+<!--========== イベント情報カセット_PICKUP =============================================-->
+<!--========== イベント情報カセット_リスト ==============================================-->	
+<section id="eventinformation--casset__lists" class="event--casset__common moreinfo__none">
+	<!--イベントインフォメーション START-->
+	<a href="#" class="event--information eventtitle--backcolor__default link--opacity__50">
+		<div class="event--information__color">
+			<div class="event--information__tabs">
+				<span class="tab tab-color--mono round">駅名／都県</span>
+				<span class="tab tab-color--orange round">イベント</span>
+				<span class="tab tab-color--strong-red round">グルメ</span>
+				<span class="tab tab-color--cyan-blue round">音楽</span>
+			</div>
+			<div class="event--information__title">
+				<h3 id="event-title__002" class="text--size__bigger text--strong text--left">2017神宮外苑花火大会２行になった場合の見た目２行になった場合の見た目</h3>
+			</div>
+			<hr class="event--information__border" />
+		</div>
+	</a>
+	<!--イベントインフォメーション END-->
+	<!--インフォメーションエリア START-->
+	<div class="event--information__area">
+		<!--見出しタイトル START-->
+		<p class="event--information__label">神宮の空を鮮やかに彩る花火×人気アーティストの豪華饗宴</p>
+		<!--見出しタイトル END-->
+		<div class="event--information__left">
+			<div class="event--image__frame">
+				<div class="event--image only_pc"></div>
+				<a class="event--image only_sp" href="#">
+					<img src="img/fire_work_001.png" />
+				</a>
+			</div>
+			 <div class="event--image__caption">
+				 <p>
+					 キャプションが入ります。キャプションが入ります。キャプションが入ります。キャプションが入ります。
+				 </p>
+			</div>
+		</div>
+		<div class="event--information__right">
+			<div class="event--image__text">
+				<p class="text--size__middle">
+					東京三大花火と称される神宮外苑花火大会は、大迫力のスターマインや趣向を凝らした花火はもちろん、人気アーティストによるライブも充実。メイン会場の神宮球場には、デビュー25周年を迎える大黒摩季が登場！名曲とともに約1万2000発の花火が神宮の空を彩る。
+				</p>
+				<!--追加情報枠　黄色背景-->
+				<div class="event--image__moreinfo">
+					<p>
+						打ち上げ数：<span class="text--strong">約1万2000発</span>
+					</p>
+					<p>
+						例年の人出：<span class="text--strong">32万人</span>
+					</p>
+					<p>
+						露店：<span class="text--strong">あり</span>
+					</p>
+				</div>
+				<!--追加情報枠　黄色背景-->
+			</div>
+		</div>
+	</div>
+	<!--インフォメーションエリア END-->
+	<div class="event--information__field">
+		<dl>
+			<dt>開催日時</dt>
+			<dd>
+				<p class="text--strong">2017年8月20日(日) </p>
+				<p>19:30花火打ち上げ開始、20:30花火終了予定</p>
+				<p>※予備日、8月21日(月) 翌日順延。</p>
+			</dd>
+		</dl>
+		<dl>
+			<dt>場所</dt>
+			<dd>
+				<p>明治神宮外苑</p>
+			</dd>
+		</dl>
+		<dl>
+			<dt>最寄駅</dt>
+			<dd>
+				<p class="recent-station">国立競技場、 外苑前、 信濃町、 千駄ヶ谷、 代々木、 北参道、 青山一丁目、 表参道</p>
+			</dd>
+		</dl>
+	</div>
+	<a class="button link--opacity__50 event--button__color" href="#">
+		<div class="event-button">
+			<p>エリアで買える<span>おすすめチョコレートを見る</span></p>
+		</div>
+	</a>
+	<div class="height--20px"></div>
+</section>
+
+<!--========== イベント情報カセット_リスト ==============================================-->	
+<!--========== イベント情報カセット_特別枠 ==============================================-->
+<section id="eventinformation--casset__special" class="event--casset__common moreinfo__none">
+	<!--イベントインフォメーション START-->
+	<a href="#" class="event--information eventtitle--backcolor__default link--opacity__50">
+		<div class="event--information__color">
+			<div class="event--information__tabs">
+				<span class="tab tab-color--mono round">駅名／都県</span>
+				<span class="tab tab-color--orange round">イベント</span>
+				<span class="tab tab-color--strong-red round">グルメ</span>
+				<span class="tab tab-color--cyan-blue round">音楽</span>
+			</div>
+			<div class="event--information__title">
+				<h3 id="event-title__003" class="text--size__bigger text--strong text--left">2017神宮外苑花火大会</h3>
+			</div>
+			<hr class="event--information__border" />
+		</div>
+	</a>
+	<!--イベントインフォメーション END-->
+	<!--インフォメーションエリア START-->
+	<div class="event--information__area">
+		<!--見出しタイトル START-->
+		<p class="event--information__label">神宮の空を鮮やかに彩る花火×人気アーティストの豪華饗宴</p>
+		<!--見出しタイトル START-->
+		<div class="event--information__left">
+			<div class="event--image__frame">
+				<div class="event--image only_pc"></div>
+				<a class="event--image only_sp" href="#">
+					<img src="img/fire_work_002.png" />
+				</a>
+			</div>
+			 <div class="event--image__caption">
+				 <p>
+					 キャプションが入ります。キャプションが入ります。キャプションが入ります。キャプションが入ります。
+				 </p>
+			</div>
+		</div>
+		<div class="event--information__right">
+			<div class="event--image__frame">
+				<div class="event--image only_pc"></div>
+				<div class="event--image only_sp">
+					<img src="img/fire_work_003.png" />
+				</div>
+			</div>
+			 <div class="event--image__caption">
+				 <p>
+					 キャプションが入ります。キャプションが入ります。キャプションが入ります。キャプションが入ります。
+				 </p>
+			</div>
 		</div>
 		<div class="event--image__text">
 			<p class="text--size__middle">
 				東京三大花火と称される神宮外苑花火大会は、大迫力のスターマインや趣向を凝らした花火はもちろん、人気アーティストによるライブも充実。メイン会場の神宮球場には、デビュー25周年を迎える大黒摩季が登場！名曲とともに約1万2000発の花火が神宮の空を彩る。
 			</p>
+			<!--追加情報枠　黄色背景-->
 			<div class="event--image__moreinfo">
 				<p>
 					打ち上げ数：<span class="text--strong">約1万2000発</span>
@@ -1585,60 +1863,60 @@ loadLetsSBM_special('facebook-sp,twitter-sp,hatena-sp,line', 'sbsp');
 					露店：<span class="text--strong">あり</span>
 				</p>
 			</div>
+			<!--追加情報枠　黄色背景-->
 		</div>
 	</div>
 	<!--インフォメーションエリア END-->
-	<dl>
-		<dt>開催日時</dt>
-		<dd>
-			<p class="text--strong">2017年8月20日(日) </p>
-			<p>19:30花火打ち上げ開始、20:30花火終了予定</p>
-			<p>※予備日、8月21日(月) 翌日順延。</p>
-		</dd>
- 	</dl>
-	<dl>
-		<dt>場所</dt>
-		<dd>
-			<p>明治神宮外苑</p>
-		</dd>
-	</dl>
-	<dl>
-		<dt>最寄駅</dt>
-		<dd>
-			<p>国立競技場、 外苑前、 信濃町、 千駄ヶ谷、 代々木、 北参道、 青山一丁目、 表参道</p>
-		</dd>
-	</dl>
-	<dl>
-		<dt>有料席</dt>
-		<dd>
-			<p>あり<a class="link--underline" href="#"><span>料金・お問い合せ先を見る</span></a></p>
-		</dd>
-	</dl>
-	<dl>
-		<dt>予約期間</dt>
-		<dd>6月17日(土)より一般発売開始</dd>
-	</dl>
+	<div class="event--information__field">
+		<dl>
+			<dt>開催日時</dt>
+			<dd>
+				<p class="text--strong">2017年8月20日(日) </p>
+				<p>19:30花火打ち上げ開始、20:30花火終了予定</p>
+				<p>※予備日、8月21日(月) 翌日順延。</p>
+			</dd>
+		</dl>
+		<dl>
+			<dt>場所</dt>
+			<dd>
+				<p>明治神宮外苑</p>
+			</dd>
+		</dl>
+		<dl>
+			<dt>最寄駅</dt>
+			<dd>
+				<p class="recent-station">国立競技場、 外苑前、 信濃町、 千駄ヶ谷、 代々木、 北参道、 青山一丁目、 表参道</p>
+			</dd>
+		</dl>
+	</div>
 	<a class="button link--opacity__50 event--button__color" href="#">
-		<div class="btn">
+		<div class="event-button">
 			<p>エリアで買える<span>おすすめチョコレートを見る</span></p>
 		</div>
 	</a>
-	<div class="height--30px"></div>
+	<div class="height--25px"></div>
 </section>
-<!--========== イベント情報カセット_PICKUP =============================================-->
-<!--========== イベント情報カセット_リスト ==============================================-->	
-<section class="contents--component__018 event--casset__common">
+
+<!--========== イベント情報カセット_特別枠 ==============================================-->
+<!--========== イベント情報カセット_強調枠 ==============================================-->
+<section id="eventinformation--casset__strong" class="event--casset__common">
 	<!--イベントインフォメーション START-->
 	<a href="#" class="event--information eventtitle--backcolor__default link--opacity__50">
 		<div class="event--information__color">
 			<div class="event--information__tabs">
-				<span class="tab tab--station round">駅名／都県</span>
-				<span class="tab tab--event round">イベント</span>
-				<span class="tab tab--gourmet round">グルメ</span>
-				<span class="tab tab--music round">音楽</span>
+				<span class="tab tab-color--mono round">駅名／都県</span>
+				<span class="tab tab-color--orange round">イベント</span>
+				<span class="tab tab-color--strong-red round">グルメ</span>
+				<span class="tab tab-color--cyan-blue round">音楽</span>
+				<span class="tab tab-color--deep-green round">スポーツ</span>
+				<span class="tab tab-color--blue-magenta round">アート・カルチャー</span>
+				<span class="tab tab-color--strong-magenta">祭り</span>
+				<span class="tab tab-color--phthalo-blue round">さんま祭り</span>
+				<span class="tab tab-color--brown round">紅葉</span>
+				<span class="tab tab-color--yellow-green round">スイーツ</span>
 			</div>
 			<div class="event--information__title">
-			<p class="text--size__bigger text--strong text--left">2017神宮外苑花火大会２行になった場合の見た目２行になった場合の見た目</p>
+				<h3 id="event-title__004" class="text--size__bigger text--strong text--left">2017神宮外苑花火大会</h3>
 			</div>
 			<hr class="event--information__border" />
 		</div>
@@ -1647,146 +1925,90 @@ loadLetsSBM_special('facebook-sp,twitter-sp,hatena-sp,line', 'sbsp');
 	<!--インフォメーションエリア START-->
 	<div class="event--information__area">
 		<!--見出しタイトル START-->
-	  <p class="event--information__label">神宮の空を鮮やかに彩る花火×人気アーティストの豪華饗宴</p>
+		<p class="event--information__label">神宮の空を鮮やかに彩る花火×人気アーティストの豪華饗宴</p>
 		<!--見出しタイトル END-->
-		 <div class="event--image__frame">
-			 <img src="img/fire_work_004.png" alt="花火" />
-			 <p>
-				 キャプションが入ります。キャプションが入ります。
-			 </p>
+		<div class="event--information__left">
+			<div class="event--image__frame">
+				<div class="event--image only_pc"></div>
+				<a class="event--image only_sp" href="#">
+					<img src="img/fire_work_002.png" />
+				</a>
+			</div>
+			 <div class="event--image__caption">
+				 <p>
+					 キャプションが入ります。キャプションが入ります。キャプションが入ります。キャプションが入ります。
+				 </p>
+			</div>
 		</div>
-		<div class="event--image__text">
-			<p class="text--size__middle">
-				東京三大花火と称される神宮外苑花火大会は、大迫力のスターマインや趣向を凝らした花火はもちろん、人気アーティストによるライブも充実。メイン会場の神宮球場には、デビュー25周年を迎える大黒摩季が登場！名曲とともに約1万2000発の花火が神宮の空を彩る。
-			</p>
-			<div class="event--image__moreinfo sp--only">
-				<p>
-					打ち上げ数：<span class="text--strong">約1万2000発</span>
+		<div class="event--information__right">
+			<div class="event--image__text">
+				<p class="text--size__middle">
+					東京三大花火と称される神宮外苑花火大会は、大迫力のスターマインや趣向を凝らした花火はもちろん、人気アーティストによるライブも充実。メイン会場の神宮球場には、デビュー25周年を迎える大黒摩季が登場！名曲とともに約1万2000発の花火が神宮の空を彩る。
 				</p>
-				<p>
-					例年の人出：<span class="text--strong">32万人</span>
-				</p>
-				<p>
-					露店：<span class="text--strong">あり</span>
-				</p>
+				<!--追加情報枠　黄色背景-->
+				<div class="event--image__moreinfo">
+					<p>
+						打ち上げ数：<span class="text--strong">約1万2000発</span>
+					</p>
+					<p>
+						例年の人出：<span class="text--strong">32万人</span>
+					</p>
+					<p>
+						露店：<span class="text--strong">あり</span>
+					</p>
+				</div>
+				<!--追加情報枠　黄色背景-->
 			</div>
 		</div>
 	</div>
 	<!--インフォメーションエリア END-->
-	<dl>
-		<dt>開催日時</dt>
-		<dd>
-			<p class="text--strong">2017年8月20日(日) </p>
-			<p>19:30花火打ち上げ開始、20:30花火終了予定</p>
-			<p>※予備日、8月21日(月) 翌日順延。</p>
-		</dd>
- 	</dl>
-	<dl>
-		<dt>場所</dt>
-		<dd>
-			<p>明治神宮外苑</p>
-		</dd>
-	</dl>
-	<dl>
-		<dt>最寄駅</dt>
-		<dd>
-			<p>国立競技場、 外苑前、 信濃町、 千駄ヶ谷、 代々木、 北参道、 青山一丁目、 表参道</p>
-		</dd>
-	</dl>
-	<a class="button link--opacity__50 event--button__color" href="#">
-		<div class="btn">
-			<p>エリアで買える<span>おすすめチョコレートを見る</span></p>
-		</div>
-	</a>
-	<div class="height--30px"></div>
-</section>
-
-<!--========== イベント情報カセット_リスト ==============================================-->	
-<!--========== イベント情報カセット_特別枠 ==============================================-->
-<section class="contents--component__019 event--casset__common">
-	<!--イベントインフォメーション START-->
-	<a href="#" class="event--information eventtitle--backcolor__default link--opacity__50">
-		<div class="event--information__color">
-			<div class="event--information__tabs">
-				<span class="tab tab--station round">駅名／都県</span>
-				<span class="tab tab--event round">イベント</span>
-				<span class="tab tab--gourmet round">グルメ</span>
-				<span class="tab tab--music round">音楽</span>
-			</div>
-			<div class="event--information__title">
-				<p class="text--size__bigger text--strong text--left">2017神宮外苑花火大会</p>
-			</div>
-			<hr class="event--information__border" />
-		</div>
-	</a>
-	<!--イベントインフォメーション END-->
-		<!--見出しタイトル START-->
-	  <p class="event--information__label">神宮の空を鮮やかに彩る花火×人気アーティストの豪華饗宴</p>
-		<!--見出しタイトル END-->
-	<!--インフォメーションエリア START-->
-	<div class="event--information__area">
-		<div class="event--image__frame001">
-			<img src="img/fire_work_003.png" alt="花火" />
-			<p>
-				キャプションが入ります。キャプションが入ります。キャプションが入ります。キャプションが入ります。
-			</p>
-		</div>
-		<div class="event--image__frame002">
-			<img src="img/fire_work_004.png" alt="花火" />
-			<p>
-				キャプションが入ります。キャプションが入ります。キャプションが入ります。キャプションが入ります。
-			</p>
-		</div>
-		<div class="event--image__text">
-			<p class="text--size__middle">
-				東京三大花火と称される神宮外苑花火大会は、大迫力のスターマインや趣向を凝らした花火はもちろん、人気アーティストによるライブも充実。メイン会場の神宮球場には、デビュー25周年を迎える大黒摩季が登場！名曲とともに約1万2000発の花火が神宮の空を彩る。
-			</p>
-			<div class="event--image__moreinfo sp--only">
-				<p>
-					打ち上げ数：<span class="text--strong">約1万2000発</span>
-				</p>
-				<p>
-					例年の人出：<span class="text--strong">32万人</span>
-				</p>
-				<p>
-					露店：<span class="text--strong">あり</span>
-				</p>
-			</div>
-		</div>
+	<div class="event--information__field">
+		<dl>
+			<dt>開催日時</dt>
+			<dd>
+				<p class="text--strong">2017年8月20日(日) </p>
+				<p>19:30花火打ち上げ開始、20:30花火終了予定</p>
+				<p>※予備日、8月21日(月) 翌日順延。</p>
+			</dd>
+		</dl>
+		<dl>
+			<dt>場所</dt>
+			<dd>
+				<p>明治神宮外苑</p>
+			</dd>
+		</dl>
+		<dl>
+			<dt>最寄駅</dt>
+			<dd>
+				<p class="recent-station">国立競技場、 外苑前、 信濃町、 千駄ヶ谷、 代々木、 北参道、 青山一丁目、 表参道</p>
+			</dd>
+		</dl>
+		<dl>
+			<dt>有料席</dt>
+			<dd>
+				<p>あり<a class="link--underline" href="#"><span>料金・お問合せ先を見る</span></a></p>
+			</dd>
+		</dl>
+		<dl>
+			<dt>予約期間</dt>
+			<dd>6月17日(土)より一般発売開始</dd>
+		</dl>
 	</div>
-	<!--インフォメーションエリア END-->
-	<dl>
-		<dt>開催日時</dt>
-		<dd>
-			<p class="text--strong">2017年8月20日(日) </p>
-			<p>19:30花火打ち上げ開始、20:30花火終了予定</p>
-			<p>※予備日、8月21日(月) 翌日順延。</p>
-		</dd>
- 	</dl>
-	<dl>
-		<dt>場所</dt>
-		<dd>
-			<p>明治神宮外苑</p>
-		</dd>
-	</dl>
-	<dl>
-		<dt>最寄駅</dt>
-		<dd>
-			<p>国立競技場、 外苑前、 信濃町、 千駄ヶ谷、 代々木、 北参道、 青山一丁目、 表参道</p>
-		</dd>
-	</dl>
 	<a class="button link--opacity__50 event--button__color" href="#">
-		<div class="btn">
+		<div class="event-button">
 			<p>エリアで買える<span>おすすめチョコレートを見る</span></p>
 		</div>
 	</a>
-	<div class="height--15px"></div>
+	<div class="height--20px"></div>
 </section>
 
-<!--========== イベント情報カセット_特別枠 ==============================================-->
+
+
+
+<!--========== イベント情報カセット_強調枠 ==============================================-->
 <!--========== イベント情報カセット_もっと見る ===========================================-->	
-<section class="contents--component__021 event--casset__common">
-	<a class="arrow--img" href="#">イベントをもっと見る</a>	
+<section id="eventinformation--casset__more">
+	<a class="arrow--img" href="#">お出かけ記事をもっと見る</a>	
 </section>
 <!--========== イベント情報カセット_もっと見る ===========================================-->	
 <!--========== イベント情報カレンダー ===================================================-->
@@ -1804,13 +2026,29 @@ loadLetsSBM_special('facebook-sp,twitter-sp,hatena-sp,line', 'sbsp');
 		</div>
 	</div>
 </div>
-<div class="height--30px"></div>
 <!--========== イベント情報カレンダー ===================================================-->
-</div><!--contents--area end -->
-<!-- PC用のJS配置 -->
-<script src="js/ones_season_pc.js"></script>
-<!-- PC用のJS配置 -->
-<!-- /コーディングここまで -->
+<!--========== 特集トップに戻る ========================================================-->
+<div id="footer-before" class="only_sp">
+ 	<div class="go-to-top">
+		<div class="button-top">
+			<a href="#">
+				<p>特集TOPへ戻る</p>
+			</a>
+		</div>
+		<div class="breadcrumb">
+			<div class="breadcrumb-box">
+				<a href="#"><span>特集TOP</span></a>
+				<a href="#"><span>下層ページタイトル下層ページタイトル</span></a>
+				<p><span>下層ページタイトル下層ページタイトル</span></p>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="link-top only_pc">
+	<a href="#">▲ページTOPへ</a>
+</div>
+<!--========== 特集トップに戻る ========================================================-->
+</div>
 
 <div id="sub">
 <!--▼右TOPICS PR-->

@@ -5,6 +5,80 @@ window.onscroll = function() {
   ( getScrolled() > 300 ) ? $('.btn_scroll_top').css('display', 'block'):$('.btn_scroll_top').css('display', 'none');
 };
 
+//Y 記事誘導枠（秋のイベントのおでかけ記事）のアコーディオン
+$(window).on('load', function(){
+var eventNum = 1;
+hideevent = "<a class='accordion--toggle__nonactive' href='#'>お出かけ記事を隠す</a>";
+showevent = "<a class='accordion--toggle__active' href='#'>お出かけ記事をもっと見る</a>";
+$("#eventinformation--casset__more").html( showevent );
+$(".event--casset__common:not(:lt("+eventNum+"))").hide();
+$("#eventinformation--casset__more").click(function (e) {
+   e.preventDefault();
+       if ($(".event--casset__common:eq("+eventNum+")").is(":hidden")) {
+           $(".event--casset__common:hidden").slideDown();
+           $("#eventinformation--casset__more").html( hideevent );
+			//イベント情報カセット	   
+	   } else {
+           $(".event--casset__common:not(:lt("+eventNum+"))").slideUp();
+           $("#eventinformation--casset__more").html( showevent );
+       }
+	});
+});
+
+//Y 記事誘導枠（秋のイベントのおでかけ記事）のアコーディオン
+$(window).on('load', function(){
+var 　outingNum = 3;
+hideouting = "<p class='accordion--toggle__nonactive'>お出かけ記事を隠す</p>";
+showouting = "<p class='accordion--toggle__active'>おでかけ記事をもっと見る</p>";
+$(".archive--outing").html( showouting );
+$(".accordion--outing:not(:lt("+outingNum+"))").hide();
+$(".archive--outing").click(function (e) {
+   e.preventDefault();
+       if ($(".accordion--outing:eq("+outingNum+")").is(":hidden")) {
+           $(".accordion--outing:hidden").slideToggle(200);
+           $(".archive--outing").html( hideouting );
+       } else {
+           $(".accordion--outing:not(:lt("+outingNum+"))").slideToggle(200);
+           $(".archive--outing").html( showouting );
+       }
+});
+});	
+
+//X レストラン誘導枠（デートやディナーにおすすめのレストラン）のアコーディオン
+$(window).on('load', function(){
+var spotNum = 0;
+hidespot = "<p class='accordion--toggle__nonactive'>東京のバレンタインスポットを隠す</p>";
+showspot = "<p class='accordion--toggle__active'>東京のバレンタインスポットをもっと見る</p>";
+$(".archive").html( showspot );
+$(".accordion--spot:not(:lt("+spotNum+"))").hide();
+$(".archive").click(function (e) {
+   e.preventDefault();
+       if ($(".accordion--spot:eq("+spotNum+")").is(":hidden")) {
+           $(".accordion--spot:hidden").slideToggle(200);
+           $(".archive").html( hidespot );
+       } else {
+           $(".accordion--spot:not(:lt("+spotNum+"))").slideToggle(200);
+           $(".archive").html( showspot );
+       }
+});
+})
+$(window).on('load', function(){
+var 　outingNum__002 = 3;
+hideouting__002 = "<p class='accordion--toggle__nonactive'>お出かけ記事を隠す</p>";
+showouting__002 = "<p class='accordion--toggle__active'>おでかけ記事をもっと見る</p>";
+$(".archive--outing__002").html( showouting__002 );
+$(".accordion--outing__002:not(:lt("+outingNum__002+"))").hide();
+$(".archive--outing__002").click(function (e) {
+   e.preventDefault();
+       if ($(".accordion--outing__002:eq("+outingNum__002+")").is(":hidden")) {
+           $(".accordion--outing__002:hidden").slideToggle(200);
+           $(".archive--outing__002").html( hideouting__002 );
+       } else {
+           $(".accordion--outing__002:not(:lt("+outingNum__002+"))").slideToggle(200);
+           $(".archive--outing__002").html( showouting__002 );
+       }
+});
+});
 // F コンテンツ誘導枠（タイプ別編集部おすすめ秋祭り）
 $(window).on('load resize', function(){
 	$('#contents--induction').each(function(i, box) {
@@ -45,104 +119,6 @@ $(window).on('load resize', function(){
 		$(box).find('.container--area__lists a').height(maxHeight);
 	});
 });
-
-
-
-
-//Y 記事誘導枠（秋のイベントのおでかけ記事）のアコーディオン
-$(window).on('load', function(){
-if (androidVersion() <= 4.4) {
-var 　outingNum = 3;
-hideouting = "<p class='accordion--toggle__nonactive'>お出かけ記事を隠す</p>";
-showouting = "<p class='accordion--toggle__active'>おでかけ記事をもっと見る</p>";
-$(".archive--outing").html( showouting );
-$(".accordion--outing:not(:lt("+outingNum+"))").hide();
-$(".archive--outing").click(function (e) {
-   e.preventDefault();
-       if ($(".accordion--outing:eq("+outingNum+")").is(":hidden")) {
-           $(".accordion--outing:hidden").slideToggle(200);
-           $(".archive--outing").html( hideouting );
-		   $('.contents--area section#contents--article__induction a .container--box__image').css('width', '38%').css('width', '-=10px');
-		   $('.contents--area section#contents--article__induction a .container--box__text').css('width', '62%').css('width', '-=10px');
-       } else {
-           $(".accordion--outing:not(:lt("+outingNum+"))").slideToggle(200);
-           $(".archive--outing").html( showouting );
-       }
-});
-}else{
-var 　outingNum = 3;
-hideouting = "<p class='accordion--toggle__nonactive'>お出かけ記事を隠す</p>";
-showouting = "<p class='accordion--toggle__active'>おでかけ記事をもっと見る</p>";
-$(".archive--outing").html( showouting );
-$(".accordion--outing:not(:lt("+outingNum+"))").hide();
-$(".archive--outing").click(function (e) {
-   e.preventDefault();
-       if ($(".accordion--outing:eq("+outingNum+")").is(":hidden")) {
-           $(".accordion--outing:hidden").slideToggle(200);
-           $(".archive--outing").html( hideouting );
-       } else {
-           $(".accordion--outing:not(:lt("+outingNum+"))").slideToggle(200);
-           $(".archive--outing").html( showouting );
-       }
-});
-}});	
-
-//X レストラン誘導枠（デートやディナーにおすすめのレストラン）のアコーディオン
-$(window).on('load', function(){
-var spotNum = 0;
-hidespot = "<p class='accordion--toggle__nonactive'>東京のバレンタインスポットを隠す</p>";
-showspot = "<p class='accordion--toggle__active'>東京のバレンタインスポットをもっと見る</p>";
-$(".archive").html( showspot );
-$(".accordion--spot:not(:lt("+spotNum+"))").hide();
-$(".archive").click(function (e) {
-   e.preventDefault();
-       if ($(".accordion--spot:eq("+spotNum+")").is(":hidden")) {
-           $(".accordion--spot:hidden").slideToggle(200);
-           $(".archive").html( hidespot );
-       } else {
-           $(".accordion--spot:not(:lt("+spotNum+"))").slideToggle(200);
-           $(".archive").html( showspot );
-       }
-});
-})
-$(window).on('load', function(){
-if (androidVersion() <= 4.4) {
-var 　outingNum__002 = 3;
-hideouting__002 = "<p class='accordion--toggle__nonactive'>お出かけ記事を隠す</p>";
-showouting__002 = "<p class='accordion--toggle__active'>おでかけ記事をもっと見る</p>";
-$(".archive--outing__002").html( showouting__002 );
-$(".accordion--outing__002:not(:lt("+outingNum__002+"))").hide();
-$(".archive--outing__002").click(function (e) {
-   e.preventDefault();
-       if ($(".accordion--outing__002:eq("+outingNum__002+")").is(":hidden")) {
-           $(".accordion--outing__002:hidden").slideToggle(200);
-           $(".archive--outing__002").html( hideouting__002 );
-		   $('.contents--area section#contents--feature__square .container--box a .container--box__image').css('width', '24%').css('width', '-=10px');
-		   $('.contents--area section#contents--feature__square .container--box a .container--box__text').css('width', '76%').css('width', '-=10px');
-       } else {
-           $(".accordion--outing__002:not(:lt("+outingNum__002+"))").slideToggle(200);
-           $(".archive--outing__002").html( showouting__002 );
-       }
-});
-}else {
-var 　outingNum__002 = 3;
-hideouting__002 = "<p class='accordion--toggle__nonactive'>お出かけ記事を隠す</p>";
-showouting__002 = "<p class='accordion--toggle__active'>おでかけ記事をもっと見る</p>";
-$(".archive--outing__002").html( showouting__002 );
-$(".accordion--outing__002:not(:lt("+outingNum__002+"))").hide();
-$(".archive--outing__002").click(function (e) {
-   e.preventDefault();
-       if ($(".accordion--outing__002:eq("+outingNum__002+")").is(":hidden")) {
-           $(".accordion--outing__002:hidden").slideToggle(200);
-           $(".archive--outing__002").html( hideouting__002 );
-       } else {
-           $(".accordion--outing__002:not(:lt("+outingNum__002+"))").slideToggle(200);
-           $(".archive--outing__002").html( showouting__002 );
-       }
-});
-}});
-
-//Z-1 関連特集（正方形)（秋祭り＆秋のイベントのお役立ち情報<）のアコーディオン
 
 // ページ外アンカーリンク対策
 $(function(){
@@ -368,12 +344,10 @@ for( j=0; j<7; j++ ){
 thisDat = thisTable[ j + (i*7) ];
 // 書きこむ内容の取得
 // 今日のクラスを設定
-//var target = document.getElementById('test');
+
 //for (k = 0; k < monthNumber; k++) {
 //target.innerHTML += i;
-if ( thisDat == thisToday && calendarOffset == 0 ){	
-tableHtml += "<div class='today'>";
-}else if( j==5 ){	
+if ( j==5 ){	
 // 土曜のセルの色
 tableHtml += "<div class='saturday'>";
 }else if( j==6 ){	
@@ -400,6 +374,7 @@ tableHtml += "</div>";
 }
 // 表の終わり
 tableHtml += "</div>";
+
 // 次の月のカレンダー
 if (calendarOffset == monthNum) {
 dateSet02 = dateSet_stach;
@@ -407,7 +382,7 @@ target01.innerHTML = tableHtml;
 // 次の月のカレンダー
 } else if (calendarOffset == checkmonth) {
 dateSet03 = dateSet_stach;
-target02.innerHTML = tableHtml;
+target02.innerHTML += tableHtml;
 }
 }
 calendar(monthNum);	
@@ -427,128 +402,14 @@ if (androidVersion() <= 4.4) {//もしアンドロイドのバージョンが4.3
 $(window).on('load resize', function(){
     $('.container--link__text').css('width', '100%').css('width', '-=10px');
     $('.container--box__002:after').css('width', '50%').css('width', '-=8px');
-    $('.contents--area section#new--information__photo .container--box .container--box__001 .container--box__image').css('width', '37%').css('width', '-=10px');
-    $('.contents--area section#new--information__photo .container--box .container--box__001 .container--box__field').css('width', '63%').css('width', '-=10px');
-    $('.contents--area section#new--information__photo .container--box .container--box__001 .container--box__image').css('width', '37%').css('width', '-=10px');
-    $('.contents--area section#new--information__photo .container--box .container--box__001 .container--box__field').css('width', '63%').css('width', '-=10px');
-    $('.contents--area section#new--information__text .container--box__title').css('width', '100%').css('width', '-=20px');
-    $('.contents--area section#new--information__text .container--box__title p').css('width', '100%').css('width', '-=20px');
-    $('.contents--area section#ranking--top3 .container--box__title p').css('width', '100%').css('width', '-=5px');
-    $('.contents--area section#ranking--top3 .container--box__004:first-child').css('width', '33%').css('width', '-=13px');
-    $('.contents--area section#ranking--top3 .container--box__004:nth-child(2)').css('width', '33%').css('width', '-=13px');
-    $('.contents--area section#ranking--top3 .container--box__004').css('width', '33%').css('width', '-=13px');
-    $('.contents--area section#ranking--top3 .container--box__004-last').css('width', '33%').css('width', '-=13px');
-    $('.contents--area section#ranking--top3 hr').css('width', '100%').css('width', '-=20px');
-    $('.contents--area section#pickup--contents .container--boxright__005').css('width', '100%').css('width', '-=20px');
-    $('.contents--area section#pickup--contents .container--box__image').css('width', '100%').css('width', '-=20px');
-    $('.contents--area section#pickup--contents__002 .container--boxright__005').css('width', '100%').css('width', '-=20px');
-    $('.contents--area section#pickup--contents__002 .container--box__image').css('width', '100%').css('width', '-=20px');
-    $('.contents--area section#contents--induction .container--boxleft__006').css('width', '38%').css('width', '-=10px');
-    $('.contents--area section#contents--induction .container--boxright__006a').css('width', '59%').css('width', '-=5px');
-    $('.contents--area section#contents--paymentfee .contents--component__title h2').css('width', '100%').css('width', '-=60px');
-    $('.contents--area section#contents--paymentfee .container--boxright__007').css('width', '59%').css('width', '-=10px');
-    $('.contents--area section#contents--paymentfee .container--boxleft__007').css('width', '41%').css('width', '-=20px');
-    $('.contents--area section#contents--paymentfee .event-button p').css('width', '100%').css('width', '-=20px');
-    $('.contents--area section#contents--popular--areas .container--box a').css('width', '25%').css('width', '-=12.5px');
-    $('.contents--area section#contents--restaurant__guidance .container--box a').css('width', '100%').css('width', '-=10px');
-    $('.contents--area section#contents--restaurant__guidance .container--boxleft__009').css('width', '38%').css('width', '-=10px');
-    $('.contents--area section#contents--restaurant__guidance .container--boxright__009').css('width', '62%').css('width', '-=10px');
-    $('.contents--area section#contents--restaurant__guidance .event-button p').css('width', '100%').css('width', '-=30px');
-    $('.contents--area section#contents--article__induction a .container--box__image').css('width', '38%').css('width', '-=10px');
-    $('.contents--area section#contents--article__induction a .container--box__text').css('width', '62%').css('width', '-=10px');
-    $('.contents--area section#contents--feature__square .container--box a .container--box__image').css('width', '24%').css('width', '-=10px');
-    $('.contents--area section#contents--feature__square .container--box a .container--box__text').css('width', '76%').css('width', '-=10px');
-    $('.contents--area section#contents--feature__3-2 .container--box__image').css('width', '37%').css('width', '-=10px');
-    $('.contents--area section#contents--feature__3-2 .container--box__text').css('width', '63%').css('width', '-=10px');
-    $('.contents--area section#imagetext--onecolum__fourcolum a .container--box__image').css('width', '38%').css('width', '-=10px');
-    $('.contents--area section#imagetext--onecolum__fourcolum a .container--box__text').css('width', '62%').css('width', '-=10px');
-    $('.contents--area section#imagetext--onecolum__twocolum .container--box__image').css('width', '37%').css('width', '-=10px');
-    $('.contents--area section#imagetext--onecolum__twocolum .container--box__text').css('width', '63%').css('width', '-=10px');
+	//エリアから秋祭りを探す
     $('.contents--area section#search--festa__area .container--box').css('width', '100%').css('width', '-=20px');
     $('.contents--area section#search--festa__area .container--box .container--box__area a').css('width', '50%').css('width', '-=5px');
     $('.contents--area section#search--festa__area .container--box .container--box__area a.margin--right__not').css('width', '50%');
-    $('.contents--area section#imagetext--onecolum__twocolum--ver2 h2').css('width', '100%').css('width', '-=40px');
-    $('.contents--area section#imagetext--onecolum__twocolum--ver2 .container--box').css('width', '100%').css('width', '-=20px');
-    $('.contents--area section#imagetext--twocolum__twocolum h2').css('width', '100%').css('width', '-=40px');
-    $('.contents--area section#imagetext--twocolum__twocolum .container--box').css('width', '100%').css('width', '-=20px');
-    $('.contents--area section#imagetext--twocolum__twocolum .container--box__area a').css('width', '50%').css('width', '-=5px');	
-    $('.contents--area section#imagetext--strong h2').css('width', '100%').css('width', '-=40px');
-    $('.contents--area section#imagetext--strong .container--box__left a').css('width', '100%').css('width', '-=20px');
-    $('.contents--area section#imagetext--strong .container--box__right .container--box__image').css('width', '38%').css('width', '-=10px');
-    $('.contents--area section#imagetext--strong .container--box__right .container--box__text').css('width', '62%').css('width', '-=10px');
-	//イベント情報カセット
-    $('.event--information__area').css('width', '100%').css('width', '-=20px');
-    $('.event--casset__common dl').css('width', '100%').css('width', '-=20px');
-    $('.event--casset__common dl dt').css('width', '25%').css('width', '-=10px');
-    $('.event--casset__common dl dd').css('width', '75%').css('width', '-=10px');
-    $('.event--casset__common a.button').css('width', '100%').css('width', '-=20px');
-    $('.contents--area section#eventinformation--casset__pickup .event--information__title h3.text--size__bigger').css('width', '100%').css('width', '-=30px');
-    $('.contents--area section#eventinformation--casset__pickup .event--image__frame').css('width', '100%').css('width', '-=30px');
-	$('.contents--area section#eventinformation--casset__pickup .event--image__frame img').css('width', '100%').css('width', '-=10px');
-    $('.contents--area section#eventinformation--casset__pickup.event--casset__common a.button').css('width', '100%').css('width', '-=20px');
-	//イベント情報カセット	
+	//秋イベントオススメ情報
 	$('#footer-before .button-top').css('width', '100%').css('width', '-=20px');
     $('#footer-before .breadcrumb').css('width', '100%').css('width', '-=20px');
 });
 }
 
-$(window).on('load resize', function(){
-if (androidVersion() <= 4.4) {//もしアンドロイドのバージョンが4.3以下だったら
-var eventNum = 1;
-hideevent = "<a class='accordion--toggle__nonactive' href='#'>お出かけ記事を隠す</a>";
-showevent = "<a class='accordion--toggle__active' href='#'>お出かけ記事をもっと見る</a>";
-$("#eventinformation--casset__more").html( showevent );
-$(".event--casset__common:not(:lt("+eventNum+"))").hide();
-$("#eventinformation--casset__more").click(function (e) {
-   e.preventDefault();
-       if ($(".event--casset__common:eq("+eventNum+")").is(":hidden")) {
-           $(".event--casset__common:hidden").slideDown();
-           $("#eventinformation--casset__more").html( hideevent );
-			//イベント情報カセット
-			$('.event--information__area').css('width', '100%').css('width', '-=20px');
-			$('.event--casset__common dl').css('width', '100%').css('width', '-=20px');
-			$('.event--casset__common dl dt').css('width', '25%').css('width', '-=10px');
-			$('.event--casset__common dl dd').css('width', '75%').css('width', '-=10px');
-			$('.event--casset__common a.button').css('width', '100%').css('width', '-=20px');
-			$('.contents--area section#eventinformation--casset__strong .event--information__title h3.text--size__bigger').css('width', '100%').css('width', '-=30px');
-			$('.contents--area section#eventinformation--casset__strong .event--image__frame').css('width', '100%').css('width', '-=30px');
-			$('.contents--area section#eventinformation--casset__strong .event--image__frame img').css('width', '100%').css('width', '-=10px');
-			$('.contents--area section#eventinformation--casset__strong.event--casset__common a.button').css('width', '100%').css('width', '-=20px');
-			$('.contents--area section#eventinformation--casset__lists .event--image__frame').css('width', '35%').css('width', '-=10px');
-			$('.contents--area section#eventinformation--casset__lists .event--image__frame img').css('width', '100%').css('width', '-=10px');
-			$('.contents--area section#eventinformation--casset__lists .event--information__left').css('width', '37%').css('width', '-=10px');
-			$('.contents--area section#eventinformation--casset__lists.event--casset__common a.button').css('width', '100%').css('width', '-=20px');
-			$('.contents--area section#eventinformation--casset__lists .event--information__title h3.text--size__bigger').css('width', '100%').css('width', '-=30px');
-			$('.contents--area section#eventinformation--casset__special .event--information__title h3.text--size__bigger').css('width', '100%').css('width', '-=30px');
-			$('.contents--area section#eventinformation--casset__special .event--image__frame001 img').css('width', '100%').css('width', '-=20px');
-			$('.contents--area section#eventinformation--casset__special .event--image__frame001 p').css('width', '100%').css('width', '-=20px');
-			$('.contents--area section#eventinformation--casset__special .event--image__frame002 img').css('width', '100%').css('width', '-=20px');
-			$('.contents--area section#eventinformation--casset__special .event--image__frame002 p').css('width', '100%').css('width', '-=20px');
-			$('.contents--area section#eventinformation--casset__special .event--information__title h3.text--size__bigger').css('width', '100%').css('width', '-=30px');
-			$('.contents--area section#eventinformation--casset__special.event--casset__common a.button').css('width', '100%').css('width', '-=20px');
-			//イベント情報カセット	   
-	   } else {
-           $(".event--casset__common:not(:lt("+eventNum+"))").slideUp();
-           $("#eventinformation--casset__more").html( showevent );
-       }
-	});
-} else {
-var eventNum = 1;
-hideevent = "<a class='accordion--toggle__nonactive' href='#'>お出かけ記事を隠す</a>";
-showevent = "<a class='accordion--toggle__active' href='#'>お出かけ記事をもっと見る</a>";
-$("#eventinformation--casset__more").html( showevent );
-$(".event--casset__common:not(:lt("+eventNum+"))").hide();
-$("#eventinformation--casset__more").click(function (e) {
-   e.preventDefault();
-       if ($(".event--casset__common:eq("+eventNum+")").is(":hidden")) {
-           $(".event--casset__common:hidden").slideDown();
-           $("#eventinformation--casset__more").html( hideevent );
-       } else {
-           $(".event--casset__common:not(:lt("+eventNum+"))").slideUp();
-           $("#eventinformation--casset__more").html( showevent );
-       }
-});
-}
-});	
 
-	
