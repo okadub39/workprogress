@@ -1,82 +1,7 @@
-
-
-//B-1新着情報（写真）の最大高さの値を取得してコンテンツの高さを揃えるJS
-$(window).on('load resize', function(){
-	$('#new--information__photo').each(function(i, box) {
-		var maxHeight = 0;
-		$(box).find('.container--box__001').each(function() {
-			if ($(this).height() > maxHeight) maxHeight = $(this).height();
-		});
-		$(box).find('.container--box__001').height(maxHeight);
-	});
-});
-
-
-//Y 記事誘導枠の最大高さの値を取得してコンテンツの高さを揃えるJS
-$(window).on('load resize', function(){
-	$('#contents--article__induction').each(function(i, box) {
-		var maxHeight = 0;
-		$(box).find('.container--box__area a').each(function() {
-			if ($(this).height() > maxHeight) maxHeight = $(this).height();
-		});
-		$(box).find('.container--box__area a').height(maxHeight);
-	});
-});
-
-$(window).on('load resize', function(){
-	$('#contents--feature__square').each(function(i, box) {
-		var maxHeight = 0;
-		$(box).find('.container--box__area a').each(function() {
-			if ($(this).height() > maxHeight) maxHeight = $(this).height();
-		});
-		$(box).find('.container--box__area a').height(maxHeight);
-	});
-});
-
-$(window).on('load resize', function(){
-	$('#contents--restaurant__guidance').each(function(i, box) {
-		var maxHeight = 0;
-		$(box).find('.container--box__area .accordion--spot').each(function() {
-			if ($(this).height() > maxHeight) maxHeight = $(this).height();
-		});
-		$(box).find('.container--box__area .accordion--spot').height(maxHeight);
-	});
-});
-
-$(window).on('load resize', function(){
-	$('#imagetext--onecolum__fourcolum').each(function(i, box) {
-		var maxHeight = 0;
-		$(box).find('.container--box__area a').each(function() {
-			if ($(this).height() > maxHeight) maxHeight = $(this).height();
-		});
-		$(box).find('.container--box__area a').height(maxHeight);
-	});
-});
-$(window).on('load resize', function(){
-	$('#imagetext--onecolum__twocolum').each(function(i, box) {
-		var maxHeight = 0;
-		$(box).find('.container--box__area a').each(function() {
-			if ($(this).height() > maxHeight) maxHeight = $(this).height();
-		});
-		$(box).find('.container--box__area a').height(maxHeight);
-	});
-});
-
-$(window).on('load resize', function(){
-	$('#imagetext--twocolum__twocolum').each(function(i, box) {
-		var maxHeight = 0;
-		$(box).find('.container--box__area a').each(function() {
-			if ($(this).height() > maxHeight) maxHeight = $(this).height();
-		});
-		$(box).find('.container--box__area a').height(maxHeight);
-	});
-});
-
-
-$(window).on('load resize', function(){
-var eventNum = 1;
-hideevent = "<a class='accordion--toggle__nonactive' href='#'>お出かけ記事を隠す</a>";
-showevent = "<a class='accordion--toggle__active' href='#'>お出かけ記事をもっと見る</a>";
+$(window).on('load', function(){
+var eventNum = 3;
+hideevent = "<div class='accordion--toggle__nonactive'>イベントを隠す</div>";
+showevent = "<div class='accordion--toggle__active'>イベントをもっと見る</div>";
 $("#eventinformation--casset__more").html( showevent );
 $(".event--casset__common:not(:lt("+eventNum+"))").hide();
 $("#eventinformation--casset__more").click(function (e) {
@@ -91,7 +16,59 @@ $("#eventinformation--casset__more").click(function (e) {
 });
 });
 
-
+//B-1新着情報（写真）の最大高さの値を取得してコンテンツの高さを揃えるJS
+$(window).on('load resize', function(){
+	$('#new--information__photo').each(function(i, box) {
+		var maxHeight = 0;
+		$(box).find('.container--box__001').each(function() {
+			if ($(this).height() > maxHeight) maxHeight = $(this).height();
+		});
+		$(box).find('.container--box__001').height(maxHeight);
+	});
+//Y 記事誘導枠の最大高さの値を取得してコンテンツの高さを揃えるJS
+	$('#contents--article__induction').each(function(i, box) {
+		var maxHeight = 0;
+		$(box).find('.container--box__area a').each(function() {
+			if ($(this).height() > maxHeight) maxHeight = $(this).height();
+		});
+		$(box).find('.container--box__area a').height(maxHeight);
+	});
+	$('#contents--feature__square').each(function(i, box) {
+		var maxHeight = 0;
+		$(box).find('.container--box__area a').each(function() {
+			if ($(this).height() > maxHeight) maxHeight = $(this).height();
+		});
+		$(box).find('.container--box__area a').height(maxHeight);
+	});
+	$('#contents--restaurant__guidance').each(function(i, box) {
+		var maxHeight = 0;
+		$(box).find('.container--box__area .accordion--spot').each(function() {
+			if ($(this).height() > maxHeight) maxHeight = $(this).height();
+		});
+		$(box).find('.container--box__area .accordion--spot').height(maxHeight);
+	});
+	$('#imagetext--onecolum__fourcolum').each(function(i, box) {
+		var maxHeight = 0;
+		$(box).find('.container--box__area a').each(function() {
+			if ($(this).height() > maxHeight) maxHeight = $(this).height();
+		});
+		$(box).find('.container--box__area a').height(maxHeight);
+	});
+	$('#imagetext--onecolum__twocolum').each(function(i, box) {
+		var maxHeight = 0;
+		$(box).find('.container--box__area a').each(function() {
+			if ($(this).height() > maxHeight) maxHeight = $(this).height();
+		});
+		$(box).find('.container--box__area a').height(maxHeight);
+	});
+	$('#imagetext--twocolum__twocolum').each(function(i, box) {
+		var maxHeight = 0;
+		$(box).find('.container--box__area a').each(function() {
+			if ($(this).height() > maxHeight) maxHeight = $(this).height();
+		});
+		$(box).find('.container--box__area a').height(maxHeight);
+	});
+});
 
 //カレンダーJS
 var monthNum = 0 ;
@@ -100,12 +77,10 @@ var dateSet01;
 var dateSet02;
 var dateSet03;
 var global_csvFile = "eventdata.csv";
-
 function change01(){
   document.getElementById("left").style.display="none";
   document.getElementById("right").style.display="block";
 };
-
 function change02(){
   document.getElementById("left").style.display="block";
   document.getElementById("right").style.display="none";
@@ -316,4 +291,5 @@ target02.innerHTML = tableHtml;
 }
 calendar(monthNum);	
 calendar(checkmonth);
+calendar(monthNum);	
 }

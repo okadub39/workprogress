@@ -1,3 +1,27 @@
+// アンドロイド4.3未満CSS代替Jqueryスクリプト（※CSS整理後修正）
+// アンドロイドのバージョンをUAから取得
+function androidVersion() {
+  var ua = navigator.userAgent;
+  if( ua.indexOf("Android") > 0 ){
+      var version = parseFloat(ua.slice(ua.indexOf("Android")+8));
+      return version;
+    }
+  }
+if (androidVersion() <= 4.4) {//もしアンドロイドのバージョンが4.3以下だったら
+$(window).on('load resize', function(){
+    $('.container--link__text').css('width', '100%').css('width', '-=10px');
+    $('.container--box__002:after').css('width', '50%').css('width', '-=8px');
+	//エリアから秋祭りを探す
+    $('.contents--area section#search--festa__area .container--box').css('width', '100%').css('width', '-=20px');
+    $('.contents--area section#search--festa__area .container--box .container--box__area a').css('width', '50%').css('width', '-=0px');
+    $('.contents--area section#search--festa__area .container--box .container--box__area a.margin--right__not').css('width', '50%');
+	//秋イベントオススメ情報
+	$('#footer-before .button-top').css('width', '100%').css('width', '-=20px');
+    $('#footer-before .breadcrumb').css('width', '100%').css('width', '-=20px');
+});
+}
+
+//トップに戻るボタンの挙動
 function getScrolled() {
  return ( window.pageYOffset !== undefined ) ? window.pageYOffset: document.documentElement.scrollTop;
 }
@@ -5,11 +29,11 @@ window.onscroll = function() {
   ( getScrolled() > 300 ) ? $('.btn_scroll_top').css('display', 'block'):$('.btn_scroll_top').css('display', 'none');
 };
 
-//Y 記事誘導枠（秋のイベントのおでかけ記事）のアコーディオン
+//イベント情報カセット
 $(window).on('load', function(){
-var eventNum = 1;
-hideevent = "<a class='accordion--toggle__nonactive' href='#'>お出かけ記事を隠す</a>";
-showevent = "<a class='accordion--toggle__active' href='#'>お出かけ記事をもっと見る</a>";
+var eventNum = 3;
+hideevent = "<div class='accordion--toggle__nonactive'>お出かけ記事を隠す</div>";
+showevent = "<div class='accordion--toggle__active'>お出かけ記事をもっと見る</div>";
 $("#eventinformation--casset__more").html( showevent );
 $(".event--casset__common:not(:lt("+eventNum+"))").hide();
 $("#eventinformation--casset__more").click(function (e) {
@@ -23,10 +47,7 @@ $("#eventinformation--casset__more").click(function (e) {
            $("#eventinformation--casset__more").html( showevent );
        }
 	});
-});
-
 //Y 記事誘導枠（秋のイベントのおでかけ記事）のアコーディオン
-$(window).on('load', function(){
 var 　outingNum = 3;
 hideouting = "<p class='accordion--toggle__nonactive'>お出かけ記事を隠す</p>";
 showouting = "<p class='accordion--toggle__active'>おでかけ記事をもっと見る</p>";
@@ -42,10 +63,7 @@ $(".archive--outing").click(function (e) {
            $(".archive--outing").html( showouting );
        }
 });
-});	
-
 //X レストラン誘導枠（デートやディナーにおすすめのレストラン）のアコーディオン
-$(window).on('load', function(){
 var spotNum = 0;
 hidespot = "<p class='accordion--toggle__nonactive'>東京のバレンタインスポットを隠す</p>";
 showspot = "<p class='accordion--toggle__active'>東京のバレンタインスポットをもっと見る</p>";
@@ -61,8 +79,6 @@ $(".archive").click(function (e) {
            $(".archive").html( showspot );
        }
 });
-})
-$(window).on('load', function(){
 var 　outingNum__002 = 3;
 hideouting__002 = "<p class='accordion--toggle__nonactive'>お出かけ記事を隠す</p>";
 showouting__002 = "<p class='accordion--toggle__active'>おでかけ記事をもっと見る</p>";
@@ -79,6 +95,8 @@ $(".archive--outing__002").click(function (e) {
        }
 });
 });
+
+
 // F コンテンツ誘導枠（タイプ別編集部おすすめ秋祭り）
 $(window).on('load resize', function(){
 	$('#contents--induction').each(function(i, box) {
@@ -88,9 +106,7 @@ $(window).on('load resize', function(){
 		});
 		$(box).find('.container--box__text a').height(maxHeight);
 	});
-});
 //テキストのみ角丸ボタン（エリアから秋祭りを探す）
-$(window).on('load resize', function(){
 	$('#search--festa__area').each(function(i, box) {
 		var maxHeight = 0;
 		$(box).find('.container--box__area a').each(function() {
@@ -98,9 +114,7 @@ $(window).on('load resize', function(){
 		});
 		$(box).find('.container--box__area a').height(maxHeight);
 	});
-});
 //画像とテキスト_2カラムと2カラム（秋イベントおすすめ情報）
-$(window).on('load resize', function(){
 	$('#imagetext--twocolum__twocolum').each(function(i, box) {
 		var maxHeight = 0;
 		$(box).find('#imagetext--twocolum__twocolum .container--box__area a').each(function() {
@@ -108,9 +122,7 @@ $(window).on('load resize', function(){
 		});
 		$(box).find('#imagetext--twocolum__twocolum .container--box__area a').height(maxHeight);
 	});
-});
 //C エリアから探す　エリアから秋祭り・イベントを探す
-$(window).on('load resize', function(){
 	$('#search--event__area').each(function(i, box) {
 		var maxHeight = 0;
 		$(box).find('.container--area__lists a').each(function() {
@@ -131,9 +143,7 @@ var pos = Math.floor(target.offset().top) - 44;
 $("html, body").animate({scrollTop:pos}, 100);
 }
 }
-});
 // スムーズスクロール&&ページ内アンカーリンク対策
-$(function(){
 var headerHight = 44;
 $('a[href^=#]').click(function(){
 var href= $(this).attr("href");
@@ -387,29 +397,7 @@ target02.innerHTML += tableHtml;
 }
 calendar(monthNum);	
 calendar(checkmonth);
-}
-
-// アンドロイド4.3未満CSS代替Jqueryスクリプト（※CSS整理後修正）
-// アンドロイドのバージョンをUAから取得
-function androidVersion() {
-  var ua = navigator.userAgent;
-  if( ua.indexOf("Android") > 0 ){
-      var version = parseFloat(ua.slice(ua.indexOf("Android")+8));
-      return version;
-    }
-  }
-if (androidVersion() <= 4.4) {//もしアンドロイドのバージョンが4.3以下だったら
-$(window).on('load resize', function(){
-    $('.container--link__text').css('width', '100%').css('width', '-=10px');
-    $('.container--box__002:after').css('width', '50%').css('width', '-=8px');
-	//エリアから秋祭りを探す
-    $('.contents--area section#search--festa__area .container--box').css('width', '100%').css('width', '-=20px');
-    $('.contents--area section#search--festa__area .container--box .container--box__area a').css('width', '50%').css('width', '-=5px');
-    $('.contents--area section#search--festa__area .container--box .container--box__area a.margin--right__not').css('width', '50%');
-	//秋イベントオススメ情報
-	$('#footer-before .button-top').css('width', '100%').css('width', '-=20px');
-    $('#footer-before .breadcrumb').css('width', '100%').css('width', '-=20px');
-});
+calendar(monthNum);	
 }
 
 

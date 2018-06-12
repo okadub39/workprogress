@@ -2696,7 +2696,7 @@ background-position: right 15px bottom 15px*/
 	right: 5px;
 	width: 7.5px;
 	height: 15px;
-	margin-top: -8px;
+	margin-top: -4px;
 	background: url(../img/arrow_red.png);
 	background-size: contain;
 	background-repeat: no-repeat;
@@ -3040,33 +3040,64 @@ background-position: right 15px bottom 15px*/
 	box-shadow: 0 0 0 1px #cccccc inset;
 	-webkit-box-shadow: 0 0 0 1px #cccccc inset;
 }
+.tab-color--mono__none .tab-color--mono {
+	display: none;
+}
 .tab-color--orange {
 	background-color: #ce7824;
+}
+.tab-color--orange__none .tab-color--orange {
+	display: none;
 }
 .tab-color--strong-red {
 	background-color: #bf4141;
 }
+.tab-color--strong-red__none .tab-color--strong-red {
+	display: none;
+}
 .tab-color--cyan-blue {
 	background-color: #4d7ea1;
+}
+.tab-color--cyan-blue__none .tab-color--cyan-blue {
+	display: none;
 }
 .tab-color--deep-green {
 	background-color: #357d4d;
 }
+.tab-color--deep-green__none .tab-color--deep-green {
+	display: none;
+}
 .tab-color--blue-magenta {
 	background-color: #7d579a;
+}
+.tab-color--blue-magenta__none .tab-color--blue-magenta {
+	display: none;
 }
 .tab-color--strong-magenta {
 	background-color: #ac478e;
 }
+.tab-color--strong-magenta__none .tab-color--strong-magenta {
+	display: none;
+}
 .tab-color--phthalo-blue {
 	background-color: #475297;
+}
+.tab-color--phthalo-blue__none .tab-color--phthalo-blue {
+	display: none;
 }
 .tab-color--brown {
 	background-color: #7a573a;
 }
+.tab-color--brown__none .tab-color--brown {
+	display: none;
+}
 .tab-color--yellow-green {
 	background-color: #838b29;
 }
+.tab-color--yellow-green__none .tab-color--yellow-green {
+	display: none;
+}
+
 .event--information__tabs {
 	display: inline-block;
 	width: auto;
@@ -3121,6 +3152,8 @@ background-position: right 15px bottom 15px*/
 	text-align: left;
 	line-height: 1;
 }
+
+
 section.event--casset__common dl:last-of-type {
 	padding-bottom: 15px;
 }
@@ -3202,6 +3235,27 @@ section.event--casset__common dl:last-of-type {
 }
 .event--casset__common .event--information__title p {
 }
+.event--information__title__none .event--information__title {
+	display: none;	
+}
+.event--information__data__none dl.event--information__data{
+	display: none;	
+}
+.event--information__place_none dl.event--information__place{
+	display: none;	
+}
+.event--information__station__none dl.event--information__station{
+	display: none;	
+}
+.event--information__toll__none dl.event--information__toll{
+	display: none;	
+}
+.event--information__reserve__none dl.event--information__reserve{
+	display: none;	
+}
+.event--information__label__none .event--information__label {
+	display: none;
+}
 /*module9 イベント情報ピックアップの
 				スタイルシート開始（SP版）の設定*/
 .contents--area section#eventinformation--casset__pickup {
@@ -3209,6 +3263,8 @@ section.event--casset__common dl:last-of-type {
 	width: 100%;
 	padding-bottom: 5px;
 	background-color: #ffffff;
+	font-size: 0;
+	line-height: 1;
 }
 .contents--area section#eventinformation--casset__pickup a {
 	position: relative;
@@ -3305,15 +3361,22 @@ section.event--casset__common dl:last-of-type {
 	overflow: hidden;
 	text-align: center;
 }
+.contents--area section#eventinformation--casset__pickup .event--information__right__sub {
+	display: none;
+}
+
+
+
 /*左のボックス画像*/
 .contents--area section#eventinformation--casset__pickup .event--image__frame .event--image {
 	width: 100%;
 	height: auto;
+	min-height: 237px;
 	margin: 0 auto;
 	background-image: url(../img/fire_work_001.png);
 	background-repeat: no-repeat;
-	background-size:contain;
-	background-position: center center;	
+	background-size: contain;
+	background-position: bottom center;	
  }
 /*左のボックス画像キャプション*/
 .contents--area section#eventinformation--casset__pickup .event--image__caption {
@@ -3361,11 +3424,26 @@ section.event--casset__common dl:last-of-type {
 	width: 100%;
 	padding-bottom: 10px;
 	background-color: #ffffff;
+	font-size: 0;
+	line-height: 1;
 }
 .contents--area section#eventinformation--casset__lists a {
 	position: relative;
 	width: 100%;
 	font-size: 0;
+}
+.contents--area section#eventinformation--casset__lists h2 {
+	display: block;
+	width: auto;
+	padding: 10.5px 40px 10.5px 10px;
+	font-size: 16px;
+	font-weight: 700;
+	text-align: left;
+	line-height: 24px;
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
 }
 .contents--area section#eventinformation--casset__lists a.event--information.eventtitle--backcolor__default {
 	border-top: 1px solid #DFDFDF;
@@ -3401,6 +3479,9 @@ section.event--casset__common dl:last-of-type {
 	padding: 0px;
 	text-align: center;
 }
+.contents--area section#eventinformation--casset__lists .event--information__right__sub {
+	display: none;
+}
 /*左のボックス画像フレーム*/
 .contents--area section#eventinformation--casset__lists .event--image__frame {
 	float: none;
@@ -3419,6 +3500,10 @@ section.event--casset__common dl:last-of-type {
 	min-height: 88px;
 	margin: 0 auto;
 	background: none;
+	background-image: url(../img/fire_work_001.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: bottom center;	
  }
 /*左のボックス画像キャプション*/
 .contents--area section#eventinformation--casset__lists .event--image__caption {
@@ -3529,6 +3614,8 @@ section.event--casset__common dl:last-of-type {
 	width: 100%;
 	padding-bottom: 10px;
 	background-color: #ffffff;
+	font-size: 0;
+	line-height: 1;
 }
 .contents--area section#eventinformation--casset__special hr {
 	width: 100%;
@@ -3541,6 +3628,19 @@ section.event--casset__common dl:last-of-type {
 	position: relative;
 	width: 100%;
 	font-size: 0;
+}
+.contents--area section#eventinformation--casset__special h2 {
+	display: block;
+	width: auto;
+	padding: 10.5px 40px 10.5px 10px;
+	font-size: 16px;
+	font-weight: 700;
+	text-align: left;
+	line-height: 24px;
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
 }
 .contents--area section#eventinformation--casset__special a.event--information.eventtitle--backcolor__default {
 	border-top: 1px solid #DFDFDF;
@@ -3644,24 +3744,31 @@ section.event--casset__common dl:last-of-type {
 	margin-right: 0px;
 	text-align: center;
 }
-.contents--area section#eventinformation--casset__special .event--image__frame001 img {
-	width: calc(100%-20px);
+.contents--area section#eventinformation--casset__special .event--information__left .event--image__frame .event--image{
+	width: 100%;
+	height: auto;
+	min-height: 237px;
 	margin: 0 auto;
+	background-image: url(../img/fire_work_003.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: bottom center;	
 }
-.contents--area section#eventinformation--casset__special .event--image__frame001 p {
-	width: calc(100%-20px);
+
+.contents--area section#eventinformation--casset__special .event--information__right .event--image__frame .event--image{
+	width: 100%;
+	height: auto;
+	min-height: 237px;
 	margin: 0 auto;
-	padding: 10px 0px;
-	color: #757575;
-	font-size: 11px;
-	text-align: left;
+	background-image: url(../img/fire_work_004.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: bottom center;	
 }
-.contents--area section#eventinformation--casset__special .event--image__frame002 img {
-	width: calc(100%-20px);
-	margin: 0 auto;
-}
+
+
+
 .contents--area section#eventinformation--casset__special .event--image__frame002 p {
-	width: calc(100%-20px);
 	margin: 0 auto;
 	padding: 10px 0px;
 	color: #757575;
@@ -3742,6 +3849,9 @@ section.event--casset__common dl:last-of-type {
 	width: auto;
 	padding: 0px 10px;
 }
+.contents--area section.contents--component__title__none .contents--component__title {
+display: none;
+}
 /*module9 イベント情報(強調表示)の
 				スタイルシート開始（SP版）の設定*/
 .contents--area section#eventinformation--casset__strong {
@@ -3749,6 +3859,8 @@ section.event--casset__common dl:last-of-type {
 	width: 100%;
 	padding-bottom: 5px;
 	background-color: #ffffff;
+	font-size: 0;
+	line-height: 1;
 }
 .contents--area section#eventinformation--casset__strong a {
 	position: relative;
@@ -3766,20 +3878,30 @@ section.event--casset__common dl:last-of-type {
 	margin: 0 auto;
 }
 .contents--area section#eventinformation--casset__strong h2#module9 {
-	position: relative;
-	width: calc(100% - 10px);
-	padding: 13.5px 0px 13.5px 10px;
-	text-align: left;
+	display: block;
+	width: auto;
+	padding: 10.5px 40px 10.5px 10px;
 	font-size: 16px;
 	font-weight: 700;
-	line-height: 18px;
-	z-index: 100;
+	text-align: left;
+	line-height: 24px;
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+.contents--area section#eventinformation--casset__strong .event--information__title h3.text--size__bigger {
+	position: relative;
+	width: auto;
+	margin: 12px 0px 16px 0px;
+	padding: 0px 20px 0px 10px;
 }
 .contents--area section#eventinformation--casset__strong .event--information__title h3:after {
 	display: inline-block;
 	position: absolute;
 	top: 50%;
-	right: 0px;
+	right: 10px;
 	width: 7.5px;
 	height: 15px;
 	margin-top: -7.5px;
@@ -3790,18 +3912,11 @@ section.event--casset__common dl:last-of-type {
 	content: '';
 	z-index: 2;
 }
-
-.contents--area section#eventinformation--casset__strong .event--information__title h3.text--size__bigger {
-	position: relative;
-	width: calc(100% - 30px);
-	margin: 12px 0px 16px 0px;
-	padding: 0px 10px;
-}
 .contents--area section#eventinformation--casset__strong .event--image__frame img {
 	width: 100%;
 }
 .contents--area section#eventinformation--casset__strong .event--image__frame {
-	width: calc(100% - 20px);
+	width: 100%;
 	height: auto;
 	margin: 0 auto;
 	text-align: center;
@@ -3842,10 +3957,17 @@ section.event--casset__common dl:last-of-type {
 	overflow: hidden;
 	text-align: center;
 }
+.contents--area section#eventinformation--casset__strong .event--information__right__sub {
+	display: none;
+}
+
+
+
 /*左のボックス画像*/
 .contents--area section#eventinformation--casset__strong .event--image__frame .event--image {
 	width: 100%;
 	height: auto;
+	min-height: 237px;
 	margin: 0 auto;
 	background-image: url(../img/fire_work_001.png);
 	background-repeat: no-repeat;
@@ -3869,11 +3991,11 @@ section.event--casset__common dl:last-of-type {
 .contents--area section#eventinformation--casset__strong.event--casset__common a.button {
 	display: block;
 	position: relative;
-	width: calc(100%-20px);
+	width: auto;
 	height: auto;
 	min-height: 40px;
-	margin: 15px auto 6px;
-	padding: 4px 0px;
+	margin: 15px 10px 6px;
+	padding: 4px 10px;
 	border-radius: 4px;
 	text-align: center;
 	text-align: center;
