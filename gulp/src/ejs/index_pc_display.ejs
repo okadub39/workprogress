@@ -1,0 +1,324 @@
+<%
+var page = page ? page : 'index';
+include('./_config', {page: page});
+%>
+<%- include('_head', {page: 'index'}); %>
+<%- include(PATH + '/globals/_header'); %>
+<!--========== メインビジュアル =====================================================-->
+<%- include(PATH + '/contents/_contents--mainvisual'); %>
+<!--========== メインビジュアル =====================================================-->
+<!--========== B-1 新着情報（写真） =================================================-->
+<div>
+	<h1>見出しのデザインについて</h1>
+	<blockquote>
+		見出しのレベルはクラスを付与することで変更できます。
+		h2を囲んでいるdivタグの中にクラスを付与することで、デザインを変更できます。	
+		eventtitle--backcolor__default・・・デフォルトの色。
+	</blockquote>
+	<section id="new--information__photo">
+		<div class="contents--component__title eventtitle--backcolor__default">
+			<h2 id="b-1">注目の秋祭り＆秋のイベント</h2>
+		</div>
+	</section>
+	<blockquote>
+		.eventtitle--backcolor__subcolor・・・別パターンの色（今回のケースだと金色。）
+	</blockquote>
+	<section id="new--information__photo">
+		<div class="contents--component__title eventtitle--backcolor__subcolor">
+			<h2 id="b-1">注目の秋祭り＆秋のイベント</h2>
+		</div>
+	</section>
+	<blockquote>
+		.maintitle--design__border・・・見出しの下にボーダーラインがつくパターンです。
+	</blockquote>
+	<section id="new--information__photo">
+		<div class="contents--component__title maintitle--design__border">
+			<h2 id="b-1">注目の秋祭り＆秋のイベント</h2>
+		</div>
+	</section>
+	<h1>角丸の付け方</h1>
+	<blockquote>
+		roundというクラスがついた親要素の子要素にいるimgとtabクラスが角丸になります。
+	</blockquote>
+	<div class="round" style="text-align:center; width:49%; float:left;">
+		<img src="img/image_sample_001.jpg" alt="image_sample001" /><br />
+		角丸あり
+	</div>
+	<div style="text-align:center; width:49%; float:left;">
+		<img src="img/image_sample_001.jpg" alt="image_sample001" /><br />
+		角丸なし
+	</div>
+	<h1>イベント情報カセットについて</h1>
+	<blockquote>
+		同じHTMLで構成されています。<br />
+		<br />
+		-------　カラー設定　-------<br />
+		メインカラーの値に変動し、他の要素の色が変わる。<br />
+		メインカラーのHEXカラーを入れてください。<br />
+		例）<br />
+		デフォルトカラー：#ac232c<br />
+		ダークグリーン：#006400<br />
+		ダークブルー：#37485A<br />
+		<div style="text-align:center;">
+			<form>
+				<label for="textForm">メインカラーの値（HEX）: </label>
+				<input type="text" id="textForm">
+				<button id="button">変更する</button>
+			</form>
+		</div>
+		<br />
+		-------　コンテンツ非表示設定　-------<br />
+		<br />
+		カセットの種類は４種類。<br />
+		セクション内のHTML構文は同じ内容になります。<br />
+		<br />
+		ピックアップ・・・eventinformation--casset__pickup<br />
+		リスト・・・eventinformation--casset__lists<br />
+		特別枠・・・eventinformation--casset__special<br />
+		強調枠・・・eventinformation--casset__strong<br />
+		<br />
+		contents--component__title__none・・・H2見出しが非表示になります。<br />
+		moreinfo__none・・・黄色枠が非表示になります。<br />
+		tab-color--*__none・・・タブが非表示になります。<br />
+		<blockquote>
+			.tab-color--mono__none・・・モノクロタブ<br />
+			.tab-color--orange__none・・・オレンジタブ<br />
+			.tab-color--strong-red__none・・・ストロングレッドタブ<br />
+			.tab-color--cyan-blue__none・・・シアンタブ<br />
+			.tab-color--deep-green__none・・・深緑タブ<br />
+			.tab-color--blue-magenta__none・・・マジェンダタブ<br />
+			.tab-color--strong-magenta__none・・・ストロングマジェンダタブ<br />
+			.tab-color--phthalo-blue__none・・・ブルータブ<br />
+			.tab-color--brown__none・・・茶色タブ<br />
+			.tab-color--yellow-green__none・・・黄緑タブ<br />
+			.event--information__data__none・・・開催日時<br />
+			.event--information__place_none・・・場所<br />
+			.event--information__station__none・・・最寄駅<br />
+			.event--information__toll__none ・・・有料席<br />
+			.event--information__reserve__none・・・予約期間
+}		</blockquote>
+		event--information__label__none 写真上の小見出しの箇所を非表示にします。<br />
+		event--information__*__none・・・テーブルレイアウトの詳細情報の各項目が非表示になります。<br />
+		<br />
+		デフォルトは全て表示になっていますので、クラスを与えた後にクラスを消すことで表示にすることができます。
+		<div style="text-align:center;">
+			<form>
+				<label for="textForm__002">クラスを与えて非表示にしよう。: </label>
+				<input type="text" id="textForm__002">
+				<button id="button__002">非表示する</button>
+			</form>
+			<form>
+				<label for="textForm__003">クラスを消して表示にしよう。: </label>
+				<input type="text" id="textForm__003">
+				<button id="button__003">表示する</button>
+			</form>
+		</div>
+	</blockquote>
+	<blockquote>
+		イベント情報カセットの「イベント」「グルメ」などのタブはクラスを付与することで非表示にできます。
+		
+	</blockquote>
+<h4>以下、サンプルです。</h4>
+
+<section id="eventinformation--casset__pickup" class="event--casset__common">
+	<div class="contents--component__title eventtitle--backcolor__default">
+		<h2 id="module9">イベント・フェア</h2>
+	</div>
+	<a href="#" class="event--information eventtitle--backcolor__default link--opacity__50">
+		<div class="event--information__color">
+			<div class="event--information__tabs">
+				<span class="tab tab-color--mono round">駅名／都県</span>
+				<span class="tab tab-color--orange round">イベント</span>
+				<span class="tab tab-color--strong-red round">グルメ</span>
+				<span class="tab tab-color--cyan-blue round">音楽</span>
+				<span class="tab tab-color--deep-green round">スポーツ</span>
+				<span class="tab tab-color--blue-magenta round">アート・カルチャー</span>
+				<span class="tab tab-color--strong-magenta">祭り</span>
+				<span class="tab tab-color--phthalo-blue round">さんま祭り</span>
+				<span class="tab tab-color--brown round">紅葉</span>
+				<span class="tab tab-color--yellow-green round">スイーツ</span>
+			</div>
+			<div class="event--information__title">
+				<h3 id="event-title__001" class="text--size__bigger text--strong text--left">2017神宮外苑花火大会</h3>
+			</div>
+			<hr class="event--information__border" />
+		</div>
+	</a>
+	<div class="event--information__area">
+		<p class="event--information__label">神宮の空を鮮やかに彩る花火×人気アーティストの豪華饗宴</p>
+		<div class="event--information__left">
+			<div class="event--image__frame">
+				<div class="event--image only_pc"></div>
+				<a class="event--image only_sp" href="#">
+					<img src="img/fire_work_001.png" style="width:100%;" />
+				</a>
+			</div>
+			 <div class="event--image__caption">
+				 <p>
+					 キャプションが入ります。キャプションが入ります。キャプションが入ります。キャプションが入ります。
+				 </p>
+			</div>
+		</div>
+		<div class="event--information__right">
+			<div class="event--information__right__sub">
+				<div class="event--image__frame">
+					<div class="event--image only_pc"></div>
+					<div class="event--image only_sp">
+						<img src="img/fire_work_001b.png" />
+					</div>
+				</div>
+				 <div class="event--image__caption">
+					 <p>
+						 キャプションが入ります。キャプションが入ります。キャプションが入ります。キャプションが入ります。
+					 </p>
+				</div>
+			</div>
+			<div class="event--image__text">
+				<p class="text--size__middle">
+					東京三大花火と称される神宮外苑花火大会は、大迫力のスターマインや趣向を凝らした花火はもちろん、人気アーティストによるライブも充実。メイン会場の神宮球場には、デビュー25周年を迎える大黒摩季が登場！名曲とともに約1万2000発の花火が神宮の空を彩る。
+				</p>
+				<!--追加情報枠　黄色背景-->
+				<div class="event--image__moreinfo">
+					<p>
+						打ち上げ数：<span class="text--strong">約1万2000発</span>
+					</p>
+					<p>
+						例年の人出：<span class="text--strong">32万人</span>
+					</p>
+					<p>
+						露店：<span class="text--strong">あり</span>
+					</p>
+				</div>
+				<!--追加情報枠　黄色背景-->
+			</div>
+		</div>
+	</div>
+	<div class="event--information__field">
+		<dl class="event--information__data">
+			<dt>開催日時</dt>
+			<dd>
+				<p class="text--strong">2017年8月20日(日) </p>
+				<p>19:30花火打ち上げ開始、20:30花火終了予定</p>
+				<p>※予備日、8月21日(月) 翌日順延。</p>
+			</dd>
+		</dl>
+		<dl class="event--information__place">
+			<dt>場所</dt>
+			<dd>
+				<p>明治神宮外苑</p>
+			</dd>
+		</dl>
+		<dl class="event--information__station">
+			<dt>最寄駅</dt>
+			<dd>
+				<p class="recent-station">国立競技場、 外苑前、 信濃町、 千駄ヶ谷、 代々木、 北参道、 青山一丁目、 表参道</p>
+			</dd>
+		</dl>
+		<dl class="event--information__toll">
+			<dt>有料席</dt>
+			<dd>
+				<p>あり<a class="link--underline" href="#"><span>料金・お問合せ先を見る</span></a></p>
+			</dd>
+		</dl>
+		<dl class="event--information__reserve">
+			<dt>予約期間</dt>
+			<dd>6月17日(土)より一般発売開始</dd>
+		</dl>
+	</div>
+	<a class="button link--opacity__50 event--button__color" href="#">
+		<div class="event-button">
+			<p>エリアで買える<span>おすすめチョコレートを見る</span></p>
+		</div>
+	</a>
+	<div class="height--20px"></div>
+	<!--ここまでカセットスタート-->
+</section>
+
+	<h1>見出しに「PR」を入れる場合</h1>
+	<blockquote>
+		＜h2＞タグの後ろにclass="square-color__white"と記入するとタグが出ます。
+	</blockquote>
+	<section id="imagetext--onecolum__twocolum--ver2">
+	<div class="contents--component__title eventtitle--backcolor__default">
+		<h2 id="module6" class="">秋イベントをとことん満喫しよう</h2>
+		<span class="square-color__white">PR</span>
+	</div>
+	</section>
+	
+<br />
+<br />
+<br />
+	
+<style>
+h1 {
+font-size: 18px;
+text-align: center;
+width: 100%;
+margin: 30px 0px;		
+}
+section#eventinformation--casset__pickup {
+	box-shadow: 0 0 0 0px #DFDFDF !important;
+  -webkit-box-shadow: 0 0 0 0px #DFDFDF !important;
+          box-shadow: 0 0 0 0px #DFDFDF !important;
+}
+hr.event--information__border {
+  background-color: rgba(255,0,0,.10);
+  width: 100%;
+  height: 1px;
+  margin: 0px;
+  padding: 0px;
+  display: block;
+}
+section {
+	padding-bottom:0px;	
+}
+</style>
+
+<script>
+ 
+// ボタンの要素を取得
+var button = document.getElementById("button");
+// ボタンをクリックした時の処理
+button.addEventListener("click", function(e) {
+    e.preventDefault();
+    // 入力フォームの値を取得
+    var textForm = document.getElementById("textForm").value;
+    // 取得した値を別の入力フォームに表示
+	$('.eventtitle--backcolor__default').css('backgroundColor', textForm);
+	textForm = '';
+	//
+});
+
+// ボタンの要素を取得
+var button = document.getElementById("button__002");
+// ボタンをクリックした時の処理
+button.addEventListener("click", function(e) {
+    e.preventDefault();
+    // 入力フォームの値を取得
+    var textForm__002 = document.getElementById("textForm__002").value;
+    // 取得した値を別の入力フォームに表示
+	$('#eventinformation--casset__pickup').addClass(textForm__002);
+	textForm__002 = '';
+	//
+});
+
+// ボタンの要素を取得
+var button = document.getElementById("button__003");
+// ボタンをクリックした時の処理
+button.addEventListener("click", function(e) {
+    e.preventDefault();
+    // 入力フォームの値を取得
+    var textForm__003 = document.getElementById("textForm__003").value;
+    // 取得した値を別の入力フォームに表示
+	$('#eventinformation--casset__pickup').removeClass(textForm__003);
+	textForm__003 = '';
+	//
+});
+
+	
+</script>
+</div>
+<!--========== 特集トップに戻る ========================================================-->
+</div>
+<%- include(PATH + '/globals/_sidebar'); %>
+<%- include(PATH + '/globals/_footer'); %>

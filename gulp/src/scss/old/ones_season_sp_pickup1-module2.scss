@@ -1,0 +1,4488 @@
+@charset "UTF-8";
+/*色味変更箇所*/
+/*見出しのカラーセット*/
+
+/*本番に合わせるための仮置きCSS*/
+section.contents--mainvisual {
+	width: 100%;
+	margin: 5px 0px 0px 0px;
+	padding: 0px;
+	border: nonet;
+	background-color: #fff;
+	background-position: right 15px bottom 15px;
+	background-repeat: no-repeat;
+}
+section.contents--mainvisual h1 {
+	margin: 0px;
+	padding: 0px;
+}
+section.contents--mainvisual img {
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+section.contents--mainvisual .contents--texts__fields {
+	width: 100%;
+	background: #c78b4f;
+	color: #fff;
+	text-align: left;
+}
+section.contents--mainvisual .contents--texts__fields p {
+	padding: 5px 10px 15px;
+	font-size: 11px;
+	line-height: 14.3px;
+}
+/*共通要素*/
+.height--0px {
+	clear: both;
+	float: none;
+	width: 100%;
+	height: 0px;
+}
+.height--5px {
+	clear: both;
+	float: none;
+	width: 100%;
+	height: 5px;
+}
+.height--10px {
+	clear: both;
+	float: none;
+	width: 100%;
+	height: 10px;
+}
+.height--15px {
+	clear: both;
+	float: none;
+	width: 100%;
+	height: 15px;
+}
+.height--20px {
+	clear: both;
+	float: none;
+	width: 100%;
+	height: 20px;
+}
+.height--25px {
+	clear: both;
+	float: none;
+	width: 100%;
+	height: 25px;
+}
+.height--30px {
+	clear: both;
+	float: none;
+	width: 100%;
+	height: 30px;
+}
+.height--45px {
+	clear: both;
+	float: none;
+	width: 100%;
+	height: 45px;
+}
+.height--60px {
+	clear: both;
+	float: none;
+	width: 100%;
+	height: 60px;
+}
+.height--75px {
+	clear: both;
+	float: none;
+	width: 100%;
+	height: 75px;
+}
+.height--90px {
+	clear: both;
+	float: none;
+	width: 100%;
+	height: 90px;
+}
+.height--120px {
+	clear: both;
+	float: none;
+	width: 100%;
+	height: 120px;
+}
+.height--150px {
+	clear: both;
+	float: none;
+	width: 100%;
+	height: 150px;
+}
+.height--180px {
+	clear: both;
+	float: none;
+	width: 100%;
+	height: 180px;
+}
+.height--210px {
+	clear: both;
+	float: none;
+	width: 100%;
+	height: 210px;
+}
+.display--block {
+	display: block;
+}
+.display--none {
+	display: none;
+}
+/*スマートフォン閲覧用*/
+.only_sp {
+	display: block;
+}
+.only_pc {
+	display: none !important;
+	background: none;
+	}
+/*アコーディオン用CSS*/
+#accordion--001 {
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+.contents--area section#contents--restaurant__guidance .container--box #accordion--001 a.archive {
+	width: 100%;
+	margin-left: 0px;
+	border-top: 1px solid #ccc;
+	border-bottom: none;
+	color: #757575;
+	font-size: 12px;
+}
+#accordion--001 a p {
+	padding: 0px 10px;
+	font-weight: 700;
+	line-height: 20px;
+}
+#accordion--002 {
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+#accordion--002 a p {
+	height: auto;
+	min-height: 20px;
+	padding: 10px;
+	border-bottom: 0px solid #ccc;
+	color: #757575;
+	font-size: 12px;
+	font-weight: 700 !important;
+	line-height: 20px;
+}
+#accordion--002 a:hover {
+	opacity: 1 !important;
+}
+#accordion--003 {
+	width: 100%;
+	text-align: center;
+}
+#accordion--003 a p {
+	height: auto;
+	min-height: 20px;
+	padding: 10px;
+	border-top: none;
+	border-bottom: none;
+	color: #757575;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 20px;
+}
+#accordion--003 a:hover {
+	opacity: 1 !important;
+}
+/*リンク箇所マウスオーバーで透明化*/
+a.link--opacity__50:hover {
+	opacity: .5;
+}
+p.link--opacity__50:hover {
+	opacity: .5;
+}
+.link--opacity__50 a:hover {
+	opacity: .5;
+}
+
+/*リンク箇所マウスオーバーでアンダーライン*/
+.container--link__text a p span:hover {
+	text-decoration-color: #195197 !important;
+	text-decoration: underline !important;
+	-webkit-text-decoration-color: #195197 !important;
+}
+a.link--underline span:hover {
+	text-decoration-color: #195197 !important;
+	text-decoration: underline !important;
+	-webkit-text-decoration-color: #195197 !important;
+}
+.link--underline a span:hover {
+	text-decoration-color: #195197 !important;
+	text-decoration: underline !important;
+	-webkit-text-decoration-color: #195197 !important;
+}
+
+/*セクション共通要素（デフォルト）*/
+.contents--area {
+	/*アンドロイド用オーバーフロー対策*/
+	width: 100%;
+	color: #333333;
+	overflow:hidden;
+}
+.contents--area a {
+	color: inherit;
+	text-decoration: none !important;
+}
+.contents--area hr {
+	display: inline-block;
+	clear: both;
+	width: 100%;
+	height: 1px;
+	margin: 5px 0px;
+	border: none;
+}
+/*section共通クラス*/
+.contents--area section {
+	display: inline-block;
+	clear: both;
+	margin: 0;
+	padding: 0;
+	border: none;
+	text-align: center;
+}
+.contents--area section a {
+	display: block;
+	width: 100%;
+}
+/*section共通クラス----H2見出し----*/
+.contents--area section .contents--component__title {
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	min-width: 100%;
+	max-width: 100%;
+	height: auto;
+	margin: 0px;
+	font-size: 0px;
+	text-align: left;
+}
+.contents--area section h2 {
+	display: inline;
+	float: left;
+	margin-left: 0px;
+	padding: 10px 40px 10px 0px;
+	font-size: 16px;
+	font-weight: 700;
+	text-align: left;
+	line-height: 18px;
+}
+#calendar--setdata {
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+#calendar--setdata h2 {
+	display: block;
+	padding: 10.5px 30px 10.5px 10px !important;
+	font-size: 16px;
+	font-weight: 700;
+	text-align: left;
+	line-height: 24px;
+}
+/*section共通クラス----H2見出し----*/
+.container--box {
+	display: inline-block;
+	width: 100%;
+	margin: 0 auto;
+	padding-bottom: 0px;
+	text-align: left;
+}
+.container--box__tag {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 18px;
+	padding: 1px 4px;
+	font-size: 11px;
+	line-height: 18px;
+}
+.container--box__place {
+	display: inline-block;
+}
+.container--box__place p {
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	font-size: 11px;
+}
+.container--box__place p:before {
+	margin-right: 3px;
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	content: "\f3c5";
+}
+.container--link__text {
+	position: relative;
+	float: right;
+	width: calc(100% - 10px);
+	height: auto;
+	margin-right: 10px;
+	font-weight: 700;
+	text-align: right;
+}
+.container--link__text a p {
+	position: relative;
+	height: auto;
+	min-height: 20px;
+	margin: 0px 10px 0px 0px;
+	padding: 0px;
+	font-size: 12px;
+	line-height: 20px;
+}
+.container--link__text a p span {
+	height: auto;
+	min-height: 20px;
+	margin-right: 5px;
+	padding: 10px 0px;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 20px;
+}
+.container--link__text a p span:hover {
+	text-decoration: underline !important;
+	text-decoration-color: #195197 !important;
+	-webkit-text-decoration-color: #195197 !important;
+}
+.container--link__text a p:after {
+	position: absolute;
+	font-size: 18px;
+	text-decoration: none !important;
+}
+.container--link__text.arrow--img a p:after {
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	width: 7.5px;
+	height: 12px;
+	margin: -6px 0px 0px 3px;
+	background: url(../img/arrow_red.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+	content: '';
+}
+.container--link__text.arrow--font a p:after {
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	content: '\f105';
+}
+.container--link__text a p:hover:after {
+	text-decoration: none !important;
+	text-decoration-color: #ffffff !important;
+	-webkit-text-decoration-color: #ffffff !important;
+}
+.container--box__002.arrow--img:after {
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	width: 7.5px;
+	height: 12px;
+	margin-top: -6px;
+	background: url(../img/arrow_red.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+	content: '';
+}
+.container--box__002.arrow--font:after {
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	content: '\f105';
+}
+.container--box__002:after {
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	margin-top: -8px;
+	font-size: 16px;
+	line-height: 16px;
+}
+.event--information__title p {
+	position: relative;
+}
+.event--information__title p:after {
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	right: -15px;
+	width: 7.5px;
+	height: 12px;
+	margin-top: -6px;
+	background: url(../img/arrow_red.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+	content: '';
+}
+.event--casset__common dl dd a span:after {
+	display: inline-block;
+	width: 5px;
+	height: 10px;
+	margin-left: 5px;
+	background: url(../img/arrow_red.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+	content: '';
+}
+
+.float--right {
+	display: inline;
+	float: right;
+	text-align: right;
+}
+.text--left {
+	text-align: left;
+}
+.text--center {
+	text-align: center;
+}
+.text--right {
+	text-align: right;
+}
+.text--strong {
+	font-weight: 700 !important;
+}
+.text--size__middle {
+	font-size: 14px;
+}
+.text--size__big {
+	font-size: 16px;
+}
+.text--size__bigger {
+	font-size: 18px;
+}
+.text--default__margin {
+	margin: 15px 0px 10px 0px;
+}
+/*リンクはマウスオーバー時に透明化
+a:hover {
+opacity: 0.5;
+}
+*/
+
+/*アコーディオンに矢印をつける　スタート*/
+.accordion--toggle__nonactive:after {
+	display: inline-block;
+	width: 13.5px;
+	height: 9px;
+	margin-left: 7.5px;
+	background: url(../img/arrow_red_up.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+	content: '';
+}
+.accordion--toggle__active:after {
+	display: inline-block;
+	width: 13.5px;
+	height: 9px;
+	margin-left: 7.5px;
+	background: url(../img/arrow_red_down.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+	content: '';
+}
+/*アコーディオンに矢印をつける エンド*/
+/*B-1 新着情報（写真）の
+				スタイルシート開始（ＳＰ版）*/
+.contents--area section#new--information__photo {
+	display: block;
+	clear: both;
+	width: 100%;
+	margin: 0px 0px 0px 0px;
+	background-color: #fff;
+	text-align: center;
+}
+
+/*B-1 新着情報（写真）---コンテンツ領域*/
+.contents--area section#new--information__photo .container--box {
+	width: 100%;
+	margin: 0 auto;
+	padding-top: 0px;
+}
+/*B-1 新着情報（写真）---見出しのスタイルシート*/
+.contents--area section#new--information__photo h2#b-1 {
+	display: block;
+	position: relative;
+	width: auto;
+	padding: 10.5px 40px 10.5px 10px !important;
+	font-size: 16px;
+	font-weight: 700;
+	text-align: left;
+	line-height: 24px;
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+.contents--area section#new--information__photo h2#b-1 span {
+	position: absolute;
+	top:50%;
+	right: 10px;
+	margin-top: -7px;
+	z-index: 5;
+}
+/*B-1 新着情報（写真）---リンク範囲の設定*/
+.contents--area section#new--information__photo .container--box .container--box__001 a {
+	display: inline-block;
+	width: 100%;
+}
+/*B-1 新着情報（写真）---コンテンツを展開させるコンテナのスタイルシート*/
+.contents--area section#new--information__photo .container--box .container--box__001 {
+	float: none;
+	clear: both;
+	width: auto;
+	padding: 10px;
+	border-bottom: 1px solid #dfdfdf;
+}
+/*B-1 新着情報（写真）---写真を格納するフレーム領域*/
+
+.contents--area section#new--information__photo .container--box .container--box__001 .container--box__image {
+	position: relative;
+	float: left;
+	width: 37%;
+	margin: 0px;
+	padding: 0px;
+}
+/*B-1 新着情報（写真）---写真のサイズ*/
+.contents--area section#new--information__photo .container--box .container--box__001 .container--box__image img {
+	width: 100%;
+}
+/*B-1 新着情報（写真）---イベントタイトルなどのテキスト領域*/
+.contents--area section#new--information__photo .container--box .container--box__001 .container--box__field {
+	float: right;
+	width: 63%;
+	margin: 0px;
+	padding: 0px;
+}
+/*B-1 新着情報（写真）---コンテンツの日付場所*/
+.contents--area section#new--information__photo .container--box .container--box__date {
+	clear: both;
+	width: 100%;
+}
+/*B-1 新着情報（写真）---コンテンツの日付テキスト*/
+.contents--area section#new--information__photo .container--box .container--box__date p {
+	margin: 10px 0px 0px 13px;
+	font-size: 11px;
+}
+/*B-1 新着情報（写真）---コンテンツのタイトル*/
+.contents--area section#new--information__photo .container--box .container--box__title p {
+	margin: 0px 0px 0px 13px;
+	font-size: 14px;
+	font-weight: 700;
+	letter-spacing: 0px;
+	line-height: 18px;
+}
+/*B-1 新着情報（写真）---コンテンツの場所*/
+.contents--area section#new--information__photo .container--box .container--box__place p {
+	margin: 10px 0px 0px 14px;
+	padding: 0px 0px 0px 0px;
+}
+/*B-1 新着情報（写真）---スマートフォンでは罫線を隠す*/
+.contents--area section#new--information__photo .container--box hr {
+	display: none;
+}
+/*B-1 新着情報（写真）---リンク設定*/
+.contents--area section#new--information__photo .container--link__text {
+	width: 100%;
+	margin: 0px;
+}
+.contents--area section#new--information__photo .container--link__text a p {
+	height: auto;
+	min-height: 20px;
+	margin: 0px;
+	padding: 10px 0px;
+	font-size: 12px;
+	line-height: 20px;
+}
+.contents--area section#new--information__photo .container--link__text a p span {
+	height: auto;
+	min-height: 20px;
+	margin: 0px 5px 0px 0px;
+	padding: 10px 20px 10px 0px;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 20px;
+}
+/*B-1 新着情報（写真）の
+				スタイルシート終了（ＳＰ版）*/
+
+/*B-2 新着情報（テキスト）の
+				スタイルシート開始（ＰＣ版）*/
+/*B-2 新着情報（テキスト）*/
+.contents--area section#new--information__text {
+	display: block;
+	position: relative;
+	width: 100%;
+	background-color: #fff;
+	text-align: center;
+}
+/*B-1 新着情報（テキスト）---見出しのスタイルシート*/
+.contents--area section#new--information__text h2#b-2 {
+	display: block;
+	position: relative;
+	width: auto;
+	padding: 10.5px 40px 10.5px 10px !important;
+	font-size: 16px;
+	font-weight: 700;
+	text-align: left;
+	line-height: 24px;
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+.contents--area section#new--information__text h2#b-2 span {
+	position: absolute;
+	top:50%;
+	right: 10px;
+	margin: -7px 0px 0px 0px;
+	z-index: 5;
+}
+
+.contents--area section#new--information__text .container--box {
+	width: 100%;
+	margin: 0 auto;
+}
+.contents--area section#new--information__text .container--box a {
+	display: block;
+	padding: 0px;
+}
+.contents--area section#new--information__text .container--link__text {
+	width: 100%;
+	margin: 0px;
+}
+.contents--area section#new--information__text .container--link__text a p {
+	height: auto;
+	min-height: 20px;
+	margin: 0px;
+	padding: 10px 0px;
+	font-size: 12px;
+	line-height: 20px;
+}
+.contents--area section#new--information__text .container--link__text a p span {
+	height: auto;
+	min-height: 20px;
+	margin: 0px 5px 0px 0px;
+	padding: 10px 20px 10px 0px;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 20px;
+}
+
+.contents--area section#new--information__text .container--box__date {
+	float: left;
+	width:auto;
+	max-width: 210px;
+	height: auto;
+	min-height: 11px;
+	margin: 0px;
+	font-size: 11px;
+}
+.contents--area section#new--information__text .container--box__date p {
+	margin: 0px 0px 0px 0px;
+}
+.contents--area section#new--information__text .container--box__place {
+	float: left;
+	width: auto;
+	max-width:124px;
+	height: auto;
+	min-height: 11px;
+	margin: 0px 0px 0px 10px;
+}
+.contents--area section#new--information__text .container--box__title {
+	margin-left: 0px;
+	padding-right: 20px;
+}
+.contents--area section#new--information__text .container--box__title p {
+	clear: both;
+	float: none;
+	width: 100%;
+	margin: 0px;
+	padding-top: 5px;
+	font-weight: 700;
+	font-size: 14px;
+}
+.contents--area section#new--information__text .container--box__002 {
+	display: block;
+	position: relative;
+	clear: both;
+	width: auto;
+	margin: 0 auto;
+	padding: 10px;
+	border-bottom: 1px solid #ccc;
+}
+
+
+/*C エリアから探すの
+				スタイルシート開始（ＳＰ版）*/
+.contents--area section#search--event__area  {
+	display: block;
+	position: relative;
+	width: 100%;
+	background-color: #fff;
+	text-align: left;
+}
+/*C エリアから探す 見出しのスタイルシート*/
+.contents--area section#search--event__area h2#c {
+	display: block;
+	position: relative;
+	width: auto;
+	padding: 10.5px 40px 10.5px 10px !important;
+	font-size: 16px;
+	font-weight: 700;
+	text-align: left;
+	line-height: 24px;
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+/*C エリアから探す 見出しのスタイルシート*/
+.contents--area section#search--event__area h2#c span {
+	position: absolute;
+	top:50%;
+	right: 10px;
+	margin-top: -7px;
+	z-index: 5;
+}
+/*C エリアから探す コンテンツエリア*/
+.contents--area section#search--event__area .container--box {
+	margin-top: 0px;
+}
+/*C エリアから探す コンテンツエリア*/
+.contents--area section#search--event__area .container--box__003 {
+	width: 100% !important;
+}
+/*C エリアから探す コンテンツタイトルボックス*/
+.contents--area section#search--event__area .container--box__title {
+	margin: -1px 0px 0px 0px;
+	border-top:1px solid #DFDFDF;
+}
+/*C エリアから探す エリアリスト*/
+.contents--area section#search--event__area .container--area__lists {
+	display: inline-block;
+	width: 100%;
+	border-top: 1px solid #ccc;
+	border-bottom: none;
+	background-image: url(../img/momiji-4_sp.png);
+	background-position: right 0px bottom 0px;
+	background-repeat: no-repeat;
+	font-size: 0;
+	line-height: 1;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+}
+/*C エリアから探す エリアボックス*/
+.contents--area section#search--event__area .container--box__area {
+	float: left;
+	width: 50%;
+	height: auto;
+	padding: 1.5px 0px 1.5px 1px;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+}
+/*C エリアから探す エリアテキスト*/
+.contents--area section#search--event__area .container--box__area a {
+	position: relative;
+	width: auto;
+	padding: 14px 20px 14px 10px;
+}
+.contents--area section#search--event__area .container--box__area a span {
+	font-size: 14px;
+}
+.contents--area section#search--event__area .container--box__area p span {
+	font-size: 14px;
+	line-height: 14px;
+}
+/*C エリアから探す 罫線重複しないための偶数制御*/
+.contents--area section#search--event__area .container--box__area:nth-child(odd):nth-last-child(2) {
+	border-bottom: none;
+}
+.contents--area section#search--event__area .container--box__area:nth-child(even):last-child {
+	border-bottom: none;
+}
+.contents--area section#search--event__area .container--box__area:nth-child(2n+1):last-child {
+	border-bottom: none;
+}
+.contents--area section#search--event__area .container--box__area:nth-child(even) {
+	border-right: none;
+}
+/*C エリアから探す 最後のボーダーボトム削除*/
+.contents--area section#search--event__area .border--bottom__none {
+	border-bottom: none !important;
+}
+/*C エリアから探す ２カラムから１からむに変更するクラスの作成*/
+.contents--area section#search--event__area .container--area__lists.oneclum .container--box__area {
+	display: block;
+	float: none;
+	width: 100%;
+	height: 45px;
+	padding: 16px 0px;
+	border-right: none;
+	border-bottom: 1px solid #ccc !important;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+}
+/*C エリアから探す 背景の紅葉を隠すために白背景を設置*/
+.contents--area section#search--event__area .container--area__lists .container--box__area {
+	display: block;
+	background-color: #ffffff;
+}
+/*C エリアから探す 矢印設定*/
+.contents--area section#search--event__area .container--box__title:after {
+	margin-left: 5px;
+	font-size: 20px !important;
+}
+/*C エリアから探す コンテンツタイトルテキスト*/
+.contents--area section#search--event__area .container--box__title p {
+	width: 90%;
+	font-size: 16px;
+	font-weight: 700;
+}
+.contents--area section#search--event__area .container--box__title p a span{
+	font-weight: 700;
+}
+.contents--area section#search--event__area .container--box__title.arrow--img p {
+	position: relative;
+	width: 100%;
+}
+.contents--area section#search--event__area .container--box__title.arrow--img a {
+	width: 100%;
+	height: 100%;
+}
+.contents--area section#search--event__area .container--box__title.arrow--img p span{
+	display: block;
+	padding: 16px 20px 16px 10px;
+	font-weight: 700;
+}
+.contents--area section#search--event__area .container--box__title.arrow--img a:after {
+	display: block;
+	position: absolute;
+	top: 50%;
+	right: 5px;
+	width: 7.5px;
+	height: 12px;
+	margin-top: -6px;
+	background: url(../img/arrow_red.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+	content: '';
+}
+
+.contents--area section#search--event__area .container--box__area a:after {
+	display: inline-block;
+	position: absolute;
+	top:50%;
+	right: 5px;
+	width: 7.5px;
+	height: 12px;
+	margin: -5px 0px 0px 0px;
+	background: url(../img/arrow_red.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	line-height: 16px;
+	vertical-align: middle;
+	content: '';
+}
+.contents--area section#search--event__area .oneclum .container--box__area a:after {
+	display: inline-block;
+	float: right;
+	width: 7.5px;
+	height: 12px;
+	margin-top: 5px;
+	margin-right: 10px;
+	background: url(../img/arrow_red.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	line-height: 14px;
+	vertical-align: middle;
+	content: '';
+}
+.contents--area section#search--event__area a .container--box__title.arrow--font p:after {
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	content: '\f105';
+}
+/*C エリアから探すの
+				スタイルシート終了（ＳＰ版）*/
+/*D ランキングTOP3の
+				スタイルシート開始（ＳＰ版）*/
+.contents--area section#ranking--top3 {
+	display: block;
+	width: 100%;
+	margin-top: -4px !important;
+	border-bottom: none;
+	background-color: #fff;
+	text-align: center;
+	font-size: 0;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+}
+/*D ランキングTOP3 見出しのスタイルシート*/
+.contents--area section#ranking--top3 h2#d {
+	display: block;
+	position: relative;
+	width: auto;
+	padding: 10.5px 40px 10.5px 10px;
+	font-size: 16px;
+	font-weight: 700;
+	text-align: left;
+	line-height: 24px;
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+/*D ランキングTOP3 見出しのスタイルシート*/
+.contents--area section#ranking--top3 h2#d span {
+	position: absolute;
+	top:50%;
+	right: 10px;
+	margin-top: -7px;
+	z-index: 5;
+}
+
+/*D ランキングTOP3 コンテンツエリア*/
+.contents--area section#ranking--top3 .container--box {
+	display: inline-block;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	text-align: left;
+	line-height: 100%;
+}
+.contents--area section#ranking--top3 .container--box .container--box__field{
+	margin: 10px 5px 0px;
+}
+.contents--area section#ranking--top3 .container--box__line {
+	display: inline-block;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	/*padding: 10px 5px 0px;*/
+	text-align: left;
+	line-height: 100%;
+}
+/*D ランキングTOP3 コンテンツエリアタイトル*/
+.contents--area section#ranking--top3 .container--box__title {
+	display: block;
+	width: auto;
+	max-width: 90%;
+	height: auto;
+	margin: 0 auto;
+	padding: 5px 0px 10px;
+	text-align: left;
+}
+.contents--area section#ranking--top3 .container--box__title p {
+	display: inline;
+	font-size: 12px;
+	line-height: 15px;
+}
+/*D ランキングTOP3 コンテンツエリアタイトルランキングボックス*/
+.contents--area section#ranking--top3 .container--box__004:first-child {
+	float: left;
+	width: 33.333333333%;
+	max-width: 33.333333333%;
+	text-align: center;
+}
+.contents--area section#ranking--top3 .container--box__004:nth-child(2) {
+	float: left;
+	width: 33.333333333%;
+	max-width: 33.333333333%;
+	text-align: center;
+}
+.contents--area section#ranking--top3 .container--box__004-last {
+	float: left;
+	width: 33.333333333%;
+	max-width: 33.333333333%;
+	text-align: center;
+}
+.contents--area section#ranking--top3 .container--box__004 a{
+	display: inline-block;
+	width: 100%;
+	padding: 0px;
+}
+.contents--area section#ranking--top3 .container--box__004-last a{
+	display: inline-block;
+	width: 100%;
+	padding: 0px;
+}
+/*D ランキングTOP3 画像フレーム ランキングタブを配置するためにrelativeに*/
+.contents--area section#ranking--top3 .container--box__004 .container--box__image {
+	position: relative;
+	width: auto;
+	margin: 0px 5px;
+}
+.contents--area section#ranking--top3 .container--box__004-last .container--box__image {
+	position: relative;
+	width: auto;
+	margin: 0px 5px;
+}
+/*D ランキングTOP3 画像*/
+.contents--area section#ranking--top3 .container--box__004 .container--box__image img {
+	width: 100%;
+}
+.contents--area section#ranking--top3 .container--box__004-last .container--box__image img {
+	width: 100%;
+}
+/*D ランキングTOP3 PC版で使っていた罫線を非表示にする*/
+.contents--area section#ranking--top3 hr {
+	display: block;
+	clear: both;
+	width: 100%;
+	height: 1px;
+	margin: 0 auto;
+	border: none;
+}
+/*D ランキングTOP3 TOP10すべてのランキングを見るの領域*/
+.contents--area section#ranking--top3 .container--link__text {
+	position: relative;
+	width: 100%;
+	height: auto;
+	margin: 0px;
+	padding: 0px;
+	border-top:1px solid #DFDFDF;
+	text-align: right;
+}
+.contents--area section#ranking--top3 .container--link__text a p {
+	height: auto;
+	margin-right: 20px;
+	padding: 10px 0px;
+}
+.contents--area section#ranking--top3 .container--link__text a p span {
+	height: auto;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 20px;
+}
+.contents--area section#ranking--top3 .container--link__text a p span:hover {
+	text-decoration: underline !important;
+	text-decoration-color: #195197 !important;
+	-webkit-text-decoration-color: #195197 !important;
+}
+.contents--area section#ranking--top3 .container--link__text a p:after {
+	position: absolute;
+	font-size: 12px;
+	text-decoration: none !important;
+}
+.contents--area section#ranking--top3 .container--link__text.arrow--img a {
+	position: relative;
+}
+.contents--area section#ranking--top3 .container--link__text.arrow--img a p:after {
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	right: -10px;
+	width: 7.5px;
+	height: 12px;
+	margin-top: -6px;
+	background: url(../img/arrow_red.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+	content: '';
+}
+.contents--area section#ranking--top3 .container--link__text.arrow--font a p:after {
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	content: '\f105';
+}
+.contents--area section#ranking--top3 .container--link__text a p:hover:after {
+	text-decoration: none !important;
+	-webkit-text-decoration-color: #ffffff !important;
+	text-decoration-color: #ffffff !important;
+}
+/*D ランキングTOP3 ランキングタブ*/
+.contents--area section#ranking--top3 .container--ranking__001 {
+	position: absolute;
+	top:  0px;
+	left: 5px;
+	width: 27px;
+	height: 29px;
+	padding: 5px;
+	background-image: url(../img/image_ranking_001.png);
+	background-repeat: no-repeat;
+	font-size: 12px;
+}
+.contents--area section#ranking--top3 .container--ranking__002 {
+	position: absolute;
+	top:  0px;
+	left: 7px;
+	width: 27px;
+	height: 29px;
+	padding: 5px;
+	background-image: url(../img/image_ranking_002.png);
+	background-repeat: no-repeat;
+	font-size: 12px;
+}
+.contents--area section#ranking--top3 .container--ranking__003 {
+	position: absolute;
+	top:  0px;
+	left: 5px;
+	width: 27px;
+	height: 29px;
+	padding: 5px;
+	background-image: url(../img/image_ranking_003.png);
+	background-repeat: no-repeat;
+	font-size: 12px;
+}
+/*D ランキングTOP3の
+				スタイルシート終了（ＳＰ版）*/
+
+
+/*E PICKUPコンテンツの
+				スタイルシート開始（ＳＰ版）*/
+.contents--area section#pickup--contents {
+	display: block;
+	width: 100%;
+	background-color: #fbf8f5;
+	padding: 10px 0px 6px;
+	border-top: 1px solid #9D7744;
+	border-bottom: 1px solid #9D7744;
+	display: block;
+}
+/*E PICKUPコンテンツのタイトル*/
+.contents--area section#pickup--contents h2#e {
+	display: block;
+	position: relative;
+	width: calc(100%-50px);
+	padding: 10.5px 40px 10.5px 10px;
+	text-align: left;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 24px;
+}
+/*E PICKUPコンテンツのタイトル*/
+.contents--area section#pickup--contents h2#e span {
+	position: absolute;
+	right: 10px;
+	top:50%;
+	margin-top: -7px;
+	z-index: 5;
+}
+/*E PICKUPコンテンツのコンテナボックス*/
+.contents--area section#pickup--contents .container--box {
+	width: 100%;
+	display: inline-block;
+	padding: 10px 0px 0px 0px;
+	text-align: center;
+	border-top: 1px solid #ccc;
+}
+.contents--area section#pickup--contents .container--box:first-child {
+	padding: 0px 0px 10px 0px;
+	border-top: none;
+}
+.contents--area section#pickup--contents .container--box:last-child {
+	border-bottom: none;
+	padding-top: 10px;
+	padding-bottom: 5px;
+}
+/*E PICKUPコンテンツのコンテナボックスタイトルの位置調整。*/
+.contents--area section#pickup--contents  .container--box .container--box__title p {
+	font-size: 14px;
+	font-weight: 700;
+	padding-top: 13px;
+}
+.contents--area section#pickup--contents  .container--box p {
+	font-size: 14px;
+	font-weight: 400;
+	padding-top: 11px;
+}
+/*E PICKUPコンテンツの左側コンテナボックス*/
+.contents--area section#pickup--contents .container--boxleft__005 {
+	width: 100%;
+	margin: 0px;
+	padding: 0px 0px 0px 0px;
+	text-align: center;
+	float: left;
+}
+/*E PICKUPコンテンツの右側コンテナボックスのテキスト領域*/
+.contents--area section#pickup--contents .container--boxright__005 {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0px 0px 0px 0px;
+	display: inline-block;
+	text-align: left;
+}
+/*E PICKUPコンテンツのタグ設定*/
+.contents--area section#pickup--contents .container--box__image .container--box__tag {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	padding: 0px 7.5px;
+	font-size: 11px;
+	line-height: 18px;
+	height: 18px;
+	font-weight: 400;
+}
+/*E PICKUPコンテンツの画像フレーム*/
+.contents--area section#pickup--contents .container--box__image {
+	width: 100%;
+	position: relative;
+	margin: 0 auto;
+}
+/*E PICKUPコンテンツの画像*/
+.contents--area section#pickup--contents .container--box__image img {
+	width: 100%;
+	min-height: 80px;
+}
+/*E PICKUPコンテンツのリンク範囲*/
+.contents--area section#pickup--contents .container--box a {
+	float: none;
+	clear: both;
+	width: auto;
+	padding: 0px 10px;
+}
+/*E PICKUPコンテンツの
+				スタイルシート終了（ＳＰ版）*/
+
+/*E PICKUPコンテンツ3:2の
+				スタイルシート開始（ＳＰ版）*/
+.contents--area section#pickup--contents__002 {
+	display: block;
+	width: 100%;
+	background-color: #fbf8f5;
+	padding: 10px 0px 6px;
+	border-top: 1px solid #9D7744;
+	border-bottom: 1px solid #9D7744;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+/*E PICKUPコンテンツのタイトル*/
+.contents--area section#pickup--contents h2#e span {
+	position: absolute;
+	right: 10px;
+	top:50%;
+	margin-top: -7px;
+	z-index: 5;
+}
+/*E PICKUPコンテンツのコンテナボックス*/
+.contents--area section#pickup--contents__002 .container--box {
+	display: inline-block;
+	width: 100%;
+	padding: 10px 0px 0px 0px;
+	border-top: 1px solid #ccc;
+	text-align: center;
+}
+.contents--area section#pickup--contents__002 .container--box:first-child {
+	padding: 0px 0px 10px 0px;
+	border-top: none;
+}
+.contents--area section#pickup--contents__002 .container--box:last-child {
+	padding-top: 10px;
+	padding-bottom: 5px;
+	border-bottom: none;
+}
+/*E PICKUPコンテンツのコンテナボックスタイトルの位置調整。*/
+.contents--area section#pickup--contents__002 .container--box .container--box__title p {
+	padding-top: 13px;
+	font-size: 14px;
+	font-weight: 700;
+}
+
+.contents--area section#pickup--contents__002 .container--box p {
+	font-size: 14px;
+	font-weight: 400;
+	padding-top: 11px;
+}
+
+/*E PICKUPコンテンツの左側コンテナボックス*/
+.contents--area section#pickup--contents__002 .container--boxleft__005 {
+	float: left;
+	width: 100%;
+	margin: 0px;
+	padding: 0px 0px 0px 0px;
+	text-align: center;
+}
+/*E PICKUPコンテンツの右側コンテナボックスのテキスト領域*/
+.contents--area section#pickup--contents__002 .container--boxright__005 {
+	display: inline-block;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0px 0px 0px 0px;
+	text-align: left;
+}
+/*E PICKUPコンテンツのタグ設定*/
+.contents--area section#pickup--contents__002 .container--box__image .container--box__tag {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 18px;
+	padding: 0px 7.5px;
+	font-size: 11px;
+	font-weight: 400;
+	line-height: 18px;
+}
+/*E PICKUPコンテンツの画像フレーム*/
+.contents--area section#pickup--contents__002 .container--box__image {
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+}
+/*E PICKUPコンテンツの画像*/
+.contents--area section#pickup--contents__002 .container--box__image img {
+	width: 100%;
+	min-height: 80px;
+}
+/*E PICKUPコンテンツのリンク範囲*/
+.contents--area section#pickup--contents__002 .container--box a {
+	float: none;
+	clear: both;
+	width: auto;
+	padding: 0px 10px;
+}
+/*E PICKUPコンテンツ3:2の
+				スタイルシート終了（ＳＰ版）*/
+
+/*F コンテンツ誘導枠の
+				スタイルシート終了（ＳＰ版）*/
+.contents--area section#contents--induction {
+	display: block;
+	width: 100%;
+	margin-bottom: 0px;
+	padding: 0px;
+	border-top: none;
+	background-color: #fff;
+	background-image: url(../img/momiji-4_sp.png);
+	background-position: right 0px bottom 0px;
+	background-repeat: no-repeat;
+	background-position: right 10px bottom 5px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+}
+/*F コンテンツ誘導枠のタイトル*/
+.contents--area section#contents--induction h2#f {
+	display: block;
+	position: relative;
+	width: auto;
+	padding: 10.5px 40px 10.5px 10px;
+	font-size: 16px;
+	font-weight: 700;
+	text-align: left;
+	line-height: 24px;
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+/*E PICKUPコンテンツのタイトル*/
+.contents--area section#contents--induction h2#f span {
+	position: absolute;
+	top:50%;
+	right: 10px;
+	margin-top: -7px;
+	z-index: 5;
+}
+/*F コンテンツ誘導枠コンテンツのコンテナボックス*/
+.contents--area section#contents--induction .container--box {
+	width: 100%;
+	margin: 0 auto;
+}
+.contents--area section#contents--induction a {
+	display:inline-block;
+	width: auto;
+	padding: 10px 10px 5px;
+}
+/*F コンテンツ誘導枠コンテンツのタイトル*/
+.contents--area section#contents--induction .container--box__title p {
+	margin: 0px 0px 5px 0px;
+	padding: 0px;
+	color: #333333;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 100%;
+}
+/*F コンテンツ誘導枠コンテンツのリンク範囲*/
+.contents--area section#contents--induction .container--box__text a {
+	display: inline-block;
+	margin: 0px;
+	padding: 0px;
+	color: #195197;
+	font-size: 13px;
+}
+
+/*F コンテンツ誘導枠左側コンテンツ*/
+.contents--area section#contents--induction .container--boxleft__006 {
+	float: left;
+	width: 38%;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+}
+/*F コンテンツ誘導枠コンテンツの画像フレーム*/
+.contents--area section#contents--induction .container--box__image {
+	position: relative;
+	width: 100%;
+	margin-top: 0px;
+	padding: 0px;
+	text-align: center;
+}
+/*F コンテンツ誘導枠コンテンツの画像*/
+.contents--area section#contents--induction .container--box__image img {
+	width: 100%;
+}
+/*F コンテンツ誘導枠右側コンテンツ*/
+.contents--area section#contents--induction .container--boxright__006a {
+	width: 62%;
+	margin: 0px;
+	padding: 0px;
+	text-align: left;
+	float: left;
+}
+/*F コンテンツ誘導枠右側コンテンツのテキスト*/
+.contents--area section#contents--induction .container--boxright__006a p {
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 5px 5px;
+	font-size: 14px;
+	line-height: 20px;
+}
+/*F コンテンツ誘導枠下側コンテンツ*/
+.contents--area section#contents--induction .container--boxright__006b {
+	float: none;
+	clear: both;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	text-align: left;
+}
+/*F コンテンツ誘導枠下側コンテンツのテキスト*/
+.contents--area section#contents--induction .container--boxright__006b .container--box__text {
+	display: inline-block;
+	width: 100%;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	border-top: solid 1px #ccc;
+	font-size: 14px;
+	line-height: 140%;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+}
+/*F コンテンツ誘導枠下側コンテンツのリンクテキスト*/
+.contents--area section#contents--induction .container--boxright__006b .container--box__text a {
+	display: flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	float: left;
+	color: #333;
+	width: 50%;
+	height: auto;
+	border-bottom: solid 1px #ccc;
+	border-right: solid 1px #ccc;
+	background-color: #fff;
+	line-height: 140%;
+	overflow: hidden;
+	align-items: center;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+}
+/*F コンテンツ誘導枠下側コンテンツの枠線調整*/
+.contents--area section#contents--induction .container--boxright__006b .container--box__text a:nth-child(even) {
+	border-right: none;
+}
+.contents--area section#contents--induction .container--boxright__006b .container--box__text a:nth-child(2n+1):last-child {
+	border-bottom: none;
+}
+.contents--area section#contents--induction .container--boxright__006b .container--box__text a:nth-child(even):last-child {
+	border-bottom: none;
+}
+.contents--area section#contents--induction .container--boxright__006b .container--box__text a:nth-last-child(2):nth-child(odd) {
+	border-bottom: none;
+}
+.contents--area section#contents--induction .container--boxright__006b .container--box__text a span {
+	display: block;
+	width: auto;
+	padding: 15.5px 30px 15.5px 10px;
+	font-size: 14px;
+	line-height: 18px;
+}
+/*F コンテンツ誘導枠下側コンテンツのリンク矢印設定*/
+.contents--area section#contents--induction .container--box__title p:after {
+	color: #ac232c;
+	font-size: 14px;
+}
+.contents--area section#contents--induction .container--box__text a:after {
+	color: #ac232c;
+	font-size: 14px;
+}
+.contents--area section#contents--induction .container--box__title p:after {
+	margin-left: 5px;
+	font-size: 20px !important;
+}
+.contents--area section#contents--induction .container--box__title.arrow--img p:after {
+/*content:url(../img/arrow_red.png);*/
+}
+.contents--area section#contents--induction .container--box__title.arrow--font p:after {
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	content: '\f105';
+}
+.contents--area section#contents--induction .container--box__text.arrow--img a {
+	position: relative;
+	width: 50%;
+	padding-right: 0px;
+}
+.contents--area section#contents--induction .container--box__text.arrow--img a:after {
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	right: 8px;
+	width: 7.5px;
+	height: 12px;
+	margin-top: -6px;
+	background: url(../img/arrow_red.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+	content: '';
+}
+.contents--area section#contents--induction .container--box__text.arrow--font a:after {
+	margin: 0px 5px;
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	content: '\f105';
+}
+/*F コンテンツ誘導枠の
+				スタイルシート終了（ＳＰ版）*/
+
+
+/*V 有料差込枠の
+				スタイルシート開始（ＳＰ版）*/
+.contents--area section#contents--paymentfee {
+	display: block;
+	width: 100%;
+	margin-top: -1px;
+	padding-bottom: 3px;
+	background-color: #fff;
+	border-top: 4px solid #937a41 !important;
+	border-bottom: 4px solid #937a41 !important;
+}
+/*V 有料差込枠下側コンテンツのタイトル*/
+.contents--area section#contents--paymentfee h2#v {
+	display: block;
+	width: auto;
+	padding: 10.5px 40px 10.5px 10px;
+	font-size: 16px;
+	font-weight: 700;
+	text-align: left;
+	line-height: 24px;
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+.contents--area section#contents--paymentfee h2#v span {
+	position: absolute;
+	top:50%;
+	right: 10px;
+	margin-top: -7px;
+	z-index: 5;
+}
+/*V 有料差込枠下側コンテンツのエリア*/
+.contents--area section#contents--paymentfee .container--box {
+	display: inline-block;
+	width: 100%;
+	margin: 0 auto;
+	padding-bottom: 14px;
+}
+/*V 有料差込枠下側コンテンツのリンク範囲*/
+.contents--area section#contents--paymentfee .container--box a {
+	display: inline-block;
+	width: 100%;
+	font-size:0;
+	line-height: 1;
+}
+
+.contents--area section#contents--paymentfee .container--box a .container--box__field {
+	display: block;
+	width:auto;
+	padding: 0px 10px;
+	line-height: 100%;
+}
+/*V 有料差込枠下側コンテンツの右側のコンテンツボックス*/
+.contents--area section#contents--paymentfee .container--boxright__007 {
+	float: left;
+	width: 59%;
+	margin: 0px 0px 0px 0px;
+	padding: 10px 0px 0px 0px;
+	text-align: left;
+}
+/*V 有料差込枠下側コンテンツの右側のテキスト*/
+.contents--area section#contents--paymentfee .container--boxright__007 p {
+	margin:7px 0px 7px 10px;
+	font-size: 14px;
+	line-height: 140%;
+}
+/*V 有料差込枠下側コンテンツの右側のテキストタイトル*/
+.contents--area section#contents--paymentfee .container--boxright__007 .container--box__title p {
+	margin-top: 0px;
+	font-size: 14px;
+	font-weight: 700;
+	letter-spacing: -1px;
+}
+/*V 有料差込枠下側コンテンツの左側のコンテンツボックス*/
+.contents--area section#contents--paymentfee .container--boxleft__007 {
+	float: left;
+	width: 41%;
+	margin: 0px;
+	padding: 10px 0px 0px 0px;
+	text-align: center;
+}
+/*V 有料差込枠下側コンテンツの画像フレーム*/
+.contents--area section#contents--paymentfee .container--box__image img {
+	width: 100%;
+}
+/*V 有料差込枠のボタン*/
+.contents--area section#contents--paymentfee .event-button {
+	display: block;
+	position: relative;
+	width: auto;
+	margin: 5px 0px 0px 10px;
+	border-radius: 4px;
+	text-align: center;
+	box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, .3);
+	-webkit-box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, .3);
+}
+.contents--area section#contents--paymentfee .event-button p {
+	width: 100%;
+	margin: 0 auto;
+	height: auto !important;
+	padding: 16px 0px;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 100% !important;
+	letter-spacing: 1px;
+}
+.contents--area section#contents--paymentfee .event-button p:after {
+	position: absolute;
+	top: 2px;
+	right: 15px;
+}
+.contents--area section#contents--paymentfee .event-button.arrow--img {
+	position: relative;
+}
+.contents--area section#contents--paymentfee .event-button.arrow--img p:after {
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	width: 7.5px;
+	height: 15px;
+	margin-top: -6px;
+	background: url(../img/arrow_white.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+	content: '';
+	z-index: 2;
+}
+.contents--area section#contents--paymentfee .event-button.arrow--font p:after {
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	content: '\f105';
+}
+/*V 有料差込枠の
+				スタイルシート終了（ＳＰ版）*/
+
+/*H 人気のエリアの
+				スタイルシート開始（ＳＰ版）*/
+.contents--area section#contents--popular--areas {
+	display: block;
+	width: 100%;
+	padding: 0px;
+	border-top: none;
+	background-color: #fff;
+}
+/*H 人気のエリアのタイトル*/
+.contents--area section#contents--popular--areas h2#h {
+	display: block;
+	width: auto;
+	padding: 10.5px 40px 10.5px 10px;
+	font-size: 16px;
+	font-weight: 700;
+	text-align: left;
+	line-height: 24px;
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+/*H 人気のエリアのタイトル*/
+.contents--area section#contents--popular--areas h2#h span {
+	position: absolute;
+	top:50%;
+	right: 10px;
+	margin-top: -7px;
+	z-index: 5;
+}
+
+/*H 人気のエリアコンテンツのコンテナボックス*/
+.contents--area section#contents--popular--areas .container--box {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	/*padding: 10px 5px 0px;*/
+}
+/*H 人気のエリアコンテンツのコンテナボックスリンク範囲*/
+.contents--area section#contents--popular--areas .container--box a {
+	display: block;
+	float: left;
+	width: 25%;
+	height: auto;
+	min-height: 89px;
+	margin: 0px;
+	padding: 0px;
+}
+
+
+/*H 人気のエリアコンテンツのコンテナボックス最後のコンテナの右マージンをなくす*/
+.contents--area section#contents--popular--areas .container--box a.margin--right__not {
+	margin-right: 0px;
+}
+/*H 人気のエリアコンテンツの画像フレーム*/
+.contents--area section#contents--popular--areas .container--box__image {
+	width: auto;
+	padding: 0px 5px;
+}
+/*H 人気のエリアコンテンツの画像*/
+.contents--area section#contents--popular--areas .container--box a img {
+	width: 100%;
+	margin: 0 auto;
+}
+/*H 人気のエリアコンテンツのコンテナエリア*/
+.contents--area section#contents--popular--areas .container--box .container--box__area{
+	display: block;
+	width: auto;
+	padding: 10px 5px 0px;
+}
+
+/*H 人気のエリアコンテンツのコンテナエリアのテキスト*/
+.contents--area section#contents--popular--areas .container--box .container--box__area p {
+	margin: 5px 5px 5px;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 18px;
+	letter-spacing: -0.5px;
+}
+/*H 人気のエリアの
+				スタイルシート終了（ＳＰ版）*/
+
+/*X レストラン誘導枠の
+				スタイルシート開始（ＳＰ版）*/
+.contents--area section#contents--restaurant__guidance {
+	display: block;
+	width: 100%;
+	margin: 0 auto;
+	margin: 0px;
+	padding: 0px;
+	border-top: none !important;
+	background-color: #fff;
+	border-bottom: none !important;
+}
+/*X レストラン誘導枠のタイトル*/
+.contents--area section#contents--restaurant__guidance h2#x {
+	display: block;
+	width: auto;
+	padding: 10.5px 40px 10.5px 10px;
+	font-size: 16px;
+	font-weight: 700;
+	text-align: left;
+	line-height: 24px;
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+.contents--area section#contents--restaurant__guidance .contents--component__title {
+	position: relative;
+}
+/*H 人気のエリアのタイトル*/
+.contents--area section .contents--component__title span {
+	position: absolute;
+	top:50%;
+	right: 10px;
+	margin-top: -7px;
+	z-index: 5;
+}
+
+/*X レストラン誘導枠のコンテナボックス*/
+.contents--area section#contents--restaurant__guidance .container--box {
+	display: block;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0px;
+}
+/*X レストラン誘導枠のコンテナボックスリンク範囲*/
+.contents--area section#contents--restaurant__guidance .container--box a {
+	display: inline-block;
+	float: none;
+	clear: both;
+	width: 100%;
+	margin: 0px;
+	padding: 10px 0px 10px;
+	/*padding: 10px 10px 10px;*/
+}
+.contents--area section#contents--restaurant__guidance .container--box a .container--box__field{
+	display: block;
+	width: auto;
+	padding: 10px 10px 10px;
+}
+/*X レストラン誘導枠の左エリア*/
+.contents--area section#contents--restaurant__guidance .container--boxleft__009 {
+	float: left;
+	width: 38%;
+	padding: 0px;
+	text-align: center;
+}
+/*X レストラン誘導枠の右エリア*/
+.contents--area section#contents--restaurant__guidance .container--boxright__009 {
+	float: left;
+	width: 62%;
+	margin: 0px;
+	padding: 0px;
+	text-align: left;
+}
+/*X レストラン誘導枠の右エリアのテキスト*/
+.contents--area section#contents--restaurant__guidance .container--boxright__009 p {
+	font-size: 14px;
+	margin: 2px 0px 11px 10px;
+	line-height: 20px;
+}
+/*X レストラン誘導枠の右エリアの画像フレーム*/
+.contents--area section#contents--restaurant__guidance .container--box__image {
+	width: 100%;
+}
+/*X レストラン誘導枠の右エリアの画像*/
+.contents--area section#contents--restaurant__guidance .container--box__image img {
+	width: 100%;
+}
+/*X レストラン誘導枠の右エリアのボタン*/
+.contents--area section#contents--restaurant__guidance .event-button {
+	display: block;
+	position: relative;
+	width: auto;
+	margin: 0px 0px 0px 10px;
+	border-radius: 4px;
+	color: #fff;
+	text-align: center;
+	box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, .3);
+	-webkit-box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, .3);
+}
+/*X レストラン誘導枠の右エリアのボタンテキスト*/
+.contents--area section#contents--restaurant__guidance .event-button p {
+	width: auto;
+	height: auto;
+	margin-left: 10px;
+	padding: 10px 20px 10px 10px;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 20px;
+}
+/*X レストラン誘導枠の右エリアのボタンテキスト矢印*/
+.contents--area section#contents--restaurant__guidance .event-button p:after {
+	position: absolute;
+	top: 2px;
+	right: 10px;
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	content: '\f105';
+}
+/*X レストラン誘導枠の右エリアのアコーディオンエリア*/
+.contents--area section#contents--restaurant__guidance .container--box__area {
+	position: relative;
+	clear: both;
+	width: auto;
+	margin: 0px 0px 0px 0px;
+}
+/*X レストラン誘導枠の右エリアのアコーディオンエリアリンク*/
+.contents--area section#contents--restaurant__guidance .container--box__area a {
+	display: block;
+	clear: none;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0px;
+	border-top: 1px solid #ccc;
+	color: #333333;
+	font-size: 14px;
+}
+/*X レストラン誘導枠の右エリアのアコーディオンエリアリンクテキスト*/
+.contents--area section#contents--restaurant__guidance .container--box__area a span {
+	display: block;
+	position: relative;
+	height: auto;
+	min-height: 20px;
+	margin: 0px;
+	padding: 15px 20px 15px 10px;
+	font-weight: 700;
+	line-height: 20px;
+}
+/*X レストラン誘導枠の右エリアのアコーディオンエリアリンク矢印*/
+.contents--area section#contents--restaurant__guidance .container--box__area a:before {
+	color: #ac232c;
+	font-size: 14px;
+}
+/*X レストラン誘導枠の右エリアのアコーディオンボタン開閉の矢印*/
+.contents--area section#contents--restaurant__guidance .container--box__area.arrow--img a span:after {
+	display: inline-block;
+	position: absolute;
+	top:50%;
+	right: 5px;
+	width: 7.5px;
+	height: 12px;
+	margin-top: -6px;
+	background: url(../img/arrow_red.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+	content: '';
+}
+/*X レストラン誘導枠の右エリアのアコーディオンボタン開閉の矢印*/
+.contents--area section#contents--restaurant__guidance .container--box__area.arrow--font a:after {
+	margin-left: 10px;
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	content: '\f105';
+}
+/*X レストラン誘導枠の右エリアのボタンの矢印*/
+.contents--area section#contents--restaurant__guidance .event-button p:after {
+	position: absolute;
+	top: 2px;
+	right: 15px;
+}
+.contents--area section#contents--restaurant__guidance .event-button.arrow--img p:after {
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	width: 7.5px;
+	height: 15px;
+	margin-top: -6px;
+	background: url(../img/arrow_white.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+	content: '';
+	z-index: 2;
+}
+.contents--area section#contents--restaurant__guidance .arrow--font .event-button p:after {
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	content: '\f105';
+}
+/*X レストラン誘導枠の
+				スタイルシート終了（ＳＰ版）*/
+
+/*Y 記事誘導枠の
+		    スタイルシート開始（ＳＰ版）*/
+.contents--area section#contents--article__induction {
+	display: block;
+	width: 100%;
+	border-bottom: none !important;
+	background-color: #fff;
+	/*background-image: url(../img/momiji-3.png);
+background-position: right 15px bottom 15px*/
+	background-repeat: no-repeat;
+}
+/*Y 記事誘導枠のタイトル*/
+.contents--area section#contents--article__induction h2#y {
+	display: block;
+	width: auto;
+	padding: 10.5px 40px 10.5px 10px;
+	font-size: 16px;
+	font-weight: 700;
+	text-align: left;
+	line-height: 24px;
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+/*H 人気のエリアのタイトル*/
+.contents--area section#contents--article__induction h2#y span {
+	position: absolute;
+	top:50%;
+	right: 10px;
+	margin-top: -7px;
+	z-index: 5;
+}
+
+/*Y 記事誘導枠のコンテナボックス*/
+.contents--area section#contents--article__induction .container--box {
+	display: inline-block;
+	width: auto;
+	margin-top: -1px;
+	padding-bottom: 0px;
+	font-size: 0px;
+	line-height: 1;
+}
+
+.contents--area section#contents--article__induction .container--box .container--box__area{
+	width: auto;
+}
+/*Y 記事誘導枠のコンテナボックスのリンク範囲*/
+.contents--area section#contents--article__induction .container--box .container--box__area a {
+	display: inline-block;
+	width: 100%;
+	margin: 0;
+	padding: 0px 0px 10px;
+	border-top: 1px solid #ccc;
+	line-height: 100%;
+}
+.contents--area section#contents--article__induction .container--box .container--box__area a .container--box__field{
+	display: block;
+	width: auto;
+	padding: 10px;
+}
+/*Y 記事誘導枠のコンテナボックスのリンク範囲の最初の要素のみマージン変更*/
+.contents--area section#contents--article__induction .container--box a:first-child {
+	border-top:none;
+}
+/*Y 記事誘導枠のアコーディオンの下線をなくす*/
+.contents--area section#contents--article__induction .container--box #accordion--002  {
+	border-top:1px solid #dfdfdf;
+}
+.contents--area section#contents--article__induction .container--box #accordion--002 a {
+	border-bottom: none;
+}
+/*Y 記事誘導枠のアコーディオンの開閉アイテム*/
+.contents--area section#contents--article__induction #accordion--002 .archive--outing {
+	padding: 0px;
+}
+
+/*Y 記事誘導枠の画像*/
+.contents--area section#contents--article__induction .container--box a img {
+	width: 100%;
+	margin: 0 auto;
+}
+/*Y 記事誘導枠の画像フレーム*/
+.contents--area section#contents--article__induction a .container--box__image {
+	float: left;
+	width: 38%;
+	margin: 0px;
+	padding: 0px;
+}
+/*Y 記事誘導枠のテキストボックス*/
+.contents--area section#contents--article__induction a .container--box__text {
+	float: right;
+	width: 62%;
+	margin: 0px;
+	padding: 0px 0px 2px 0px;
+}
+/*Y 記事誘導枠のテキスト*/
+.contents--area section#contents--article__induction a .container--box__text p {
+	margin:5px 0px 10px 10px;
+	line-height: 18px;
+}
+/*Y 記事誘導枠の要素を含まないようにする*/
+.contents--area section#contents--article__induction .container--box .container--box__area a .container--boxleft__010 {
+	display: block;
+}
+/*Y 記事誘導枠のテキスト*/
+.contents--area section#contents--article__induction .container--box .container--box__area p {
+	margin: 4px 0px 0px 7px;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 18px;
+}
+/*Y 記事誘導枠のマウスオーバー処理*/
+.contents--area section#contents--article__induction .link--opacity__50 a:hover {
+	opacity: 1;
+}
+.contents--area section#contents--article__induction .link--opacity__50 a:hover .container--box__image img {
+	opacity: .5;
+}
+.contents--area section#contents--article__induction .link--opacity__50 a:hover .container--box__text {
+	opacity: .5;
+}
+/*Y 記事誘導枠の
+		    スタイルシート終了（ＳＰ版）*/
+
+/*Z-1 関連特集（正方形）の
+				スタイルシート開始（ＰＣ版）compoment--010の設定*/
+.contents--area section#contents--feature__square {
+	display: block;
+	width: 100%;
+	border-bottom: none !important;
+	background-color: #fff;
+	background-repeat: no-repeat;
+}
+.contents--area section#contents--feature__square h2#z-1 {
+	display: block;
+	width: auto;
+	padding: 10.5px 40px 10.5px 10px;
+	font-size: 16px;
+	font-weight: 700;
+	text-align: left;
+	line-height: 24px;
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+/*H 人気のエリアのタイトル*/
+.contents--area section#contents--feature__square h2#z-1 span {
+	position: absolute;
+	top:50%;
+	right: 10px;
+	margin-top: -7px;
+	z-index: 5;
+}
+/*Z-1 関連特集（正方形）のコンテナボックス*/
+.contents--area section#contents--feature__square .container--box {
+	display: inline-block;
+	width: 100%;
+	margin-top: -1px;
+	padding-bottom: 0px;
+	font-size: 0;
+	line-height: 1;
+}
+.contents--area section#contents--feature__square .container--box .container--box__area{
+	display: block;
+	width: auto;
+	padding: 0px;
+	font-size: 0;
+	line-height: 1;
+}
+
+.contents--area section#contents--feature__square .container--box .container--box__area a {
+	display: inline-block;
+	clear: both;
+	width: 100%;
+	padding: 0px 0px 10px;
+	border-bottom: 1px solid #ccc;
+	font-size: 0;
+	line-height: 1;
+}
+.contents--area section#contents--feature__square .container--box .container--box__area a .container--box__field{
+	display: block;
+	width: auto;
+	padding: 10px;
+	font-size: 0;
+	line-height: 1;
+}
+.contents--area section#contents--feature__square .container--box a .container--box__image {
+	display: block;
+	float: left;
+	width: 24%;
+	height: auto;
+	margin: 0px;
+	padding: 0px;	
+	background-color: #fff;
+	text-align: center;
+}
+.contents--area section#contents--feature__square .container--box a .container--box__image img {
+	width: 100%;
+}
+.contents--area section#contents--feature__square .container--box a .container--box__text {
+	display: block;
+	float: right;
+	width: 76%;
+	margin: 5px 0px 0px 0px;
+	padding: 0px;	
+}
+.contents--area section#contents--feature__square .container--box a .container--box__text p {
+	margin: 8px 0px 0px 10px;
+	font-size: 14px;
+}
+.contents--area section#contents--feature__square a .container--box__text p.subtitle {
+	margin: 0px 0px 0px 10px;
+	padding: 0px;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 110%;
+}
+.contents--area section#contents--feature__square .container--box .container--box__area p {
+	margin-right: 10px;
+	margin-left: 10px;
+}
+.contents--area section#contents--feature__square .link--opacity__50 a:hover {
+	opacity: 1;
+}
+.contents--area section#contents--feature__square .link--opacity__50 a:hover .container--box__image img {
+	opacity: .5;
+}
+.contents--area section#contents--feature__square .link--opacity__50 a:hover .container--box__text {
+	opacity: .5;
+}
+/*Z-1 関連特集（正方形）の
+				スタイルシート終了（ＰＣ版）compoment--010の設定*/
+
+/*Z-2 関連特集枠の
+				スタイルシート開始（ＰＣ版）の設定*/
+.contents--area section#contents--feature__3-2 {
+	display: block;
+	width: 100%;
+	background-color: #fff;
+	background-repeat: no-repeat;
+}
+.contents--area section#contents--feature__3-2 h2#z-2 {
+	display: block;
+	width: auto;
+	padding: 10.5px 40px 10.5px 10px;
+	font-size: 16px;
+	font-weight: 700;
+	text-align: left;
+	line-height: 24px;
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+/*H 人気のエリアのタイトル*/
+.contents--area section#contents--feature__3-2 h2#z-2 span {
+	position: absolute;
+	top:50%;
+	right: 10px;
+	margin-top: -7px;
+	z-index: 5;
+}
+/*Z-1 関連特集（正方形）のコンテナボックス*/
+.contents--area section#contents--feature__3-2 .container--box {
+	display: inline-block;
+	width: 100%;
+	margin: 0 auto;
+	padding-bottom: 0px;
+}
+.contents--area section#contents--feature__3-2 .container--box__area {
+	width: 100%;
+}
+.contents--area section#contents--feature__3-2 .container--box__area a {
+	display: inline-block;
+	clear: both;
+	width: 100%;
+	padding: 0px 0px 10px;
+	border-bottom: 1px solid #ccc;
+	font-size: 0;
+	line-height: 1;
+}
+.contents--area section#contents--feature__3-2 .container--box__area a .container--box__field{
+	display: block;
+	clear: both;
+	width: auto;
+	margin: 0px;
+	padding: 10px;
+	font-size: 0;
+	line-height: 1;
+}
+.contents--area section#contents--feature__3-2 .container--box__area a:last-child {
+	border-bottom: none;
+}
+.contents--area section#contents--feature__3-2 .container--box__image {
+	float: left;
+	width: 37%;
+	height: auto;
+	margin: 0px;
+	padding: 0px;
+	background-color: #fff;
+	line-height: 140%;
+}
+.contents--area section#contents--feature__3-2 .container--box__image img {
+	width: 100%;
+}
+.contents--area section#contents--feature__3-2 .container--box__text {
+	float: right;
+	width: 63%;
+	height: auto;
+	margin: 0px ;
+	padding-top: 0px;
+}
+.contents--area section#contents--feature__3-2 .container--box__text p {
+	margin-left: 10px;
+	margin-top: 0px;
+	font-size: 14px;
+	line-height: 140%;
+}
+.contents--area section#contents--feature__3-2 .container--box__text p.subtitle {
+	margin: 3px 10px 1px 12px;
+	font-size: 14px;
+	font-weight: 700;
+}
+.contents--area section#contents--feature__3-2 .link--opacity__50 a:hover {
+	opacity: 1;
+}
+.contents--area section#contents--feature__3-2 .link--opacity__50 a:hover .container--box__image img {
+	opacity: .5;
+}
+.contents--area section#contents--feature__3-2 .link--opacity__50 a:hover .container--box__text {
+	opacity: .5;
+}
+/*Z-2 関連特集枠の
+				スタイルシート終了（ＰＣ版）の設定*/
+
+/*module4 画像とテキスト_1カラムと4カラムの
+				スタイルシート開始（ＰＣ版）compoment--010の設定*/
+.contents--area section#imagetext--onecolum__fourcolum {
+	display: block;
+	width: 100%;
+	background-color: #fff;
+	/*background-image: url(../img/momiji-3.png);
+background-position: right 15px bottom 15px*/
+	background-repeat: no-repeat;
+	border-bottom: none !important;
+}
+/*module4 画像とテキスト_1カラムと4カラムのタイトル*/
+.contents--area section#imagetext--onecolum__fourcolum h2#module4 {
+	display: block;
+	width: auto;
+	padding: 10.5px 40px 10.5px 10px;
+	font-size: 16px;
+	font-weight: 700;
+	text-align: left;
+	line-height: 24px;
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+/*H 人気のエリアのタイトル*/
+.contents--area section#imagetext--onecolum__fourcolum h2#module4 span {
+	position: absolute;
+	top:50%;
+	right: 10px;
+	margin-top: -7px;
+	z-index: 5;
+}
+/*module4 画像とテキスト_1カラムと4カラムのコンテナボックス*/
+.contents--area section#imagetext--onecolum__fourcolum .container--box {
+	display: inline-block;
+	width: 100%;
+	margin: 0 auto;
+	padding-bottom: 0px;
+}
+/*module4 画像とテキスト_1カラムと4カラムのコンテナボックスのリンク範囲*/
+.contents--area section#imagetext--onecolum__fourcolum .container--box a {
+	display: inline-block;
+	width: 100%;
+	margin: 0 auto;
+	padding: 6px 0px 9px;
+	padding-bottom: -4px;
+	border-bottom: 1px solid #ccc;
+	line-height: 100%;
+}
+.contents--area section#imagetext--onecolum__fourcolum .container--box a {
+	display: inline-block;
+	width: 100%;
+	margin: 0 auto;
+	padding: 6px 0px 9px;
+	padding-bottom: -4px;
+	border-bottom: 1px solid #ccc;
+	line-height: 100%;
+}
+.contents--area section#imagetext--onecolum__fourcolum .container--box a:last-child {
+	border-bottom:none;
+}
+/*module4 画像とテキスト_1カラムと4カラムのコンテナボックスのリンク範囲の最初の要素のみマージン変更*/
+.contents--area section#imagetext--onecolum__fourcolum .container--box a:first-child {
+	padding-top: 10px;
+}
+/*module4 画像とテキスト_1カラムと4カラムのアコーディオンの下線をなくす*/
+.contents--area section#imagetext--onecolum__fourcolum .container--box #accordion--002 a {
+	border-bottom: none;
+}
+/*module4 画像とテキスト_1カラムと4カラムのアコーディオンの開閉アイテム*/
+.contents--area section#imagetext--onecolum__fourcolum #accordion--002 .archive--outing {
+	padding: 0px;
+}
+/*module4 画像とテキスト_1カラムと4カラムのアコーディオンのテキスト処理*/
+.contents--area section#imagetext--onecolum__fourcolum .container--box #accordion--002 a p{
+	width: 100%;
+	height: auto;
+	margin-top: -4px;
+	margin-left: 10px;
+	padding: 10px 0px 6px 0px;
+	border-bottom: 0px solid #ccc;
+	color: #757575;
+	font-size: 12px;
+	font-weight: 700 !important;
+	line-height: 100%;
+}
+/*module4 画像とテキスト_1カラムと4カラムの画像*/
+.contents--area section#imagetext--onecolum__fourcolum .container--box a img {
+	width: 100%;
+	margin: 0 auto;
+}
+/*module4 画像とテキスト_1カラムと4カラムの画像フレーム*/
+.contents--area section#imagetext--onecolum__fourcolum a .container--box__image {
+	float: left;
+	width: 38%;
+	margin: 0px;
+	padding: 0px;
+}
+/*module4 画像とテキスト_1カラムと4カラムのテキストボックス*/
+.contents--area section#imagetext--onecolum__fourcolum a .container--box__text {
+	float: right;
+	width: 62%;
+	margin: 0px;
+	padding: 0px;
+}
+/*module4 画像とテキスト_1カラムと4カラムのテキスト*/
+.contents--area section#imagetext--onecolum__fourcolum a .container--box__text p {
+	margin: 5px 0px 10px10px;
+	line-height: 18px;
+}
+.contents--area section#imagetext--onecolum__fourcolum .container--box .container--box__area {
+	display: inline-block;
+	font-size: 0;
+	line-height: 1;
+}
+/*module4 画像とテキスト_1カラムと4カラムの要素を含まないようにする*/
+.contents--area section#imagetext--onecolum__fourcolum .container--box .container--box__area a .container--boxleft__010 {
+	display: block;
+}
+/*module4 画像とテキスト_1カラムと4カラムのリンク範囲*/
+.contents--area section#imagetext--onecolum__fourcolum .container--box .container--box__area a {
+	display: inline-block;
+	width: 100%;
+	margin: 0px;
+	padding: 0px 0px 10px;
+	font-size: 0;
+	line-height: 1;
+}
+.contents--area section#imagetext--onecolum__fourcolum .container--box .container--box__area a .container--box__field{
+	display: block;
+	width: auto;
+	margin: 0px;
+	padding: 10px;
+}
+/*module4 画像とテキスト_1カラムと4カラムのテキスト*/
+.contents--area section#imagetext--onecolum__fourcolum .container--box .container--box__area p {
+	margin: 0px 0px 5px 10px;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 18px;
+}
+/*module4 画像とテキスト_1カラムと4カラムのマウスオーバー処理*/
+.contents--area section#imagetext--onecolum__fourcolum .link--opacity__50 a:hover {
+	opacity: 1;
+}
+.contents--area section#imagetext--onecolum__fourcolum .link--opacity__50 a:hover .container--box__image img {
+	opacity: .5;
+}
+.contents--area section#imagetext--onecolum__fourcolum .link--opacity__50 a:hover .container--box__text {
+	opacity: .5;
+}
+/*module4 画像とテキスト_1カラムと4カラムの
+				スタイルシート終了（ＰＣ版）compoment--010の設定*/
+
+/*module4 画像とテキスト_1カラムと2カラムの
+				スタイルシート開始（ＰＣ版）の設定*/
+.contents--area section#imagetext--onecolum__twocolum {
+	display: block;
+	width: 100%;
+	background-color: #fff;
+	background-repeat: no-repeat;
+}
+.contents--area section#imagetext--onecolum__twocolum h2#module5 {
+	display: block;
+	width: auto;
+	padding: 10.5px 40px 10.5px 10px;
+	font-size: 16px;
+	font-weight: 700;
+	text-align: left;
+	line-height: 24px;
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+/*H 人気のエリアのタイトル*/
+.contents--area section#imagetext--onecolum__twocolum h2#module5 span {
+	position: absolute;
+	top:50%;
+	right: 10px;
+	margin-top: -7px;
+	z-index: 5;
+}
+.contents--area section#imagetext--onecolum__twocolum .container--box {
+	display: block;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0px;
+}
+.contents--area section#imagetext--onecolum__twocolum .container--box__area {
+	width: 100%;
+}
+.contents--area section#imagetext--onecolum__twocolum .container--box__area a {
+	display: inline-block;
+	clear: both;
+	width: 100%;
+	padding: 0px 0px 10px;
+	border-bottom: 1px solid #ccc;
+}
+.contents--area section#imagetext--onecolum__twocolum .container--box__area a .container--box__field {
+	display: block;
+	clear: both;
+	width: auto;
+	padding: 10px;
+}
+.contents--area section#imagetext--onecolum__twocolum .container--box__area a:last-child {
+	padding-bottom: 6px;
+	border-bottom: none;
+}
+.contents--area section#imagetext--onecolum__twocolum .container--box__image {
+	float: left;
+	width: 37%;
+	height: auto;
+	margin: 0px;
+	padding: 0px;
+	background-color: #fff;
+	line-height: 140%;
+}
+.contents--area section#imagetext--onecolum__twocolum .container--box__image img {
+	width: 100%;
+}
+.contents--area section#imagetext--onecolum__twocolum .container--box__text {
+	float: right;
+	width: 63%;
+	height: auto;
+	margin: 0px;
+	padding-top: 0px;
+}
+.contents--area section#imagetext--onecolum__twocolum .container--box__text p {
+	margin-left: 10px;
+	margin-top: 0px;
+	font-size: 14px;
+	line-height: 140%;
+}
+.contents--area section#imagetext--onecolum__twocolum .container--box__text p.subtitle {
+	margin-bottom: 5px;
+	margin-left: 10px;
+	font-size: 14px;
+	font-weight: 700;
+}
+.contents--area section#imagetext--onecolum__twocolum .link--opacity__50 a:hover {
+	opacity: 1;
+}
+.contents--area section#imagetext--onecolum__twocolum .link--opacity__50 a:hover .container--box__image img {
+	opacity: .5;
+}
+.contents--area section#imagetext--onecolum__twocolum .link--opacity__50 a:hover .container--box__text {
+	opacity: .5;
+}
+/*module4 画像とテキスト_1カラムと2カラムの
+				スタイルシート終了（ＳＰ版）の設定*/
+
+/*module1 エリアから秋祭りを探すの
+				スタイルシート開始（ＳＰ版）の設定*/
+.contents--area section#search--festa__area {
+	display: inline-block;
+	width: 100%;
+	padding-bottom: 10px!important;
+	background-color: #fff;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+}
+.contents--area section#search--festa__area h2#module1 {
+	display: block;
+	width: auto;
+	padding: 10.5px 40px 10.5px 10px;
+	font-size: 16px;
+	font-weight: 700;
+	text-align: left;
+	line-height: 24px;
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+/*H 人気のエリアのタイトル*/
+.contents--area section#search--festa__area h2#module1 span {
+	position: absolute;
+	top:50%;
+	right: 10px;
+	margin-top: -7px;
+	z-index: 5;
+}
+.contents--area section#search--festa__area .container--box {
+	display: inline-block;
+	width: calc(100%-20px);
+	margin: 0 auto;
+	padding: 0px;
+	text-align: center;
+}
+.contents--area section#search--festa__area .container--box:nth-child(2) {
+	margin-top: 10px;
+}
+
+.contents--area section#search--festa__area .contents--component__title h2 {
+	margin: 0px !important;
+}
+.contents--area section#search--festa__area .container--box__area　 {
+	padding-top: 10px;
+}
+.contents--area section#search--festa__area .container--box .container--box__area a {
+	display: inline-block;
+	float: left;
+	width: calc(50%-5px);
+	margin: 0px 5px 10px 0px;
+	border: 1px solid #ccc;
+	border-radius: 0px;
+	background-color: #f3f3f3;
+	text-align: left;
+	line-height: 110%;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+}
+.contents--area section#search--festa__area .container--box .container--box__area a:nth-child(even) {
+	float: right !important;
+	margin-right: 0px !important;
+}
+.contents--area section#search--festa__area .container--box .container--box__area a p {
+	padding: 13.5px 20px 13.5px 15px;
+	font-size: 16px;
+	line-height: 20px;
+}
+.contents--area section#search--festa__area .container--box .container--box__area a.margin--right__not {
+	width: 50%;
+	margin: -1px 0px 0px 0px;
+	padding: 0px;
+	border-top: 1px solid #ccc;
+	border-right: none;
+	border-bottom: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	border-radius: 0px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+}
+.contents--area section#search--festa__area .container--box__area a.margin--right__not:nth-child(even) {
+	border-right: 1px solid #ccc !important;
+}
+.contents--area section#search--festa__area .container--box__area a.margin--right__not:last-child {
+	border-right: 1px solid #ccc !important;
+}
+.contents--area section#search--festa__area .container--box .container--box__area.arrow--img a {
+	position: relative;
+}
+.contents--area section#search--festa__area .container--box .container--box__area.arrow--img a p:after {
+	display: inline-block;
+	position: absolute;
+	top:50%;
+	right: 5px;
+	width: 7.5px;
+	height: 15px;
+	margin-top: -4px;
+	background: url(../img/arrow_red.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+	content: '';
+	z-index: 2;
+}
+.contents--area section#search--festa__area .container--box .container--box__area.arrow--font a p:after {
+	float: right;
+	margin-right: 15px;
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	content: '\f105';
+}
+
+.contents--area section#search--festa__area .container--box .container--box__area a p:after {
+	color: #ac232c;
+	font-size: 14px;
+}
+/*module1 エリアから秋祭りを探すの
+				スタイルシート終了（ＳＰ版）の設定*/
+
+/*module6 画像とテキスト_1カラムと2カラム（キャプションで展開）の
+				スタイルシート開始（ＳＰ版）の設定*/
+.contents--area section#imagetext--onecolum__twocolum--ver2 {
+	display: block;
+	width: 100%;
+	padding-bottom: 0px;
+	background-color: #fff;
+	background-image: url(../img/momiji-5.png);
+	background-position: right 10px bottom 10px;
+	background-repeat: no-repeat;
+}
+.contents--area section#imagetext--onecolum__twocolum--ver2 h2 {
+	display: block;
+	width: auto;
+	padding: 10.5px 40px 10.5px 10px;
+	font-size: 16px;
+	font-weight: 700;
+	text-align: left;
+	line-height: 24px;
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+/*H 人気のエリアのタイトル*/
+.contents--area section#imagetext--onecolum__twocolum--ver2 h2 span {
+	position: absolute;
+	top:50%;
+	right: 10px;
+	margin-top: -7px;
+	z-index: 5;
+}
+.contents--area section#imagetext--onecolum__twocolum--ver2 .container--box {
+	display: inline-block;
+	float: none;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0px;
+}
+.contents--area section#imagetext--onecolum__twocolum--ver2 .container--box a {
+	display: block;
+	position: relative;
+	float: none;
+	width: auto;
+	margin: 10px;
+	padding: 0px;
+	background-color: #fff;
+	line-height: 140%;
+}
+.contents--area section#imagetext--onecolum__twocolum--ver2 .container--box a img {
+	width: 100%;
+}
+.contents--area section#imagetext--onecolum__twocolum--ver2 .container--box__image {
+	width: 100%;
+}
+.contents--area section#imagetext--onecolum__twocolum--ver2 .container--box__text {
+	margin: 0px;
+	padding: 0px;
+}
+.contents--area section#imagetext--onecolum__twocolum--ver2 .container--box a .container--box__text {
+	position: absolute;
+	top: auto;
+	bottom: 0px;
+	width: 100%;
+	height: auto;
+	max-height: 135px;
+	background-color: rgba(255, 255, 255, .75);
+}
+.contents--area section#imagetext--onecolum__twocolum--ver2 .container--box .container--box__area {
+	width: 100%;
+	margin: 0 auto !important;
+}
+.contents--area section#imagetext--onecolum__twocolum--ver2 .container--box .container--box__area p {
+	width: 95%;
+	margin: 4px 6px;
+	padding: 6px 0px;
+	font-size: 14px;
+	font-weight: 700;
+}
+.contents--area section#imagetext--onecolum__twocolum--ver2 .link--opacity__50 a:hover {
+	opacity: 1;
+}
+.contents--area section#imagetext--onecolum__twocolum--ver2 .link--opacity__50 a:hover .container--box__image img {
+	opacity: .5;
+}
+.contents--area section#imagetext--onecolum__twocolum--ver2 .link--opacity__50 a:hover .container--box__text {
+	opacity: .5;
+}
+/*module6 画像とテキスト_1カラムと2カラム（キャプションで展開）の
+				スタイルシート終了（ＳＰ版）の設定*/
+
+/*module7 画像とテキスト_2カラムと2カラムの
+				スタイルシート開始（ＳＰ版）の設定*/
+.contents--area section#imagetext--twocolum__twocolum {
+	display: block;
+	width: 100%;
+	background-color: #fff;
+	background-image: url(../img/momiji-5.png);
+	background-position: right 15px bottom 15px;
+	background-repeat: no-repeat;
+}
+.contents--area section#imagetext--twocolum__twocolum h2#module7 {
+	display: block;
+	width: auto;
+	padding: 10.5px 40px 10.5px 10px;
+	font-size: 16px;
+	font-weight: 700;
+	text-align: left;
+	line-height: 24px;
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+/*H 人気のエリアのタイトル*/
+.contents--area section#imagetext--twocolum__twocolum h2 span {
+	position: absolute;
+	top:50%;
+	right: 10px;
+	margin-top: -7px;
+	z-index: 5;
+}
+
+.contents--area section#imagetext--twocolum__twocolum .container--box {
+	display: inline-block;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0px 0px 10px;
+	text-align: center;
+}
+.contents--area section#imagetext--twocolum__twocolum .container--box .container--box__area {
+	display: block;
+	width:auto;
+	padding: 10px 5px;
+	background-color: #ffffff;
+	
+}
+.contents--area section#imagetext--twocolum__twocolum .container--box__area a {
+	float: left;
+	width: 50%;
+	margin: 3px 0px 0px 0px;
+	padding: 0px;
+	background-color: #fff;
+}
+.contents--area section#imagetext--twocolum__twocolum .container--box__area a .container--box__image{
+	margin: 0px 5px;
+}
+.contents--area section#imagetext--twocolum__twocolum .container--box__area a:nth-child(1) {
+	margin: 0px 0px 0px 0px;
+}
+.contents--area section#imagetext--twocolum__twocolum .container--box__area a:nth-child(2) {
+	margin: 0px 0px 0px 0px;
+}
+.contents--area section#imagetext--twocolum__twocolum .container--box__area a:nth-child(even) {
+	float: right;
+}
+.contents--area section#imagetext--twocolum__twocolum .container--box__area a img {
+	width: 100%;
+	margin: 0 auto;
+}
+.contents--area section#imagetext--twocolum__twocolum .container--box a .container--box__text {
+	width: auto;
+	margin: 0px 5px;
+	text-align: left;
+}
+.contents--area section#imagetext--twocolum__twocolum .container--box .container--box__area p {
+	margin-top: 5px;
+	margin-bottom: 0px;
+	font-size: 14px;
+	font-weight: 700;
+	text-align: left;
+	letter-spacing: -0.5px;
+	line-height: 130%;
+}
+.contents--area section#imagetext--twocolum__twocolum .link--opacity__50 a:hover {
+	opacity: 1;
+}
+.contents--area section#imagetext--twocolum__twocolum .link--opacity__50 a:hover .container--box__image img {
+	opacity: .5;
+}
+.contents--area section#imagetext--twocolum__twocolum .link--opacity__50 a:hover .container--box__text {
+	opacity: .5;
+}
+/*module7 画像とテキスト_2カラムと2カラムの
+				スタイルシート終了（ＳＰ版）の設定*/
+
+/*module8 画像とテキスト（強調）の
+				スタイルシート開始（ＳＰ版）の設定*/
+.contents--area section#imagetext--strong {
+	display: block;
+	width: 100%;
+	background-color: #fff;
+}
+.contents--area section#imagetext--strong h2#module8 {
+	display: block;
+	width: auto;
+	padding: 10.5px 40px 10.5px 10px;
+	font-size: 16px;
+	font-weight: 700;
+	text-align: left;
+	line-height: 24px;
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+.contents--area section#imagetext--strong h2 span {
+	position: absolute;
+	right: 10px;
+	top:50%;
+	margin-top: -7px;
+	z-index: 5;
+}
+.contents--area section#imagetext--strong .container--box {
+	display: inline-block;
+	width: 100%;
+	margin: 0 auto;
+	font-size: 14px;
+}
+.contents--area section#imagetext--strong .container--box__left {
+	width: auto;
+	margin: 0 auto;
+	padding: 10px;
+	border-bottom: 1px solid #ccc;
+	text-align: center;
+}
+.contents--area section#imagetext--strong .container--box__left .container--box__text {
+	padding-top: 5px;
+}
+.contents--area section#imagetext--strong .container--box__left .container--box__image {
+	width: 100%;
+	text-align: center;
+}
+.contents--area section#imagetext--strong .container--box__left a {
+	display: inline-block;
+	width: 100%;
+	margin: 0;
+	padding: 0px;
+}
+.contents--area section#imagetext--strong .container--box__inline:last-child {
+	padding-bottom: 6px;
+	border-bottom: none;
+}
+.contents--area section#imagetext--strong .container--box__left a p {
+	width: 100%;
+	text-align: left;
+}
+.contents--area section#imagetext--strong .container--box__left a img {
+	width: 100%;
+	margin: 0 auto;
+}
+.contents--area section#imagetext--strong .container--box__right {
+	width: 100%;
+	font-size: 0;
+}
+.contents--area section#imagetext--strong .container--box__right .container--box__inline{
+	display: inline-block;
+	clear: both;
+	width: 100%;
+	margin: 0px;
+	padding: 0px 0px 10px;
+	font-size: 0;
+	border-bottom: 1px solid #ccc;
+}
+.contents--area section#imagetext--strong .container--box__right .container--box__inline a{
+	display: block;
+	width: auto;
+	padding: 10px;
+	font-size: 0;
+	line-height: 0;
+}
+.contents--area section#imagetext--strong .container--box__right .container--box__inline:last-child {
+	border-bottom: none;
+}
+.contents--area section#imagetext--strong .container--box__right .container--box__image {
+	float: left;
+	width: 38%;
+	margin: 0px;
+}
+.contents--area section#imagetext--strong .container--box__right .container--box__image img {
+	width: 100%;
+}
+.contents--area section#imagetext--strong .container--box__right .container--box__text {
+	float: right;
+	width: 62%;
+	margin: 0px;
+}
+.contents--area section#imagetext--strong .container--box__right .container--box__text p {
+	margin: 5px 0px 5px 10px;
+	padding-top: 0px;
+	font-size: 14px;
+	line-height: 20px;
+}
+.contents--area section#imagetext--strong .container--box__left .container--box__text .text--size__middle {
+	margin: 10px 0px;
+	letter-spacing: -0.2px;
+}
+/*module8 画像とテキスト（強調）の
+				スタイルシート終了（ＳＰ版）の設定*/
+
+/*イベント情報カセット_共有*/
+.tab {
+	display: inline-block;
+	float: left;
+	margin: 0px 4px 5px 0px;
+	padding: 4px 8px;
+	border-radius: 4px;
+	color: #ffffff;
+	font-size: 12px;
+}
+.tab span {
+	margin: 0;
+	padding: 0;
+}
+.tab-color--mono {
+	padding: 4px 6px !important;
+	color: #333333;
+	background-color: #FBF8F5;
+	box-shadow: 0 0 0 1px #cccccc inset;
+	-webkit-box-shadow: 0 0 0 1px #cccccc inset;
+}
+.tab-color--mono__none .tab-color--mono {
+	display: none;
+}
+.tab-color--orange {
+	background-color: #ce7824;
+}
+.tab-color--orange__none .tab-color--orange {
+	display: none;
+}
+.tab-color--strong-red {
+	background-color: #bf4141;
+}
+.tab-color--strong-red__none .tab-color--strong-red {
+	display: none;
+}
+.tab-color--cyan-blue {
+	background-color: #4d7ea1;
+}
+.tab-color--cyan-blue__none .tab-color--cyan-blue {
+	display: none;
+}
+.tab-color--deep-green {
+	background-color: #357d4d;
+}
+.tab-color--deep-green__none .tab-color--deep-green {
+	display: none;
+}
+.tab-color--blue-magenta {
+	background-color: #7d579a;
+}
+.tab-color--blue-magenta__none .tab-color--blue-magenta {
+	display: none;
+}
+.tab-color--strong-magenta {
+	background-color: #ac478e;
+}
+.tab-color--strong-magenta__none .tab-color--strong-magenta {
+	display: none;
+}
+.tab-color--phthalo-blue {
+	background-color: #475297;
+}
+.tab-color--phthalo-blue__none .tab-color--phthalo-blue {
+	display: none;
+}
+.tab-color--brown {
+	background-color: #7a573a;
+}
+.tab-color--brown__none .tab-color--brown {
+	display: none;
+}
+.tab-color--yellow-green {
+	background-color: #838b29;
+}
+.tab-color--yellow-green__none .tab-color--yellow-green {
+	display: none;
+}
+
+.event--information__tabs {
+	display: inline-block;
+	width: auto;
+	margin-top:  9px;
+	margin-left: 6px;
+}
+/*イベント情報カセット_PICKUP*/
+.event--information {
+	position: relative;
+	margin: 0px;
+	padding: 0px;
+	text-align: left;
+}
+.event--information__area {
+	display: inline-block;
+	width: auto;
+	margin: 0px 10px 0px 10px;
+	padding: 0px;
+	border-bottom: 1px solid #ccc;
+}
+.event--information__label {
+	width: 100%;
+	margin: 0 auto;
+	padding: 15px 0px 15px 0px;
+	font-size: 14px;
+	font-weight: 700;
+	text-align: left;
+	line-height: 120%;
+}
+.event--casset__common .event--image__text p {
+	margin-top: -3px;
+	margin-bottom: 10px;
+	padding-top: 0px;
+	text-align: left;
+	line-height: 160%;
+}
+.event--casset__common .event--image__moreinfo p {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-top: 0px;
+	font-size: 14px;
+}
+.event--casset__common dl {
+	display: inline-block;
+	float: none;
+	clear: both;
+	width: 100%;
+	margin: 0 auto;
+	padding: 12px 0px 8px;
+	border-bottom: 1px solid #ccc;
+	font-size: 0;
+	text-align: left;
+	line-height: 1;
+}
+
+
+section.event--casset__common dl:last-of-type {
+	padding-bottom: 15px;
+}
+.event--casset__common dl dt {
+	display: block;
+	float: left;
+	width: 25%;
+	margin: 0px;
+	padding: 0px;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 14px;
+}
+.event--casset__common dl dd {
+	display: block;
+	float: left;
+	width: 75%;
+	margin: 0px;
+	padding: 0px;
+	font-size: 12px;
+	line-height: 14px;
+}
+.event--casset__common dl dd p {
+	margin-left: 5px;
+	margin-right: 10px;
+	padding-bottom: 5px;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 14px;
+}
+.event--casset__common dl dd p.recent-station {
+	line-height: 14px;
+}
+.event--casset__common dl dd a {
+	display: inline;
+	margin-left: 5px;
+	color: #195197;
+	font-weight: 700;
+}
+.event--casset__common dl dd a span{
+	margin-left: 5px;
+	font-size: 12px;
+	font-weight: 400;
+}
+.event--casset__common .event-button {
+	font-size: 14px;
+}
+.event--casset__common .event-button p {
+	display: inline-block;
+	width: 90%;
+	margin: 0 auto;
+	padding: 6.5px 0px;
+	line-height: 17px;
+}
+.event--casset__common .event-button p span {
+	display: inline-block;
+	width: 90%;
+}
+.event--casset__common a.button {
+	display: block;
+	position: relative;
+	width: calc(100%-20px);
+	height: auto;
+	min-height: 40px;
+	margin: 0 auto;
+	margin-top: 15px;
+	border-radius: 4px;
+	text-align: center;
+	line-height: 180%;
+	box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
+	-webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
+}
+.event--casset__common .event--information__title {
+	margin: 0px;
+	padding: 0px;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 24px;
+}
+.event--casset__common .event--information__title p {
+}
+.event--information__title__none .event--information__title {
+	display: none;	
+}
+.event--information__data__none dl.event--information__data{
+	display: none;	
+}
+.event--information__place_none dl.event--information__place{
+	display: none;	
+}
+.event--information__station__none dl.event--information__station{
+	display: none;	
+}
+.event--information__toll__none dl.event--information__toll{
+	display: none;	
+}
+.event--information__reserve__none dl.event--information__reserve{
+	display: none;	
+}
+.event--information__label__none .event--information__label {
+	display: none;
+}
+/*module9 イベント情報ピックアップの
+				スタイルシート開始（SP版）の設定*/
+.contents--area section#eventinformation--casset__pickup {
+	display: block;
+	width: 100%;
+	padding-bottom: 5px;
+	background-color: #ffffff;
+	font-size: 0;
+	line-height: 1;
+}
+.contents--area section#eventinformation--casset__pickup a {
+	position: relative;
+	width: 100%;
+	font-size: 0;
+}
+.contents--area section#eventinformation--casset__pickup a.event--information.eventtitle--backcolor__default {
+	border-top: 1px solid #DFDFDF;
+}
+
+.contents--area section#eventinformation--casset__pickup hr {
+	display: block;
+	width: 100%;
+	height: 2px;
+	margin: 0 auto;
+}
+.contents--area section#eventinformation--casset__pickup h2#module9 {
+	display: block;
+	width: auto;
+	padding: 10.5px 40px 10.5px 10px;
+	font-size: 16px;
+	font-weight: 700;
+	text-align: left;
+	line-height: 24px;
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+.contents--area section#eventinformation--casset__pickup .event--information__title h3.text--size__bigger {
+	position: relative;
+	width: auto;
+	margin: 12px 0px 16px 0px;
+	padding: 0px 20px 0px 10px;
+}
+.contents--area section#eventinformation--casset__pickup .event--information__title h3:after {
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	width: 7.5px;
+	height: 15px;
+	margin-top: -7.5px;
+	background: url(../img/arrow_red.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+	content: '';
+	z-index: 2;
+}
+.contents--area section#eventinformation--casset__pickup .event--image__frame img {
+	width: 100%;
+}
+.contents--area section#eventinformation--casset__pickup .event--image__frame {
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	text-align: center;
+}
+.contents--area section#eventinformation--casset__pickup .event--information__right .event--image__text p.text--size__middle {
+	line-height: 20px;
+}
+
+.contents--area section#eventinformation--casset__pickup .event--image__frame p {
+	width: 100%;
+	margin: 10px 0px;
+	color: #757575;
+	font-size: 11px;
+	text-align: left;
+}
+.contents--area section#eventinformation--casset__pickup .event--image__moreinfo {
+	width: auto;
+	margin: 0 auto 10px;
+	padding: 10px;
+	background-color: #faf0d5;
+	text-align: left;
+}
+/*左のボックス スマートフォンの場合はフロートをなくす*/
+.contents--area section#eventinformation--casset__pickup .event--information__left {
+	float: none;
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	text-align: center;
+}
+/*左のボックス画像フレーム*/
+.contents--area section#eventinformation--casset__pickup .event--image__frame {
+	float: none;
+	width: 100%;
+	margin: 0 auto;
+	margin-left: 0px;
+	margin-top: 0px;
+	overflow: hidden;
+	text-align: center;
+}
+.contents--area section#eventinformation--casset__pickup .event--information__right__sub {
+	display: none;
+}
+
+
+
+/*左のボックス画像*/
+.contents--area section#eventinformation--casset__pickup .event--image__frame .event--image {
+	width: 100%;
+	height: auto;
+	min-height: 237px;
+	margin: 0 auto;
+	background-image: url(../img/fire_work_001.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: bottom center;	
+ }
+/*左のボックス画像キャプション*/
+.contents--area section#eventinformation--casset__pickup .event--image__caption {
+	clear: both;
+	width: 100%;
+	padding: 5px 0px;
+	color: #777;
+	text-align: left;
+}
+.contents--area section#eventinformation--casset__pickup .event--image__caption p {
+	margin: 0;
+	padding: 0px 0px 10px 0px;
+	font-size: 11px;
+	line-height: 18px;
+}
+.contents--area section#eventinformation--casset__pickup.event--casset__common a.button {
+	display: block;
+	position: relative;
+	width: auto;
+	height: auto;
+	min-height: 40px;
+	margin: 15px 10px 6px;
+	padding: 4px 10px;
+	border-radius: 4px;
+	text-align: center;
+	text-align: center;
+	line-height: 180%;
+	box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
+	-webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
+}
+.contents--area section#eventinformation--casset__pickup .height--20px {
+	height: 0px;
+}
+.contents--area section#eventinformation--casset__pickup .event--information__field {
+	width: auto;
+	padding: 0px 10px;
+}
+/*module9 イベント情報ピックアップの
+				スタイルシート終了（SP版）の設定*/
+
+/*module9 イベント情報リストの
+				スタイルシート開始（SP版）の設定*/
+.contents--area section#eventinformation--casset__lists {
+	display: block;
+	width: 100%;
+	padding-bottom: 10px;
+	background-color: #ffffff;
+	font-size: 0;
+	line-height: 1;
+}
+.contents--area section#eventinformation--casset__lists a {
+	position: relative;
+	width: 100%;
+	font-size: 0;
+}
+.contents--area section#eventinformation--casset__lists h2 {
+	display: block;
+	width: auto;
+	padding: 10.5px 40px 10.5px 10px;
+	font-size: 16px;
+	font-weight: 700;
+	text-align: left;
+	line-height: 24px;
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+.contents--area section#eventinformation--casset__lists a.event--information.eventtitle--backcolor__default {
+	border-top: 1px solid #DFDFDF;
+}
+.contents--area section#eventinformation--casset__lists hr {
+	width: 100%;
+	height: 2px;
+	margin: 0 auto;
+}
+.contents--area section#eventinformation--casset__lists .event--image__frame {
+	float: left;
+	width: 35%;
+	height: auto;
+	margin-left: 10px;
+	text-align: center;
+}
+.contents--area section#eventinformation--casset__lists .event--image__frame img {
+	width: 100%;
+}
+.contents--area section#eventinformation--casset__lists .event--image__frame p {
+	width: 100%;
+	margin: 5px 0px;
+	color: #757575;
+	font-size: 11px;
+	text-align: left;
+}
+/*左のボックス*/
+.contents--area section#eventinformation--casset__lists .event--information__left {
+	float: left;
+	width: 36%;
+	height: auto;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+}
+.contents--area section#eventinformation--casset__lists .event--information__right__sub {
+	display: none;
+}
+/*左のボックス画像フレーム*/
+.contents--area section#eventinformation--casset__lists .event--image__frame {
+	float: none;
+	width: 100%;
+	height: 88px;
+	margin: 0 auto;
+	margin-left: 0px;
+	margin-top: 0px;
+	text-align: center;
+	overflow: hidden;
+}
+/*左のボックス画像*/
+.contents--area section#eventinformation--casset__lists .event--image__frame .event--image {
+	width: 100%;
+	height: auto;
+	min-height: 88px;
+	margin: 0 auto;
+	background: none;
+	background-image: url(../img/fire_work_001.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: bottom center;	
+ }
+/*左のボックス画像キャプション*/
+.contents--area section#eventinformation--casset__lists .event--image__caption {
+	clear: both;
+	width: 100%;
+	padding: 5px 0px;
+	color: #777;
+	text-align: left;
+}
+.contents--area section#eventinformation--casset__lists .event--image__caption p {
+	margin: 0;
+	padding: 0;
+	font-size: 11px;
+	line-height: 12px;
+}
+.contents--area section#eventinformation--casset__lists .event--image__text p {
+	font-size: 14px;
+	line-height: 20px;
+}
+.contents--area section#eventinformation--casset__lists .event--information__right .event--image__text p.text--size__middle {
+	line-height: 20px;
+}
+.contents--area section#eventinformation--casset__lists .event--information__area {
+	margin-top: 10px;
+}
+.contents--area section#eventinformation--casset__lists .event--information__label {
+	display: none;
+}
+.contents--area section#eventinformation--casset__lists .event--information__right {
+	float: right;
+	width: 64%;
+	
+}
+
+.contents--area section#eventinformation--casset__lists .event--image__text p.text--size__middle {
+	height: auto;
+	margin: 0px 0px 0px 5px;
+	padding-bottom: 10px;
+	text-align: left;
+	line-height: 20px;
+}
+.contents--area section#eventinformation--casset__lists .event--image__moreinfo {
+	clear: both;
+	width: 100%;
+	margin: 10px auto;
+	background-color: #faf0d5;
+	text-align: left;
+}
+.contents--area section#eventinformation--casset__lists .event--image__moreinfo p {
+	padding: 0px 10px 0px 10px;
+}
+.contents--area section#eventinformation--casset__lists .event--image__moreinfo p:first-child {
+	padding: 10px 10px 0px 10px;
+}
+.contents--area section#eventinformation--casset__lists .event--image__moreinfo p:last-child {
+	padding: 0px 10px 10px 10px;
+}
+.contents--area section#eventinformation--casset__lists.event--casset__common a.button {
+	display: block;
+	position: relative;
+	width: auto;
+	height: auto;
+	min-height: 40px;
+	margin: 15px 10px 6px;
+	padding: 4px 0px;
+	border-radius: 4px;
+	text-align: center;
+	text-align: center;
+	line-height: 180%;
+	box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
+	-webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
+}
+.contents--area section#eventinformation--casset__lists.event--casset__common .height--20px {
+	height: 0px;
+}
+.contents--area section#eventinformation--casset__lists .event--information__title h3.text--size__bigger {
+	position: relative;
+	width: auto;
+	margin: 0px;
+	padding: 15px 20px 20px 10px;
+}
+.contents--area section#eventinformation--casset__lists .event--information__title h3:after {
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	width: 7.5px;
+	height: 15px;
+	margin-top: -7.5px;
+	background: url(../img/arrow_red.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+	content: '';
+	z-index: 2;
+}
+.contents--area section#eventinformation--casset__lists .event--information__field {
+	width: auto;
+	padding: 0px 10px;
+}
+
+/*module9 イベント情報リストの
+				スタイルシート終了（SP版）の設定*/
+
+/*特別枠*/
+.contents--area section#eventinformation--casset__special {
+	display: block;
+	width: 100%;
+	padding-bottom: 10px;
+	background-color: #ffffff;
+	font-size: 0;
+	line-height: 1;
+}
+.contents--area section#eventinformation--casset__special hr {
+	width: 100%;
+	margin: 0 auto;
+	margin: 0;
+	padding: 0;
+	height: 2px;
+}
+.contents--area section#eventinformation--casset__special a {
+	position: relative;
+	width: 100%;
+	font-size: 0;
+}
+.contents--area section#eventinformation--casset__special h2 {
+	display: block;
+	width: auto;
+	padding: 10.5px 40px 10.5px 10px;
+	font-size: 16px;
+	font-weight: 700;
+	text-align: left;
+	line-height: 24px;
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+.contents--area section#eventinformation--casset__special a.event--information.eventtitle--backcolor__default {
+	border-top: 1px solid #DFDFDF;
+}
+.contents--area section#eventinformation--casset__special .event--information__label {
+	margin-bottom: 0px;
+}
+/*左のボックス*/
+.contents--area section#eventinformation--casset__special .event--information__left {
+	float: none;
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	margin: 0 auto;
+}
+/*左のボックス画像フレーム*/
+.contents--area section#eventinformation--casset__special .event--information__left .event--image__frame {
+	width: 100%;
+	margin-left: 0px;
+	text-align: center;
+	overflow: hidden;
+}
+/*左のボックス画像*/
+.contents--area section#eventinformation--casset__special .event--information__left .event--image__frame img{
+	width: 100%;
+	margin-left: 0px;
+	text-align: center;
+	overflow: hidden;
+}
+
+/*左のボックス画像キャプション*/
+.contents--area section#eventinformation--casset__special .event--information__left .event--image__caption {
+	clear: both;
+	width: 100%;
+	padding: 5px 0px;
+	color: #757575;
+	font-size: 11px;
+	text-align: left;
+	line-height: 15px;
+}
+.contents--area section#eventinformation--casset__special .event--information__left .event--image__caption p{
+	margin: 0px;
+	padding: 0px;
+}
+.contents--area section#eventinformation--casset__special .event--information__right .event--image__text p.text--size__middle {
+	text-align: left;
+	line-height: 20px;
+}
+
+/*左のボックス*/
+.contents--area section#eventinformation--casset__special .event--information__right {
+	float: none;
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+}
+/*左のボックス画像フレーム*/
+.contents--area section#eventinformation--casset__special .event--information__right .event--image__frame {
+	width: 100%;
+	margin-left: 0px;
+	text-align: center;
+	overflow: hidden;
+}
+/*左のボックス画像*/
+.contents--area section#eventinformation--casset__special .event--information__right .event--image__frame img{
+	width: 100%;
+	margin-left: 0px;
+	text-align: center;
+	overflow: hidden;
+}
+
+/*左のボックス画像キャプション*/
+.contents--area section#eventinformation--casset__special .event--information__right .event--image__caption {
+	clear: both;
+	width: 100%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: #757575;
+	font-size: 11px;
+	text-align: left;
+	line-height: 15px;
+}
+.contents--area section#eventinformation--casset__special .event--information__right .event--image__caption p{
+	margin: 0px;
+	padding: 0px;
+}
+.contents--area section#eventinformation--casset__special .event--image__text p {
+	line-height: 20px;
+}
+.contents--area section#eventinformation--casset__special .event--image__frame001 {
+	float: left;
+	width: 100%;
+	height: auto;
+	margin-top: 0px;
+	text-align: center;
+}
+.contents--area section#eventinformation--casset__special .event--image__frame002 {
+	float: left;
+	width: 100%;
+	height: auto;
+	margin-right: 0px;
+	text-align: center;
+}
+.contents--area section#eventinformation--casset__special .event--information__left .event--image__frame .event--image{
+	width: 100%;
+	height: auto;
+	min-height: 237px;
+	margin: 0 auto;
+	background-image: url(../img/fire_work_003.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: bottom center;	
+}
+
+.contents--area section#eventinformation--casset__special .event--information__right .event--image__frame .event--image{
+	width: 100%;
+	height: auto;
+	min-height: 237px;
+	margin: 0 auto;
+	background-image: url(../img/fire_work_004.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: bottom center;	
+}
+
+
+
+.contents--area section#eventinformation--casset__special .event--image__frame002 p {
+	margin: 0 auto;
+	padding: 10px 0px;
+	color: #757575;
+	font-size: 11px;
+	text-align: left;
+}
+.contents--area section#eventinformation--casset__special .event--information__area {
+	margin-top: 0px;
+}
+.contents--area section#eventinformation--casset__special .event--image__text p {
+	float: none;
+	clear: both;
+	width: 100%;
+	height: auto;
+	margin: 0 auto 10px;
+	text-align: left;
+}
+.contents--area section#eventinformation--casset__special .event--image__moreinfo {
+	width: 100%;
+	margin: 10px auto;
+	background-color: #faf0d5;
+}
+.contents--area section#eventinformation--casset__special .event--image__moreinfo p {
+	padding: 0px 10px 0px 10px;
+}
+.contents--area section#eventinformation--casset__special .event--image__moreinfo p:first-child {
+	padding: 10px 10px 0px 10px;
+}
+.contents--area section#eventinformation--casset__special .event--image__moreinfo p:last-child {
+	padding: 0px 10px 10px 10px;
+}
+.contents--area section#eventinformation--casset__special .event--image__text {
+	float: none;
+	clear: both;
+	width: 100%;
+	margin: 0 auto;
+}
+.contents--area section#eventinformation--casset__special .event--information__title h3:after {
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	right: 0px;
+	width: 7.5px;
+	height: 15px;
+	margin-top: -7.5px;
+	background: url(../img/arrow_red.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+	z-index: 2;
+	content: '';
+}
+
+.contents--area section#eventinformation--casset__special .event--information__title h3.text--size__bigger {
+	position: relative;
+	width: calc(100% - 30px);
+	margin: 0px;
+	padding: 15px 10px 20px 10px;
+}
+.contents--area section#eventinformation--casset__special.event--casset__common a.button {
+	display: block;
+	position: relative;
+	width: calc(100%-20px);
+	height: auto;
+	min-height: 40px;
+	margin: 15px auto 6px;
+	padding: 4px 0px;
+	border-radius: 4px;
+	text-align: center;
+	line-height: 180%;
+	box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
+	-webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
+}
+.contents--area section#eventinformation--casset__special.event--casset__common .height--25px {
+	height: 0px;
+}
+.contents--area section#eventinformation--casset__special .event--information__field {
+	width: auto;
+	padding: 0px 10px;
+}
+.contents--area section.contents--component__title__none .contents--component__title {
+display: none;
+}
+/*module9 イベント情報(強調表示)の
+				スタイルシート開始（SP版）の設定*/
+.contents--area section#eventinformation--casset__strong {
+	display: block;
+	width: 100%;
+	padding-bottom: 5px;
+	background-color: #ffffff;
+	font-size: 0;
+	line-height: 1;
+}
+.contents--area section#eventinformation--casset__strong a {
+	position: relative;
+	width: 100%;
+	font-size: 0;
+}
+.contents--area section#eventinformation--casset__strong a.event--information.eventtitle--backcolor__default {
+	border-top: 1px solid #DFDFDF;
+}
+
+.contents--area section#eventinformation--casset__strong hr {
+	display: block;
+	width: 100%;
+	height: 2px;
+	margin: 0 auto;
+}
+.contents--area section#eventinformation--casset__strong h2#module9 {
+	display: block;
+	width: auto;
+	padding: 10.5px 40px 10.5px 10px;
+	font-size: 16px;
+	font-weight: 700;
+	text-align: left;
+	line-height: 24px;
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+.contents--area section#eventinformation--casset__strong .event--information__title h3.text--size__bigger {
+	position: relative;
+	width: auto;
+	margin: 12px 0px 16px 0px;
+	padding: 0px 20px 0px 10px;
+}
+.contents--area section#eventinformation--casset__strong .event--information__title h3:after {
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	width: 7.5px;
+	height: 15px;
+	margin-top: -7.5px;
+	background: url(../img/arrow_red.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+	content: '';
+	z-index: 2;
+}
+.contents--area section#eventinformation--casset__strong .event--image__frame img {
+	width: 100%;
+}
+.contents--area section#eventinformation--casset__strong .event--image__frame {
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	text-align: center;
+}
+.contents--area section#eventinformation--casset__strong .event--information__right .event--image__text p.text--size__middle {
+	line-height: 20px;
+}
+
+.contents--area section#eventinformation--casset__strong .event--image__frame p {
+	width: 100%;
+	margin: 10px 0px;
+	color: #757575;
+	font-size: 11px;
+	text-align: left;
+}
+.contents--area section#eventinformation--casset__strong .event--image__moreinfo {
+	width: auto;
+	margin: 0 auto 10px;
+	padding: 10px;
+	background-color: #faf0d5;
+	text-align: left;
+}
+/*左のボックス スマートフォンの場合はフロートをなくす*/
+.contents--area section#eventinformation--casset__strong .event--information__left {
+	float: none;
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	text-align: center;
+}
+/*左のボックス画像フレーム*/
+.contents--area section#eventinformation--casset__strong .event--image__frame {
+	float: none;
+	width: 100%;
+	margin: 0 auto;
+	margin-left: 0px;
+	margin-top: 0px;
+	overflow: hidden;
+	text-align: center;
+}
+.contents--area section#eventinformation--casset__strong .event--information__right__sub {
+	display: none;
+}
+
+
+
+/*左のボックス画像*/
+.contents--area section#eventinformation--casset__strong .event--image__frame .event--image {
+	width: 100%;
+	height: auto;
+	min-height: 237px;
+	margin: 0 auto;
+	background-image: url(../img/fire_work_001.png);
+	background-repeat: no-repeat;
+	background-size:contain;
+	background-position: center center;	
+ }
+/*左のボックス画像キャプション*/
+.contents--area section#eventinformation--casset__strong .event--image__caption {
+	clear: both;
+	width: 100%;
+	padding: 5px 0px;
+	color: #777;
+	text-align: left;
+}
+.contents--area section#eventinformation--casset__strong .event--image__caption p {
+	margin: 0;
+	padding: 0px 0px 10px 0px;
+	font-size: 11px;
+	line-height: 18px;
+}
+.contents--area section#eventinformation--casset__strong.event--casset__common a.button {
+	display: block;
+	position: relative;
+	width: auto;
+	height: auto;
+	min-height: 40px;
+	margin: 15px 10px 6px;
+	padding: 4px 10px;
+	border-radius: 4px;
+	text-align: center;
+	text-align: center;
+	line-height: 180%;
+	box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
+	-webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
+}
+.contents--area section#eventinformation--casset__strong .height--20px {
+	height: 0px;
+}
+.contents--area section#eventinformation--casset__strong .event--information__field {
+	width: auto;
+	padding: 0px 10px;
+}
+/*module9 イベント情報(強調表示)の
+				スタイルシート終了（SP版）の設定*/
+
+
+.contents--area section#eventinformation--casset__more {
+	width: 100%;
+	margin: 0 auto;
+	padding: 15px 0px;
+	border-top: 1px solid #DFDFDF;
+	background-color: #ffffff;
+	text-align: center;
+}
+.contents--area section#eventinformation--casset__more p{
+	width: 100%;
+	margin: 0 auto;
+	padding-top: 15px;
+	border-top: 1px solid #DFDFDF;
+}
+.contents--area section#eventinformation--casset__more a {
+	display: inline;
+	width: auto;
+	margin: 0px 0px 0px 16px;
+	padding: 0;
+	color: #757575;
+	font-size: 12px;
+	line-height: 1;
+}
+.contents--area section#eventinformation--casset__more a:hover {
+	text-decoration: underline !important;
+}
+.contents--area section#eventinformation--casset__more a.arrow--img:after {
+	display: inline-block;
+	position: absolute;
+	top: 7px;
+	width: 15px;
+	height: 6px;
+	margin-left: 10px;
+	background: url(../img/arrow_red_down.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+	content: '';
+}
+.contents--area section#eventinformation--casset__more a.arrow--font:after {
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	content: '\f105';
+}
+.event--casset__common .event-button p:after {
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	width: 7.5px;
+	height: 12px;
+	margin-top: -6px;
+	margin-left: 5px;
+	background: url(../img/arrow_white.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+	content: '';
+}
+
+
+
+
+
+
+.event--image__frame.event--cassette__002 {
+	float: left;
+	width: 208px;
+	height: auto;
+	text-align: center;
+}
+.event--image__text.event--cassette__002 {
+	float: right;
+	width: 368px;
+	height: auto;
+	margin-right: 15px;
+	text-align: left;
+}
+.event--image__moreinfo.event--cassette__002 {
+	width: 100%;
+	margin: 0 auto;
+	padding: 15px;
+	background-color: #faf0d5;
+	text-align: left;
+}
+#calendar--setdata {
+	width: 100%x;
+	margin: 0 auto !important;
+	padding-bottom: 15px;
+	background-color: #ffffff;
+}
+/*色指定クラス*/
+body {
+	background-color: #ffecda;
+	font-size: 12px;
+}
+#innerWrap {
+	background-color: #ffffff;
+	box-shadow: 1px 1px 1px 1px #ccc;
+	-webkit-box-shadow: 1px 1px 1px 1px #ccc;
+}
+hr {
+	background-color: #ccc;
+}
+.container--link__text p {
+	color: #195197;
+}
+/*マップアイコンの色*/
+.container--box__place p:before {
+	color: #D3BDA6;
+}
+/*もっと見るの横にあるアローアイコンの色*/
+.container--link__text p:after {
+	color: #ac232c;
+}
+/*右寄せ・高さ中央にあるアローアイコンの色*/
+.container--box__002.arrow--font:after {
+	color: #ac232c;
+	font-size: 20px;
+}
+
+
+.event--casset__common .event--information p:after {
+	color: #ac232c;
+	font-size: 14px;
+}
+.event--casset__common dl dd a:after {
+	color: #ac232c;
+	font-size: 14px;
+}
+/*カレンダーCSS*/
+#calendar--setdata {
+	margin-top: 15px;
+}
+#calendar--setdata .calendar--header {
+	position: relative;
+	width: 49%;
+	min-height: 45px;
+	margin: 0 auto;
+	border-radius: 4px 4px 0 0 / 4px 4px 0 0;
+	-webkit-border-radius: 4px 4px 0 0 / 4px 4px 0 0;
+	-moz-border-radius: 4px 4px 0 0 / 4px 4px 0 0;
+	font-size: 14px;
+	font-weight: 700;
+	text-align: center;
+	line-height: 45px;
+}
+.calendar--float__left {
+	float: left;
+}
+.calendar--float__right {
+	float: right;
+}
+#calendar--setdata .calendar--header__002 {
+	position: relative;
+	width: 49%;
+	min-height: 45px;
+	margin: 0 auto;
+	border-bottom: none;
+	border-radius: 4px 4px 0 0 / 4px 4px 0 0;
+	-webkit-border-radius: 4px 4px 0 0 / 4px 4px 0 0;
+	-moz-border-radius: 4px 4px 0 0 / 4px 4px 0 0;
+	font-size: 14px;
+	font-weight: 700;
+	text-align: center;
+	line-height: 45px;
+	cursor: pointer;
+}
+#calendar--setdata .arrow--position {
+	position: absolute;
+	top: 12px;
+	right: 10px;
+	font-size: 16px;
+	cursor: pointer;
+}
+#calendar--setdata .calendar--header span {
+	margin: 0px 6px;
+	font-size: 14px;
+	font-weight: 700;
+}
+#calendar--setdata #calendar--wrapper {
+	display: inline-block;
+	width: 100%;
+	margin-top: 20px;
+	margin: 0 auto;
+	padding-bottom: 5px;
+	text-align: center;
+	background-color: #fff;
+}
+#calendar--setdata #left {
+	display: block;
+	width: 95%;
+	max-width: 375px;
+	margin: 0 auto;
+	padding-top: 15px;
+}
+#calendar--setdata #right {
+	display: none;
+	width: 95%;
+	max-width: 375px;
+	margin: 0 auto;
+	padding-top: 15px;
+}
+#calendar--setdata #table {
+	display: table;
+	table-layout: fixed;
+	width: 100%;
+	max-width: 375px;
+	margin: -1px auto;
+	border-top: 4px solid #c95960;
+	background-color: #ccc;
+	font-weight: 400;
+	text-align: center;
+}
+#calendar--setdata .row {
+	display: table-row;
+	width: 50%;
+	margin: 0 auto;
+	font-weight: 400;
+}
+#calendar--setdata .row div {
+	display: table-cell;
+	width: 14%;
+	height: 20px;
+	min-height: 20px;
+	margin: 1px;
+	padding: 13.5px 9px;
+	border-left: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	font-size: 16px;
+	font-weight: 400;
+	text-align: center;
+}
+#calendar--setdata .row.tabele--contents > div {
+	background-color: #fff;
+	text-align: center;
+}
+#calendar--setdata .row > div.sunday {
+	border-right: 1px solid #ccc;
+}
+#calendar--setdata .border--right {
+	border-right: 1px solid #ccc;
+}
+#calendar--setdata .row > div.weekday {
+	color: #333;
+}
+#calendar--setdata .row.tabele--header > div.weekday {
+	background-color: #fff;
+	color: #333;
+}
+#calendar--setdata .row.tabele--contents div {
+	position: relative;
+	height: 16px;
+}
+#calendar--setdata .row.tabele--contents div a {
+	display: block;
+	position: absolute;
+	top: 13.5px;
+	left: 0;
+	width: 100%;
+	height: 20px;
+	margin: 0;
+	padding: 0;
+	background-color: inherit;
+	color: #195197;
+	font-weight: 700;
+	text-decoration: underline !important;
+	z-index: 2;
+}
+.calendar--header.calendar--backcolor__default {
+	border-bottom: 1px solid #C85960;
+	background-color: #C85960;
+}
+
+.calendar--header__002.calendar--backcolor__default {
+	border: 1px solid #C85960;
+	background-color: #ffffff;
+}
+#calendar--setdata .fireworks--text {
+	float: none;
+	clear: both;
+	padding-top: 5px;
+	text-align: left;
+}
+#calendar--setdata .fireworks--text p {
+	margin-left: 10px;
+	margin-top: 10px;
+	color: #333;
+	font-size: 12px;
+	line-height: 100%;
+}
+
+
+span.square-color__red {
+	margin-left: 3px;
+	padding:2px 7px;
+	background-color:#E50000;
+	color:#ffffff;
+	font-size:10px;
+	letter-spacing: 0px;
+	line-height:100%;
+}
+span.square-color__grey {
+	margin-left: 3px;
+	padding:2px 7px;
+	background-color:#CFCFCF;
+	color:#ffffff;
+	font-size:10px;
+	letter-spacing: 0px;
+	line-height:100%;
+}
+span.square-color__white {
+	margin-left: 3px;
+	padding:2px 7px;
+	background-color:#FFFFFF;
+	color:#999999;
+	font-size:10px;
+	letter-spacing: 0px;
+	line-height:100%;
+}
+
+#footer-before {
+	display: block;
+	width: 100%;
+	height: auto;
+	background-color: #fff;
+}
+#footer-before .go-to-top {
+	display: block;
+	width:100%;
+	height: auto;
+	padding: 15px 0px;
+	border-top: 1px solid #DFDFDF;
+}
+#footer-before .button-top {
+	display: block;
+	position: relative;
+	width:calc(100% - 20px);
+	height: auto;
+	min-height: 48px;
+	margin-top: 15px;
+	margin: 0 auto;
+	border-radius: 4px;
+	background-color: #EEEEEE;
+	text-align: center;
+	box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.4);
+}
+#footer-before .button-top a{
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 1005;
+}
+#footer-before .button-top p{
+	padding: 16px 0px;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 17px;
+}
+#footer-before .button-top p:before {
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left:10px;
+	width: 7.5px;
+	height: 12px;
+	margin-top: -6px;
+	margin-left: 3px;
+	background: url(../img/arrow_red_left.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+	content: " ";
+	z-index: 6;
+}
+#footer-before .breadcrumb {
+	display: inline-block;
+	width:calc(100% - 20px);
+	margin: 20px 10px 0px 10px;
+	font-size: 12px;
+	text-align: center;		
+	line-height: 15px;
+}
+#footer-before .breadcrumb-box {
+	display:inline-block;
+	width: auto;
+	margin: 0 auto;
+	text-align: center;
+}
+#footer-before .breadcrumb a span{
+	margin-right: 15px;
+	margin-left: 15px;
+	color:#195197;
+	font-weight: 700;
+	text-decoration: none;
+}
+#footer-before .breadcrumb p span{
+	margin-right: 15px;
+	margin-left: 15px;
+	text-decoration: none;
+}
+#footer-before .breadcrumb a{
+	display:inline-block;
+	margin: 0px;
+	padding: 0px;
+	line-height: 30px;
+}
+#footer-before .breadcrumb p{
+	display:inline-block;
+	margin: 0px;
+	padding: 0px;
+	line-height: 30px;
+}
+#footer-before .breadcrumb a:first-child span{
+	margin-left: 0px;
+}
+
+#footer-before .breadcrumb a:before{
+	display: inline-block;
+	width: 7.5px;
+	height: 12px;
+	margin: 0pa 15px;
+	background: url(../img/arrow_glay@3x.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	color:#195197;
+	text-decoration: none;
+	vertical-align: middle;
+	content: " ";
+	z-index: 6;
+}
+#footer-before .breadcrumb p:before{
+	display: inline-block;
+	width: 7.5px;
+	height: 12px;
+	margin: 0pa 15px;
+	background: url(../img/arrow_glay@3x.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	color:#195197;
+	text-decoration: none;
+	vertical-align: middle;
+	content: " ";
+	z-index: 6;
+}
+#footer-before .breadcrumb a:first-child:before{
+	display: inline-block;
+	width: 7.5px;
+	height: 12px;
+	margin: 0pa 15px;
+	background: url();
+	background-size: contain;
+	background-repeat: no-repeat;
+	color:#195197;
+	text-decoration: none;
+	vertical-align: middle;
+	content: " ";
+	z-index: 6;
+}
+.pc-only {
+	display: none;
+}
+.event--information__border {
+	display: none;
+}
+.btn_scroll_top{
+	display: none ;
+}
+.btn_scroll_top.fade-in {
+	display: block;
+}

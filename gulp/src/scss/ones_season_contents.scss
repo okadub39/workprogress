@@ -1,0 +1,465 @@
+@charset "UTF-8";
+/*
+コンテンツとカレンダーの背景色と文字色を設定するCSSになります。
+「NEW」「PR」のタブの設定もこちらで処理しております。
+*/
+/*コンテンツエリアの背景色*/
+
+.maintitle--design__border {
+	margin: 0 auto ;
+	background-color: #ffffff;
+	border-top: 2px solid #ac232c;
+	border-bottom: 1px solid #dfdfdf;
+	color: #333333;
+}
+.maintitle--design__underborder {
+	margin: 0 auto;
+	background-color: #ffffff;
+	border-bottom: 1px solid #dfdfdf;
+	color: #333333;
+}
+
+/*スマートフォン＆パソコン兼用文字色設定*/
+/*白文字を使用しているクラス*/
+#calendar--setdata h2 ,
+#calendar--setdata .calendar--header a,
+#calendar--setdata .calendar--header,
+.contents--area section#contents--restaurant__guidance .event-button,
+.contents--area section#contents--restaurant__guidance .container--boxright__009 .event-button,
+.contents--area section.event--casset__common a.event--button__color .event-button p,
+.event--button__color a,
+.event--button__color a:link,
+.event--button__color a:visited,
+.event-button--color,
+.eventtitle--backcolor__subcolor,
+.eventtitle--backcolor__default, #globalNav ul,
+.container--tag__color,
+section.contents--mainvisual .contents--texts__fields,
+span.square-color__red,
+span.square-color__grey,
+.tab,
+.tag-color__pickup {
+	color: #ffffff;
+}
+/*#333333を使用しているクラス*/
+#calendar--setdata .calendar--header__002,
+#calendar--setdata .fireworks--text p,
+#calendar--setdata .row > div.saturday,
+#calendar--setdata .row > div.sunday,
+#calendar--setdata .row > div.weekday,
+#calendar--setdata .row.tabele--contents div p,
+#calendar--setdata .row.tabele--contents > div.saturday,
+#calendar--setdata .row.tabele--contents > div.sunday ,
+#calendar--setdata .row.tabele--header > div.weekday,
+.contents--area,
+.contents--area section#contents--induction .container--box__title p,
+.contents--area section#contents--induction .container--boxright__006b .container--box__text a,
+.contents--area section#contents--restaurant__guidance .container--box__area a,
+.maintitle--design__border,
+.tab-color--mono,
+.tab--station{
+	color: #333333;
+}
+#accordion--002 a p,
+#accordion--003 a p,
+.contents--area section#contents--restaurant__guidance .container--box #accordion--001 a.archive,
+.contents--area section#eventinformation--casset__more a,
+.contents--area section#eventinformation--casset__lists .event--image__frame p,
+.contents--area section#eventinformation--casset__pickup .event--image__frame p,
+.contents--area section#eventinformation--casset__strong .event--image__frame p,
+.contents--area section#eventinformation--casset__special .event--image__frame002 p,
+.contents--area section#eventinformation--casset__special .event--information__right .event--image__caption,
+.contents--area section#eventinformation--casset__special .event--information__left .event--image__caption,
+.contents--area section#eventinformation--casset__special .event--image__frame001 p,
+.contents--area section#eventinformation--casset__special .event--image__frame002 p,
+.contents--area section#eventinformation--casset__pickup .event--image__frame p,
+.contents--area section#eventinformation--casset__more a, 
+.contents--area section#imagetext--onecolum__fourcolum .container--box #accordion--002 a p{
+	color: #757575;
+}
+.contents--area section#contents--restaurant__guidance .container--box__area a
+.contents--area section#contents--induction .container--box__text a,
+.contents--area section#contents--induction .container--box__title p,
+#calendar--setdata .row.tabele--contents div a,
+.event--casset__common dl dd a{
+	color: #195197;
+}
+.contents--area div.link-top a {
+	color: #cc2414;
+}
+span.square-color__white {
+	color: #999999;
+}
+.contents--area section#search--festa__area .container--box .container--box__area a p:after,
+.contents--area section#contents--restaurant__guidance .container--box__area a:before,
+.contents--area section#contents--induction .container--box__text a:after,
+.contents--area section#contents--induction .container--box__title p:after {
+	color: #ac232c;
+}
+.contents--area section#eventinformation--casset__strong .event--image__caption,
+.contents--area section#eventinformation--casset__lists .event--image__caption,
+.contents--area section#eventinformation--casset__pickup .event--image__caption {
+	color: #777777;
+}
+#calendar--setdata .row.tabele--contents div a,
+.contents--area section#contents--induction .container--box__text a,
+.container--link__text p,
+.event--casset__common dl dd a,
+#footer-before .breadcrumb a:first-child:before,
+#footer-before .breadcrumb p:before,
+#footer-before .breadcrumb a:before,
+#footer-before .breadcrumb a span{
+	color: #195197;
+}
+.container--box__place p:before {
+	color: #D3BDA6;
+}
+.contents--area section#search--festa__area .container--box .container--box__area a p:after,
+.container--box__002.arrow--font:after,
+.container--link__text p:after,
+.event--casset__common dl dd a:after,
+.event--casset__common .event--information p:after,
+#search--event__area .container--box__title p:after{
+	color: #ac232c;
+}
+
+
+/*スマートフォン＆パソコン兼用背景色設定*/
+.tab--station,
+.maintitle--design__border,
+section.contents--mainvisual,
+#footer-before,
+span.square-color__white,
+#innerWrap,
+.calendar--header__002.calendar--backcolor__default,
+.contents--area section#search--event__area .container--area__lists .container--box__area,
+.contents--area section#imagetext--twocolum__twocolum .container--box .container--box__area,
+.contents--area section#contents--feature__square .container--box a .container--box__image,
+.contents--area section#eventinformation--casset__pickup,
+.contents--area section#eventinformation--casset__lists,
+.contents--area section#eventinformation--casset__special,
+.contents--area section#eventinformation--casset__strong,
+.contents--area section#eventinformation--casset__more,
+.contents--area section#search--event__area,
+.contents--area section#contents--feature__3-2 .container--box__image,
+.contents--area section#search--festa__area,
+.contents--area section#imagetext--twocolum__twocolum .container--box__area a ,
+.contents--area section#new--information__photo,
+.contents--area section#new--information__text,
+.contents--area section#search--event__area,
+.contents--area section#ranking--top3,
+.contents--area section#contents--induction,
+.contents--area section#contents--paymentfee,
+.contents--area section#contents--popular--areas,
+.contents--area section#contents--popular--areas .container--box,
+.contents--area section#contents--popular--areas .container--box a,
+.contents--area section#contents--restaurant__guidance,
+.contents--area section#contents--article__induction,
+.contents--area section#contents--article__induction .container--box a,
+.contents--area section#contents--feature__square,
+.contents--area section#contents--feature__square .container--box a,
+.contents--area section#contents--feature__3-2,
+.contents--area section#contents--feature__3-2 .container--box a,
+.contents--area section#imagetext--onecolum__fourcolum,
+.contents--area section#imagetext--onecolum__fourcolum .container--box a,
+.contents--area section#imagetext--onecolum__twocolum,
+.contents--area section#imagetext--onecolum__twocolum .container--box a,
+.contents--area section#search--festa__area,
+.contents--area section#imagetext--onecolum__twocolum--ver2,
+.contents--area section#imagetext--onecolum__twocolum--ver2 .container--box a,
+.contents--area section#imagetext--twocolum__twocolum,
+.contents--area section#imagetext--twocolum__twocolum .container--box a,
+.contents--area section#imagetext--strong,
+.contents--area section#imagetext--onecolum__twocolum .container--box__image,
+#calendar--setdata,
+#calendar--setdata #calendar--wrapper,
+#calendar--setdata #calendar--wrapper,
+#calendar--setdata .row.tabele--header > div.weekday,
+#calendar--setdata .row.tabele--header > div.weekday,
+#calendar--setdata .row.tabele--contents > div,
+#calendar--setdata .row.tabele--contents > div,
+#calendar--setdata .calendar--header__002,
+span.square-color__white{
+	background-color: #ffffff;
+}
+.contents--area {
+	background-color: #f5eee7;
+}
+.eventtitle--backcolor__default, #globalNav ul {
+	background-color: #ac232c;
+}
+.eventtitle--backcolor__subcolor {
+	background-color: #937a41 !important;
+}
+.event--button__color {
+	background-color: #ac232c;
+}
+.event-button--color {
+	background-color: #937a41;
+}
+#calendar--setdata .row.tabele--contents > div.sunday,
+#calendar--setdata .row > div.sunday {
+	background-color: #FFE7DD;
+}
+#calendar--setdata .row.tabele--contents > div.saturday,
+#calendar--setdata .row > div.saturday {
+	background-color: #E9EEF4;
+}
+.container--tag__color {
+	background-color: #CF7926;
+}
+.tag-color__pickup {
+	background-color: #9D7744;
+}
+.contents--area section#search--festa__area .container--box .container--box__area a {
+	background-color: #f3f3f3;
+}
+.contents--area section#eventinformation--casset__pickup .event--image__moreinfo,
+.contents--area section#eventinformation--casset__lists .event--image__moreinfo,
+.contents--area section#eventinformation--casset__special .event--image__moreinfo,
+.contents--area section#eventinformation--casset__strong .event--image__moreinfo,
+.event--image__moreinfo.event--cassette__002 {
+	background-color: #faf0d5;
+}
+.tab-color--mono,
+.contents--area section#pickup--contents,
+.contents--area section#pickup--contents__002 {
+	background-color: #fbf8f5;
+}
+.tab-color--mono {
+	background-color: #FBF8F5;
+}
+.tab-color--orange,
+.tab--event {
+	background-color: #ce7824;
+}
+.tab-color--strong-red,
+.tab--gourmet {
+	background-color: #bf4141;
+}
+.tab-color--cyan-blue,
+.tab--music {
+	background-color: #4d7ea1;
+}
+.tab-color--deep-green,
+.tab--sports {
+	background-color: #357d4d;
+}
+.tab-color--blue-magenta,
+.tab--art {
+	background-color: #7d579a;
+}
+.tab-color--strong-magenta,
+.tab--fes {
+	background-color: #ac478e;
+}
+.tab-color--phthalo-blue,
+.tab--sanma {
+	background-color: #475297;
+}
+.tab-color--brown,
+.tab--leaves {
+	background-color: #7a573a;
+}
+.tab-color--yellow-green,
+.tab--sweets {
+	background-color: #838b29;
+}
+span.square-color__red{
+	background-color: #E50000;
+}
+span.square-color__grey {
+	background-color: #CFCFCF;
+}
+#calendar--setdata #table{ 
+	background-color: #dfdfdf;
+}
+.calendar--header.calendar--backcolor__default {
+	background-color: #C85960;
+}
+#footer-before .button-top {
+	background-color: #EEEEEE;
+}
+.event--information__color {
+	background-color: rgba(255, 248, 248, .95);
+}
+#calendar--setdata .calendar--header a {
+	background-color: rgba(250, 245, 245, .22);
+}
+#calendar--setdata #table{
+	background-color: #dfdfdf;
+}
+hr.event--information__border {
+	background-color: rgba(200, 250, 250, .45);
+}
+.contents--area section#imagetext--onecolum__twocolum--ver2 .container--box a .container--box__text {
+	background-color: rgba(255, 255, 255, .75);
+}
+.contents--area section#imagetext--onecolum__twocolum--ver2 .container--box a .container--box__text {
+	background-color: rgba(255, 255, 255, .75);
+}
+#content .eventTable .trcolor1 {
+	background-color: #f4f4f4;
+}
+#wrapper {
+	background: #ffecda;
+}
+#globalNav ul {
+	background-color: #ac232c !important;
+}
+#globalNav ul :hover ul :hover {
+	background-color: #efefef;
+}
+#globalNav ul {
+	background-color: #d34b01;
+}
+#globalNav ul {
+	background-color: #ac232c !important;
+}
+#globalNav ul :hover ul :hover {
+	background-color: #efefef;
+}
+#globalNav ul {
+	background-color: #d34b01;
+}
+#content .eventTable .trcolor1 {
+	background-color: #f4f4f4;
+}
+#content .eventTable .trcolor2 {
+	background-color: #ffffff;
+}
+
+ /*パソコンブラウザ用ボーダーライン*/
+#calendar--setdata .calendar--header__002 {
+	border: 1px solid #c95960;
+}
+.contents-round {
+	border-radius: 4px;
+}
+#footList {
+	border-top-color: #efefef !important;
+}
+.maintitle--design__border {
+	border-top-color: #ac232c !important;
+	border-bottom-color: #dfdfdf !important;
+}
+.tab--station,
+.contents--area section#search--festa__area .container--box .container--box__area a {
+	border-color: #dfdfdf !important;
+}
+.contents--area section#search--festa__area .container--box .container--box__area a.margin--right__not {
+	border-top-color: #dfdfdf !important;
+	border-bottom-color: #dfdfdf !important;
+	border-left-color: #dfdfdf !important;
+	border-right: none !important;
+}
+.contents--area section#search--festa__area .container--box .container--box__area a.margin--right__not:nth-child(4n),
+.contents--area section#search--festa__area .container--box .container--box__area a.margin--right__not:nth-last-child(1),
+.border--right ,
+#calendar--setdata .border--right {
+	border-right-color: #dfdfdf !important;
+}
+#calendar--setdata .row div {
+	border-bottom-color: #dfdfdf !important;
+	border-left-color: #dfdfdf !important;
+}
+.border--top,
+.contents--area section#pickup--contents .container--box,
+.contents--area section#pickup--contents__002 .container--box,
+.contents--area section#ranking--top3 .container--link__text,
+.contents--area section#new--information__text .container--link__text,
+.contents--area section#new--information__text .container--box a .container--box__002,
+.contents--area section#new--information__photo .container--link__text {
+	border-top-color: #dfdfdf !important;
+}
+.event--information__area,
+.event--casset__common dl,
+.maintitle--design__underborder,
+.contents--area section#ranking--top3 hr {
+	border-bottom-color: #dfdfdf !important;
+}
+
+.contents--area section#search--event__area .container--box__area:last-child::after,
+.contents--area section#search--event__area .container--box__area::before {
+	border-left-color: #D3BDA6 !important;
+}
+.contents--area section#contents--paymentfee,
+.contents--area section#pickup--contents,
+.contents--area section#pickup--contents__002{
+	border-top-color: #9d7744 !important;
+	border-bottom-color: #9d7744 !important;/*border: 1px solid #dfdfdf;*/
+}
+
+ /*スマートフォン用ボーダーライン*/
+#footer-before .go-to-top,
+.contents--area section#contents--article__induction .container--box #accordion--002,
+.contents--area section#contents--article__induction .container--box .container--box__area a,
+.contents--area section#contents--induction .container--boxright__006b .container--box__text,
+.contents--area section#contents--restaurant__guidance .container--box__area a,
+.contents--area section#contents--restaurant__guidance .container--box #accordion--001 a.archive,
+.contents--area section#eventinformation--casset__more,
+.contents--area section#eventinformation--casset__more p,
+.contents--area section#eventinformation--casset__lists a.event--information.eventtitle--backcolor__default,
+.contents--area section#eventinformation--casset__pickup a.event--information.eventtitle--backcolor__default,
+.contents--area section#eventinformation--casset__strong a.event--information.eventtitle--backcolor__default,
+.contents--area section#eventinformation--casset__special a.event--information.eventtitle--backcolor__default,
+.contents--area section#pickup--contents .container--box,
+.contents--area section#pickup--contents__002 .container--box,
+.contents--area section#ranking--top3 .container--link__text,
+.contents--area section#search--event__area .container--area__lists,
+.contents--area section#search--event__area .container--box__003 .container--box__title{
+	border-top-color:#dfdfdf !important;
+}
+#accordion--002 a p,
+.contents--area section#contents--feature__3-2 .container--box__area a ,
+.contents--area section#contents--feature__square .container--box .container--box__area a ,
+.contents--area section#imagetext--onecolum__twocolum .container--box__area a,
+.contents--area section#imagetext--onecolum__fourcolum .container--box #accordion--002 a p,
+.contents--area section#imagetext--onecolum__fourcolum .container--box a,
+.contents--area section#imagetext--strong .container--box__right .container--box__inline,
+.contents--area section#imagetext--strong .container--box__left,
+.contents--area section#new--information__text .container--box__002,
+.contents--area section#new--information__photo .container--box .container--box__001,
+.contents--area section#search--event__area .container--area__lists.oneclum .container--box__area,
+.event--casset__common dl,
+.event--information__area{
+	border-bottom-color: #dfdfdf !important;
+}
+
+.contents--area section#search--festa__area .container--box .container--box__area a {
+	border-color: #dfdfdf !important;
+}
+.contents--area section#search--festa__area .container--box .container--box__area a.margin--right__not {
+	border-top-color: #dfdfdf !important;
+	border-right: none;
+	border-bottom-color: #dfdfdf !important;
+	border-left-color: #dfdfdf !important;
+}
+#calendar--setdata .border--right,
+#calendar--setdata .row > div.sunday,	
+.contents--area section#search--festa__area .container--box__area a.margin--right__not:last-child,	
+.contents--area section#search--festa__area .container--box__area a.margin--right__not:nth-child(even){
+	border-right-color: #dfdfdf !important;
+}
+
+#calendar--setdata .row div,
+.contents--area section#contents--induction .container--boxright__006b .container--box__text a,
+.contents--area section#search--event__area .container--box__area {
+	border-right-color: #dfdfdf !important;
+	border-bottom-color: #dfdfdf !important;
+}
+.contents--area section#contents--paymentfee,
+.contents--area section#pickup--contents,
+.contents--area section#pickup--contents__002{
+	border-top-color: #9D7744 !important;
+	border-bottom-color: #9D7744 !important;
+}
+#calendar--setdata #table {
+	border-top-color: #c95960 !important;
+}
+.calendar--header.calendar--backcolor__default {
+	border-bottom-color: #C85960 !important;
+}
+.calendar--header__002.calendar--backcolor__default {
+	border-color: #C85960 !important;
+}

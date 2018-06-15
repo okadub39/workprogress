@@ -1,0 +1,96 @@
+@charset "UTF-8";
+/*
+アローをWEBフォント化するCSS
+このCSSを読み込ませると画像からWEBフォントに切り替わります。
+Font Awesome 5 FreeのWEBフォントを使用する場合、font-weightの値は900にすること。
+コメントアウトで隠しているcontent: url(../img/arrow_red.png);からコメントアウトを外して、
+下記のCSSをコメントアウトで隠すことで画像とWEBフォントを変更できます。
+
+ーーーーーーーーーー
+　font-family: "Font Awesome 5 Free";
+  content: '\f105';
+  font-weight: 900;
+	color: #ac232c;
+ーーーーーーーーーー
+
+白色の矢印のcontentをコメントアウトを外すようにしてください。
+
+
+*/
+/*アロー全体のデフォルト設定　こちらの設定を変更することで画像とWEBフォントの切り替えも可能です。*/
+
+.container--link__text.arrow--img a p:after,.container--link__text.arrow--font a p:after,.container--box__002.arrow--img:after,.container--box__002.arrow--font:after,.contents--component__003 a .container--box__title.arrow--img p:after,.contents--component__003 a .container--box__title.arrow--font p:after,.contents--component__006 .container--box__title.arrow--img p:after,.contents--component__006 .container--box__title.arrow--font p:after,.contents--component__007.arrow--font .btn p:after,.contents--component__009.arrow--img .btn p:after,.contents--component__009.arrow--font .btn p:after,.contents--component__007.arrow--img .btn p:after,.contents--component__006 .container--box__text.arrow--img a:after,.contents--component__006 .container--box__text.arrow--font a:after,.contents--component__009 .container--box__area.arrow--img a:before,.contents--component__009 .container--box__area.arrow--font a:before,.contents--component__013 .container--box .container--box__area.arrow--img a p:after,.contents--component__013 .container--box .container--box__area.arrow--font a p:after,.event--information__title p:after,.contents--component__021 a.arrow--img:after,.contents--component__021 a.arrow--font:after,.container--box__002.arrow--font:after,#calendar--setdata .calendar--header a:after,.event--casset__common dl dd a:after,.event--casset__common .btn a:after,.event--casset__common .btn p:after  {
+  font-family: "Font Awesome 5 Free";
+	margin-left: 5px;
+	margin-top: 0px;
+  content: '\f105';
+  font-weight: 900;
+	color: #ac232c;
+	/*content: url(../img/arrow_red.png);*/
+	background: url(none);
+	display:inline-block;
+	text-decoration: none !important;
+}
+/*白色の矢印（背景が茶色および暖色系の時に利用しています。）*/
+.contents--component__009.arrow--img .btn p:after,.contents--component__009.arrow--font .btn p:after,.contents--component__007.arrow--img .btn p:after,#calendar--setdata .calendar--header a:after,.event--casset__common .btn p:after{
+	color: #fff;
+	/*content: url(../img/arrow_white.png);*/
+}
+.contents--component__021 a.arrow--img:after  {
+	margin-top: -12px !important;
+}
+/*下記はアローの位置調整*/
+.contents--component__006 .container--box__text.arrow--img a:after {
+  margin-left: 5px;
+  margin-right: 20px;
+}
+.contents--component__006 .container--box__text.arrow--font a:after {
+  margin: 0px 5px;
+}
+.contents--component__009 .container--box__area.arrow--img a:before,.contents--component__009 .container--box__area.arrow--font a:before {
+  margin-right: 10px;
+}
+.contents--component__013 .container--box .container--box__area.arrow--img a p:after,.contents--component__013 .container--box .container--box__area.arrow--font a p:after {
+  float: right;
+  margin-right: 10px;
+}
+.event--casset__common .btn p:after {
+	margin-top: -20px;
+}
+.event--information__title p:after {
+  position: absolute;
+  right: 15px;
+  left: auto;
+  top: 50%;
+  margin-top: 5px;
+}
+.contents--component__021 a.arrow--img:after,.event--casset__common dl dd a:after {
+  margin-left: 10px;
+}
+.container--box__002.arrow--font:after {
+  font-size: 20px;
+}
+#calendar--setdata .calendar--header a:after {
+	position: absolute;
+	top:2px;
+	right:10px;
+}
+.event--casset__common .btn a:after {
+  right: 15px;
+  top: 2px;
+}
+.container--link__text.arrow--img a p:after {
+	float: right;
+	margin-top:0px !important;
+  font-size: 18px;
+  text-decoration: none !important;
+}
+.contents--component__021 a.arrow--img:after, .event--casset__common dl dd a:after{
+	margin-top: -5px !important;
+}
+.contents--component__003 a .container--box__title.arrow--img p:after,{
+	margin-top: -10px !important;
+}
+.contents--component__006 .container--box__title p:after,.contents--component__006 .container--box__text a:after,.contents--component__009 .container--box__area.arrow--img a:before, {
+	margin-top: -8px !important;
+}
